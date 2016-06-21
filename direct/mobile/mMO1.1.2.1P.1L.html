@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>요금제를 선택해 주세요 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>요금제를 선택해 주세요</h1>
+	</div>
+	<div class="popCon plan">
+
+		<div class="inPop">
+
+			<div class="narrowCon info">
+				<p class="title">고객님의 데이터 사용량 및 통신요금에 따라 요금제를 선택해 보세요.</p>
+				<p class="txtInfo">다이렉트 가입 시 <em class="fColor3">데이터 20% 추가지원!!</em></p>
+			</div>
+
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>무제한 요금제</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li class="on"><a href="#none">무제한 요금제</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+									<li><a href="#none">기본형 요금제</a></li>
+									<li><a href="#none">절약형 요금제</a></li>
+									<li><a href="#none">청소년 요금제</a></li>
+									<li><a href="#none">어르신 요금제</a></li>
+									<li><a href="#none">음성형</a></li>
+								</ul>
+							</div>
+							<div class="group">
+								<ul class="tabJs">
+									<li><a href="#none">전국민 무한</a></li>
+									<li><a href="#none">T끼리</a></li>
+									<li><a href="#none">T끼리 맞춤형</a></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>1</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->
+
+			<div class="tab_area" id="">
+				<div class="tab_con_box">
+					<div class="info month_plan">
+						<span class="fRight type2">24개월 약정시(VAT포함)</span>
+						<span class="fRight type1">월정액(VAT포함)</span>
+					</div>
+					<ul class="extend tglClsOpen h10">
+						<li class="on"><!-- 활성화시 클래스 on 추가 -->
+							<a href="#" class="tglBtn"><strong>LTE/3G 공용</strong></a>
+							<div class="extendCon">
+								<div class="con">
+									<div>
+										<ul>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan1" checked><label for="plan1">올인원 44</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">12GB</strong><em class="fColor6"> (+무제한)</em><em class="tag">+1.3GB</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">100,000원</span>
+																	<em class="type1">(110,000원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan2"><label for="plan2">band 데이터 51</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">20GB</strong><em class="fColor6"> (+무제한)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">44,000원</span>
+																	<em class="type1">(29,500원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnClose tglBtnClose">닫기</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="tglBtn"><strong>LTE 공용</strong></a>
+							<div class="extendCon">
+								<div class="con">
+									<div>
+										<ul>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan1" checked><label for="plan1">올인원 44</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">12GB</strong><em class="fColor6"> (+무제한)</em><em class="tag">+1.3GB</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">100,000원</span>
+																	<em class="type1">(110,000원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan2"><label for="plan2">band 데이터 51</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">20GB</strong><em class="fColor6"> (+무제한)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">44,000원</span>
+																	<em class="type1">(29,500원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnClose tglBtnClose">닫기</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="tglBtn"><strong>3G 공용</strong></a>
+							<div class="extendCon">
+								<div class="con">
+									<div>
+										<ul>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan1" checked><label for="plan1">올인원 44</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">12GB</strong><em class="fColor6"> (+무제한)</em><em class="tag">+1.3GB</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">100,000원</span>
+																	<em class="type1">(110,000원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan2"><label for="plan2">band 데이터 51</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">20GB</strong><em class="fColor6"> (+무제한)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">44,000원</span>
+																	<em class="type1">(29,500원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnClose tglBtnClose">닫기</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL2 btnRed">선택한 요금제로 보기</a>
+				</div>
+			</div>
+			<div class="tab_area" id="" style="display:none;">
+				<div class="tab_con_box">
+					<div class="info month_plan">
+						<span class="fRight type2">24개월 약정시(VAT포함)</span>
+						<span class="fRight type1">월정액(VAT포함)</span>
+					</div>
+					<ul class="extend tglClsOpen h10">
+						<li class="on"><!-- 활성화시 클래스 on 추가 -->
+							<a href="#" class="tglBtn"><strong>LTE/3G 공용</strong></a>
+							<div class="extendCon">
+								<div class="con">
+									<div>
+										<ul>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan3" checked><label for="plan3">band 데이터 69</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong>12GB</strong><em class="fColor6"> (+2GB)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">100,000원</span>
+																	<em class="type1">(110,000원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan4"><label for="plan4">band 데이터 51</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong>20GB</strong><em class="fColor6"> (+3GB)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">44,000원</span>
+																	<em class="type1">(29,500원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnClose tglBtnClose">닫기</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="tglBtn"><strong>LTE 공용</strong></a>
+							<div class="extendCon">
+								<div class="con">
+									<div>
+										<ul>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan1" checked><label for="plan1">올인원 44</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">12GB</strong><em class="fColor6"> (+무제한)</em><em class="tag">+1.3GB</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">100,000원</span>
+																	<em class="type1">(110,000원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan2"><label for="plan2">band 데이터 51</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">20GB</strong><em class="fColor6"> (+무제한)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">44,000원</span>
+																	<em class="type1">(29,500원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnClose tglBtnClose">닫기</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="tglBtn"><strong>3G 공용</strong></a>
+							<div class="extendCon">
+								<div class="con">
+									<div>
+										<ul>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan1" checked><label for="plan1">올인원 44</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">12GB</strong><em class="fColor6"> (+무제한)</em><em class="tag">+1.3GB</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">100,000원</span>
+																	<em class="type1">(110,000원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>
+														<span class="formWrap circle">
+															<input type="checkbox" id="plan2"><label for="plan2">band 데이터 51</label>
+														</span>
+													</dt>
+													<dd>
+														<div class="option_area">
+															<span class="option">
+																<span class="memory"><strong class="infinity">20GB</strong><em class="fColor6"> (+무제한)</em></span>
+																<span class="call"><strong>200분</strong></span>
+																<span class="message"><strong>250건</strong></span>
+															</span>
+															<span class="price">
+																<em class="month_plan">
+																	<span class="type1">44,000원</span>
+																	<em class="type1">(29,500원)</em>
+																</em>
+																<em class="month_plan">
+																	<span class="type2">76,000원</span>
+																	<em class="type2">(83,600원)</em>
+																</em>
+															</span>
+														</div>
+														<div class="btn_area">
+															<span class="fLeft">
+																<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+																<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+															</span>
+															<span class="fRight">
+																<a href="#none" class="btnS btnDgray">자세히 보기</a>
+															</span>
+														</div>
+													</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnClose tglBtnClose">닫기</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL2 btnRed">선택한 요금제로 보기</a>
+				</div>
+			</div>
+			<div class="tab_area" id="" style="display:none;">
+				<div class="tab_select_box">
+					<dl>
+						<dt class="titDep2"><em class="fColor3">음성 제공 옵션</em> 확인 후 <em class="fColor3">추가 음성</em> 및 <em class="fColor3">데이터 제공량</em>을 선택해 주세요.</dt>
+						<dd>
+							<div>
+								<span>나는</span>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>음성옵션</option>
+									<option value="bb">음성옵션</option>
+									<option value="cc" disabled>음성옵션</option>
+								</select>
+								<span>+</span>
+							</div>
+							<div>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>음성 추가 제공량</option>
+									<option value="bb">음성 추가 제공량</option>
+									<option value="cc" disabled>음성 추가 제공량</option>
+								</select>
+								<span>과</span>
+							</div>
+							<div>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>데이터</option>
+									<option value="bb">데이터</option>
+									<option value="cc" disabled>데이터</option>
+								</select>
+								<span>를</span><br />
+								<span>제공하는 요금제를 찾고 있어요.</span>
+							</div>
+						</dd>
+					</dl>
+					<div class="btnBox h15">
+						<a href="#" class="btnL2 btnRed">조회</a>
+					</div>
+				</div>
+				<!-- 조회 후 결과 출력 부분 -->
+				<div class="emptyPlace"><!-- Empty --></div>
+				<div class="tab_con_box st02">
+					<div class="info month_plan">
+						<span class="fRight type2">24개월 약정시(VAT포함)</span>
+						<span class="fRight type1">월정액(VAT포함)</span>
+					</div>
+					<div class="extendCon">
+						<div class="con">
+							<ul>
+								<li>
+									<dl>
+										<dt>
+											<span class="formWrap circle">
+												<input type="checkbox" id="plan3" checked><label for="plan3">band 데이터 69</label>
+											</span>
+										</dt>
+										<dd>
+											<div class="option_area">
+												<span class="option">
+													<span class="memory"><strong class="infinity">12GB</strong><em class="fColor6"> (+무제한)</em><em class="tag">+1.3GB</em></span>
+													<span class="call"><strong>200분</strong></span>
+													<span class="message"><strong>250건</strong></span>
+												</span>
+												<span class="price">
+													<em class="month_plan">
+														<span class="type1">100,000원</span>
+														<em class="type1">(110,000원)</em>
+													</em>
+													<em class="month_plan">
+														<span class="type2">76,000원</span>
+														<em class="type2">(83,600원)</em>
+													</em>
+												</span>
+											</div>
+											<div class="btn_area">
+												<span class="fLeft">
+													<a href="#none" class="btnS btnWhite2 fColor6">T map</a>
+													<a href="#none" class="btnS btnWhite2 fColor6">실시간TV</a>
+													<a href="#none" class="btnS btnWhite2 fColor6">최신콘텐츠</a>
+												</span>
+												<span class="fRight">
+													<a href="#none" class="btnS btnDgray">자세히 보기</a>
+												</span>
+											</div>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<div class="btnBox h15">
+							<a href="#" class="btnL2 btnRed">선택한 요금제로 보기</a>
+						</div>
+					</div>
+				</div>
+				<!-- //조회 후 결과 출력 부분 -->
+			</div>
+
+		</div>
+
+	</div>
+	<div class="popClose"><button type="button">닫기</button></div>
+</div>
+</body>
+</html>

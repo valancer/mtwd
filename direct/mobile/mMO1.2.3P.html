@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>상품정보 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>Galaxy a7 2016</h1>
+	</div>
+	<div class="popCon topNone galleryView">
+
+		<div class="inPop">
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>이미지 보기</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li class="on"><a href="#tab1">이미지 보기</a></li>
+									<li><a href="#tab2">360도 보기</a></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li><!-- data가 없을 경우 -->
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->		
+
+			<div id="tab1" class="tabCon">			
+
+				<!-- 이벤트 슬라이드 영역 -->
+				<div class="gallerySlide">
+
+					<div class="swiperCon">
+						<button type="button" class="swipePrev"><span class="hidden">이전</span></button>
+						<ul class="swiperWrap">
+							<li class="cont">
+								<!-- 이미지 등록 시 -->
+								<div class="imgType">
+									<a href="#">
+										<img src="../../img/direct/tmp_item_530x640.jpg" alt=""><!-- alt값은 이미지 대체 텍스트 : 이미지에 있는 텍스트롤 모두 넣어줌 -->
+									</a>
+								</div>
+								<!-- //이미지 등록 시 -->
+							</li>
+							<li class="cont">
+								<!-- 이미지 등록 시 -->
+								<div class="imgType">
+									<a href="#">
+										<img src="../../img/direct/tmp_item_530x640.jpg" alt=""><!-- alt값은 이미지 대체 텍스트 : 이미지에 있는 텍스트롤 모두 넣어줌 -->
+									</a>
+								</div>
+								<!-- //이미지 등록 시 -->
+							</li>
+							<li class="cont">
+								<!-- 이미지 등록 시 -->
+								<div class="imgType">
+									<a href="#">
+										<img src="../../img/direct/tmp_item_530x640.jpg" alt=""><!-- alt값은 이미지 대체 텍스트 : 이미지에 있는 텍스트롤 모두 넣어줌 -->
+									</a>
+								</div>
+								<!-- //이미지 등록 시 -->
+							</li>
+							<li class="cont">
+								<!-- 이미지 등록 시 -->
+								<div class="imgType">
+									<a href="#">
+										<img src="../../img/direct/tmp_item_530x640.jpg" alt=""><!-- alt값은 이미지 대체 텍스트 : 이미지에 있는 텍스트롤 모두 넣어줌 -->
+									</a>
+								</div>
+								<!-- //이미지 등록 시 -->
+							</li>
+						</ul>
+						<button type="button" class="swipeNext"><span class="hidden">다음</span></button>
+					</div>
+					<div class="slideNavi">
+						<!--button type="button" class="btnPlay">정지</button>
+						<button type="button" class="btnStop" style="display:none">재생</button-->
+						<ul>
+							<li class="on"><span>이미지 1</span></li>
+							<li><span>이미지 2</span></li>
+							<li><span>이미지 3</span></li>
+							<li><span>이미지 4</span></li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- //이벤트 슬라이드 영역 -->
+
+			</div><!-- //tabCon -->
+
+			<div id="tab2" class="tabCon" style="display:none">
+
+				<ul class="viewer h50">
+					<li class="on"><img src="../../img/direct/tmp_item360_530x640.jpg" alt=""></li>
+					<li><img src="../../img/direct/tmp_item_530x640.jpg" alt=""></li>
+					<li><img src="../../img/direct/tmp_item_530x640.jpg" alt=""></li>
+					<li><img src="../../img/direct/tmp_item_530x640.jpg" alt=""></li>				
+				</ul>
+
+				<p class="fColor1 center">좌우로 드래그 해주세요</p>
+
+			</div><!-- //tabCon -->
+
+		<div><!-- //inPop -->
+
+	</div>
+	<div class="popClose"><button type="button">닫기</button></div>
+</div>
+</body>
+</html>

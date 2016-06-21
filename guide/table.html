@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>SKT POC mobile</title>
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="../inc/css/common.css">
+<script src="../inc/js/jquery-1.7.2.min.js"></script>
+<script src="../inc/js/common.js"></script>
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+<script>
+$(function() {
+	//코드 보여주는 script
+	function preTxt(){
+		$('pre').each(function(){
+			var $pre = $(this);
+			$pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		});
+	};
+	preTxt();
+});
+</script>
+</head>
+<body>
+	<div id="guideWrap">
+		<header>
+			<strong><a href="../list_ko.html"><img src="img/sktw_logo.gif" alt=""> SKT 마케팅 통합 POC 구축_Mobile HTML</a></strong>
+			<ul class="interface">
+				<li><a href="../../pc/list_ko.html"><span class="hidden">PC</span></a></li>
+				<li class="this"><a href="../list_ko.html"><span class="hidden">MOBILE</span></a></li>
+			</ul>
+			<nav class="guide_gnb">
+				<a href="index.html" class="on"><span>Html Guide</span></a>
+				<a href="../list_ko.html"><span>국문 HTML List</span></a>
+				<a href="../list_en.html"><span>영문 HTML List</span></a>
+			</nav>
+		</header>
+		<section id="guideContent">
+			<nav class="guide_lnb">
+				<strong>Html Guide</strong>
+				<ul>
+					<li><a href="index.html"><span>기본규칙</span></a></li>
+					<li><a href="btn.html"><span>button</span></a></li>
+					<li><a href="form.html"><span>Form</span></a></li>
+					<li><a href="tab.html"><span>Tab</span></a></li>
+					<li><a href="list.html"><span>List</span></a></li>
+					<!--<li><a href="table.html" class="on"><span>테이블</span></a></li>-->
+					<!--<li><a href="popup.html"><span>팝업</span></a></li>-->
+					<!--<li><a href="layer.html"><span>레이어팝업</span></a></li>-->
+				</ul>
+			</nav>
+			<div class="guideBox">
+				<strong class="guideTit1">Table</strong>
+				<strong class="guideTit2">type1</strong>
+<!-- guideCode -->
+<div class="guideCode">
+<pre>
+	코드는 여기에
+</pre>
+</div>
+<!-- //guideCode -->
+			</div><!-- // guideBox -->
+		</section>
+	</div><!-- // wrap -->
+</body>
+</html>

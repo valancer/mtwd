@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>APN 설정 확인방법 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>APN 설정 확인방법</h1>
+	</div>
+	<div class="popCon foreign">
+
+		<div class="inPop">
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>iOS</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li><a href="#tab1">Android O/S</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+									<li class="on"><a href="#tab2">iOS</a></li>
+									<li><a href="#tab3">Windows Mobile (7이전버전)</a></li>
+									<li><a href="#tab4">Windows Mobile (7이후버전)</a></li>
+									<li><a href="#tab5">Nokia</a></li>
+									<li><span></span></li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>1</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->
+			
+			<div class="tabCon" id="tab1" style="display:none;">
+				<p class="boxGray fColor6">설정 &gt; 무선 및 네트워크 &gt; 모바일 네트워크 &gt; 엑세스 포인트 이름 &gt; (단말 메뉴버튼)새 APN &gt; APN에서 새로운 APN 정보 입력</p>
+				<div class="tableType3 h10">
+					<table>
+						<caption>제목</caption>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:70%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">이름</th>
+								<td class="fColor5">SKT 3G</td>
+							</tr>
+							<tr>
+								<th scope="row">APN</th>
+								<td class="fColor5">web.sktelecom.com</td>
+							</tr>
+							<tr>
+								<th scope="row">MMSC</th>
+								<td class="fColor5">http://omms.nate.com:9082/oma_mms (MMS 포트 : 9093)</td>
+							</tr>
+							<tr>
+								<th scope="row">MMS<br />프록시</th>
+								<td class="fColor5"><p>smart.nate.com</p>
+								<p>(MCC : 450, MNC : 05)</p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+			<div class="tabCon" id="tab2">
+				<p class="titDep4">데이터 설정</p>
+				<p class="boxGray h10 fColor6">설정 &gt; 일반 &gt; 네트워크 &gt; 셀룰러 데이터 네트워크 &gt; 셀룰러 데이터</p>
+				<div class="tableType3 h10">
+					<table>
+						<caption>제목</caption>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:70%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">APN</th>
+								<td class="fColor5">web.sktelecom.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="titDep4 h15">데이터 설정</p>
+				<p class="boxGray h10 fColor6">설정 &gt; 일반 &gt; 네트워크 &gt; 셀룰러 데이터 네트워크 &gt; MMS 아래 각 항목 입력</p>
+				<div class="tableType3 h10">
+					<table>
+						<caption>제목</caption>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:70%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">APN</th>
+								<td class="fColor5">web.sktelecom.com</td>
+							</tr>
+							<tr>
+								<th scope="row">MMSC</th>
+								<td class="fColor5">http://omms.nate.com:9082/oma_mms</td>
+							</tr>
+							<tr>
+								<th scope="row">MMS<br />프록시</th>
+								<td class="fColor5">smart.nate.com:9093</td>
+							</tr>
+							<tr>
+								<th scope="row">MMS<br />최대크기</th>
+								<td class="fColor5">1048576</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+			<div class="tabCon" id="tab3" style="display:none;">
+				<p class="titDep4">데이터 설정</p>
+				<p class="boxGray h10 fColor6">Start &gt; Settings &gt; Wireless Controls &gt; 오른쪽 하단의 “Menu” &gt; Connections  &gt; My ISP “Add a new modem connection”</p>
+				<div class="tableType3 h10">
+					<table>
+						<caption>제목</caption>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:70%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">Enter a name<br />for the<br />connections</th>
+								<td class="fColor5">SKT 3G</td>
+							</tr>
+							<tr>
+								<th scope="row">Select<br />a modem</th>
+								<td class="fColor5"><p>“Cellular Line(GPRS)”</p> 
+								<p>선택 후 “Next” 클릭</p></td>
+							</tr>
+							<tr>
+								<th scope="row">Access<br />point name</th>
+								<td class="fColor5">web.sktelecom.com</td>
+							</tr>
+							<tr>
+								<th scope="row">User name/<br />Password/<br />Domain</th>
+								<td class="fColor5">정보 입력 없이 “Finish” 클릭</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+			<div class="tabCon" id="tab4" style="display:none;">
+				<p class="titDep4">MMS 사용을 위한 세팅</p>
+				<p class="boxGray h10 fColor6">Start &gt; HTC Messages &gt;오른쪽 하단의 “Menu” &gt; Settings &gt; Options  &gt; 오른쪽 하단의 “Menu”&gt; MMS Server &gt; Sample MMSC (Add해서 추가하는 경우에는 새로 만든 서버를 기본으로 설정함)</p>
+				<div class="tableType3 h10">
+					<table>
+						<caption>제목</caption>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:70%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">Server name</th>
+								<td class="fColor5"><p>원하는 이름 입력</p>
+								<p>(예 : SKT MMSC)</p></td>
+							</tr>
+							<tr>
+								<th scope="row">IP address</th>
+								<td class="fColor5">220.103.230.150</td>
+							</tr>
+							<tr>
+								<th scope="row">Port number</th>
+								<td class="fColor5">9093</td>
+							</tr>
+							<tr>
+								<th scope="row">Server<br />address</th>
+								<td class="fColor5">http://omms.nate.com:9082/oma_mms</td>
+							</tr>
+							<tr>
+								<th scope="row">Connect via</th>
+								<td class="fColor5">My ISP</td>
+							</tr>
+							<tr>
+								<th scope="row">Send Limit</th>
+								<td class="fColor5">1024K</td>
+							</tr>
+							<tr>
+								<th scope="row">WAP version</th>
+								<td class="fColor5">WAP 2.0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+			<div class="tabCon" id="tab5" style="display:none;">
+				<p class="titDep4">데이터 설정</p>
+				<div class="boxGray h10 fColor6">
+					<p>설정 &gt; 연결 &gt; 설정 &gt; 대상 &gt; 옵션 &gt; 새 대상</p>
+					<ul class="h10">
+						<li>1. 대상 이름에 “SKT 3G” 입력 후 아무 아이콘 선택</li>
+						<li>2. “SKT 3G” 선택 후 “옵션” → 새 엑세스 지점</li>
+						<li>3. “사용 가능한 엑세스 지점을 자동으로 확인하시겠습니까?”에서 “아니오” 선택</li>
+						<li>4. “패킷 데이터” 선택 후 패킷 데이터 엑세스 지점 이름에 “web.sktelecom.com” 입력 후 “OK” 선택</li>
+					</ul>
+				</div>
+				<p class="titDep4 h20">MMS 사용을 위한 세팅</p>
+				<div class="boxGray h10 fColor6">
+					<p>설정 &gt; 연결 &gt; 설정 &gt; 대상 &gt; 옵션 &gt; 새 대상</p>
+					<ul class="h10">
+						<li>1. 대상 이름에 “SKT MMS” 입력 후 아무 아이콘 선택</li>
+						<li>2. “SKT MMS” 선택 후 “옵션” → 새 엑세스 지점</li>
+						<li>3. “사용 가능한 엑세스 지점을 자동으로 확인하시겠습니까?”에서 “아니오” 선택</li>
+						<li>4. “패킷 데이터” 선택 후 패킷 데이터 엑세스 지점 이름에 “web.sktelecom.com” 입력 후 “OK” 선택</li>
+						<li>5. “홈페이지 정보 수정”에서 “http://omms.nate.com:9082/oma_mms” 입력 후 “옵션” 클릭</li>
+						<li>6. 프록시 서버 주소에 “smart.nate.com” 입력 (포트 번호 : 9093)</li>
+						<li>7. MMS APN 생성 후 메뉴 → 메뉴 → 옵션 → 설정 → 멀티미디어 메시지 → 사용 엑세스 지점에서 “web.sktelecom.com” 선택</li>
+					</ul>
+				</div>
+				<div class="btnBox h15">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+		</div><!-- //inPop -->
+
+	</div><!-- //popCon -->
+	<div class="popClose"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>

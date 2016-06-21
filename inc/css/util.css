@@ -1,0 +1,121 @@
+@charset "euc-kr";
+
+/*회원가입.로그인*/
+.joinBox{display:table;width:100%;border:1px solid #ccc;border-left:none}
+.joinBox:after{content:'';display:block;clear:both}
+.joinBox a{display:table-cell;width:50%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:84px 0 20px;border-left:1px solid #ccc;background:url(../../img/util/bg_join1.gif) no-repeat 50% 20px;background-size:56px 56px;-webkit-background-size:56px 56px;-moz-background-size:56px 56px;-o-background-size:56px 56px;font-size:13px;color:#fb6400;text-align:center}
+.joinBox .bg1{background-image:url(../../img/util/bg_join1.gif)}
+.joinBox .bg2{background-image:url(../../img/util/bg_join2.gif)}
+.joinBox .bg3{background-image:url(../../img/util/bg_idsearch1.gif);background-size:55px 55px;-webkit-background-size:55px 55px;-moz-background-size:55px 55px;-o-background-size:55px 55px;}
+.joinBox .bg4{background-image:url(../../img/util/bg_idsearch2.gif);background-size:55px 55px;-webkit-background-size:55px 55px;-moz-background-size:55px 55px;-o-background-size:55px 55px;}
+.inner.memberlogin{text-align:center}
+.inner.memberlogin p{font-size:13px}
+.inputProtect{margin:15px 0 20px}
+.inputProtect input{width:170px;height:35px;padding:0 10px 0 34px;border:none;border-bottom:1px solid #666;background:url(../../img/util/ico_password.gif) no-repeat 10px 50%;background-size:12px 16px;-webkit-background-size:12px 16px;-moz-background-size:12px 16px;-o-background-size:12px 16px;font-size:14px;}
+.topConBox.mb0{margin-bottom:0}
+.topConBox.type2{margin:10px 15px;padding:20px 14px;border:1px solid #e4e4e4}
+.topConBox.type2>strong{padding:59px 0 0}
+.topConBox.type2>strong.bg1{background:url(../../img/util/img_tworld1.gif) no-repeat 0 0;background-size:83px 44px;-webkit-background-size:83px 44px;-moz-background-size:83px 44px;-o-background-size:83px 44px;}
+.topConBox.type2>strong.bg2{background:url(../../img/util/img_tworld2.gif) no-repeat 0 0;background-size:122px 44px;-webkit-background-size:122px 44px;-moz-background-size:122px 44px;-o-background-size:122px 44px;}
+.topConBox.type2>strong .btnMore{top:0;right:0;margin:0}
+
+/**회원정책**/
+.WhiteBox {padding:15px 0;border:1px solid #e4e4e4;text-align:center}
+.cartoonView img{width:100%;}
+/*약관*/
+.termsArea .terms_tit {font-size:13px;font-weight:bold}
+.termsArea .terms_stit{font-size:13px}
+.termsArea .terms_stit2, .termsArea .terms_stit+p{display:block;margin-top:10px}
+.termsArea p+.terms_tit, .termsArea ul+.terms_tit, .termsArea ol+.terms_tit, .termsArea .terms_stit {margin-top:17px}
+.terms_oList{margin-top:10px}
+.terms_oList li ul, .terms_oList li ul li, .terms_oList li ol{margin-top:5px}
+.termsArea .terms_oList>li>ol, .terms_oList li>ul>li>ol{padding-left:7px}
+.termsArea .terms_oList>li>ol>li{list-style:decimal;padding-top:5px;list-style-position:inside}
+.termsArea .terms_oList>li>ol>li:first-child{padding-top:0}
+
+.inPop.detail .titDep4:first-child{margin-top:0;}
+.inPop.detail .titDep4{margin-top:25px;margin-bottom:25px;}
+.inPop.detail .sTxt1,
+.inPop.detail .sTit1{display:block;margin-top:5px;}
+.termsArea>ol>li+li{margin-top:5px;}
+.inPop.detail>ol li+li{margin-top:5px;}
+/*QnA*/
+.arcBox.noImg{border-top:none;}
+.arcBox.noImg > li:first-child{border-top:1px solid #e4e4e4}
+.arcBox.noImg > li > div > ul > li{border:none;}
+.arcBox.noImg li .question,
+.arcBox.noImg li .noticeTit{padding:15px 46px 15px 15px}
+.arcBox.noImg li .answer{padding:0 15px 15px 32px;background:none;border:none;}
+.arcBox.noImg li .answer:after{top:0;}
+.arcBox.noImg li .question:before{display:none;}
+.arcBox.noImg li .answer:before{display:none;}
+.arcBox.noImg li .question{border-top:none;}
+.arcBox.noImg li.on{border-top:2px solid #434159;}
+.arcBox.noImg li.on + li{border-top:2px solid #434159;}
+/*회원안내*/
+.openBox{margin:0;border:2px solid #efefef;padding:20px 15px;position:relative;}
+.topConBox.openBox>div strong{display:block;position:relative;padding-right:50px;font-size:17px}
+.topConBox.openBox>div strong .btnMore{position:absolute;top:50%;right:0;width:35px;height:35px;margin-top:-17px;background:url(../../img/common/bg_top_selector.png) no-repeat 0 0;background-position:0px 0px-webkit-background-size:35px 70px;-moz-background-size:35px 70px;-o-background-size:35px 70px;background-size:35px 70px;color:transparent;line-height:0;/*font-size:0;opacity:0;*/}
+.topConBox.openBox.on>div strong .btnMore{background-position:0px -35px}
+.openBox+.openBox{margin-top:10px;}
+
+.openBox>div:first-child{background:url(../../img/util/bg_certify_01.gif) no-repeat 0 50%;background-size:26px 32px;-webkit-background-size:26px 32px;-moz-background-size:26px 32px;-o-background-size:26px 32px;padding-left:45px;}
+.openBox+.openBox>div:first-child{background:url(../../img/util/bg_certify_02.gif) no-repeat 0 50%;background-size:26px 32px;-webkit-background-size:26px 32px;-moz-background-size:26px 32px;-o-background-size:26px 32px;}
+.openBox>div strong{font-size:17px;font-weight:bold;}
+.openBox>div p{font-size:13px;font-weight:bold;margin-top:15px;}
+.openBox li a{position:absolute;top:0;right:0;}
+
+.topCon{position:relative;border-bottom:1px solid #ccc;background:#fbfbfb;}
+.topCon[class*="con"] p{padding:35px 17px 35px 57px;line-height:20px;}
+.topCon[class*="con"] p>strong{vertical-align:middle}
+.topCon.con1 p{background:url(../../img/util/bg_member_topcon01.gif) no-repeat 17px 50%;background-size:26px 32px;-webkit-background-size:26px 32px;-moz-background-size:26px 32px;-o-background-size:26px 32px;}
+.topCon.con2 p{background:url(../../img/util/bg_member_topcon02.gif) no-repeat 17px 50%;background-size:32px 32px;-webkit-background-size:32px 32px;-moz-background-size:32px 32px;-o-background-size:32px 32px;}
+.topCon.con3 p{background:url(../../img/util/bg_member_topcon03.gif) no-repeat 17px 50%;background-size:19.5px 32px;-webkit-background-size:19.5px 32px;-moz-background-size:19.5px 32px;-o-background-size:19.5px 32px;}
+.topCon.con4 p{background:url(../../img/util/bg_member_topcon04.gif) no-repeat 17px 50%;background-size:32px 19px;-webkit-background-size:32px 19px;-moz-background-size:32px 19px;-o-background-size:32px 19px;}
+.topCon.con5 p{background:url(../../img/util/bg_member_topcon05.gif) no-repeat 17px 50%;background-size:32px 32px;-webkit-background-size:32px 32px;-moz-background-size:32px 32px;-o-background-size:32px 32px;}
+.topCon.con6 p{background:url(../../img/util/bg_member_topcon06.gif) no-repeat 17px 50%;background-size:32px 32px;-webkit-background-size:32px 32px;-moz-background-size:32px 32px;-o-background-size:32px 32px;}
+.topCon:after{position:absolute;left:50%;bottom:-15px;display:block;content:'';width:30px;height:30px;margin:0 0 0 -15px;background:url(../../img/util/bg_member_result.png) no-repeat;background-size:30px 30px;-webkit-background-size:30px 30px;-moz-background-size:30px 30px;-o-background-size:30px 30px;z-index:1;}
+/*회원탈퇴*/
+.breakdownBox{display:table;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:1px solid #e4e4e4;border-left:none}
+.breakdownBox li{display:table-cell;width:33%;border-left:1px solid #e4e4e4;background:url(../../img/util/bg_withdraw1.gif) no-repeat 50% 21px;background-size:32px 32px;-webkit-background-size:32px 32px;-moz-background-size:32px 32px;-o-background-size:32px 32px;text-align:center}
+.breakdownBox li:nth-child(2){background-image:url(../../img/util/bg_withdraw2.gif)}
+.breakdownBox li:nth-child(3){background-image:url(../../img/util/bg_withdraw3.gif)}
+.breakdownBox li a{display:block}
+.breakdownBox li strong{display:block;padding:64px 0 5px;font-size:12px}
+.breakdownBox li span{display:inline-block;padding-bottom:19px;color:#fb6400}
+.yellowbgCon{background:#fffcf0;overflow:hidden}
+.yellowbgCon .dayBox{width:154px;height:128px;margin:30px auto 15px;padding-top:26px;border-radius:100px;border:3px solid #e4e4e4;background:#fff;text-align:center}
+.yellowbgCon .dayBox strong{display:block;font-size:13px;font-weight:normal}
+.yellowbgCon .dayBox .accDay{font-size:13px;color:#fb6400;}
+.yellowbgCon .dayBox .accDay em{font-size:25px;font-weight:bold;vertical-align:-3px}
+.yellowbgCon .dayBox p{padding-top:5px;font-size:12px;line-height:15px;letter-spacing:-0.05em}
+.yellowbgCon .benefitHistory ul{overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:1px;line-height:0}
+.yellowbgCon .benefitHistory li{text-align:center}
+.yellowbgCon .benefitHistory li img{display:block;width:320px;margin:0 auto}
+.whiteBoxList{padding:0 14px;border:1px solid #efefef}
+.whiteBoxList li{position:relative;padding:27px 0 23px 50px;border-bottom:1px dashed #e4e4e4;font-weight:bold}
+.whiteBoxList li:last-child{border-bottom:none}
+.whiteBoxList li:before{display:block;content:'';position:absolute;left:0;top:50%;width:35px;height:35px;margin-top:-16px}
+.whiteBoxList.benefit li:before{background:url(../../img/util/bg_benefit.gif) no-repeat 0 0;background-size:35px 140px;-webkit-background-size:35px 140px;-moz-background-size:35px 140px;-o-background-size:35px 140px;
+.whiteBoxList.benefit li:first-child:before{background-position:0 0}
+.whiteBoxList.benefit li:nth-child(2):before{background-position:0 -35px}
+.whiteBoxList.benefit li:nth-child(3):before{background-position:0 -70px}
+.whiteBoxList.benefit li:nth-child(4):before{background-position:0 -105px}
+.reasonChk{margin-top:20px}
+.reasonChk li{margin-top:15px}
+.reasonChk li:first-child{margin-top:0}
+/*회원정보 조회 및 관리*/
+.footBox{padding:30px 15px 40px;background:#f7f7f7}
+.footBox .tit{padding-left:20px;background:url(../../img/common/bg_exclamation.png) no-repeat 0 0;background-size:16px 16px;-webkit-background-size:16px 16px;-moz-background-size:16px 16px;-o-background-size:16px 16px;font-size:13px;line-height:16px;font-weight:bold;}
+.footBox .txt{font-size:13px;color:#666;margin-top:15px;}
+
+.botTxt{padding:10px 15px;}
+.btnL.line2{height:auto;line-height:20px;padding:11px 0;}
+
+ /*시스템에러*/
+.util_error .topHead{padding:12px 0 8px;background:#333}
+.util_error .topHead img{display:inline-block;width:20px;height:21px}
+.util_error footer{background:#fff}
+.util_error footer{padding:10px 0;border-top:1px solid #e4e4e4;text-align:center;font-size:12px;color:#666}
+.util_error footer em{color:#e3002b}
+.util_error .infoBox{padding-bottom:60px}

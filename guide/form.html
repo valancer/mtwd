@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>SKT POC mobile</title>
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="../inc/css/common.css">
+<script src="../inc/js/jquery-1.7.2.min.js"></script>
+<script src="../inc/js/calendar.js"></script>
+<script src="../inc/js/common.js"></script>
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+<script>
+$(function() {
+	//코드 보여주는 script
+	function preTxt(){
+		$('pre').each(function(){
+			var $pre = $(this);
+			$pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/=""/g, ''));
+		});
+	};
+	preTxt();
+});
+</script>
+</head>
+<body>
+	<div id="guideWrap">
+		<header>
+			<strong><a href="../list_ko.html"><img src="img/sktw_logo.gif" alt=""> SKT 마케팅 통합 POC 구축_Mobile HTML</a></strong>
+			<ul class="interface">
+				<li><a href="../../pc/list_ko.html"><span class="hidden">PC</span></a></li>
+				<li class="this"><a href="../list_ko.html"><span class="hidden">MOBILE</span></a></li>
+			</ul>
+			<nav class="guide_gnb">
+				<a href="index.html" class="on"><span>Html Guide</span></a>
+				<a href="../list_ko.html"><span>국문 HTML List</span></a>
+				<a href="../list_en.html"><span>영문 HTML List</span></a>
+			</nav>
+		</header>
+		<section id="guideContent"> 
+			<nav class="guide_lnb">
+				<strong>Html Guide</strong>
+				<ul>
+					<li><a href="index.html"><span>기본규칙</span></a></li>
+					<li><a href="btn.html"><span>button</span></a></li>
+					<li><a href="form.html" class="on"><span>Form</span></a></li>
+					<li><a href="tab.html"><span>Tab</span></a></li>
+					<li><a href="list.html"><span>List</span></a></li>
+					<li><a href="step.html"><span>Step</span></a></li>
+					<!--<li><a href="table.html"><span>테이블</span></a></li>-->
+					<!--<li><a href="popup.html"><span>팝업</span></a></li>-->
+					<!--<li><a href="layer.html"><span>레이어팝업</span></a></li>-->
+				</ul>
+			</nav>
+			<div class="guideBox">
+				<strong class="guideTit1">Form</strong>
+				<strong class="guideTit2">Check box</strong>
+				<!-- 예제 -->
+				<span class="formWrap">
+					<input type="checkbox" id="labelCheck1">
+					<label for="labelCheck1">기본상태</label>
+				</span><br><br>
+				<span class="formWrap">
+					<input type="checkbox" id="labelCheck2" disabled>
+					<label for="labelCheck2">비활성상태</label>
+				</span>
+				<span class="formWrap">
+					<input type="checkbox" id="labelCheck3" checked>
+					<label for="labelCheck3">체크상태</label>
+				</span>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<span class="formWrap">
+	<input type="checkbox" id="labelCheck1">
+	<label for="labelCheck1">기본상태</label>
+</span>
+<span class="formWrap">
+	<input type="checkbox" id="labelCheck2" disabled>
+	<label for="labelCheck2">비활성상태</label>
+</span>
+<span class="formWrap">
+	<input type="checkbox" id="labelCheck3" checked>
+	<label for="labelCheck3">체크상태</label>
+</span>
+</pre>
+<!-- //guideCode -->
+				
+				<strong class="guideTit2">Radio button</strong>
+				<!-- 예제 -->
+				<span class="formWrap">
+					<input type="radio" id="labelRd1" name="sample1">
+					<label for="labelRd1">기본상태</label>
+				</span><br><br>
+				<span class="formWrap">
+					<input type="radio" id="labelRd2" name="sample1" disabled> 
+					<label for="labelRd2">비활성상태</label>
+				</span>
+				<span class="formWrap">
+					<input type="radio" id="labelRd3" name="sample1" checked>
+					<label for="labelRd3">체크상태</label>
+				</span>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<span class="formWrap">
+	<input type="radio" id="labelRd1" name="sample1">
+	<label for="labelRd1">기본상태</label>
+</span>
+<span class="formWrap">
+	<input type="radio" id="labelRd2" name="sample1" disabled> 
+	<label for="labelRd2">비활성상태</label>
+</span>
+<span class="formWrap">
+	<input type="radio" id="labelRd3" name="sample1" checked>
+	<label for="labelRd3">체크상태</label>
+</span>
+</pre>
+<!-- //guideCode -->
+				
+				<strong class="guideTit2">Textarea</strong>
+				<!-- 예제 -->
+				<textarea class="textArea" rows="5" cols="35" title="내용을 입력하세요"></textarea>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<textarea class="textArea" rows="5" cols="35" title="내용을 입력하세요"></textarea>
+</pre>
+<!-- //guideCode -->
+				
+				<strong class="guideTit2">Calendar</strong>
+				<p class="guideTxt">*<span class="blue">input type date의 속성사용시</span> Android OS I~M까지의 테스트범위 중에 <span class="blue">ice cream sandwich의 4.0버전에서 호환이 안됨</span></p>
+				<!-- 예제 -->
+				<div class="calWrap">
+					<div class="formArea">
+						<div>
+							<div class="calendar on"><!-- 활성화시에 class값 on 추가 -->
+								<input type="text" title="시작일" readonly style="width:93px">
+								<button type="button" class="calBtn">시작일 달력선택</button>
+							</div>
+							<!-- 시작일 달력 -->
+							<div class="calBox">
+								<div class="calTop">
+									<button class="first" type="button">첫 달</button>
+									<button class="prev" type="button">이전 달</button>
+									<p><span class="year">2015<span class="hidden">년</span></span><span class="month">08</span><span class="hidden">월</span></p>
+									<button class="next" type="button">다음 달</button>
+									<button class="end" type="button">마지막 달</button>
+								</div>
+								<table>
+									<caption>달력정보</caption>
+									<colgroup>
+										<col style="width:15%;">
+										<col style="width:14%;">
+										<col style="width:14%;">
+										<col style="width:*;">
+										<col style="width:14%;">
+										<col style="width:14%;">
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일</th>
+											<th scope="col">월</th>
+											<th scope="col">화</th>
+											<th scope="col">수</th>
+											<th scope="col">목</th>
+											<th scope="col">금</th>
+											<th scope="col">토</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><a href="#">1</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">2</a></td>
+											<td><a href="#">3</a></td>
+											<td><a href="#">4</a></td>
+											<td><a href="#">5</a></td>
+											<td><a href="#">6</a></td>
+											<td><a href="#">7</a></td>
+											<td><a href="#">8</a></td>
+										</tr>
+										<tr>
+											<td class="today"><a href="#">9</td>
+											<td><a href="#">10</a></td>
+											<td><a href="#">11</a></td>
+											<td><a href="#">12</a></td>
+											<td><a href="#">13</a></td>
+											<td><a href="#">14</a></td>
+											<td><a href="#">15</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">16</a></td>
+											<td><a href="#">17</a></td>
+											<td><a href="#">18</a></td>
+											<td><a href="#">19</a></td>
+											<td><a href="#">20</a></td>
+											<td><a href="#">21</a></td>
+											<td><a href="#">22</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">23</a></td>
+											<td><a href="#">24</a></td>
+											<td><a href="#">25</a></td>
+											<td><a href="#">26</a></td>
+											<td><a href="#">27</a></td>
+											<td><a href="#">28</a></td>
+											<td><a href="#">29</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">30</a></td>
+											<td><a href="#">31</a></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="btn clearfix">
+									<button type="button" class="today"><span>오늘</span></button>
+									<button type="button" class="close"><span>닫기</span></button>
+								</div>
+							</div>
+							<!-- //시작일 달력 -->
+						</div>
+						<em class="wave">~</em>
+						<div>
+							<div class="calendar">
+								<input type="text" title="종료일" readonly style="width:93px">
+								<button type="button" class="calBtn">종료일 달력선택</button>
+							</div>
+							<!-- 종료일 달력 -->
+							<div class="calBox">
+								<div class="calTop">
+									<button class="first" type="button">첫 달</button>
+									<button class="prev" type="button">이전 달</button>
+									<p><span class="year">2015<span class="hidden">년</span></span><span class="month">08</span><span class="hidden">월</span></p>
+									<button class="next" type="button">다음 달</button>
+									<button class="end" type="button">마지막 달</button>
+								</div>
+								<table>
+									<caption>달력정보</caption>
+									<colgroup>
+										<col style="width:15%;">
+										<col style="width:14%;">
+										<col style="width:14%;">
+										<col style="width:*;">
+										<col style="width:14%;">
+										<col style="width:14%;">
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일</th>
+											<th scope="col">월</th>
+											<th scope="col">화</th>
+											<th scope="col">수</th>
+											<th scope="col">목</th>
+											<th scope="col">금</th>
+											<th scope="col">토</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><a href="#">1</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">2</a></td>
+											<td><a href="#">3</a></td>
+											<td><a href="#">4</a></td>
+											<td><a href="#">5</a></td>
+											<td><a href="#">6</a></td>
+											<td><a href="#">7</a></td>
+											<td><a href="#">8</a></td>
+										</tr>
+										<tr>
+											<td class="today"><a href="#">9</a></td>
+											<td><a href="#">10</a></td>
+											<td><a href="#">11</a></td>
+											<td><a href="#">12</a></td>
+											<td><a href="#">13</a></td>
+											<td><a href="#">14</a></td>
+											<td><a href="#">15</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">16</a></td>
+											<td><a href="#">17</a></td>
+											<td><a href="#">18</a></td>
+											<td><a href="#">19</a></td>
+											<td><a href="#">20</a></td>
+											<td><a href="#">21</a></td>
+											<td><a href="#">22</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">23</a></td>
+											<td><a href="#">24</a></td>
+											<td><a href="#">25</a></td>
+											<td><a href="#">26</a></td>
+											<td><a href="#">27</a></td>
+											<td><a href="#">28</a></td>
+											<td><a href="#">29</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">30</a></td>
+											<td><a href="#">31</a></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="btn clearfix">
+									<button type="button" class="today"><span>오늘</span></button>
+									<button type="button" class="close"><span>닫기</span></button>
+								</div>
+							</div>
+							<!-- //종료일 달력 -->
+						</div>
+					</div>
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="calWrap">
+	<div class="formArea">
+		<div>
+			<div class="calendar on"><!-- 활성화시에 class값 on 추가 -->
+				<input type="text" title="시작일" readonly style="width:93px">
+				<button type="button" class="calBtn">시작일 달력선택</button>
+			</div>
+			<!-- 시작일 달력 -->
+			<div class="calBox">
+				<div class="calTop">
+					<button class="first" type="button">첫 달</button>
+					<button class="prev" type="button">이전 달</button>
+					<p><span class="year">2015<span class="hidden">년</span></span><span class="month">08</span><span class="hidden">월</span></p>
+					<button class="next" type="button">다음 달</button>
+					<button class="end" type="button">마지막 달</button>
+				</div>
+				<table>
+					<caption>달력정보</caption>
+					<colgroup>
+						<col style="width:15%;">
+						<col style="width:14%;">
+						<col style="width:14%;">
+						<col style="width:*;">
+						<col style="width:14%;">
+						<col style="width:14%;">
+						<col style="width:15%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><a href="#">1</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">2</a></td>
+							<td><a href="#">3</a></td>
+							<td><a href="#">4</a></td>
+							<td><a href="#">5</a></td>
+							<td><a href="#">6</a></td>
+							<td><a href="#">7</a></td>
+							<td><a href="#">8</a></td>
+						</tr>
+						<tr>
+							<td class="today"><a href="#">9</td>
+							<td><a href="#">10</a></td>
+							<td><a href="#">11</a></td>
+							<td><a href="#">12</a></td>
+							<td><a href="#">13</a></td>
+							<td><a href="#">14</a></td>
+							<td><a href="#">15</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">16</a></td>
+							<td><a href="#">17</a></td>
+							<td><a href="#">18</a></td>
+							<td><a href="#">19</a></td>
+							<td><a href="#">20</a></td>
+							<td><a href="#">21</a></td>
+							<td><a href="#">22</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">23</a></td>
+							<td><a href="#">24</a></td>
+							<td><a href="#">25</a></td>
+							<td><a href="#">26</a></td>
+							<td><a href="#">27</a></td>
+							<td><a href="#">28</a></td>
+							<td><a href="#">29</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">30</a></td>
+							<td><a href="#">31</a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn clearfix">
+					<button type="button" class="today"><span>오늘</span></button>
+					<button type="button" class="close"><span>닫기</span></button>
+				</div>
+			</div>
+			<!-- //시작일 달력 -->
+		</div>
+		<em class="wave">~</em>
+		<div>
+			<div class="calendar">
+				<input type="text" title="종료일" readonly style="width:93px">
+				<button type="button" class="calBtn">종료일 달력선택</button>
+			</div>
+			<!-- 종료일 달력 -->
+			<div class="calBox">
+				<div class="calTop">
+					<button class="first" type="button">첫 달</button>
+					<button class="prev" type="button">이전 달</button>
+					<p><span class="year">2015<span class="hidden">년</span></span><span class="month">08</span><span class="hidden">월</span></p>
+					<button class="next" type="button">다음 달</button>
+					<button class="end" type="button">마지막 달</button>
+				</div>
+				<table>
+					<caption>달력정보</caption>
+					<colgroup>
+						<col style="width:15%;">
+						<col style="width:14%;">
+						<col style="width:14%;">
+						<col style="width:*;">
+						<col style="width:14%;">
+						<col style="width:14%;">
+						<col style="width:15%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><a href="#">1</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">2</a></td>
+							<td><a href="#">3</a></td>
+							<td><a href="#">4</a></td>
+							<td><a href="#">5</a></td>
+							<td><a href="#">6</a></td>
+							<td><a href="#">7</a></td>
+							<td><a href="#">8</a></td>
+						</tr>
+						<tr>
+							<td class="today"><a href="#">9</a></td>
+							<td><a href="#">10</a></td>
+							<td><a href="#">11</a></td>
+							<td><a href="#">12</a></td>
+							<td><a href="#">13</a></td>
+							<td><a href="#">14</a></td>
+							<td><a href="#">15</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">16</a></td>
+							<td><a href="#">17</a></td>
+							<td><a href="#">18</a></td>
+							<td><a href="#">19</a></td>
+							<td><a href="#">20</a></td>
+							<td><a href="#">21</a></td>
+							<td><a href="#">22</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">23</a></td>
+							<td><a href="#">24</a></td>
+							<td><a href="#">25</a></td>
+							<td><a href="#">26</a></td>
+							<td><a href="#">27</a></td>
+							<td><a href="#">28</a></td>
+							<td><a href="#">29</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">30</a></td>
+							<td><a href="#">31</a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn clearfix">
+					<button type="button" class="today"><span>오늘</span></button>
+					<button type="button" class="close"><span>닫기</span></button>
+				</div>
+			</div>
+			<!-- //종료일 달력 -->
+		</div>
+	</div>
+</div>			
+</pre>
+<!-- //guideCode -->
+				
+				<strong class="guideTit2">input</strong>
+				<strong class="guideTit3">1. input placeholder 사용</strong>
+				<!-- 예제 -->
+				<input type="text" class="inputTxt1" title="검색어 입력" placeholder="검색어를 입력해주세요">
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<input type="text" class="inputTxt1" title="검색어 입력" placeholder="검색어를 입력해주세요">
+or
+<span id="txt" class="hidden">검색어입력</span>
+<input type="text" aria-labelledby="txt" class="inputTxt1" placeholder="검색어를 입력해주세요">
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit3">3. 전화번호 선택</strong>
+				<!-- 예제 -->
+				<div class="formArea">
+					<span>
+						<select title="전화번호 앞자리 선택">
+							<option>010</option>
+						</select>
+					</span>
+					<span class="hyphen">-</span>
+					<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
+					<span class="hyphen">-</span>
+					<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="formArea">
+	<span>
+		<select title="전화번호 앞자리 선택">
+			<option>010</option>
+		</select>
+	</span>
+	<span class="hyphen">-</span>
+	<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
+	<span class="hyphen">-</span>
+	<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
+</div>
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit2">Select box</strong>
+				<!-- 예제 -->
+				<select title="기본 셀렉트">
+					<option value="aa" selected>테스트</option>
+					<option value="bb">테스트</option>
+					<option value="cc">테스트</option>
+				</select>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<select title="기본 셀렉트">
+	<option value="aa" selected>테스트</option>
+	<option value="bb">테스트</option>
+	<option value="cc">테스트</option>
+</select>
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit2">Search</strong>
+				<!-- 예제 -->
+				<fieldset>
+					<legend>검색</legend>
+					<div class="searchCon">
+						<div class="srch">
+							<input type="search" title="검색어 입력" placeholder="검색어를 입력해주세요">
+							<button type="button">검색</button>
+						</div>
+					</div>
+				</fieldset>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<fieldset>
+	<legend>검색</legend>
+	<div class="searchCon">
+		<div class="srch">
+			<input type="search" title="검색어 입력" placeholder="검색어를 입력해주세요">
+			<button type="button">검색</button>
+		</div>
+	</div>
+</fieldset>
+</pre>
+<!-- //guideCode -->
+				
+				<strong class="guideTit2">Format form</strong>
+				<!-- 예제 -->
+				<table class="tableType">
+					<caption>제목</caption>
+					<colgroup>
+						<col width="80px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="name">이름</label></th>
+							<td><input type="text" id="name" class="inputTxt1"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="phone">전화번호</label></th>
+							<td>
+								<div class="formArea">
+									<span>
+										<select id="phone" title="전화번호 앞자리 선택">
+											<option>010</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="text" id="phone2" title="전화번호 가운데 4자리 입력" value="1234" class="inputTxt1"></span>
+									<span class="hyphen">-</span>
+									<span><input type="text" id="phone3" title="전화번호 마지막 4자리 입력" value="5678" class="inputTxt1"></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="consulting">상담유형</label></th>
+							<td>
+								<div class="formArea">
+									<span>
+										<select id="consulting">
+											<option>상담유형</option>
+											<option>테스트</option>
+										</select>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="address">주소</label></th>
+							<td>
+								<div class="formArea">
+									<span><input type="text" id="address" class="inputTxt1" title="우편번호"></span>
+									<span class="empty"></span>
+									<span><button type="reset" class="btnS btnBlack" target="_blank">우편번호 검색<span class="hidden">새창열림</span></button></span>
+								</div>
+								<div class="formArea">
+									<span><input type="text" id="address2" title="기본주소 입력" class="inputTxt1"></span>
+									<span class="empty"></span>
+									<span><input type="text" id="address3" title="상세주소 입력" class="inputTxt1"></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="email">이메일</label></th>
+							<td>
+								<div class="formArea">
+									<span><input type="email" id="email" title="이메일계정입력" class="inputTxt1"></span>
+									<span class="emailEmpty">@</span>
+									<span>
+										<select title="도메인선택">
+											<option>직접입력</option>
+											<option>naver.com</option>
+										</select>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //예제 -->
+				<!--
+				<strong class="guideTit2">Pagenation</strong>
+				<div class="pager">
+					<a href="#" class="prevFirst">처음으로</a>
+					<a href="#" class="prev">이전</a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#" class="on" title="현재페이지">3</a>
+					<a href="#" class="next">다음</a>
+					<a href="#" class="nextLast">마지막으로</a>
+				</div>
+				-->
+			</div>
+		</section>
+	</div>
+</body>
+</html>

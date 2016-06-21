@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>필터설정 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>필터설정</h1>
+	</div>
+	<div class="popCon filter">
+		<div class="inPop">
+			<div class="login_wrap">
+				<p>로그인을 하시면<br />
+				현재 <em>사용중인 요금제</em> 및 <em>납부금액<br />
+				기준으로 비교</em>해보실 수 있습니다.</p>
+				<a href="#none" class="btn_login">로그인</a>
+			</div>		
+			<div class="form_wrap">
+				<div class="brand">
+					<dl>
+						<dt>제조사를 선택하세요</dt>
+						<dd>
+							<ul class="check_area">
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand1" checked><label for="brand1">삼성(37)</label>
+									</span>
+								</li>
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand2"><label for="brand2">애플(12)</label>
+									</span>
+								</li>
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand3"><label for="brand3">LG(5)</label>
+									</span>
+								</li>
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand4"><label for="brand4">기타(4)</label>
+									</span>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="plan">
+					<dl>
+						<dt>사용 요금제를 선택하세요</dt>
+						<dd>
+							<select title="사용 요금제">
+								<option value="aa" selected>전국민 무한 69 요금제</option>
+								<option value="bb">전국민 무한 69 요금제</option>
+								<option value="cc">전국민 무한 69 요금제</option>
+							</select>
+						</dd>
+					</dl>
+				</div>
+				<div class="range">
+					<dl>
+						<dt>매월 납부할 금액의 범위를 선택하세요
+							<div class="qInfo">
+								<a href="#" class="qTit">안내</a>
+								<div class="qTxt">
+									<div class="con">
+										월 납부요금은 단말할부금(24개월 할부 기준, 분할상환 수수료 5.9% 포함)과 월 통신 요금을 합산한 금액입니다.
+									</div>
+									<a href="#" class="btnClose">닫기</a>
+								</div>
+							</div>
+						</dt>
+						<dd>
+							<!-- 공시지원금 셀렉트 박스 -->
+							<div class="select_area" style="display:none;">
+								<span class="formWrap">
+									<input type="radio" id="range1" name="labelRdio" checked>
+									<label for="range1">공시지원금 받기</label>
+								</span>
+								<span class="formWrap">
+									<input type="radio" id="range2" name="labelRdio">
+									<label for="range3">요금할인 받기</label>
+								</span>
+							</div>
+							<!-- //공시지원금 셀렉트 박스 -->
+							<select title="매월 납부할 금액의 범위">
+								<option value="aa" selected>20,000~150,000원/월</option>
+								<option value="bb">20,000~150,000원/월</option>
+								<option value="cc">20,000~150,000원/월</option>
+							</select>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="btnBox col2 h25">
+				<span><a href="#" class="btnL btnBlack">취소</a></span>
+				<span><a href="#" class="btnL btnRed">필터 적용하기</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="popClose"><button type="button">닫기</button></div>
+</div>
+</body>
+</html>

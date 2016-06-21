@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>상품정보 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>바로픽업 가능 매장 조회</h1>
+	</div>
+	<div class="popCon">
+		<div class="inPop">
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>키워드로 찾기</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li class="on"><a href="#tab1">키워드로 찾기</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+									<li><a href="#tab2">지하철 노선으로 찾기</a></li>
+									<li><a href="#tab3">지역으로 찾기</a></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li><!-- data가 없을 경우 -->
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->
+
+			<div class="tabCon" id="tab1">
+				<h1 class="hidden">키워드로 찾기</h1>
+				<fieldset class="h15">
+					<legend>검색</legend>
+					<div class="searchCon">
+						<div class="srch">
+							<input type="search" title="검색어 입력" placeholder="주소 또는 지하철 명으로 입력해 주세요.">
+							<button type="button">검색</button>
+						</div>
+					</div>
+				</fieldset>
+
+				<!-- tab -->
+				<div class="tab h10">
+					<div class="tabTitle">
+						<a href="#"><span>지역별</span></a>
+					</div>
+					<!-- 메뉴선택 -->
+					<div class="tabContent" style="display:none">
+						<div class="tabSwipe">
+							<strong class="hidden">메뉴선택</strong>
+							<button type="button" class="btnPre">이전</button>
+							<div class="swiperWrap">
+								<div class="group">
+									<ul class="tabJs">
+										<li><a href="#tabcon1">지하철별</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+										<li class="on"><a href="#tabcon2">지역별</a></li>
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li><!-- data가 없을 경우 -->
+									</ul>
+								</div>
+							</div>
+							<button type="button" class="btnAfter">다음</button>
+							<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+							<button type="button" class="btnClose">목록닫기</button>
+						</div>
+					</div>
+					<!-- //메뉴선택 -->
+				</div><!-- //tab -->
+
+				<div class="tabCon picShop" id="tabcon1" style="display:none;">
+					<ul class="arcBox board mainType tglClsOpen train_pic">
+						<li class="on">
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_1"><span>1호선</span>수원역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_2"><span>2호선</span>서울대입구역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_3"><span>3호선</span>대화역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_4"><span>4호선</span>노원역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_5"><span>5호선</span>아차산역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_6"><span>6호선</span>태능입구역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_7"><span>7호선</span>건대입구역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_8"><span>8호선</span>천호역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_9"><span>9호선</span>가양역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="noticeTit tglBtn">
+								<span class="train_name train_9"><span>9호선</span>가양역</span>
+							</a>
+							<div class="noticeCon">
+								<ul class="listStore">
+									<li>
+										<p><strong>큰사랑대리점(본점)</strong></p>
+										<p>서울 강남구 테헤란로 128(역삼동)</p>
+										<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+										<a href="#none" class="btnS btnWhite btnPick">매장선택</a>
+									</li>
+								</ul>
+								<a href="#" class="btnClose tglBtnClose">닫기</a>
+							</div>
+						</li>
+					</ul>
+					<div class="infoBox">
+						<dl>
+							<dt><img src="../../img/common/ico_guide.png" alt="안내"></dt>
+							<dd>
+								<strong><em class="fColor1">검색 결과가 없습니다.</em></strong>
+								<p>다시 시도해주세요.</p>
+							</dd>
+						</dl>
+					</div>
+					<!-- 
+					train_10: 분당선
+					train_11: 인천선
+					train_12: 신분당선
+					train_13: 경의중앙산
+					train_14: 경춘선
+					train_15: 공항선
+					train_16: 의정부선
+					train_17: 수인선
+					train_18: 에버라인선
+					train_19: 자기부상선
+					-->
+				</div><!-- //tabcon1 -->
+
+				<div class="tabCon picShop" id="tabcon2">
+					<ul class="listStore">
+						<li>
+							<p><strong>큰사랑대리점(본점)</strong></p>
+							<p>서울 강남구 테헤란로 128(역삼동)</p>
+							<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+							<a href="#none" class="btnS bntWhite btnPick">매장선택</a>
+						</li>
+						<li>
+							<p><strong>큰사랑대리점(본점)</strong></p>
+							<p>서울 강남구 테헤란로 128(역삼동)테헤란로 128(역삼동)</p>
+							<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+							<a href="#none" class="btnS bntWhite btnPick">매장선택</a>
+						</li>
+						<li>
+							<p><strong>큰사랑대리점(본점)</strong></p>
+							<p>서울 강남구 테헤란로 128(역삼동)</p>
+							<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+							<a href="#none" class="btnS bntWhite btnPick">매장선택</a>
+						</li>
+						<li>
+							<p><strong>큰사랑대리점(본점)</strong></p>
+							<p>서울 강남구 테헤란로 128(역삼동)테헤란로 128(역삼동)</p>
+							<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+							<a href="#none" class="btnS bntWhite btnPick">매장선택</a>
+						</li>
+						<li>
+							<p><strong>큰사랑대리점(본점)</strong></p>
+							<p>서울 강남구 테헤란로 128(역삼동)</p>
+							<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+							<a href="#none" class="btnS bntWhite btnPick">매장선택</a>
+						</li>
+						<li>
+							<p><strong>큰사랑대리점(본점)</strong></p>
+							<p>서울 강남구 테헤란로 128(역삼동)테헤란로 128(역삼동)</p>
+							<a href="tel:070-7470-2004" class="btnCall">070-7470-2004</a>
+							<a href="#none" class="btnS bntWhite btnPick">매장선택</a>
+						</li>
+					</ul>
+					
+					<div class="infoBox">
+						<dl>
+							<dt><img src="../../img/common/ico_guide.png" alt="안내"></dt>
+							<dd>
+								<strong><em class="fColor1">검색 결과가 없습니다.</em></strong>
+								<p>다시 시도해주세요.</p>
+							</dd>
+						</dl>
+					</div>
+				</div><!-- //tabcon2 -->
+
+			</div><!-- //tab1 -->
+
+			<div class="tabCon" id="tab2" style="display:none;">
+				<h1 class="hidden">지하철 노선으로 찾기</h1>
+				<fieldset class="h15">
+					<legend>검색</legend>
+					<div class="searchCon col2 btnBox2">
+						<span>
+							<select title="기본 셀렉트">
+								<option value="aa" selected>수도권</option>
+								<option value="bb">대구</option>
+								<option value="cc">부산</option>
+							</select>
+						</span>
+						<span>
+							<select title="기본 셀렉트">
+								<option value="aa" selected>1 호선</option>
+								<option value="bb">2 호선</option>
+								<option value="cc">3 호선</option>
+							</select>
+						</span>
+					</div>
+				</fieldset>
+				<p class="h10">다양한 매장 검색 기능을 통해 고객님께서 방문이 편리하신 매장을 실시간으로 검색하여 선택하실 수 있습니다.</p>
+
+				<ul class="findInfo">
+					<li class="find1">
+						<p>키워드로 찾기</p>
+						입력한 검색어가 지하철역과 주소로 자동 완성되어 찾기에 편리합니다.
+					</li>
+					<li class="find2">
+						<p>지하철노선으로 찾기</p>
+						전국 지하철 호선과 역명으로 검색할 수 있어 위치파악과 찾아가기에 편리합니다.
+					</li>
+					<li class="find3">
+						<p>지역으로 찾기</p>
+						전국의 행정구역 단위로 조회가 가능하여 우리지역의 다양한 매장을 찾아볼 수 있습니다.
+					</li>
+				</ul>
+			</div><!-- //tab2 -->
+
+		</div><!-- //inPop -->
+
+	</div><!-- //popCon -->
+	<div class="popClose"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>

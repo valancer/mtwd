@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>SKT POC mobile</title>
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="../inc/css/common.css">
+<script src="../inc/js/jquery-1.7.2.min.js"></script>
+<script src="../inc/js/common.js"></script>
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+<script>
+$(function() {
+	//코드 보여주는 script
+	function preTxt(){
+		$('pre').each(function(){
+			var $pre = $(this);
+			$pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		});
+	};
+	preTxt();
+});
+</script>
+</head>
+<body>
+	<div id="guideWrap">
+		<header>
+			<strong><a href="../index.html"><img src="img/sktw_logo.gif" alt=""> SKT 마케팅 통합 POC 구축_Mobile HTML</a></strong>
+			<ul class="interface">
+				<li><a href="../../pc/list_ko.html"><span class="hidden">PC</span></a></li>
+				<li class="this"><a href="index.html"><span class="hidden">MOBILE</span></a></li>
+			</ul>
+			<nav class="guide_gnb">
+				<a href="index.html" class="on"><span>Html Guide</span></a>
+				<a href="../list_ko.html"><span>국문 HTML List</span></a>
+				<a href="../mobileList.html"><span>영문 HTML List</span></a>
+			</nav>
+		</header>
+		<section id="guideContent">
+			<nav class="guide_lnb">
+				<strong>Html Guide</strong>
+				<ul>
+					<li><a href="index.html"><span>기본규칙</span></a></li>
+					<li><a href="btn.html"><span>button</span></a></li>
+					<li><a href="form.html"><span>Form</span></a></li>
+					<li><a href="tab.html" class="on"><span>Tab</span></a></li>
+					<li><a href="list.html"><span>List</span></a></li>
+					<li><a href="step.html"><span>Step</span></a></li>
+					<!--<li><a href="table.html"><span>테이블</span></a></li>-->
+					<!--<li><a href="popup.html"><span>팝업</span></a></li>-->
+					<!--<li><a href="layer.html"><span>레이어팝업</span></a></li>-->
+				</ul>
+			</nav>
+			<div class="guideBox">
+				<strong class="guideTit1">Tab</strong><br>
+				<ul class="guide">
+					<li>웹접근성을 위해 탭부분의 링크를 콘텐츠로 바로 이동할수 있도록 제공. 예) &lt;a <strong class="red">href="#tabCon1"</strong>&gt; ->  &lt;div class="tabCon" <strong class="red">id="tabCon1"</strong>&gt;</li>
+					<li>웹접근성을 위해 콘텐츠 안에 순서에 맞는 h태그로 클릭한 탭 명을 정의한다. 예) <strong>&lt;h2 class="hidden"&gt;전체보기&lt;/h2&gt;</strong></li>
+					<li>동일한 id값은 실적용시 수정. (id는 한페이지에 하나밖에 사용할 수 없음.)</li>
+				</ul>
+				
+				<strong class="guideTit2">기본형 <strong>class=&quot;tabType1&quot;</strong></strong>
+				<!-- 예제 -->
+				<div class="tabType1">
+					<ul>
+						<li class="on"><a href="#tabCon1">요금제</a></li><!-- 현재페이지일 경우 class="on" 추가 -->
+						<li><a href="#tabCon2">부가서비스</a></li>
+					</ul>
+				</div>
+				<div class="tabCon" id="tabCon1">
+					<h2 class="hidden">전체보기</h2><!-- 순서에 맞는 h태그 사용 -->
+					탭 컨텐츠1
+				</div>
+				<div class="tabCon" id="tabCon2" style="display:none">
+					<h2 class="hidden">부가서비스</h2>
+					탭 컨텐츠2
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="tabType1">
+	<ul>
+		<li class="on"><a href="#tabCon1">요금제</a></li><!-- 현재페이지일 경우 class="on" 추가 -->
+		<li><a href="#tabCon2">부가서비스</a></li>
+	</ul>
+</div>
+<div class="tabCon" id="tabCon1">
+	<h2 class="hidden">전체보기</h2><!-- 순서에 맞는 h태그 사용 -->
+	탭 컨텐츠1
+</div>
+<div class="tabCon" id="tabCon2" style="display:none">
+	<h2 class="hidden">부가서비스</h2>
+	탭 컨텐츠2
+</div>
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit3">1. tab이 3개일 경우 <strong>ul에 class=&quot;col3&quot;</strong> 추가</strong>
+				<!-- 예제 -->
+				<div class="tabType1">
+					<ul class="col3">
+						<li><a href="#tabCon1">요금제</a></li>
+						<li><a href="#tabCon2">부가서비스</a></li>
+						<li class="on"><a href="#tabCon3">부가서비스</a></li><!-- 현재페이지일 경우 class="on" 추가 -->
+					</ul>
+				</div>
+				<div class="tabCon" id="tabCon1">
+					<h2 class="hidden">전체보기</h2><!-- 순서에 맞는 h태그 사용 -->
+					탭 컨텐츠1
+				</div>
+				<div class="tabCon" id="tabCon2" style="display:none">
+					<h2 class="hidden">부가서비스</h2>
+					탭 컨텐츠2
+				</div>
+				<div class="tabCon" id="tabCon3" style="display:none">
+					<h2 class="hidden">요금제</h2>
+					탭 컨텐츠3
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="tabType1">
+	<ul class="col3">
+		<li><a href="#tabCon1">요금제</a></li>
+		<li><a href="#tabCon2">부가서비스</a></li>
+		<li class="on"><a href="#tabCon3">부가서비스</a></li><!-- 현재페이지일 경우 class="on" 추가 -->
+	</ul>
+</div>
+<div class="tabCon" id="tabCon1">
+	<h2 class="hidden">전체보기</h2><!-- 순서에 맞는 h태그 사용 -->
+	탭 컨텐츠1
+</div>
+<div class="tabCon" id="tabCon2" style="display:none">
+	<h2 class="hidden">부가서비스</h2>
+	탭 컨텐츠2
+</div>
+<div class="tabCon" id="tabCon3" style="display:none">
+	<h2 class="hidden">요금제</h2>
+	탭 컨텐츠3
+</div>
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit3">2. 2deth가 존재할 경우 <strong>div에 class=&quot;tabDepth2&quot;</strong> 추가</strong>
+				<!-- 예제 -->
+				<div class="tabType1 tabDepth2">
+					<ul>
+						<li class="on"><a href="#">요금제</a>
+							<ul class="tabSub col2"><!-- class값 col2는 현재 가이드에 맞춰서 임의 작업해둔 class값 -->
+								<li><span><a href="#tabCon1">전체보기</a></span></li>
+								<li class="on"><span><a href="#tabCon2">기본형</a></span></li><!-- 현재페이지일 경우 class="on" 추가 -->
+								<li><span><a href="#tabCon3">맞춤형</a></span></li>
+								<li><span><a href="#tabCon4">청소년/어르신</a></span></li>
+							</ul>
+						</li>
+						<li><a href="#">부가서비스</a></li>
+					</ul>
+				</div>
+				<div class="tabCon" id="tabCon1">
+					<h2 class="hidden">전체보기</h2><!-- 순서에 맞는 h태그 사용 -->
+					탭 컨텐츠1
+				</div>
+				<div class="tabCon" id="tabCon2" style="display:none">
+					<h2 class="hidden">기본형</h2>
+					탭 컨텐츠2
+				</div>
+				<div class="tabCon" id="tabCon3" style="display:none">
+					<h2 class="hidden">맞춤형</h2>
+					탭 컨텐츠3
+				</div>
+				<div class="tabCon" id="tabCon4" style="display:none">
+					<h2 class="hidden">청소년/어르신</h2>
+					탭 컨텐츠4
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="tabType1 tabDepth2">
+	<ul>
+		<li class="on"><a href="#">요금제</a>
+			<ul class="tabSub col2"><!-- class값 col2는 현재 가이드에 맞춰서 임의 작업해둔 class값 -->
+				<li><span><a href="#tabCon1">전체보기</a></span></li>
+				<li class="on"><span><a href="#tabCon2">기본형</a></span></li><!-- 현재페이지일 경우 class="on" 추가 -->
+				<li><span><a href="#tabCon3">맞춤형</a></span></li>
+				<li><span><a href="#tabCon4">청소년/어르신</a></span></li>
+			</ul>
+		</li>
+		<li><a href="#">부가서비스</a></li>
+	</ul>
+</div>
+<div class="tabCon" id="tabCon1">
+	<h2 class="hidden">전체보기</h2><!-- 순서에 맞는 h태그 사용 -->
+	탭 컨텐츠1
+</div>
+<div class="tabCon" id="tabCon2" style="display:none">
+	<h2 class="hidden">기본형</h2>
+	탭 컨텐츠2
+</div>
+<div class="tabCon" id="tabCon3" style="display:none">
+	<h2 class="hidden">맞춤형</h2>
+	탭 컨텐츠3
+</div>
+<div class="tabCon" id="tabCon4" style="display:none">
+	<h2 class="hidden">청소년/어르신</h2>
+	탭 컨텐츠4
+</div>
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit2">멀티탭 <strong>class=&quot;tabMulti&quot;</strong></strong>
+				<!-- 예제 -->
+				<div class="tabMulti">
+					<ul>
+						<li class="on"><a href="#">전체</a></li><!-- 현재페이지일 경우 class="on" 추가 -->
+						<li><a href="#">휴대폰</a></li>
+						<li><a href="#">요금제</a></li>
+						<li><a href="#">요금조회/납부</a></li>
+						<li><a href="#">다이렉트샵</a></li>
+						<li><a href="#">멤버십/포인트</a></li>
+						<li><a href="#">통화품질</a></li>
+						<li><a href="#">T roaming</a></li>
+						<li><a href="#">패밀리상품</a></li>
+					</ul>
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="tabMulti">
+	<ul>
+		<li class="on"><a href="#">전체</a></li><!-- 현재페이지일 경우 class="on" 추가 -->
+		<li><a href="#">휴대폰</a></li>
+		<li><a href="#">요금제</a></li>
+		<li><a href="#">요금조회/납부</a></li>
+		<li><a href="#">다이렉트샵</a></li>
+		<li><a href="#">멤버십/포인트</a></li>
+		<li><a href="#">통화품질</a></li>
+		<li><a href="#">T roaming</a></li>
+		<li><a href="#">패밀리상품</a></li>
+	</ul>
+</div>
+</pre>
+<!-- //guideCode -->
+
+			</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>바로픽업 가능 매장 조회 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>바로픽업 가능 매장 조회</h1>
+	</div>
+	<div class="popCon">
+		<div class="inPop">
+
+			<div class="narrowCon">
+				<p>원하시는 방문일자를 선택해 주세요.</p>
+				<fieldset class="h15">
+					<legend>검색</legend>
+					<div class="searchCon col2 btnBox2">
+						<span>
+							<select title="기본 셀렉트">
+								<option value="aa" selected>날짜선택</option>
+								<option value="aa">2016.04.07</option>
+								<option value="bb">2016.04.08</option>
+								<option value="cc">2016.04.09</option>
+							</select>
+						</span>
+						<span>
+							<select title="기본 셀렉트">
+								<option value="aa" selected>시간선택</option>
+								<option value="aa">08~09시</option>
+								<option value="bb">09~10시</option>
+								<option value="cc">10~11시</option>
+							</select>
+						</span>
+					</div>
+				</fieldset>
+				<div class="btnBox">
+					<a href="#" class="btnL btnBlack">선택완료</a>
+				</div>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<div class="store_info">
+				<div class="info_title">
+					<p class="fLeft titDep3">선택하신 매장 정보</p>
+					<a href="#none" class="btnM_line btnWhite fRight">매장 다시 선택</a>
+				</div>
+
+				<!-- tab -->
+				<div class="tab">
+					<div class="tabTitle">
+						<a href="#"><span>기본정보</span></a>
+					</div>
+					<!-- 메뉴선택 -->
+					<div class="tabContent" style="display:none">
+						<div class="tabSwipe">
+							<strong class="hidden">메뉴선택</strong>
+							<button type="button" class="btnPre">이전</button>
+							<div class="swiperWrap">
+								<div class="group">
+									<ul class="tabJs">
+										<li class="on"><a href="#tab1">기본정보</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+										<li><a href="#tab2">매장위치</a></li>
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li>
+										<li><span></span></li><!-- data가 없을 경우 -->
+									</ul>
+								</div>
+							</div>
+							<button type="button" class="btnAfter">다음</button>
+							<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+							<button type="button" class="btnClose">목록닫기</button>
+						</div>
+					</div>
+					<!-- //메뉴선택 -->
+				</div><!-- //tab -->
+
+				<div class="tabCon" id="tab1">
+					<h2 class="hidden">기본정보</h2>
+					<div class="tabCon store_detail">
+						<ul class="h10">
+							<li class="store_name">
+								<dl>
+									<dt class="titDep3">교대역점</dt>
+									<dd><span class="scoreM point4">별4개</span> <em>평점 4.8 (4명)</em></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt class="titDep3">주소</dt>
+									<dd>서울 강남구 강남대로 416 (역삼동,창림빌딩)<br />(지번 : 역삼동 816-3)</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt class="titDep3">연락처</dt>
+									<dd>070-4740-0225</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt class="titDep3">운영시간</dt>
+									<dd>
+										<strong>평일</strong> 10:00~21:00 / <strong>주말</strong> 10:00~21:00 <br />
+										<strong>공휴</strong> 휴무
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt class="titDep3">찾아오시는 길</dt>
+									<dd>
+										<ol>
+											<li>1.구술약도 : 지하철 강남역11 출구에서 150m앞 1층 sk텔레콤 강남직영점</li>
+											<li class="h10">2.대중교통 : 지하철2호선#신논현역 5번출구 > 강남사거리방향 > 뚜레주르옆 > 창림빌딩</li>
+										</ol>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //tab1 -->
+
+				<div class="tabCon" id="tab2" style="display: none;">
+					<h2 class="hidden">매장위치</h2>
+					<img src="../../img/direct/tmp_map.jpg" alt="매장위치" style="width:100%;">
+				</div><!-- //tab2 -->
+			</div>
+
+		</div><!-- //inPop -->
+
+	</div><!-- //popCon -->
+	<div class="popClose"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>

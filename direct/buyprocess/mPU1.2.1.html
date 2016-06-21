@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>주문내역 확인 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>주문내역 확인</h1>
+		</div>
+		<!-- content -->
+		<div id="content" class="foreign"> 
+			<section class="container">
+				
+				<div class="orderDetail">
+
+					<div class="orderBox">
+						<h2 class="titDep2">휴대폰 주문내역</h2>
+						<div class="orderInfo">
+							<div class="orderWrap">
+								<div class="infoBox goods">
+									<p><em class="icoOrder icoPhone"></em>휴대폰</p>
+									<strong>GALAXY A7 2016<br>
+									화이트/16GB</strong>
+								</div>
+							</div>
+							<div class="orderWrap">
+								<div class="infoBox rate">
+									<p><em class="icoOrder icoRate"></em>요금제</p>
+									<strong>전국민 무한 59<br>
+									24개월 요금약정</strong>
+								</div>
+							</div>
+						</div>
+						
+						<ul class="extend tglClsOpen tglOrder">
+							<li>
+								<a href="#" class="tglBtn"><strong>단말상환 금액</strong> <span class="price"><em>380,500</em>원</span></a>
+								<div class="extendCon">
+									<div class="con">
+										<div class="info">
+											<table summary="단말상환 금액 상세 내역입니다" class="tblBlank">
+												<caption>단말상환 금액</caption>
+												<colgroup>
+													<col>
+													<col style="width:30%">
+													<col style="width:30%">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row" class="left">출고가</th>
+														<td colspan="2" class="right"><span class="price"><em>495,000</em>원</span></td>
+													</tr>
+													<tr>
+														<th scope="row" class="left">공시지원금</th>
+														<td colspan="2" class="right"><span class="price"><em>-90,000</em>원</span></td>
+													</tr>
+													<tr>
+														<th scope="row" class="left">다이렉트 추가할인</th>
+														<td colspan="2" class="right"><span class="price"><em>-14,500</em>원</span></td>
+													</tr>
+													<tr>
+														<th scope="row" class="left" rowspan="2">추가할인금액</th>
+														<td>T가족포인트</td>
+														<td class="right"><span class="price"><em>-2,000</em>원</span></td>
+													</tr>
+													<tr class="noline">
+														<td>제휴포인트</td>
+														<td class="right"><span class="price"><em>-3,000</em>원</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<button type="button" class="btnClose tglBtnClose">닫기</button>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="tglBtn"><strong>월 통신요금</strong> <span class="price"><em>80,500</em>원</span></a>
+								<div class="extendCon">
+									<div class="con">
+										<div class="info">
+											<table summary="월 통신요금 상세 내역입니다" class="tblBlank">
+												<caption>월 통신요금</caption>
+												<colgroup>
+													<col>
+													<col style="width:30%">
+													<col style="width:30%">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row" class="left">월정액</th>
+														<td colspan="2" class="right"><span class="price"><em>80,500</em>원</span></td>
+													</tr>
+													<tr>
+														<th scope="row" class="left">복지할인</th>
+														<td colspan="2" class="right"><span class="price"><em>-16,500</em>원</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<button type="button" class="btnClose tglBtnClose">닫기</button>
+								</div>
+							</li>
+						</ul>
+						<div class="orderTotal">
+							<table summary="월 납부금액 상세 내역입니다" class="tblBlank">
+								<caption>월 납부금액</caption>
+								<colgroup>
+									<col>
+									<col style="width:45%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">
+											월 납부금액
+											<p class="subtxt">단말상환 금액/24 + 월 통신요금</p>
+										</th>
+										<td class="right">
+											<span class="price"><em>72,300</em>원</span>
+											<p class="subtxt">분할상환 수수료 5.9%포함</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="orderBox">
+						<h2 class="titDep2">T 기프트 내역</h2>
+						<table summary="상품 및 옵션">
+							<caption>T 기프트 내역</caption>
+							<tbody>
+								<tr>
+									<th scope="row" class="left">상품 및 옵션</th>
+									<td class="right">자바라 폰거치대 <span class="hyphen hyphen2">|</span> 블루</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="orderBox">
+						<div class="clearfix">
+							<h2 class="titDep2 fLeft">서비스 업그레이드 내역</h2>
+							<span class="usedPayment fRight">이용요금(VAT포함)</span>
+						</div>
+						<div class="serviceDetail">
+							<table summary="서비스 업그레이드 내역">
+							 <caption>서비스 업그레이드 내역</caption>
+							 <colgroup>
+								<col>
+								<col style="width:30%;">
+							 </colgroup>
+							 <tbody>
+								<tr>
+									<th scope="row">폰세이프Ⅲ 고급형</th>
+									<td><span class="usedPayment">4,900원</span></td>
+								</tr>
+								<tr>
+									<th scope="row">프리미엄패스 가입</th>
+									<td><span class="usedPayment">무료</span></td>
+								</tr>
+								<tr>
+									<th scope="row">Band 플레이팩 가입</th>
+									<td><span class="usedPayment">8,000원<br>
+									(8,800원)</span></td>
+								</tr>
+							 </tbody>
+							 </table>
+						 </div>
+					</div>
+
+					<div class="orderBox">
+						<h2 class="titDep2">지원금 방식 별 혜택 비교</h2>
+						<div class="orderSupport">
+							<div class="supBox supLeft on">
+								<div>
+									<p class="img"></p>
+									<p class="tit">지원금 상응 요금할인 선택 시</p>
+									<p class="txt">요금할인(24개월 기준)</p>
+									<p class="price">총<em>396,000</em>원</p>
+								</div>
+							</div>
+							<div class="supBox supRight">
+								<div>
+									<p class="img"></p>
+									<p class="tit">단말기 지원금 <br>선택 시</p>
+									<p class="txt">단말기 지원금</p>
+									<p class="price">총<em>236,000</em>원</p>
+								</div>
+							</div>
+						</div>
+						<p class="txtInfo h5">지원금에 상응하는 요금할인은 12개월 또는 24개월 약정 가능하며, 월 할인금액은 동일합니다.</p>
+						<ul class="agreeArea h5">
+							<li>
+								<div class="agreeBox tglClsOpen on" style="padding-top: 40px;">
+									<a href="#" class="tglBtn" title="내용보기">
+										<strong class="hidden">지원금 상응 요금할인</strong>
+									</a>
+									<div class="agreeCon" tabindex="0">
+										<ul>
+											<li>본인은 지원금에 상응하는 요금할인 또는 단말기 지원금 선택 시 혜택에 대해 충분한 설명을 들었으며, 지원금 상응 요금할인을 선택하겠습니다.</li>
+										</ul>
+									</div>
+									<div class="agreeCheck" style="height: 38px;">
+										<span class="formWrap">
+											<input type="checkbox" id="agree2">
+											<label for="agree2">지원금 상응 요금할인</label>
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="orderSupport">
+							<div class="supBox supLeft">
+								<div>
+									<p class="img"></p>
+									<p class="tit">지원금 상응 요금할인 선택 시</p>
+									<p class="txt">요금할인(24개월 기준)</p>
+									<p class="price">총<em>396,000</em>원</p>
+								</div>
+							</div>
+							<div class="supBox supRight on">
+								<div>
+									<p class="img"></p>
+									<p class="tit">단말기 지원금 <br>선택 시</p>
+									<p class="txt">단말기 지원금</p>
+									<p class="price">총<em>236,000</em>원</p>
+								</div>
+							</div>
+						</div>
+						<p class="txtInfo h5">지원금에 상응하는 요금할인은 12개월 또는 24개월 약정 가능하며, 월 할인금액은 동일합니다.</p>
+						<ul class="agreeArea h5">
+							<li>
+								<div class="agreeBox tglClsOpen on" style="padding-top: 40px;">
+									<a href="#" class="tglBtn" title="내용보기">
+										<strong class="hidden">단말기 지원금</strong>
+									</a>
+									<div class="agreeCon" tabindex="0">
+										<ul>
+											<li>본인은 지원금에 상응하는 요금할인 또는 단말기 지원금 선택 시 혜택에 대해 충분한 설명을 들었으며, 단말기 지원금을 선택하겠습니다.</li>
+										</ul>
+									</div>
+									<div class="agreeCheck" style="height: 38px;">
+										<span class="formWrap">
+											<input type="checkbox" id="agree2">
+											<label for="agree2">단말기 지원금</label>
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+							
+						<div class="btnBox h20">
+							<a href="#" class="btnL btnRed">주문내역 확인완료</a>
+						<div>
+					</div>
+
+				</div><!-- //orderDetail -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

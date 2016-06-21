@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>실시간 채팅 상담 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+
+	<a href="#cellTerms" class="id_layerOpen">레이어 팝업 보기</a>
+	<div class="layer_pop" id="cellTerms">
+		<div class="layerWrap">
+			<div class="popHead">
+				<h1>실시간 채팅상담</h1>
+			</div>
+			<div class="popCon">
+				<div class="inPop">
+					<p>입력하신 고객님의 정보는 안전하게 보호됩니다.</p>
+					<div class="boxGray h10">
+						<ul class="listType1">
+							<li><strong>이용시간 : 평일 09:00 ~ 21:00</strong></li>
+							<li>채팅상담 시 5분동안 입력이 없을 경우 자동 종료됩니다.</li>
+						</ul>
+					</div>
+
+					<div class="tableType1 tbl_cm h20">
+						<ul class="tableCon">
+							<li>
+								<strong><label for="cm_type">상담유형</label></strong>
+								<select title="상담유형" id="cm_type">
+									<option value="구매" selected>구매</option>
+										<option value="배송">배송</option>
+										<option value="교환/반품">교환/반품</option>
+										<option value="외산단말/중고기기">외산단말/중고기기</option>
+										<option value="단말기 가격 공시">단말기 가격 공시</option>
+										<option value="기타">기타</option>
+								</select>
+							</li>
+							<li>
+								<strong><label for="cm_con">상담내용</label></strong>
+								<textarea id="cm_con" class="textArea" rows="5" cols="30"></textarea>
+							</li>
+						</ul>
+					</div>
+
+					<h2 class="titDep2 h20">지난 상담내역</h2>
+					<div class="cm_list">
+						<ul>
+							<li><a href="#none"><strong>[구매]</strong> 사용하던 USIM이 손상되었는데 교체가 가능한가요?</a></li>
+							<li><a href="#none"><strong>[배송]</strong> 어제 휴대폰 주문했는데 배송지 변경 어떻게 하나요?</a></li>
+							<li><a href="#none"><strong>[기타]</strong> 어제 휴대폰 주문했는데 배송지 변경 어떻게 하나요?</a></li>
+							<li><a href="#none"><strong>[단말기 가격 공시]</strong> 어제 휴대폰 주문했는데 배송지 변경 어떻게 하나요?</a></li>
+							<li><a href="#none"><strong>[외산단말/중고기기]</strong> 어제 휴대폰 주문했는데 배송지 변경 어떻게 하나요?</a></li>
+						</ul>
+					</div>
+				
+					<div class="moreBoxType1 h10"><a href="#">더보기</a></div>
+
+				</div><!-- //inPop -->
+				<div class="btnBox2 col2">
+					<span><a href="#" class="btnL btnGray">취소</a></span>
+					<span><a href="#" class="btnL btnRed">상담 신청하기</a></span>
+				</div>
+			</div><!-- //popCon -->
+			<div class="layerClose"><button type="button">닫기</button></div>
+		</div><!-- //layerWrap -->
+	</div><!-- //layer_pop -->
+
+</body>
+</html>

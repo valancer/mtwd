@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>명세서 자세히 보기 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<h1 style="padding:0 0 20px">아래 링크 클릭하여 확인</h1>
+	<a href="#layerID" class="id_layerOpen">명세서 자세히 보기 - 단말할인 & 할부납부</a>
+
+	<div id="layerID" class="layer_pop">
+		<div class="layerWrap">
+			<div class="popHead">
+				<h1>명세서 자세히 보기</h1>
+			</div>
+
+			<div class="popCon popWide bill_detail">
+				<div class="inPop">					
+				
+					<div class="bgWaterR"> <!-- Type 1-->
+						<h2 class="titDep3">월 예상 납부 금액</h2>
+						<dl>
+							<dt><span class="typeCircleL circleWhite">A</span>월 단말 상환금액<br /> + <span class="typeCircleL circleWhite">B</span>월 통신 요금</dt>
+							<dd>
+								<strong>72,300</strong>원/월
+								<p>분할상환 수수료 5.9% 포함</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="bill_table">
+						<table>
+							<caption>A월 단말 상환금액</caption>
+							<colgroup>
+								<col width="33.3%">
+								<col width="33.3%">
+								<col width="*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scop="row" colspan="2">
+										<span class="typeCircleL">A</span>월 단말 상환금액
+										<p>(할인 후 가격/할부 24개월)</p>
+									</th>
+									<td class="fColor1">15,383원</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bill_phone">
+									<th scop="row" colspan="2">단말기 가격 <span class="typeCircle">1</span></th>
+									<td>599,500원</td>
+								</tr>
+								<tr>
+									<th scop="row" colspan="2">공시지원금 <span class="typeCircle">2</span></th>
+									<td>-182,000원</td>
+								</tr>
+								<tr>
+									<th scop="row" colspan="2">추가지원금 <span class="typeCircle">3</span></th>
+									<td>-27,300원</td>
+								</tr>
+								<tr>
+									<th scop="row" rowspan="4" class="verT">추가할인 <span class="typeCircle">4</span></th>
+									<td class="left">T가족포인트</td>
+									<td>-2,000원</td>
+								</tr>
+								<tr>
+									<td class="left">제휴포인트</td>
+									<td>-3,000원</td>
+								</tr>
+								<tr>
+									<td class="left">OK캐쉬백</td>
+									<td>-5,000원</td>
+								</tr>
+								<tr>
+									<td class="left">합계</td>
+									<td>-10,000원</td>
+								</tr>
+								<tr class="bill_last">
+									<th scop="row" colspan="2">할인 후 가격 <span class="typeCircle">1</span>-<span class="typeCircle">2</span>-<span class="typeCircle">3</span>-<span class="typeCircle">4</span></th>
+									<td>369,200원</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="h10">
+							<caption>B월 통신 요금</caption>
+							<colgroup>
+								<col width="*">
+								<col width="33.3%">
+							</colgroup>
+							<thead>
+								<th scop="row">
+									<span class="typeCircleL">B</span>월 통신 요금
+								</th>
+								<td>65,383원</td>
+							</thead>
+							<tbody>
+								<tr class="bill_phone">
+									<th scop="row">요금제 기본료(월)</th>
+									<td>75,900원</td>
+								</tr>
+								<tr>
+									<th scop="row">요금제 약정할인 24개월</th>
+									<td>-19,250원</td>
+								</tr>
+								<tr>
+									<th scop="row">복지할인</th>
+									<td>-16,500원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div><!-- //inPop -->
+
+			</div><!-- //popCon -->
+			<div class="layerClose" style="top: 0px;"><button type="button">닫기</button></div>
+		</div><!-- //layerWrap -->
+
+	</div><!-- //layer_pop -->
+</body>
+</html>

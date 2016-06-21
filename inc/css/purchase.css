@@ -1,0 +1,48 @@
+@charset "euc-kr";
+
+.roundTit{display:inline-block;font-weight:normal;background:#fff;color:#666;padding:2px 7px 4px;border:1px solid #e4e4e4;border-radius:13px;-moz-border-radius:13px;-webkit-border-radius:13px;-0-border-radius:13px}
+.qTxt{text-align:center;font-size:15px;font-weight:bold;letter-spacing:-1px}
+
+.changeProduct{/*padding:30px 0 0*/}
+.changeProduct .tit{text-align:center}
+.changeProduct .roundTit{min-width:123px}
+.changeProduct .changeCont{position:relative;background:#f7f7f7;text-align:center;padding:30px 15px 25px}
+.changeProduct .changeCont+.changeCont{background:#fff;padding:45px 15px 25px}
+.changeProduct .changeCont+.changeCont:before{content:'';display:block;position:absolute;left:50%;top:-20px;width:36px;height:44px;margin-left:-18px;background:url(../../img/purchase/bg_change.png) no-repeat center 0;background-size:36px 44px;-webkit-background-size:36px 44px;-moz-background-size:36px 44px;-o-background-size:36px 44px}
+.changeProduct .productInfor{margin-top:10px}
+.changeProduct .productInfor dt{font-size:20px;font-weight:bold;color:#333}
+.changeProduct .productInfor .phoneNumber{font-size:15px;color:#666;padding-top:3px }
+.changeProduct .productInfor .offer{padding-top:20px}
+.changeProduct .productInfor .offer ul{display:inline-block;margin:0 auto}
+.changeProduct .productInfor .offer ul:after{content:'';display:block;clear:both}
+.changeProduct .productInfor .offer ul li{float:left;width:96px;background:url(../../img/purchase/bg_data.png) no-repeat center 0;background-size:55px 55px;-webkit-background-size:55px 55px;-moz-background-size:55px 55px;-o-background-size:55px 55px}
+.changeProduct .productInfor .offer ul li+li{background:url(../../img/purchase/bg_call.png) no-repeat center 0;background-size:55px 55px;-webkit-background-size:55px 55px;-moz-background-size:55px 55px;-o-background-size:55px 55px}
+.changeProduct .productInfor .offer ul li+li+li{background:url(../../img/purchase/bg_msg.png) no-repeat center 0;background-size:55px 55px;-webkit-background-size:55px 55px;-moz-background-size:55px 55px;-o-background-size:55px 55px}
+.changeProduct .productInfor .offer ul li:first-child strong{border-left:0}
+.changeProduct .productInfor .offer ul li strong{display:block;padding:60px 10px 0;border-left:1px solid #e4e4e4}
+.changeProduct .productInfor .offer ul li p{font-size:10px;padding:3px 10px 0}
+.changeProduct .productInfor .price{display:table;width:100%;table-layout:fixed;border-top:1px dashed #e4e4e4;margin-top:20px;padding-top:20px;text-align:left}
+.changeProduct .productInfor .price .sTit{display:table-cell;font-size:14px;font-weight:bold}
+.changeProduct .productInfor .price strong{display:table-cell;text-align:right;color:#e3002b}
+.changeProduct .productInfor .price strong em{font-size:25px;vertical-align:-2px}
+
+.changeCont2{padding:30px 15px}
+.changeCont2 .tableType4 tbody th{vertical-align:top}
+.changeCont2 .prList li:before{display:inline-block;position:relative;top:3px;width:15px;height:15px;margin-right:5px;}
+.changeCont2 .prList.plus li:before{content:'';background:url(../../img/purchase/ico_prlist_plus.png) no-repeat 0 0;background-size:15px 15px;-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px}
+.changeCont2 .prList.minus li:before{content:'';background:url(../../img/purchase/ico_prlist_minus.png) no-repeat 0 0;background-size:15px 15px;-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px}
+
+.contBox{border:1px solid #e4e4e4}
+.contBox .boxType1{background:#f7f7f7;padding:25px 20px}
+.contBox .boxType2{position:relative;padding:30px 20px 25px}
+.contBox .boxType1+.boxType2:before{content:'';display:block;position:absolute;left:50%;top:-18px;margin-left:-18px;width:35px;height:35px;background:url(../../img/myt/bg_change_result.png) no-repeat 0 0;background-size:35px 35px;-webkit-background-size:35px 35px;-moz-background-size:35px 35px;-o-background-size:35px 35px}
+.contBox .dlType1{text-align:center;letter-spacing:-1px}
+.contBox .dlType1 dt{font-size:14px;color:#666;padding-bottom:3px}
+.contBox .dlType1 dd{text-align:center}
+.contBox .dlType1 dd ul{display:inline-block;margin:0 auto}
+.contBox .dlType1 dd ul li{font-size:16px;font-weight:bold;text-align:left;padding-left:8px;margin-top:5px}
+.contBox .dlType1 dd ul li:first-child{margin-top:0}
+.contBox .dlType1 dd ul.fColor5 li{background:url(../../img/purchase/bl_type1_black.png) no-repeat 0 11px;background-size:3px 3px;-webkit-background-size:3px 3px;-moz-background-size:3px 3px;-o-background-size:3px 3px}
+.contBox .dlType1 dd ul.fColor1 li{background:url(../../img/purchase/bl_type1_red.png) no-repeat 0 11px;background-size:3px 3px;-webkit-background-size:3px 3px;-moz-background-size:3px 3px;-o-background-size:3px 3px}
+
+.tableType4.nLine{border-top:0}
