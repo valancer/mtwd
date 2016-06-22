@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>SKT POC mobile</title>
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="../inc/css/common.css">
+<script src="../inc/js/jquery-1.7.2.min.js"></script>
+<script src="../inc/js/common.js"></script>
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+<script>
+$(function() {
+	//코드 보여주는 script
+	function preTxt(){
+		$('pre').each(function(){
+			var $pre = $(this);
+			$pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		});
+	};
+	preTxt();
+});
+</script>
+</head>
+<body>
+	<div id="guideWrap">
+		<header>
+			<strong><a href="../list_ko.html"><img src="img/sktw_logo.gif" alt=""> SKT 마케팅 통합 POC 구축_Mobile HTML</a></strong>
+			<ul class="interface">
+				<li><a href="../../pc/list_ko.html"><span class="hidden">PC</span></a></li>
+				<li class="this"><a href="../list_ko.html"><span class="hidden">MOBILE</span></a></li>
+			</ul>
+			<nav class="guide_gnb">
+				<a href="index.html" class="on"><span>Html Guide</span></a>
+				<a href="../list_ko.html"><span>국문 HTML List</span></a>
+				<a href="../list_en.html"><span>영문 HTML List</span></a>
+			</nav>
+		</header>
+		<section id="guideContent">
+			<nav class="guide_lnb">
+				<strong>Html Guide</strong>
+				<ul>
+					<li><a href="index.html"><span>기본규칙</span></a></li>
+					<li><a href="btn.html"><span>button</span></a></li>
+					<li><a href="form.html"><span>Form</span></a></li>
+					<li><a href="tab.html"><span>Tab</span></a></li>
+					<li><a href="list.html" class="on"><span>List</span></a></li>
+					<li><a href="step.html"><span>Step</span></a></li>
+					<!--<li><a href="table.html"><span>테이블</span></a></li>-->
+					<!--<li><a href="popup.html"><span>팝업</span></a></li>-->
+					<!--<li><a href="layer.html"><span>레이어팝업</span></a></li>-->
+				</ul>
+			</nav>
+			<div class="guideBox">
+				<strong class="guideTit1">List</strong>
+				<strong class="guideTit2">목록</strong>
+				<!-- 예제 -->
+				<div class="listType">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="tit">[공지] 가족이 결합하면 온가족무료할인혜택 온가족무료할인혜택 온가족무료할인혜택 온가족무료할인혜택</span>
+								<span class="date"><strong class="hidden">등록일:</strong>2016.01.01</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="tit">[공지] 가족이 결합하면 온가족무료할인혜택</span>
+								<span class="date"><strong class="hidden">등록일:</strong>2016.01.01</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="listType">
+	<ul>
+		<li>
+			<a href="#">
+				<span class="tit">[공지] 가족이 결합하면 온가족무료할인혜택 온가족무료할인혜택 온가족무료할인혜택 온가족무료할인혜택</span>
+				<span class="date"><strong class="hidden">등록일:</strong>2016.01.01</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="tit">[공지] 가족이 결합하면 온가족무료할인혜택</span>
+				<span class="date"><strong class="hidden">등록일:</strong>2016.01.01</span>
+			</a>
+		</li>
+	</ul>
+</div>
+</pre>
+<!-- //guideCode -->
+				
+				<strong class="guideTit2">상세</strong>
+				<!-- 예제 -->
+				<div class="listType">
+					<dl>
+						<dt class="listTit">
+							<span class="tit">[공지] 가족이 결합하면 온가족무료 할인혜택 가족이 결합하면 온가족무료 할인혜택</span>
+							<span class="date"><strong class="hidden">등록일:</strong>2016.01.06</span>
+						</dt>
+						<dd class="listCon">
+							<p>안녕하세요.<br>생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다.</p>
+							<p>개인정보 유효기간 제도 적용 대상 변경에 따라 T world 웹회원 이용약관 및 개인정보 취급방침이 아래와 같이 변경되어 상세내용을 사전 고지 드리오니 서비스 이용에 참고해 주시기 바랍니다. </p>
+						</dd>
+					</dl>
+					<div class="btnBox"><a href="#" class="btnL2 btnRed">목록</a></div>
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="listType">
+	<dl>
+		<dt class="listTit">
+			<span class="tit">[공지] 상세제목</span>
+			<span class="date"><strong class="hidden">등록일:</strong>2016.01.06</span>
+		</dt>
+		<dd class="listCon">
+			<p>상세 내용</p>
+		</dd>
+	</dl>
+	<div class="center"><a href="#" class="btnL2 btnRed">목록</a></div>
+</div>
+</pre>
+<!-- //guideCode -->
+
+				<strong class="guideTit2">아코디언</strong>
+				<!-- 예제 -->
+				<ul class="arcBox">
+					<li>
+						<a href="#" class="question"><strong class="hidden">질문</strong>와이번스샵은 아무날이나 방문하여 가입이 가능하나요?</a>
+						<div class="answer">
+							<strong class="hidden">답변</strong>
+							안녕하세요.<br>생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다.
+						</div>
+					</li>
+					<li>
+						<a href="#" class="question"><span class="hidden">질문</span>와이번스샵은 아무날이나 방문하여 가입이 가능하나요?</a>
+						<div class="answer">
+							<span class="hidden">답변</span>
+							생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다. 생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다. 생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다.
+						</div>
+					</li>
+					<li>
+						<a href="#" class="question"><span class="hidden">질문</span>와이번스샵은 아무날이나 방문하여 가입이 가능하나요?와이번스샵은 아무날이나 방문하여 가입이 가능하나요?</a>
+						<div class="answer">
+							<span class="hidden">답변</span>
+							생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다.
+						</div>
+					</li>
+					<li>
+						<a href="#" class="question"><span class="hidden">질문</span>와이번스샵은 아무날이나 방문하여 가입이 가능하나요?</a>
+						<div class="answer">
+							<span class="hidden">답변</span>
+							생각대로 이루어지는 세상 T world입니다. 항상 저희 T world를 이용해 주시는 고객님께 깊은 감사를 드립니다.
+						</div>
+					</li>
+				</ul>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<ul class="arcBox">
+	<li>
+		<a href="#" class="question"><span class="hidden">질문</span>질문 내용</a>
+		<div class="answer">
+			<span class="hidden">답변</span>
+			답변 내용
+		</div>
+	</li>
+	<li>
+		<a href="#" class="question"><span class="hidden">질문</span>질문 내용</a>
+		<div class="answer">
+			<span class="hidden">답변</span>
+			답변 내용
+		</div>
+	</li>
+</ul>
+</pre>
+<!-- //guideCode -->
+				<strong class="guideTit2">슬라이드</strong>
+				<p class="guideTxt">자동 슬라이드 될 경우 포커스 위치가 배너에 들어갈때 자동으로 멈추지 않을 경우 정지/재생 버튼이 먼저 나와야 한다</p>
+				<!-- 예제 -->
+				<div class="slideBox" style="margin-top:50px;">
+					<div class="slideNavi">
+						<ul>
+							<li><a href="#slide1">첫번째 슬라이드에 대한 제목</a></li>
+							<li class="on"><a href="#slide2">두번째 슬라이드에 대한 제목</a></li> <!-- 현재슬라이드 : class="on" 추가-->
+							<li><a href="#slide3">세번째 슬라이드에 대한 제목</a></li>
+							<li><a href="#slide4">네번째 슬라이드에 대한 제목</a></li>
+							<li><a href="#slide5">다섯번째 슬라이드에 대한 제목</a></li>
+							<li><a href="#slide6">여섯번째 슬라이드에 대한 제목</a></li>
+						</ul>
+						<button type="button" class="btnPlay">정지</button>
+						<button type="button" class="btnPlay btnStop" style="display:none;">재생</button>
+					</div>
+					
+					<!--<button type="button" class="btnPrev">이전</button>
+					<div class="slideCon">
+						<ul>
+							<li id="slide1"><a href="#">content1</a></li>
+							<li id="slide2"><a href="#">content2</a></li>
+							<li id="slide3"><a href="#">content3</a></li>
+							<li id="slide4"><a href="#">content4</a></li>
+							<li id="slide5"><a href="#">content5</a></li>
+							<li id="slide6"><a href="#">content6</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btnNext">다음</button>-->
+				</div>
+				<!-- //예제 -->
+<!-- guideCode -->
+<pre class="guideCode">
+<div class="slideBox">
+	<div class="slideNavi">
+		<ul>
+			<li><a href="#slide1">첫번째 슬라이드에 대한 제목</a></li>
+			<li class="on"><a href="#slide2">두번째 슬라이드에 대한 제목</a></li> <!-- 현재슬라이드 : class="on" 추가-->
+			<li><a href="#slide3">세번째 슬라이드에 대한 제목</a></li>
+			<li><a href="#slide4">네번째 슬라이드에 대한 제목</a></li>
+			<li><a href="#slide5">다섯번째 슬라이드에 대한 제목</a></li>
+			<li><a href="#slide6">여섯번째 슬라이드에 대한 제목</a></li>
+		</ul>
+		<button type="button" class="btnPlay">정지</button>
+		<button type="button" class="btnPlay btnStop" style="display:none;">재생</button>
+	</div>
+
+</div>
+</pre>
+<!-- //guideCode -->
+			</div>
+		</section>
+	</div>
+</body>
+</html>

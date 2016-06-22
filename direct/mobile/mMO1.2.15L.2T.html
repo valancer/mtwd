@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>할인혜택 비교하기 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<h1 style="padding:0 0 20px">아래 링크 클릭하여 확인</h1>
+	<a href="#layerID" class="id_layerOpen">할인혜택 비교하기 - 지원금에 상응하는 요금할인</a>
+
+	<div id="layerID" class="layer_pop">
+		<div class="layerWrap">
+			<div class="popHead">
+				<h1>할인혜택 비교하기</h1>
+			</div>		
+
+			<div class="popCon popWide">				
+				<div class="inPop">
+					<!-- tab -->
+					<div class="tab">
+						<div class="tabTitle">
+							<a href="#"><span>단말할인</span></a>
+						</div>
+						<!-- 메뉴선택 -->
+						<div class="tabContent" style="display:none">
+							<div class="tabSwipe">
+								<strong class="hidden">메뉴선택</strong>
+								<button type="button" class="btnPre">이전</button>
+								<div class="swiperWrap">
+									<div class="group">
+										<ul class="tabJs">
+											<li><a href="#tab1">단말할인</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+											<li class="on"><a href="#tab2">지원금에 상응하는 요금할인</a></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li>
+											<li><span></span></li><!-- data가 없을 경우 -->
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btnAfter">다음</button>
+								<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+								<button type="button" class="btnClose">목록닫기</button>
+							</div>
+						</div>
+						<!-- //메뉴선택 -->
+					</div><!-- //tab -->
+					
+					<div id="tab1" class="tabCon" style="display:none">
+						<h2 class="hidden">단말할인</h2>
+						<p class="fColor6 h20">현재 선택한 단말의 요금제별 지원금을 확인해 보세요. 요금제별 지원금만큼 단말가격에서 할인 받으실 수 있습니다.</p>
+						<div class="select h20">
+							<select title="기본 셀렉트">
+								<option value="aa" selected="">Band 데이터</option>
+								<option value="bb">LTE 전국민</option>
+								<option value="cc">LTE T끼리</option>
+								<option value="cc">band 데이터 팅</option>
+								<option value="cc">band 데이터 어르신</option>
+							</select>
+						</div>
+
+						<ul class="boxBoard h20">
+							<li>
+								<h3 class="titDep3">band 데이터 100</h3>
+								<dl>
+									<dt>단말 출고가 <span class="typeCircle">A</span></dt>
+									<dd><strong>599,500</strong>원</dd>
+									<dt>공시지원금 <span class="typeCircle">B</span></dt>
+									<dd><strong>280,000</strong>원</dd>
+									<dt>T다이렉트 추가지원금 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">42,000</strong>원</dd>
+									<dt>단말 판매가 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>227,500</strong>원</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="titDep3">band 데이터 59</h3>
+								<dl>
+									<dt>단말 출고가 <span class="typeCircle">A</span></dt>
+									<dd><strong>599,500</strong>원</dd>
+									<dt>공시지원금 <span class="typeCircle">B</span></dt>
+									<dd><strong>204,000</strong>원</dd>
+									<dt>T다이렉트 추가지원금 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">30,600</strong>원</dd>
+									<dt>단말 판매가 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>364,900</strong>원</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="titDep3">band 데이터 51</h3>
+								<dl>
+									<dt>단말 출고가 <span class="typeCircle">A</span></dt>
+									<dd><strong>599,500</strong>원</dd>
+									<dt>공시지원금 <span class="typeCircle">B</span></dt>
+									<dd><strong>179,000</strong>원</dd>
+									<dt>T다이렉트 추가지원금 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">26,800</strong>원</dd>
+									<dt>단말 판매가 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>393,700</strong>원</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="titDep3">band 데이터 47</h3>
+								<dl>
+									<dt>단말 출고가 <span class="typeCircle">A</span></dt>
+									<dd><strong>599,500</strong>원</dd>
+									<dt>공시지원금 <span class="typeCircle">B</span></dt>
+									<dd><strong>165,000</strong>원</dd>
+									<dt>T다이렉트 추가지원금 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">24,700</strong>원</dd>
+									<dt>단말 판매가 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>409,800</strong>원</dd>
+								</dl>
+							</li>
+						</ul>
+					</div><!-- //tab1 -->
+
+					<div id="tab2" class="tabCon">
+						<h2 class="hidden">지원금에 상응하는 요금할인</h2>
+						<p class="fColor6 h20">요금제별 지원금에 상응하는 요금할인 금액을 확인해보세요. 지원금에 상응하는 요금할인(12개월 또는 24개월)을 선택하실 경우, 단말 지원금 할인 대신 요금할인 혜택을 받으실 수 있습니다.</p>
+					
+						<div class="h10">
+							<span class="formWrap checked">
+								<input type="radio" id="recieveMonth1" name="recieveMonth" checked="checked">
+								<label for="recieveMonth1">12개월 받기</label>
+							</span>
+							<span class="formWrap">
+								<input type="radio" id="recieveMonth2" name="recieveMonth">
+								<label for="recieveMonth2">24개월 받기</label>
+							</span>
+						</div>					
+
+						<div class="select h10">
+							<select title="기본 셀렉트">
+								<option value="aa" selected="">Band 데이터</option>
+								<option value="bb">LTE 전국민</option>
+								<option value="cc">LTE T끼리</option>
+								<option value="cc">band 데이터 팅</option>
+								<option value="cc">band 데이터 어르신</option>
+							</select>
+						</div>
+
+						<ul class="boxBoard h20">
+							<li>
+								<h3 class="titDep3">band 데이터 100</h3>
+								<dl>
+									<dt>요금제 월정액 <span class="typeCircle">A</span></dt>
+									<dd><strong>110,000</strong>원</dd>
+									<dt>요금제 약정할인 <span class="typeCircle">B</span></dt>
+									<dd><strong>0</strong>원</dd>
+									<dt>선택약정 월별 할인액 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">22,000</strong>원</dd>
+									<dt>선택약정 총 할인액</dt>
+									<dd><strong>528,000</strong>원</dd>
+									<dt>할인 후 월요금 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>88,000</strong>원</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="titDep3">band 데이터 80</h3>
+								<dl>
+									<dt>요금제 월정액 <span class="typeCircle">A</span></dt>
+									<dd><strong>88,000</strong>원</dd>
+									<dt>요금제 약정할인 <span class="typeCircle">B</span></dt>
+									<dd><strong>0</strong>원</dd>
+									<dt>선택약정 월별 할인액 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">17,600</strong>원</dd>
+									<dt>선택약정 총 할인액</dt>
+									<dd><strong>422,400</strong>원</dd>
+									<dt>할인 후 월요금 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>70,400</strong>원</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="titDep3">band 데이터 59</h3>
+								<dl>
+									<dt>요금제 월정액 <span class="typeCircle">A</span></dt>
+									<dd><strong>65,890</strong>원</dd>
+									<dt>요금제 약정할인 <span class="typeCircle">B</span></dt>
+									<dd><strong>0</strong>원</dd>
+									<dt>선택약정 월별 할인액 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">23,200</strong>원</dd>
+									<dt>선택약정 총 할인액</dt>
+									<dd><strong>316,800</strong>원</dd>
+									<dt>할인 후 월요금 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>52,690</strong>원</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="titDep3">band 데이터 51</h3>
+								<dl>
+									<dt>요금제 월정액 <span class="typeCircle">A</span></dt>
+									<dd><strong>56,100</strong>원</dd>
+									<dt>요금제 약정할인 <span class="typeCircle">B</span></dt>
+									<dd><strong>0</strong>원</dd>
+									<dt>선택약정 월별 할인액 <span class="typeCircle">C</span></dt>
+									<dd><strong class="fColor1">11,220</strong>원</dd>
+									<dt>선택약정 총 할인액</dt>
+									<dd><strong>269,280</strong>원</dd>
+									<dt>할인 후 월요금 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+									<dd><strong>44,890</strong>원</dd>
+								</dl>
+							</li>
+						</ul>
+					</div><!-- //tab2 -->
+
+				</div><!-- //inPop -->
+
+			</div><!-- //popCon -->
+			<div class="layerClose" style="top: 0px;"><button type="button">닫기</button></div>
+		</div><!-- //layerWrap -->
+
+	</div><!-- //layer_pop -->
+</body>
+</html>

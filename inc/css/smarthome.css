@@ -1,0 +1,77 @@
+@charset "euc-kr";
+@import url("slick.css");
+
+.smarthomeMain {overflow:hidden}
+.smarthomeMain .tabSmarthome { overflow: hidden; padding: 22px 15px; border-bottom: 1px solid #ccc; }
+.smarthomeMain .tabSmarthome > a { display: block; box-sizing: border-box; position: relative; float: left; padding-left: 30px; width: 50%; font-size: 14px; line-height: 14px; }
+.smarthomeMain .tabSmarthome > a:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -12px; height: 25px; width: 24px; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.smarthomeMain .tabSmarthome > a > small { display: block; font-size: 11px; }
+.smarthomeMain .tabSmarthome > a.life { padding-left: 45px; border-left: 1px solid #dcdcdc; }
+.smarthomeMain .tabSmarthome > a.home:before { background-position: 0px 0px; }
+.smarthomeMain .tabSmarthome > a.life:before { left: 15px; background-position: -30px 0px; }
+
+.smarthomeMain .bnSlide .slideNavi {position:absolute;bottom:30px;left:0;width:100%;}
+.smarthomeMain .titDep3 {padding:20px 0 15px;font-weight:normal; background-color: #fff;}
+
+.smarthomeMain .package { padding-bottom: 25px; background-color: #eee; }
+.smarthomeMain .package .titDep3 { border-bottom: 1px solid #e4e4e4; }
+.smarthomeMain .package .package-tab { display: flex; padding: 5px 15px 15px; }
+.smarthomeMain .package .package-tab > a { flex: 1; font-size: 15px; color: #111; text-align: center; }
+.smarthomeMain .package .package-tab > a + a { border-left: 1px solid #dcdcdc; }
+
+.smarthomeMain .package ul { position: relative; padding: 50px 15px 0px; }
+.smarthomeMain .package ul > li {  }
+.smarthomeMain .package .package-item { display: block; border: 1px solid #e1e1e1; background-color: #fff; }
+.smarthomeMain .package .package-item figure { margin: 0; }
+.smarthomeMain .package .package-item img { width: 100%; }
+.smarthomeMain .package .package-item figcaption { position: relative; padding: 10px 15px; background-color: #f4f0e7; }
+.smarthomeMain .package .package-item figcaption del { display: block; font-size: 12px; color: #666; }
+.smarthomeMain .package .package-item figcaption .price { font-size: 10px; color: #e3002b; }
+.smarthomeMain .package .package-item figcaption .price em { font-size: 22px; font-weight: bold; }
+.smarthomeMain .package .package-item figcaption .dc { display: block; position: absolute; top: 50%; right: 15px; margin-top: -18px; padding: 6px 7px 0 5px; height: 30px; font-size: 12px; color: #fff; line-height: 13px; text-align: center; background-color: #e3002b; }
+.smarthomeMain .package .package-item figcaption .dc:before { content: ''; position: absolute; top: 0px; left: -10px; height: 0; width: 0; border-top: 18px solid transparent; border-bottom: 18px solid transparent; border-right: 10px solid #e3002b; }
+
+
+.smarthomeMain .slick-dots { display: flex; position: absolute !important; top: -40px; right: 0; left: 0; }
+.smarthomeMain .slick-dots > li { flex: 1; text-align: center; }
+.smarthomeMain .slick-dots > li + li { border-left: 1px solid #dcdcdc; }
+.smarthomeMain .slick-dots button { font-size: 15px; color: #111; background-color: transparent; }
+.smarthomeMain .slick-dots > li.slick-active button { font-weight: bold; }
+
+
+.smarthomeList .sort_area {padding:15px 15px 10px}
+.smarthomeList .sort_area:after {content:"";display:block;clear:both}
+.smarthomeList .sort_area p {margin-top:15px}
+
+.smarthomeList  ul {border-top:1px solid #e7e7e7}
+.smarthomeList  ul li {position:relative;overflow: hidden;padding:0px;border-bottom:1px solid #e7e7e7}
+.smarthomeList  ul li a { display: block; position: relative; padding: 30px 15px 22px 125px; min-height: 100px; }
+.smarthomeList  ul li .img_area {display: block; position: absolute; top: 30px; left: 15px; width: 95px; text-align:center;box-sizing:border-box;}
+.smarthomeList  ul li .img_area img {width:100%;}
+.smarthomeList  ul li dl dt {margin-bottom:15px;font-size:17px;font-weight:bold}
+.smarthomeList  ul li dl dt span {display:block;}
+.smarthomeList  ul li dl dt span em {margin-left:3px;padding:1px 4px 2px;border-radius:3px;font-size:10px;color:#fff}
+.smarthomeList  ul li dl dt span .hot {background:#f65d00}
+.smarthomeList  ul li dl dt span .limit {background:#00a49a}
+.smarthomeList  ul li dl dt strong { display: block; overflow: hidden; max-height: 40px; }
+.smarthomeList  ul li dl dt i { display: inline-block; height: 14px; padding: 0 6px; font-size: 10px; color: #fff; line-height: 14px; font-style: normal; border-radius: 2px; background-color: #00a49a; }
+.smarthomeList  ul li dl dd span {display:block;font-size:14px;color:#666;text-decoration:line-through}
+.smarthomeList  ul li dl dd span em {font-size:10px}
+.smarthomeList  ul li dl dd strong {display:inline-block;position:relative;font-size:24px;color:#e3002b}
+.smarthomeList  ul li dl dd strong em {font-size:12px}
+.smarthomeList  ul li dl dd strong i {position:absolute;top:-10px;right:-30px;height:16px;padding:0 5px 0 0;background:#434159;font-size:10px;font-style:normal;color:#fff;line-height:15px}
+.smarthomeList  ul li dl dd strong i:before {content:"";position:absolute;top:0px;left:-8px;width:0;height:0;border-top: 8px solid transparent;border-bottom: 8px solid transparent;border-right:8px solid #434159}
+.smarthomeList  ul li dl.package-item {  }
+.smarthomeList  ul li dl.package-item dd strong { display: block; }
+.smarthomeList  ul li dl.package-item dd strong i.subsidy { display: block; position: absolute; top: 50%; right: 0px; margin-top: -18px; padding: 6px 7px 0 5px; height: 30px; font-size: 12px; font-style: normal; color: #fff; line-height: 13px; text-align: center; background-color: #e3002b; }
+.smarthomeList  ul li dl.package-item dd strong i.subsidy:before {content: ''; position: absolute; top: 0px; left: -10px; height: 0; width: 0; border-top: 18px solid transparent; border-bottom: 18px solid transparent; border-right: 10px solid #e3002b; }
+.smarthomeList  ul li .stock {position:absolute;top:15px;left:15px;border-bottom:1px solid #d23c00;font-size:14px;font-weight:bold;color:#d23c00}
+.smarthomeList  ul li .stock strong {font-size:24px;}
+.smarthomeList  ul li .favorite {display:block;position:absolute;top:30px;right:15px;z-index:10;width:18px;height:25px;background:url('../../img/direct/ico_item_pick.png') no-repeat center top;background-size:18px;text-indent:-9999em;cursor:pointer}
+.smarthomeList  ul li .favorite.on {background-position: center bottom}
+.smarthomeList .moreBoxType1 {width:auto;margin: 15px 15px 20px;}
+
+.smarthomeList .none { padding: 100px 0; font-size: 17px; color: #111; text-align: center; line-height: 24px; border-top: 1px solid #e7e7e7; }
+.smarthomeList .none em { color: #e3002b; }
+.smarthomeList .none small { font-size: 13px; color: #666; }
+

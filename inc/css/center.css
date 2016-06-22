@@ -1,0 +1,153 @@
+@charset "euc-kr";
+
+/*이용안내*/
+.serviceInfo{margin-top:20px}
+.serviceInfo dt{padding:15px 53px 15px 33px;margin:0 -15px;background:#434159;text-align:center;color:#fff;}
+.serviceInfo dt span{position:relative;padding:0 0 0 20px}
+.serviceInfo dt span::before{content:'';display:inline-block;position:absolute;left:0;top:2px;width:10px;height:13px;background:url(../../img/center/bg_q.png) no-repeat;-webkit-background-size:10px 13px;-moz-background-size:10px 13px;-o-background-size:10px 13px;background-size:10px 13px}
+.serviceInfo dd li{position:relative;padding:20px 0 20px 47px;border-top:1px solid #efefef}
+.serviceInfo dd li em{display:block;font-size:15px;color:#d23c00}
+.serviceInfo dd li span{color:#666}
+.serviceInfo dd li>div{padding:11px 0 0}
+.serviceInfo dd li div a.btnL{margin:10px 0 0}
+.serviceInfo dd li::before{content:'';display:block;position:absolute;left:6px;top:20px;width:33px;height:32px;background:url(../../img/center/ico_use_info_m.png) no-repeat;-webkit-background-size:33px 407px;-moz-background-size:33px 407px;-o-background-size:33px 407px;background-size:33px 407px}
+.serviceInfo .info1 li:nth-child(1)::before{background-position:0 0}
+.serviceInfo .info1 li:nth-child(2)::before{background-position:0 -33px}
+.serviceInfo .info1 li:nth-child(3)::before{height:23px;background-position:0 -66px}
+
+.serviceInfo .info2 li:nth-child(1)::before{background-position:0 -89px}
+.serviceInfo .info2 li:nth-child(2)::before{background-position:0 -122px}
+.serviceInfo .info2 li:nth-child(3)::before{background-position:0 -155px}
+.serviceInfo .info2 li:nth-child(4)::before{background-position:0 -188px}
+.serviceInfo .info2 li:nth-child(5)::before{background-position:0 -221px}
+.serviceInfo .info2 li:nth-child(6)::before{background-position:0 -254px}
+
+.serviceInfo .info3 li:nth-child(1)::before{height:28px;background-position:0 -287px}
+.serviceInfo .info3 li:nth-child(2)::before{height:25px;background-position:0 -315px}
+.serviceInfo .info3 li:nth-child(3)::before{background-position:0 -341px}
+.serviceInfo .info3 li:nth-child(4)::before{background-position:0 -374px}
+
+/*이용자피해예방센터*/
+[class*="preventMenu"]{border-left:1px solid #ccc;border-bottom:1px solid #ccc}
+[class*="preventMenu"]:after{display:block;content:'';clear:both}
+[class*="preventMenu"] li{float:left;width:50%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-top:1px solid #ccc;border-right:1px solid #ccc;text-align:center}
+[class*="preventMenu"] li a{position:relative;display:block;padding:87px 0 20px;color:#fb6400}
+[class*="preventMenu"] li a:before{display:block;content:'';position:absolute;top:21px;left:50%;width:55px;height:55px;margin-left:-27px;background:url(../../img/center/bg_preventindex.png) no-repeat 0 0;background-size:385px 55px}
+.preventMenu li:nth-child(2) a:before{background-position:-55px 0}
+.preventMenu li:nth-child(3) a:before{background-position:-110px 0}
+.preventMenu li:nth-child(4) a:before{background-position:-165px 0}
+.preventMenu2{margin:0 15px 30px;border:1px solid #ccc;border-left:none}
+.preventMenu2 li{width:33%;border:none;border-left:1px solid #ccc}
+.preventMenu2 li a{padding:80px 0 15px;color:#333}
+.preventMenu2 li a:before{top:15px;background-position:-220px 0}
+.preventMenu2 li:nth-child(2) a:before{background-position:-275px 0}
+.preventMenu2 li:nth-child(3) a:before{background-position:-330px 0}
+.bannerImg{display:block}
+div.bannerImg{padding:0 15px}
+.bannerImg img{width:100%}
+.w100{width:100%}
+.prevInfoSlide{overflow:hidden;padding:30px 0;text-align:center}
+.prevInfoSlide .swipePrev{position:absolute;top:108px;left:14px}
+.prevInfoSlide .swipeNext{position:absolute;top:108px;right:14px}
+.prevInfoSlide .cont{padding:29px 14px 20px;border: 1px solid #ccc;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.prevInfoSlide .cont>a{display:block;font-size:13px}
+.prevInfoSlide .cont a .tit{display:block;padding:5px 25px 13px;font-size:17px;font-weight:bold}
+.prevInfoSlide .cont a .infoSubtxt{display:block;padding:0 25px}
+.prevInfoSlide .cont .btnL{margin-top:15px;font-size:14px}
+.prevInfoSlide .cont .img img{width:57px;height:57px}
+
+.userTopCon{padding:30px;text-align:center}
+.userTopCon .topImg{display:inline-block;margin-bottom:15px}
+.userTopCon .topImg img{width:260px;height:78px}
+.userTopCon p{font-size:13px;color:#666}
+.userTopCon .txtInfo{text-align:left}
+.numStep>li{display:table;width:100%;border:1px solid #efefef;background:#fbfbfb;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.numStep>li>em{display:table-cell;width:37px;text-align:center;vertical-align:middle;background:#fff;border-right:1px solid #efefef;font-size:16px;font-weight:bold;font-family:Verdana;color:#fb6400}
+.numStep>li>div{display:table-cell;padding:15px;font-size:13px;color:#666}
+.numStep>li+li{margin-top:10px}
+.numStep>li .tit{display:block;padding-bottom:10px;font-weight:normal;color:#333}
+.dlType1 dt{margin-top:8px;padding-bottom:8px;font-size:13px;color:#333}
+.dlType1 dt:first-child{margin-top:0}
+.dlType1 dd{font-size:13px;color:#666}
+.f10{font-size:12px}
+.userArcBox{margin:0 -15px}
+.userArcBox>li>a{padding-left:0}
+.userArcBox>li{width:100%;border-top:1px solid #e4e4e4}
+.userArcBox>li:first-child{border-top:1px solid #434159}
+.userArcBox>li:last-child{border-bottom:1px solid #e4e4e4}
+.userArcBox>li .tit{display:block;overflow:hidden;position:relative;width:100%;padding:14px 28px 14px 15px;background:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-align:left;font-size:13px}
+.userArcBox>li .tit:after{display:block;content:'';position:absolute;top:16px;right:15px;width:14px;height:14px;background:url(../../img/center/bg_arcbox.png) no-repeat 0 0;-webkit-background-size:28px 14px;-moz-background-size:28px 14px;-o-background-size:28px 14px;background-size:28px 14px}
+.userArcBox>li.on .tit{color:#ea002c}
+.userArcBox>li.on .tit:after{background-position:-14px 0}
+.userArcBox>li .view{display:none}
+.userArcBox>li.on .view{display:block;position:relative;padding:5px 15px 20px;background:#f7f7f7;border-top:1px solid #e4e4e4;font-size:13px;color:#666}
+.userArcBox>li:last-child.on{border-bottom:1px solid #434159}
+.userArcBox>li.on, .userArcBox>li.on+li{border-top:1px solid #434159}
+.webtoonSlide{overflow:hidden}
+.webtoonSlide .swiperCon{position:relative}
+.webtoonSlide .swiperCon .swipePrev{position:absolute;top:30px;left:36px}
+.webtoonSlide .swiperCon .swipeNext{position:absolute;top:30px;right:36px}
+.webtoonSlide .swiperWrap .cont .webtoonTit{min-height:50px;padding:15px 62px 20px;font-size:17px;font-weight:bold;color:#333;text-align:center}
+.webtoonSlide .swiperWrap .cont .view{max-height:395px;overflow-y:scroll;overflow-x:hidden;margin:0 15px;padding:15px 13px 15px 15px;border:1px solid #e4e4e4;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-align:center}
+.webtoonSlide .swiperWrap .cont .view img{width:100%}
+/*
+.webtoonSlide{overflow:hidden}
+.webtoonSlide .swiperCon{position:relative}
+.webtoonSlide .swiperCon .swipePrev{position:absolute;top:30px;left:36px}
+.webtoonSlide .swiperCon .swipeNext{position:absolute;top:30px;right:36px}
+.webtoonSlide .swiperWrap .cont .webtoonTit{min-height:50px;padding:15px 62px 20px;font-size:17px;font-weight:bold;color:#333;text-align:center}
+.webtoonSlide .swiperWrap .cont .view{max-height:395px;overflow-y:scroll;overflow-x:hidden;margin:0 15px;padding:15px 13px 15px 15px;border:1px solid #e4e4e4;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-align:center}
+.webtoonSlide .swiperWrap .cont .view img{width:100%}
+*/
+/*
+.webtoonSlide{overflow:hidden;padding:0 15px}
+.webtoonSlide .swiperCon{position:relative}
+.webtoonSlide .swiperCon .swipePrev{position:absolute;top:30px;left:36px}
+.webtoonSlide .swiperCon .swipeNext{position:absolute;top:30px;right:36px}
+.webtoonSlide .swiperWrap .cont{margin-right:15px}
+.webtoonSlide .swiperWrap .cont .webtoonTit{min-height:50px;padding:15px 62px 20px;font-size:17px;font-weight:bold;color:#333;text-align:center}
+.webtoonSlide .swiperWrap .cont .view{max-height:395px;overflow-y:scroll;overflow-x:hidden;padding:15px 13px 15px 15px;border:1px solid #e4e4e4;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-align:center}
+.webtoonSlide .swiperWrap .cont .view img{width:100%}*/
+.linkList1.srvLink{margin-top:-14px}
+.linkList1.srvLink+.linkList1.srvLink{margin-top:0}
+.linkList1.srvLink>li>a{position:relative;padding-left:73px;background-position:100% 50%}
+.linkList1.srvLink>li>a .tit{display:block;padding-bottom:10px;font-size:15px;font-weight:normal;color:#333}
+.linkList1.srvLink>li>a>span{font-size:13px;color:#666}
+.linkList1.srvLink>li>a:before{display:inline-block;content:'';position:absolute;top:50%;left:13px;width:32px;height:32px;margin-top:-16px;background:url(../../img/center/bg_srvlink.png) no-repeat 0 0;background-size:32px 800px;-webkit-background-size:32px 800px;-moz-background-size:32px 800px;-o-background-size:32px 800px;}
+.linkList1.srvLink>li.icon1>a:before{background-position:0 0}
+.linkList1.srvLink>li.icon2>a:before{background-position:0 -32px}
+.linkList1.srvLink>li.icon3>a:before{background-position:0 -64px}
+.linkList1.srvLink>li.icon4>a:before{background-position:0 -96px}
+.linkList1.srvLink>li.icon5>a:before{background-position:0 -128px}
+.linkList1.srvLink>li.icon6>a:before{background-position:0 -160px}
+.linkList1.srvLink>li.icon7>a:before{background-position:0 -192px}
+.linkList1.srvLink>li.icon8>a:before{background-position:0 -224px}
+.linkList1.srvLink>li.icon9>a:before{background-position:0 -256px}
+.linkList1.srvLink>li.icon10>a:before{background-position:0 -288px}
+.linkList1.srvLink>li.icon11>a:before{background-position:0 -320px}
+.linkList1.srvLink>li.icon12>a:before{background-position:0 -352px}
+.linkList1.srvLink>li.icon13>a:before{background-position:0 -384px}
+.linkList1.srvLink>li.icon14>a:before{background-position:0 -416px}
+.linkList1.srvLink>li.icon15>a:before{background-position:0 -448px}
+.linkList1.srvLink>li.icon16>a:before{background-position:0 -480px}
+.linkList1.srvLink>li.icon17>a:before{background-position:0 -512px}
+.linkList1.srvLink>li.icon18>a:before{background-position:0 -544px}
+.linkList1.srvLink>li.icon19>a:before{background-position:0 -576px}
+.linkList1.srvLink>li.icon20>a:before{background-position:0 -608px}
+.linkList1.srvLink>li.icon21>a:before{background-position:0 -640px}
+.linkList1.srvLink>li.icon22>a:before{background-position:0 -672px}
+.linkList1.srvLink>li.icon23>a:before{background-position:0 -704px}
+.linkList1.srvLink>li.icon24>a:before{background-position:0 -736px}
+.linkList1.srvLink>li.icon25>a:before{background-position:0 -768px}
+.srvLinkMore .srvLink{display:none}
+.srvLinkMore.on .srvLink{display:block;margin-top:0}
+.srvLinkMore.on .moreBoxType1, .srvLinkMore+.srvLinkMore .moreBoxType1, .srvLinkMore.on+.srvLinkMore.on .moreBoxType1{display:none}
+.srvLinkMore.on+.srvLinkMore .moreBoxType1{display:block}
+.pimsMark{padding:15px;background:#fbfbfb;border:1px solid #efefef;font-size:13px;color:#333;text-align:center}
+.pimsMark img{display:inline-block;width:35px;height:35px;padding-right:10px;vertical-align:middle}
+.linkList1.bgType2>li>a{background:url(../../img/center/bg_link.png) no-repeat 100% 50%;background-size:15px 16px;-webkit-background-size:15px 16px;-moz-background-size:15px 16px;-o-background-size:15px 16px;}
+
+/*공지사항*/
+.txtInfo.board{margin-left:15px;}
+.boardSrch{padding:0 15px;}
+.boardSrch .searchCon{padding:0;}

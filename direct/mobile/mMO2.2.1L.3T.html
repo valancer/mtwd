@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>IMEI / Wi-Fi MAC address 확인방법 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>IMEI / Wi-Fi MAC address 확인방법</h1>
+	</div>
+	<div class="popCon foreign">
+
+		<div class="inPop">
+			<div class="narrowCon">
+				<p class="titDep4">외산단말 중 해외구매폰은 아래의 방법으로 확인 가능합니다.</p>
+				<p class="txtInfo">국내제조사 외산단말은 <em class="fColor1">2012년 5월 1일 이후</em> 출시 단말부터 확인 가능합니다.</p>
+			</div>
+			
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>Windows Mobile</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li><a href="#tab1">Android O/S</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+									<li><a href="#tab2">iOS</a></li>
+									<li class="on"><a href="#tab3">Windows Mobile</a></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>1</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->
+			
+			<div class="tabCon" id="tab1" style="display:none;">
+				<dl>
+					<dt class="title"><strong>IMEI 확인방법</strong></dt>
+					<dd>
+						<ul>
+							<li>
+								<dl class="text">
+									<dt>S/W</dt>
+									<dd>설정(Settings) &gt; 휴대폰 정보(About phone) &gt; 상태(Phone identity) &gt; IMEI</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>H/W</dt>
+									<dd>배터리 슬롯의 S/N 표기 바코드와 함께 표기<br />(단, 일체형 스마트폰은 미표기되어 있을 수 있음)</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>단말박스</dt>
+									<dd>S/N 등이 표기된 박스 바코드 스티커에 표기</dd>
+								</dl>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="title"><strong>Wi-Fi MAC address 확인방법</strong></dt>
+					<dd>
+						<ul>
+							<li>
+								<p class="fColor1">* Wi-Fi MAC address는 S/W에서만 확인 가능합니다.</p>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>S/W</dt>
+									<dd>설정(Settings) &gt; 휴대폰 정보(About phone) &gt; 단말정보(Hardware information) &gt; Wi-Fi MAC address</dd>
+								</dl>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="btnBox">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+			<div class="tabCon" id="tab2" style="display:none;">
+				<dl>
+					<dt class="title"><strong>IMEI 및 Wi-Fi MAC address 확인방법</strong></dt>
+					<dd>
+						<ul>
+							<li>
+								<p class="fColor1">* Wi-Fi MAC address는 S/W에서만 확인 가능합니다. (메뉴에서 Address 숫자가 보이지 않는 경우에는 Wi-Fi On 시킨 후 확인)</p>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>S/W</dt>
+									<dd>설정(Settings) &gt; 일반(General) &gt; 정보(Information) &gt; IMEI / Wi-Fi MAC address</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>H/W</dt>
+									<dd>단말기 후면 하단에 표기(H/W 표기 : 아이폰은 아이폰5부터 적용, 아이패드는 기존 모델에도 적용)</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>단말박스</dt>
+									<dd>S/N 등이 표기된 박스 바코드 스티커에 함께 표기</dd>
+								</dl>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="title"><strong>Wi-Fi MAC address 확인방법</strong></dt>
+					<dd>
+						<ul>
+							<li>
+								<p class="fColor1">* Wi-Fi MAC address는 S/W에서만 확인 가능합니다.</p>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>S/W</dt>
+									<dd>설정(Settings) &gt; 휴대폰 정보(About phone) &gt; 단말정보(Hardware information) &gt; Wi-Fi MAC address</dd>
+								</dl>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="btnBox">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+			<div class="tabCon" id="tab3">
+				<dl>
+					<dt class="title"><strong>IMEI 및 Wi-Fi MAC address 확인방법</strong></dt>
+					<dd>
+						<ul>
+							<li>
+								<p class="fColor1">* Wi-Fi MAC address는 S/W에서만 확인 가능합니다. (메뉴에서 Address 숫자가 보이지 않는 경우에는 Wi-Fi On 시킨 후 확인)</p>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>S/W</dt>
+									<dd>설정(Settings) &gt; 정보(About) &gt; 상세정보(More information) &gt; IMEI / Wi-Fi MAC address</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>H/W</dt>
+									<dd>배터리 슬롯의 S/N 표기 바코드와 함께 표기<br />(단, 일체형 스마트폰은 미표기되어 있을 수 있음)</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="text">
+									<dt>단말박스</dt>
+									<dd>S/N 등이 표기된 박스 바코드 스티커에 함께 표기</dd>
+								</dl>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="btnBox">
+					<a href="#" class="btnL btnRed">확인</a>
+				</div>
+			</div>
+
+		</div><!-- //inPop -->
+
+	</div><!-- //popCon -->
+	<div class="popClose"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>

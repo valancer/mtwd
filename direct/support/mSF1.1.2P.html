@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>기기 필터설정 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popHead">
+		<h1>기기 필터설정</h1>
+	</div>
+	<div class="popCon filter">
+		<div class="inPop inner">
+			<div class="form_wrap">
+				<div class="plan">
+					<dl>
+						<dt>기기</dt>
+						<dd>
+							<select title="기기 선택">
+								<option value="aa" selected>LTE 휴대폰</option>
+								<option value="bb">3G 휴대폰</option>
+								<option value="cc">2G 휴대폰</option>
+								<option value="dd">태블릿</option>
+								<option value="ee">웨어러블</option>
+								<option value="ff">모바일 라우터</option>
+								<option value="gg">키즈폰</option>
+								<option value="hh">Pet 전용</option>
+							</select>
+							<input type="text" class="inputTxt1 h10" title="애칭 또는 모덜명을 입력" placeholder="애칭 또는 모덜명을 입력하세요.(선택)">
+						</dd>
+					</dl>
+				</div>
+
+				<div class="brand">
+					<dl>
+						<dt>제조사</dt>
+						<dd>
+							<ul class="check_area">
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand1" checked><label for="brand1">삼성(37)</label>
+									</span>
+								</li>
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand2"><label for="brand2">애플(12)</label>
+									</span>
+								</li>
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand3"><label for="brand3">LG(5)</label>
+									</span>
+								</li>
+								<li>
+									<span class="formWrap">
+										<input type="checkbox" id="brand4"><label for="brand4">기타(4)</label>
+									</span>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="sort">
+					<dl>
+						<dt>정렬순</dt>
+						<dd>
+							<select title="정렬순서 선택">
+								<option value="aa" selected>단말기 출시 순서대로 보겠습니다.</option>
+								<option value="bb">지원금이 높은 순서대로 보겠습니다.</option>
+								<option value="cc">판매가가 낮은 순서대로 보겠습니다.</option>
+							</select>
+						</dd>
+					</dl>
+				</div>
+
+			</div>
+			<div class="btnBox col2 h25">
+				<span><a href="#" class="btnL btnBlack">취소</a></span>
+				<span><a href="#" class="btnL btnRed">적용하기</a></span>
+			</div>
+
+		</div><!-- //inPop -->
+
+	</div><!-- //popCon -->
+	<div class="popClose"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>
