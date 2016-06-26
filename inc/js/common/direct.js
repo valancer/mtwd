@@ -349,7 +349,7 @@ function accCoupon(){
 
 //액세서리 - 보관함 담기 - 2016-06-13 추가
 function accCubbyhole(){
-	$(".accList, .smarthomeList").find(".favorite").on("click",function(){
+	$(".accList").find(".favorite").on("click",function(){
 		if(!$(this).hasClass("on")){
 			$(this).addClass("on");
 		} else {

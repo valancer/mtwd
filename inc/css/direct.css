@@ -1,7 +1,6 @@
 @charset "euc-kr";
 @import url("direct01.css");
 @import url("direct02.css");
-@import url("smarthome.css");
 
 .popup .popCon .inPop {overflow-x:hidden;}
 .boxGray {background:#f7f7f7; border:1px solid #e4e4e4; padding:10px 15px;}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>스마트홈 홈 상품 상세 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/smarthome.css">
+<link rel="stylesheet" href="../../inc/css/purchase.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+<script src="../../inc/js/common/smarthome.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body style="height:100%; background:#f7f7f7;">
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap" class="smarthomeProductDetail">
+		<div class="topHead option_tap" style="position:fixed; width:100%; top:0; z-index:100;">
+			<h1>스마트홈 스위치 <a href="#none" class="device_info">상품정보 보기</a></h1>			
+			<div class="backBtn">
+				<button type="button">이전페이지</button>
+			</div>
+		</div>
+		<!-- content -->
+		<div id="content" class="step_wrap">
+			<div class="gallerySlide">
+				<div class="swiperCon">
+					<button type="button" class="swipePrev"><span class="hidden">이전</span></button>
+					<ul class="swiperWrap">
+						<li class="cont">
+							<!-- 이미지 등록 시 -->
+							<div class="imgType">
+								<a href="#">
+									<img src="../../img/direct/tmp_item_400x400.jpg" alt="상품 이미지">
+								</a>
+							</div>
+							<!-- //이미지 등록 시 -->
+						</li>
+						<li class="cont">
+							<!-- 이미지 등록 시 -->
+							<div class="imgType">
+								<a href="#">
+									<img src="../../img/direct/tmp_item_400x400.jpg" alt="상품 이미지">
+								</a>
+							</div>
+							<!-- //이미지 등록 시 -->
+						</li>
+						<li class="cont">
+							<!-- 이미지 등록 시 -->
+							<div class="imgType">
+								<a href="#">
+									<img src="../../img/direct/tmp_item_400x400.jpg" alt="상품 이미지">
+								</a>
+							</div>
+							<!-- //이미지 등록 시 -->
+						</li>
+						<li class="cont">
+							<!-- 이미지 등록 시 -->
+							<div class="imgType">
+								<a href="#">
+									<img src="../../img/direct/tmp_item_400x400.jpg" alt="상품 이미지">
+								</a>
+							</div>
+							<!-- //이미지 등록 시 -->
+						</li>
+					</ul>
+					<button type="button" class="swipeNext on"><span class="hidden">다음</span></button>
+				</div>
+				<div class="slideNavi">
+					<ul>
+						<li class="on"><span>이미지 1</span></li>
+						<li><span>이미지 2</span></li>
+						<li><span>이미지 3</span></li>
+						<li><span>이미지 4</span></li>
+					</ul>
+				</div>
+				<a href="#none" class="btnL btnWhite">상품정보 보기</a>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<!-- 상품옵션선택 -->
+			<div class="single-options">
+				<h3 class="titDep4">상품옵션선택</h3>
+
+				<select name="" id="">
+					<option value="">레드(DAR-436TRR)</option>
+				</select>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<!-- 브릿지 구매 가이드 -->
+			<div class="guide-bridge">
+				<h3 class="titDep4">Z-Wave 사용기기는 스마트홈 서비스<br>이용을 위하여 <strong>브릿지</strong>가 필요합니다.</h3>
+				<p><strong>“브릿지”</strong>란 Z-Wave 무선통신을 Wi-Fi 무선 통신으로<br>변환해 주는 기기입니다.</p>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<!-- 구매 수량 선택 -->
+			<div class="single-options">
+				<h3 class="titDep4">구매 수량 선택</h3>
+
+				<select name="" id="">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+				</select>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<!-- 서비스가입유형 -->
+			<div class="service-type">
+				<h3 class="titDep4">
+					서비스가입유형
+					<a href="#service-type" class="btn-help id_layerOpen">서비스가입유형 도움말</a>
+				</h3>
+				<fieldset>
+					<legend>서비스가입유형 및 요금제 선택</legend>
+
+					<fieldset>
+						<legend>서비스가입유형 선택</legend>
+						<ul class="list-service-type">
+							<li>
+								<input type="radio" id="unlimited" name="service-type" value="unlimited">
+								<label for="unlimited">스마트홈 Unlimited<br><small>기기무제한연동</small></label>
+							</li>
+							<li>
+								<input type="radio" id="one" name="service-type" value="one">
+								<label for="one">스마트홈 ONE<br><small>기기1대만 연동</small></label>
+							</li>
+							<li>
+								<input type="radio" id="device" name="service-type" value="device">
+								<label for="device" class="device">기기만 구매</label>
+							</li>
+						</ul>
+					</fieldset>
+
+
+					<!-- unlimted -->
+					<div data-rel="unlimited" class="service-type-sub sep-arrow">
+						<ul class="list-radio">
+							<li>
+								<input type="radio" id="unlimited36" name="unlimited" value="" checked>
+								<label for="unlimited36">
+									<span class="title"><em>36</em>개월 요금약정</span>
+									<span class="price"><em>9,900</em>원/월</span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="unlimited24" name="unlimited" value="">
+								<label for="unlimited24">
+									<span class="title"><em>24</em>개월 요금약정</span>
+									<span class="price"><em>12,100</em>원/월</span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="unlimited12" name="unlimited" value="">
+								<label for="unlimited12">
+									<span class="title"><em>12</em>개월 요금약정</span>
+									<span class="price"><em>14,300</em>원/월</span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="unlimited0" name="unlimited" value="">
+								<label for="unlimited0">
+									<span class="title"><em>무약정</em></span>
+									<span class="price"><em>16,500</em>원/월</span>
+								</label>
+							</li>
+						</ul>
+						
+						<!-- 회선인증 -->
+						<div class="sk-auth sep-arrow">
+							<h4 class="titDep5">회선인증</h4>
+							<fieldset>
+								<legend>회선인증 입력폼</legend>
+
+								<p class="auth">
+									<select name="" id="">
+										<option value="">010</option>
+										<option value="">016</option>
+										<option value="">017</option>
+										<option value="">018</option>
+										<option value="">019</option>
+									</select>
+									<span class="dash">-</span>
+									<input type="text" class="inputTxt1">
+									<span class="dash">-</span>
+									<input type="text" class="inputTxt1">
+									<span class="dash">-</span>
+									<button type="button" class="btnL btnDgray">인증</button>
+								</p>
+								<p class="desc">회선인증은 SKT회선만 가능합니다.</p>
+							</fieldset>
+						</div>
+					</div>
+
+					<!-- one -->
+					<div data-rel="one" class="service-type-sub sep-arrow">
+						<ul class="list-radio">
+							<li>
+								<input type="radio" id="one36" name="one" value="" checked>
+								<label for="one36">
+									<span class="title"><em>36</em>개월 요금약정</span>
+									<span class="price">대당 <em>1,1000</em>원/월</span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="one24" name="one" value="">
+								<label for="one24">
+									<span class="title"><em>24</em>개월 요금약정</span>
+									<span class="price">대당 <em>1,650</em>원/월</span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="one12" name="one" value="">
+								<label for="one12">
+									<span class="title"><em>12</em>개월 요금약정</span>
+									<span class="price">대당 <em>2,200</em>원/월</span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="one0" name="one" value="">
+								<label for="one0">
+									<span class="title"><em>무약정</em></span>
+									<span class="price">대당 <em>3,300</em>원/월</span>
+								</label>
+							</li>
+						</ul>
+						
+						<!-- 회선인증 -->
+						<div class="sk-auth sep-arrow">
+							<h4 class="titDep5">회선인증</h4>
+							<fieldset>
+								<legend>회선인증 입력폼</legend>
+
+								<p class="auth">
+									<select name="" id="">
+										<option value="">010</option>
+										<option value="">016</option>
+										<option value="">017</option>
+										<option value="">018</option>
+										<option value="">019</option>
+									</select>
+									<span class="dash">-</span>
+									<input type="text" class="inputTxt1">
+									<span class="dash">-</span>
+									<input type="text" class="inputTxt1">
+									<span class="dash">-</span>
+									<button type="button" class="btnL btnDgray">인증</button>
+								</p>
+								<p class="desc">회선인증은 SKT회선만 가능합니다.</p>
+							</fieldset>
+						</div>
+					</div>
+
+					<!-- only device -->
+					<div data-rel="device" class="service-type-sub">
+						<p class="desc">서비스 가입을 하지 않을 경우<br>스마트홈 서비스를 이용하실 수 없습니다.</p>
+					</div>
+
+				</fieldset>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<!-- 상품 결제방식 -->
+			<div class="payment-methods">
+				<h3 class="titDep4">상품 결제방식</h3>
+				<fieldset>
+					<legend>상품 결제방식 선택</legend>
+
+					<ul class="list-radio">
+						<li>
+							<input type="radio" id="payments0" name="payments" value="" checked>
+							<label for="payments0">
+								<span class="title"><em>일시불</em></span>
+								<span class="price"><em>132,000</em>원 / 월</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="payments36" name="payments" value="">
+							<label for="payments36">
+								<span class="title"><em>36</em>개월 할부</span>
+								<span class="price"><em>4,400</em>원 / 월</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="payments24" name="payments" value="">
+							<label for="payments24">
+								<span class="title"><em>24</em>개월 할부</span>
+								<span class="price"><em>6,600</em>원 / 월</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="payments12" name="payments" value="">
+							<label for="payments12">
+								<span class="title"><em>12</em>개월 할부</span>
+								<span class="price"><em>13,200</em>원 / 월</span>
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+			</div>
+
+			<div class="bgWaterR">
+				<h3 class="titDep4">기기구매가격</h3>
+				<dl>
+					<dt>정상가격</dt>
+					<dd>238,100<span>원</span></dd>
+					<dt>할인금</dt>
+					<dd>-106,100<span>원</span></dd>
+					<dt>배송비</dt>
+					<dd>무료배송</dd>
+					<dt>총 기기금액</dt>
+					<dd><strong>132,000</strong>원</dd>
+
+					<!-- 할부 적용시 노출 -->
+					<dt>기기 할부 금액</dt>
+					<dd>
+						월 <strong>4,400</strong>원 / 36개월<br>
+						(분할상환 수수료 5.9% 포함)
+					</dd>
+				</dl>
+
+				<h3 class="titDep4">서비스 납부금액</h3>
+				<!-- 서비스 납부금액 존재시 -->
+				<dl>
+					<dt>서비스 구매수량</dt>
+					<dd>1<span>개</span></dd>
+					<dt>스마트홈 ONE</dt>
+					<dd>
+						월 <strong>2,200</strong>원 / 36개월<br>
+						(대당 1,100 원/월)
+					</dd>
+				</dl>
+				<p class="center">서비스가입 유형을 선택해 주세요.</p>
+			</div>
+
+			<div class="askCall">
+				<p>주문에 궁금한 점이 있으신가요?<br /><a href="#none">전화 상담 신청</a>을 통해 문의해 보세요</p>				
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<div class="bnArea">
+				<a href="#none"><img src="../../img/direct/tmp_banner03.jpg" alt="sk텔레콤 두군두근 새학기 데이터를 부탁해"></a>
+			</div>
+
+			<div class="emptyPlace"><!-- Empty --></div>
+
+			<div class="checkPoint">
+				<div class="tit">
+					<a href="#">Check Point</a>
+				</div>
+				<ol>
+					<li> <!-- 선택시 on 클래스 추가 -->
+						<a href="#">1. 서비스가입안내</a>
+						<div class="chkptCont">
+							서비스가입안내 컨텐츠
+						</div>
+					</li>
+					<li>
+						<a href="#">2. 교환 환불안내</a>
+						<div class="chkptCont">
+							교환 환불안내 컨텐츠
+						</div>
+					</li>
+					<li>
+						<a href="#">3. 교환/환불 절차안내</a>
+						<div class="chkptCont">
+							교환/환불 절차안내 컨텐츠
+						</div>
+					</li>
+					<li>
+						<a href="#">4. A/S 안내</a>
+						<div class="chkptCont">
+							 A/S 안내 컨텐츠
+						</div>
+					</li>					
+				</ol>
+				<div class="btnBox">
+					<a href="#" class="btnL btnWhite btnPlus">더보기</a> <!-- 목록이 5개 이상일 경우 나타남 -->
+					<a href="#" class="btnL btnWhite btnClose">닫기</a> <!-- 목록이 5개 이상 보여지면 나타남 -->
+				</div>
+			</div>			
+			
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->		
+		
+	</div><!--/ wrap -->
+
+
+	<!-- 서비스가입유형 도움말 -->
+	<div id="service-type" class="layer_pop">
+		<div class="layerWrap">
+			<div class="popHead">
+				<h1>서비스가입유형 도움말</h1>
+			</div>
+
+			<div class="popCon">
+				<div class="inPop">
+					
+					<h2 class="titDep4">스마트홈 기기 이용을 위해서는<br><em class="fColor1">스마트홈 서비스 가입</em>이 필요합니다. </h2>
+
+					<h3 class="titDep4" style="margin-top: 20px;">[스마트홈 Unlimited]</h3>
+					<p class="fColor6" style="margin-top: 7px;">스마트홈 기기 수와 상관없이 해당 요금제로 무제한 연동이 가능합니다.</p>
+
+					<h3 class="titDep4" style="margin-top: 20px;">[스마트홈 ONE]</h3>
+					<p class="fColor6" style="margin-top: 7px;">스마트홈 기기 1개당 ONE요금제 가입이 필요합니다.(기기 추가 시마다 ONE 요금제별도 가입)</p>
+					
+				</div><!-- //inPop -->
+				<div class="btnBox h20">
+					<span><a href="#" class="btnL btnRed">확인</a></span>
+				</div>
+
+			</div><!-- //popCon -->
+			<div class="layerClose" style="top: 0px;"><button type="button">닫기</button></div>
+		</div><!-- //layerWrap -->
+
+	</div><!-- //layer_pop -->
+
+</body>
+</html>
+<!-- 
+
+팝업 스크롤 처리
+밑배경처리
+
+
+-->
