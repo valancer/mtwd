@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>공시지원금에 상응하는 요금할인 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup popSfprice bgGray">
+	<div class="popHead">
+		<h1>공시지원금에 상응하는 요금할인</h1>
+	</div>
+	<div class="popCon popWide topNone">
+		<div class="inPop">
+			<div class="narrowCon">
+				<p class="fColor6">요금제를 선택해주세요. 선택한 요금제 별 지원금을 확인하실 수 있습니다.</p>
+				<p class="fColor6 h5">표기되지 않은 요금제는 요금제 금액과 비례하여 지원금이 적용됩니다.</p>
+			</div>
+
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>일반 요금제</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li class="on"><a href="#tab1">일반 요금제</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+									<li><a href="#tab2">맞춤형 요금제</a></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li><!-- data가 없을 경우 -->
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->
+
+			<div class="tabCon">
+				<ul class="extend tglClsOpen">
+					<li>
+						<a href="#" class="tglBtn"><strong>band 데이터 100</strong></a>
+						<div class="extendCon">
+							<div class="con">
+								<ul>
+									<li class="formWrap circle">	
+										<input type="radio" id="bandDate100" name="PriceDate" checked><label for="bandDate100">band 데이터 100</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate80" name="PriceDate"><label for="bandDate80">band 데이터 80</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate69" name="PriceDate"><label for="bandDate69">band 데이터 69</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate59" name="PriceDate"><label for="bandDate59">band 데이터 59</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate51" name="PriceDate"><label for="bandDate51">band 데이터 51</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate47" name="PriceDate"><label for="bandDate47">band 데이터 47</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate42" name="PriceDate"><label for="bandDate42">band 데이터 42</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate36" name="PriceDate"><label for="bandDate36">band 데이터 36</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="bandDate29" name="PriceDate"><label for="bandDate29">band 데이터 29</label>										
+									</li>
+								</ul>							
+							</div>
+							<button type="button" class="btnClose tglBtnClose">닫기</button>
+						</div>
+					</li>
+					<li class="on">
+						<a href="#" class="tglBtn"><strong>LTE 전국민</strong></a>
+						<div class="extendCon">
+							<div class="con">
+								<ul>
+									<li class="formWrap circle">										
+										<input type="radio" id="lteEverybody1" name="PriceDate" checked><label for="lteEverybody1">LTE 전국민 100</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="lteEverybody2" name="PriceDate"><label for="lteEverybody2">LTE 전국민 80</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="lteEverybody3" name="PriceDate"><label for="lteEverybody3">LTE 전국민 69</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="lteEverybody4" name="PriceDate"><label for="lteEverybody4">LTE 전국민 59</label>										
+									</li>
+									<li class="formWrap circle">										
+										<input type="radio" id="lteEverybody5" name="PriceDate"><label for="lteEverybody5">LTE 전국민 51</label>										
+									</li>
+								</ul>
+							</div>
+							<button type="button" class="btnClose tglBtnClose">닫기</button>
+						</div>
+					</li>					
+				</ul>
+			</div><!-- //tab2 -->			
+
+		</div><!-- //inPop -->
+
+		<div class="btnBox">
+			<a href="#" class="btnL2 btnRed">선택한 요금제로 보기</a>
+		</div>
+
+	</div><!-- //popCon -->
+	<div class="popClose" style="top: 0px;"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>

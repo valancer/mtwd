@@ -1,5 +1,14 @@
-
-// 필터설정하기 스크롤
+//공통 - 파일업로드 input
+function fileUpload(){
+	$(".boxUpload .btnUpload").change(function(){
+		var txtValue = $(this).val();
+		var txtInput = $(this).parents(".boxUpload").find(".uploadFile");
+		console.log(txtValue);
+		txtInput.attr('placeholder','');
+		txtInput.val(txtValue);
+	});
+}
+// 모바일 - 필터설정하기 스크롤
 function filter_bar(){
 	var headerH = $("header").outerHeight();
 	var conInfoH = $(".conInfo").outerHeight();
@@ -368,7 +377,8 @@ function scrollList(){
 	});
 }
 
-//액세서리 - 구매하기 레이어 옵션 선택 - 2016-06-13 추가
+//액세서리 - 구매하기 레이어 옵션 선택 - 2016-06-13 추가 
+//구매프로세스의 티기프트 상세화면에도 사용
 function accBuyLayer(){
 	$(".buyWrap").find(".open").on("click", function(){
 		if(!$(this).hasClass("on")){
@@ -392,6 +402,21 @@ function buyService(){
 		$(this).addClass("on");
 		$(this).siblings('li').not(this).removeClass("on");
 	});
+}
+//구매 프로세스 - 매장 방문일자 변경하기
+function visitStore(){
+	$(document).on("click", ".visitStore .btnVisit",function(){
+		var visitStore = $(this).parents('.visitStore');
+		var changeVisit = $(this).parents('.visitStore').next();
+		var btnVisitEnd = $(this).parents('.visitStore').next().find('.btnVisitEnd');
+		visitStore.removeClass('on');
+		changeVisit.addClass('on');
+		btnVisitEnd.click(function(){
+			visitStore.addClass('on');
+			changeVisit.removeClass('on');
+		});
+	});
+	return;
 }
 
 //액세서리 - 상품 상세 - 2016-06-14 추가
@@ -429,8 +454,64 @@ function accDetail(){
 	});
 }
 
+//공시지원금 - 요금제별 지원금 보기에서 다이렉트샵 추가지원금 보기
+function directPrice(){
+	$(document).on("click",".directAddPrice button",function(){
+		if(!$(this).hasClass("on")){
+			$(this).addClass("on").text("보기");
+			$(".sf_directPrice").find(".directPrice_area").each(function(){
+				if(!$(this).hasClass("typeCircle")){
+					$(this).show();
+				} else {
+					$(this).show().css("display", "inline-block");
+				}
+			});					
+		} else {
+			$(this).removeClass("on").text("닫기");
+			$(".sf_directPrice").find(".directPrice_area").hide();
+		}		
+	});
+
+	//공시지원금 - 변동 문자 알림
+	$(document).on("click",".support .alert_wrap .bar_area p .btn_close",function(){
+		if(!$(this).hasClass("on")){
+			$(this).addClass("on");
+			$(".support .alert_wrap .alert_content").hide();
+		} else {
+			$(this).removeClass("on");
+			$(".support .alert_wrap .alert_content").show();
+		}
+	});
+}
+
+//공시지원금 - 요금제 설정 중 맞춤요금제 조회 클릭
+function sfPriceEdit(){
+	$(".popSfprice .tab_select_box").each(function(){
+		var selectBox = $(this);
+		selectBox.find(".btnBox a").on("click",function(){
+			$(".tab_select_box").find(".result").removeClass("checked");
+			$(".tab_select_box").find(".result").find("input:radio").attr("checked",false);
+			selectBox.find(".result").addClass("checked").show();
+			selectBox.find(".result").find("input:radio").attr("checked",true);
+		});
+	});	
+}
+
+
+//더보기 버튼 관련 스크립트
+function viewMore() {
+  $('.moreBoxType1 a').click(function(){
+	  var items = $('.afterList li'),
+		firstTen = items.slice(0, 5);
+	$('.afterList').append(firstTen.clone());
+	applyLayout();
+  });
+};
+
+
 $(document).ready(function(){
-	filter_bar(); // 필터설정하기 스크롤
+	fileUpload(); //공통 - 파일업로드 input
+	filter_bar(); // 모바일 - 필터설정하기 스크롤
 	pick(); // 모바일 - 리스트 찜
 	mobile_step(); // 모바일 - 가입 단계 -2016-06-09 수정-
 	planningAdd(); //기획전
@@ -440,6 +521,10 @@ $(document).ready(function(){
 	scrollList();//공통 - 가로 스크롤 리스트 넓이 지정 - 2016-06-13 추가
 	accBuyLayer();//액세서리 - 구매하기 레이어 옵션 선택 - 2016-06-13 추가
 	buyService(); //구매 프로세스 - 서비스 업그레이드 2016-06-13 추가
+	visitStore(); //구매 프로세스 - 매장 방문일자 변경하기
 	accDetail();//액세서리 - 상품상세 - 2016-06-14 추가
+	directPrice();//공시지원금 - 요금제별 지원금 보기에서 다이렉트샵 추가지원금 보기
+	sfPriceEdit();//공시지원금 - 요금제 설정 중 맞춤요금제 조회 클릭
+	viewMore();//더보기 버튼 관련 스크립트
 });
 

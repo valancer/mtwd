@@ -6,26 +6,6 @@
 ================================== */
 button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; }
 
-.conInfo .favorite{position:absolute; right:42px; top:50%; margin-top:-8px; display:inline-block; width:17px; height:16px; background:url('../../img/direct/ico_favorite.png') 0 0 no-repeat; background-size:17px 16px; text-indent:-9999px; font-size:0;}
-.conInfo .share{position:absolute; right:15px; top:50%; margin-top:-8px; display:inline-block; width:15px; height:16px; background:url('../../img/direct/ico_share.png') 0 0 no-repeat; background-size:15px 16px; text-indent:-9999px; font-size:0;}
-
-/* Background Red Water */
-.bgWaterR {position:relative;padding:25px 15px;background:#e7032c;}
-.bgWaterR:after {content:"";position:absolute;bottom:-7px;left:0;clear:both;width:100%;height:7px;background:url('../../img/direct/bg_preview.png') repeat-x top;background-size:15px 4px}
-
-/* Slide */
-.gallerySlide {position:relative}
-.gallerySlide .cont img {display:block;width:100%;}                                         
-.gallerySlide .swipePrev{left:15px}                                             
-.gallerySlide .swipeNext{right:15px}                                           
-.gallerySlide .cont .imgType{height:auto;}                                  
-.gallerySlide .cont .imgType a{display:block;text-align:center;}
-
-/* mobile_step */
-.topHead.option_tap h1 .device_info{display:inline-block; width:19px; height:19px; line-height:37px; background:url('../../img/direct/ico_info.png') 0 0 no-repeat; background-size:19px 19px; text-indent:-9999px; font-size:0;}
-.topHead.option_tap h1:before {content:''; position:absolute; top:0; right:0; padding:50px 23px; background:#39374d;}
-
-
 
 /* ==================================
 * smart home main
@@ -218,3 +198,60 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .buyWrap .open {display:block;position:absolute;top:-13px;left:50%;width:48px;height:13px;margin-left:-24px;background:url('../../img/direct/bg_layer_open.png') no-repeat center top;background-size:48px 13px;text-indent:-9999em}
 
 
+/* ==================================
+* smart home order
+================================== */
+.orderDetail { padding-bottom: 0; background-color: #ececec; }
+.orderDetail .orderBox {background:#fff; border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; margin-top:5px; padding:28px 15px;}
+.orderDetail .orderBox:last-child {padding-bottom:50px;}
+
+.dotlineType .tableCon {padding-top:10px; border-top:none;}
+.dotlineType .tableCon li {border-top: 1px dashed #efefef;}
+.dotlineType .tableCon li:first-child {border-top:none;}
+.dotlineType [class^="titDep"] {padding-bottom:0px;}
+.dotlineType .formArea {margin-top:5px;}
+.dotlineType>.tableCon>li>strong+.formArea,
+.dotlineType>.tableCon>li>strong+.colType1,
+.dotlineType>.tableCon>li>strong+.boxUpload {margin-top:0px;}
+.dotlineType .selectRelation {text-align:right;}
+.dotlineType .selectRelation div {display:inline-block;}
+.myAddress {margin-top:5px;}
+
+
+.orderDetail .order-major-info { padding: 28px 15px; border-bottom: 1px solid #dfdfdf; background-color: #fff; }
+
+.order-info { overflow: hidden; margin-right: -15px; margin-left: -15px; padding: 20px 15px; font-size: 17px; color: #fff; line-height: 23px; text-shadow: -1px -1px 0 #d23c00, 1px -1px 0 #d23c00, -1px 1px 0 #d23c00, 1px 1px 0 #d23c00; background-color: #f65d00; }
+.list-order-info { margin-right: -15px; margin-left: -15px; }
+.list-order-info > li { padding: 0 15px; min-height: 50px; font-size: 16px; color: #333; border-top: 1px solid #e4e4e4; }
+.list-order-info > li > .title,
+.list-order-info > li > a > .title { font-weight: bold; line-height: 50px; }
+.list-order-info > li .content { float: right; line-height: 50px; }
+.list-order-info > li > .tglBtn { display: block; position: relative; }
+.list-order-info > li > .tglBtn:after { content: ''; display: block; position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 14px; background-position: 0px -30px; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.list-order-info > li.on .options { display: block; }
+.list-order-info > li.on > .tglBtn:after { background-position: -30px -30px; }
+.list-order-info .options { display: none; margin-bottom: 15px; padding: 15px; border: 1px solid #e4e4e4; background-color: #f7f7f7; }
+.list-order-info .options li { font-size: 15px; color: #333; line-height: 30px; }
+.list-order-info .options li em { font-weight: bold; }
+.list-order-info .options li .count { float: right; }
+
+.order-total { margin-right: -15px; margin-left: -15px; padding: 10px 15px 5px 15px; color: #fff; background-color: #434159; }
+.order-total ul {  }
+.order-total ul > li { overflow: hidden; padding: 15px 0; }
+.order-total ul > li + li { border-top: 1px solid #7c7a8b; }
+.order-total ul > li > .title { font-size: 20px; font-weight: bold; }
+.order-total ul > li > .title small { font-size: 12px; font-weight: normal; }
+.order-total ul > li > .content { float: right; font-size: 22px; text-align: right; }
+.order-total ul > li > .content em { font-size: 27px; }
+.order-total ul > li > .content small { display: block; margin-top: 5px; font-size: 12px; }
+.order-total ul > li.multiple {  }
+.order-total ul > li.multiple > .content { float: none; margin-top: 10px; }
+
+
+
+
+
+
+/* ==================================
+* smart home mypage
+================================== */

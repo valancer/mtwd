@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>인증하기 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>인증하기</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+				<div class="narrowCon">
+					<h2 class="titDep2">본인인증</h2>
+					<p>개인(일반), 미성년자, 법인, 외국인 인증 중 고객님의 유형을 선택하신 후 본인인증을 진행해 주십시오.</p>
+				</div>
+
+				<!-- tab -->
+				<div class="tab">
+					<div class="tabTitle">
+						<a href="#"><span>개인(일반)</span></a>
+					</div>
+					<!-- 메뉴선택 -->
+					<div class="tabContent" style="display:none">
+						<div class="tabSwipe">
+							<strong class="hidden">메뉴선택</strong>
+							<button type="button" class="btnPre">이전</button>
+							<div class="swiperWrap">
+								<div class="group">
+									<ul class="tabJs">
+										<li class="on"><a href="#tab1">개인(일반)</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+										<li><a href="#tab2">미성년자</a></li>
+										<li><a href="#tab3">법인</a></li>
+										<li><a href="#tab4">외국인</a></li>
+										<li><span></span></li>
+										<li><span></span></li><!-- data가 없을 경우 -->
+									</ul>
+								</div>
+							</div>
+							<button type="button" class="btnAfter">다음</button>
+							<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+							<button type="button" class="btnClose">목록닫기</button>
+						</div>
+					</div>
+					<!-- //메뉴선택 -->
+				</div><!-- //tab -->
+
+				<div class="tabCon" id="tab1">
+					<div class="orderBox">
+						<h1 class="hidden">개인(일반)</h1>
+						<ul class="listConfirm line">
+							<li>
+								인증방법
+								<div class="formArea">
+									<span class="formWrap">
+										<input type="radio" id="confirmType_phone" name="confirmType_person" checked>
+										<label for="Rd5">휴대폰인증</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="confirmType_ipin" name="confirmType_person">
+										<label for="Rd5">i-Pin 인증</label>
+									</span>
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_name">이름</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_num">주민등록번호 앞 7자리</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1" maxlength="6"></span> <span class="hyphen">-</span> <span><input type="password" title="주민등록번호 뒤 6자리 중 첫 번째 번호를 입력해주세요"  class="inputTxt1" maxlength="1" style="width:20%"> ●●●●●●</span>
+								</div>
+							</li>
+							<li>
+								기기변경 휴대폰 번호
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1" value="1234"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1" value="5678"></span>
+								</div>
+								<div class="formArea">
+									<a href="#" class="btnL btnDgray">회선확인</a>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btnL btnRed">인증완료</a>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab1 -->
+
+				<div class="tabCon" id="tab2" style="display:none;">
+					<div class="orderBox">
+						<h1 class="hidden">미성년자</h1>
+						<ul class="listConfirm line">
+							<li>
+								인증방법
+								<div class="formArea">
+									<span class="formWrap">
+										<input type="radio" id="confirmType_phone" name="confirmType_young" checked>
+										<label for="Rd5">휴대폰인증</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="confirmType_ipin" name="confirmType_young">
+										<label for="Rd5">i-Pin 인증</label>
+									</span>
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_name">이름</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_num">주민등록번호 앞 7자리</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1" maxlength="6"></span> <span class="hyphen">-</span> <span><input type="password" title="주민등록번호 뒤 6자리 중 첫 번째 번호를 입력해주세요" class="inputTxt1" maxlength="1" style="width:20%"> ●●●●●●</span>
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_name2">법정대리인(부모님 또는 보호자)</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_name2" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_num2">법정대리인 주민등록번호 앞 7자리</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_num2" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1" maxlength="6"></span> <span class="hyphen">-</span> <span><input type="password" title="주민등록번호 뒤 6자리 중 첫 번째 번호를 입력해주세요" class="inputTxt1" maxlength="1" style="width:20%"> ●●●●●●</span>
+								</div>
+							</li>
+							<li>
+								기기변경 휴대폰 번호(법정대리인 명의)
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1" value="1234"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1" value="5678"></span>
+								</div>
+								<div class="formArea">
+									<a href="#" class="btnL btnDgray">회선확인</a>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btnL btnRed">인증완료</a>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab2 -->
+
+				<div class="tabCon" id="tab3" style="display:none;">
+					<div class="orderBox">
+						<h1 class="hidden">법인</h1>
+						<ul class="listConfirm line">
+							<li>
+								<label for="firm_company_name">법인명</label>
+								<div class="formArea">
+									<input type="text" id="firm_company_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_company_num">법인등록번호</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+							</li>
+							<li>
+								<label for="firm_company_num2">사업자등록번호</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_company_num2" class="inputTxt1"></span>
+									<span class="hyphen">-</span>
+									<span><input type="text" class="inputTxt1" title="사업자 등록 번호 두 번째를 입력해주세요"></span>
+									<span class="hyphen">-</span>
+									<span style="width:40%"><input type="text" class="inputTxt1" title="사업자 등록 번호 세 번째를 입력해주세요"></span>
+								</div>
+							</li>
+							<li>
+								기기변경 휴대폰 번호
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1" value="1234"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1" value="5678"></span>
+								</div>
+								<div class="formArea">
+									<a href="#" class="btnL btnDgray">회선확인</a>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btnL btnRed">인증완료</a>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab3 -->
+
+				<div class="tabCon" id="tab4" style="display:none;">
+					<div class="orderBox">
+						<h1 class="hidden">외국인</h1>
+						<ul class="listConfirm line">
+							<li>
+								<label for="firm_alien_name">Name(이름)</label>
+								<div class="formArea">
+									<input type="text" id="firm_alien_name" class="inputTxt1">
+								</div>
+								<p class="fSize13">Please enter your first and last name(case-sensitive)<br>
+									영문 이름인 경우 대소문자를 정확히 입력하여 주세요.</p>
+							</li>
+							<li>
+								<label for="firm_alien_num">Alien Registration Number(외국인등록번호)</label>
+								<div class="formArea">
+									<input type="text" id="firm_alien_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+								<p class="fSize13">Please enter your first and last name(case-sensitive)<br>
+								영문 이름인 경우 대소문자를 정확히 입력하여 주세요.</p>
+							</li>
+							<li>
+								Nationality(국적)
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="Select your Country Please.(국적을 선택해 주세요)">
+											<option value="" selected>Select Country</option>
+											<option value="">Unite States of American</option>
+											<option value="">Canada</option>
+											<option value="">Japen</option>
+											<option value="">China</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li>
+								기기변경 휴대폰 번호
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1" value="1234"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1" value="5678"></span>
+								</div>
+								<div class="formArea">
+									<a href="#" class="btnL btnDgray">회선확인</a>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="btnL btnRed">인증완료</a>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab4 -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

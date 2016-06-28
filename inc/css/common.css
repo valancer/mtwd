@@ -616,7 +616,7 @@ input[type='text']:disabled{background:#eee;color:#888}
 
 .tabTitle {text-align:center;background:#e3002b;}
 .tabTitle a {display:block;position:relative;padding:10px 15px;color:#fff;padding-right:15px;font-size:17px;}/* 혜란 font-size:16px; */
-.tabTitle a span {position:relative;display:inline-block;padding-right:22px;line-height:13px}
+.tabTitle a span {position:relative;display:inline-block;padding-right:22px;}
 .tabTitle a span:after {content:'';display:block;position:absolute;top:50%;right:0;margin-top:-6px;width:12px;height:12px;background:url(../../img/common/bg_tab.png) no-repeat -48px 0;-webkit-background-size:94px 50px;-moz-background-size:94px 50px;-o-background-size:94px 50px;background-size:94px 50px;}
 .tabTitle a.on span:after {background-position:-12px 0;}
 
@@ -787,7 +787,7 @@ input[type='text']:disabled{background:#eee;color:#888}
 .layer_pop{display:none;position:fixed;left:0;right:0;z-index:999999}
 .layer_pop .layerWrap{position:relative;padding:0 15px;overflow:hidden}
 .layer_pop .popHead{position:fixed;left:15px;right:15px;top:0;padding:12px 40px 12px 15px;background:#514f65;text-align:center;letter-spacing:-1px}
-.layer_pop .popHead h1{position:relative;font-size:18px;color:#fff}/* 혜란 font-size:18px;*/
+.layer_pop .popHead h1{position:relative;font-size:18px;line-height:24px;color:#fff}/* 혜란 font-size:18px;*/
 .layer_pop .popCon{padding:50px 15px 20px;border:1px solid #35343c;border-top:0;/*max-height:404px;*/background:#fff;font-size:15px}
 .layer_pop .popCon .inPop{/*max-height:300px;*/overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
 .layer_pop .popCon.noTazara{padding:0 0 20px;margin-top:-22px}/* 상하 좌우 여백 없는 경우 */
@@ -1164,7 +1164,7 @@ input[type='text']:disabled{background:#eee;color:#888}
 .remainingGraph .graphBox .graphDetail li{display:inline-block;position:relative;min-width:103px;height:16px;padding:20px 0 0}
 .remainingGraph .graphBox .graphDetail li:first-child{padding-left:0;margin:0;}
 .remainingGraph .graphBox .graphDetail li:nth-child(2){border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4}
-.remainingGraph .graphBox .graphDetail strong{font-size:13px;color:#666;font-weight:normal}
+.remainingGraph .graphBox .graphDetail strong{font-size:13px;color:#666;font-weight:normal;letter-spacing:-1px}
 .remainingGraph .graphBox .graphDetail em{position:absolute;left:0;top:0;width:100%;font-size:19px;color:#333}
 .remainingGraph .graphBox .graphDetail em span{font-size:13px}
 .remainingGraph .graphBox .slideNavi ul{margin-top:20px}
@@ -1172,6 +1172,17 @@ input[type='text']:disabled{background:#eee;color:#888}
 .remainingGraph+.btnBox{padding:0 15px 30px}
 .graphCon{position:relative;width:150px;height:127px;margin:0 auto;background:url(../../img/common/bg_graph0.png) no-repeat;-webkit-background-size:150px 128px;-moz-background-size:150px 128px;-o-background-size:150px 128px;background-size:150px 128px}
 .remainingGraph h3{padding-right:115px}
+/*원형그래프_슬라이드 내 색이 다른 경우*/
+.graphType2{padding:0 0 20px}
+.graphType2 .graphBox .graphInfo{position:absolute;right:15px;top:0}
+.graphType2 .graphBox .graphInfo.red em:first-child::before{background:#f65d00}
+.graphType2 .graphBox .graphInfo.green em:first-child::before{background:#00a49a}
+.graphType2 .graphBox .graphInfo.blue em:first-child::before{background:#434159}
+.graphType2 .graphBox .graphInfo.black em:first-child::before{background:#666}
+.graphType2 .graphBox .graph.red .graphTxt em{color:#d23c00}
+.graphType2 .graphBox .graph.green .graphTxt em{color:#007f77}
+.graphType2 .graphBox .graph.blue .graphTxt em{color:#434159}
+.graphType2 .graphBox .graph.black .graphTxt em{color:#434159}
 
 /*페이지 상단 띠배너*/
 input[type='checkbox'].basicType{position:relative;width:15px;height:15px;margin-right:3px;opacity:1;}
@@ -1203,3 +1214,4 @@ input[type='checkbox'].basicType+label:before{content:none;}
 .urlCopy{display:table;width:100%;table-layout:fixed;margin-top:20px}
 .urlCopy .inputTxt1{display:table-cell}
 .urlCopy span{display:table-cell;width:100px;vertical-align:middle;text-align:right}
+

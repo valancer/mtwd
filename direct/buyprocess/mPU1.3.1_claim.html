@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>주문정보 작성 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>주문정보 작성</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+
+				<div class="orderBox">
+
+					<div class="tableType1 dotlineType">
+						<ul class="tableCon">
+							<li>
+								<strong>01_청구정보_납부방법선택_계좌이체_btn비활성화</strong>
+								<div class="multi_radio">
+									<span class="formWrap"><input type="radio" id="order_pay_1" name="order_pay" checked /><label for="order_pay_1">계좌이체</label></span>
+									<span class="formWrap"><input type="radio" id="order_pay_2" name="order_pay" /><label for="order_pay_2">체크/신용카드 납부</label></span>
+								</div>
+								<div class="formArea">
+									<div class="selectBox pr5" style="width:130px">
+										<select title="은행 선택">
+											<option value="" selected>은행 선택</option>
+											<option value="">국민은행</option>
+											<option value="">우리은행</option>
+											<option value="">신한은행</option>
+											<option value="">기업은행</option>
+											<option value="">스탠다드 차타드</option>
+										</select>
+									</div>
+									<input type="text" id="order_bank" class="inputTxt1" value="" />
+								</div>
+								<div class="formArea">
+									<a href="#none" class="btnS btnDgray btnDisabled">계좌번호 유효성 검사</a>
+								</div>
+							</li>
+							<li>
+								<strong>01_청구정보_납부방법선택_계좌이체</strong>
+								
+								<div class="formArea">
+									<div class="selectBox pr5" style="width:130px">
+										<select title="은행 선택">
+											<option value="" selected>은행 선택</option>
+											<option value="">국민은행</option>
+											<option value="">우리은행</option>
+											<option value="">신한은행</option>
+											<option value="">기업은행</option>
+											<option value="">스탠다드 차타드</option>
+										</select>
+									</div>
+									<input type="text" id="order_bank" class="inputTxt1" value="12345●●●●●●" />
+								</div>
+								<div class="formArea">
+									<a href="#none" class="btnS btnDgray">계좌번호 유효성 검사</a>
+								</div>
+							</li>
+							<li>
+								<strong>01_청구정보_납부방법선택_체크/신용카드 납부_btn비활성화</strong>
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="카드사 선택">
+											<option value="" selected>카드사 선택</option>
+											<option value="">국민카드</option>
+											<option value="">우리카드</option>
+											<option value="">신한카드</option>
+											<option value="">기업카드</option>
+											<option value="">삼성카드</option>
+										</select>
+									</div>
+								</div>
+								<p class="h10">카드번호</p>
+								<div class="formArea">
+									<span><input type="text" class="inputTxt1" title="카드첫 번째 4자리 번호를 입력하세요" /></span>
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드 두 번째 4자리 번호를 입력하세요" /></span>
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드 세 번째 4자리 번호를 입력하세요" /></span>
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드 네 번째 4자리 번호를 입력하세요" /></span>
+								</div>
+								<p class="h10">유효기간</p>
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="카드 유효기간 월">
+											<option value="" selected>MM 월</option>
+											<option value="">1월</option>
+											<option value="">2월</option>
+											<option value="">3월</option>
+											<option value="">4월</option>
+											<option value="">5월</option>
+											<option value="">6월</option>
+											<option value="">7월</option>
+											<option value="">8월</option>
+											<option value="">9월</option>
+											<option value="">10월</option>
+											<option value="">11월</option>
+											<option value="">12월</option>
+										</select>
+									</div>
+									<div class="selectBox pl5">
+										<select title="카드 유효기간 연도">
+											<option value="" selected>YYYY 년</option>
+											<option value="">2016년</option>
+											<option value="">2017년</option>
+											<option value="">2018년</option>
+											<option value="">2019년</option>
+											<option value="">2020년</option>
+											<option value="">2021년</option>
+											<option value="">2022년</option>
+											<option value="">2023년</option>
+											<option value="">2024년</option>
+											<option value="">2025년</option>
+											<option value="">2026년</option>
+											<option value="">2027년</option>
+											<option value="">2028년</option>
+											<option value="">2029년</option>
+											<option value="">2030년</option>
+										</select>
+									</div>
+								</div>
+							
+								<div class="formArea">
+									<a href="#none" class="btnS btnDgray btnDisabled">카드 유효성 검사</a>
+								</div>
+							</li>
+							
+							<li>
+								<strong>01_청구정보_납부방법선택_체크/신용카드 납부_btn비활성화</strong>
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="카드사 선택">
+											<option value="">카드사 선택</option>
+											<option value="" selected>국민카드</option>
+											<option value="">우리카드</option>
+											<option value="">신한카드</option>
+											<option value="">기업카드</option>
+											<option value="">삼성카드</option>
+										</select>
+									</div>
+								</div>
+								<p class="h10">카드번호</p>
+								<div class="formArea">
+									<span><input type="text" class="inputTxt1" title="카드첫 번째 4자리 번호를 입력하세요" value="1234" /></span>
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드 두 번째 4자리 번호를 입력하세요" value="5678" /></span>
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드 세 번째 4자리 번호를 입력하세요" value="9012" /></span>
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드 네 번째 4자리 번호를 입력하세요" value="3456345" /></span>
+								</div>
+								<p class="h10">유효기간</p>
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="카드 유효기간 월">
+											<option value="">MM 월</option>
+											<option value="" selected>1월</option>
+											<option value="">2월</option>
+											<option value="">3월</option>
+											<option value="">4월</option>
+											<option value="">5월</option>
+											<option value="">6월</option>
+											<option value="">7월</option>
+											<option value="">8월</option>
+											<option value="">9월</option>
+											<option value="">10월</option>
+											<option value="">11월</option>
+											<option value="">12월</option>
+										</select>
+									</div>
+									<div class="selectBox pl5">
+										<select title="카드 유효기간 연도">
+											<option value="">YYYY 년</option>
+											<option value="" selected>2016년</option>
+											<option value="">2017년</option>
+											<option value="">2018년</option>
+											<option value="">2019년</option>
+											<option value="">2020년</option>
+											<option value="">2021년</option>
+											<option value="">2022년</option>
+											<option value="">2023년</option>
+											<option value="">2024년</option>
+											<option value="">2025년</option>
+											<option value="">2026년</option>
+											<option value="">2027년</option>
+											<option value="">2028년</option>
+											<option value="">2029년</option>
+											<option value="">2030년</option>
+										</select>
+									</div>
+								</div>
+							
+								<div class="formArea">
+									<a href="#none" class="btnS btnDgray">카드 유효성 검사</a>
+								</div>
+							</li>
+							<li>
+								<strong>01_청구정보_납부방법선택_청구서종류_비활성</strong>
+								<div class="selectBox">
+									<select title="휴대폰 번호 선택">
+										<option value="" selected>스마트 청구서</option>
+										<option value="">문자 청구서</option>
+										<option value="">이메일 청구서</option>
+										<option value="">T world 확인</option>
+										<option value="">우편 청구서</option>
+									</select>
+								</div>
+								<p class="h5">
+									<span class="formWrap">
+										<input type="checkbox" id="order_charge_same"><label for="order_charge_same">통합청구하기</label>
+									</span>
+								</p>
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택" disabled>
+											<option value="" selected>010</option>
+											<option value="">011</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" class="inputTxt1" disabled></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" class="inputTxt1" disabled></span>
+								</div>
+								<div class="formArea"><a href="#none" class="btnS btnDgray btnDisabled">인증하기</a></div>
+								<p class="txtInfo">통합번호와 요금확인/납부 방법이 동일하게 적용되며, 하나의 청구서로 발송됩니다.</p>
+							</li>
+							<li>
+								<strong>01_청구정보_납부방법선택_청구서종류_활성</strong>
+								<div class="selectBox">
+									<select title="휴대폰 번호 선택">
+										<option value="" selected>스마트 청구서</option>
+										<option value="">문자 청구서</option>
+										<option value="">이메일 청구서</option>
+										<option value="">T world 확인</option>
+										<option value="">우편 청구서</option>
+									</select>
+								</div>
+								<p class="h5">
+									<span class="formWrap">
+										<input type="checkbox" id="order_charge_same" checked><label for="order_charge_same">통합청구하기</label>
+									</span>
+								</p>
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">011</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" class="inputTxt1" value="1234"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" class="inputTxt1" value="5678"></span>
+								</div>
+								<div class="formArea"><a href="#none" class="btnS btnDgray">인증하기</a></div>
+								<p class="txtInfo">통합번호와 요금확인/납부 방법이 동일하게 적용되며, 하나의 청구서로 발송됩니다.</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //청구정보 -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

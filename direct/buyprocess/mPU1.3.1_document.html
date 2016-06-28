@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>주문정보 작성 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>주문정보 작성</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+				
+				<div class="orderBox">
+					<p>01_첨부서류_미성년자인 경우</p>
+					<div class="tableType1 dotlineType">
+						<h2 class="titDep2">첨부서류</h2>
+						<strong class="essential">필수</strong>
+						<ul class="tableCon">
+							<li>
+								<strong>첨부서류<em class="essential">필수입력</em></strong>
+								<div class="boxUpload">
+									<input class="uploadFile inputTxt1" placeholder="법정대리인 신분증 첨부"  >
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">찾아보기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+								<div class="boxUpload">
+									<input class="uploadFile inputTxt1" placeholder="가족관계증명서 첨부" >
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">찾아보기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="txtInfo">법정대리인의 신분증과 가족관계 증명서를 첨부해 주세요.</p>
+					</div>
+					
+					<div class="tableType1 dotlineType">
+						<ul class="tableCon">
+							<li>
+								<strong>첨부서류<em class="essential">필수입력</em></strong>
+								<div class="boxUpload">
+									<span class="retry">
+										<input class="uploadFile inputTxt1" placeholder="신분증.jpg"  >
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">다시찾기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+								<div class="boxUpload">
+									<span class="retry">
+										<input class="uploadFile inputTxt1" placeholder="가족관계.jpg" >
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">다시찾기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="txtInfo">법정대리인의 신분증과 가족관계 증명서를 첨부해 주세요.</p>
+					</div>
+				</div><!-- //첨부서류 -->
+				
+				<div class="orderBox">
+					<p>02_첨부서류_법인인 경우</p>
+					<div class="tableType1 dotlineType">
+						<h2 class="titDep2">첨부서류</h2>
+						<strong class="essential">필수</strong>
+						<ul class="tableCon">
+							<li>
+								<strong>첨부서류<em class="essential">필수입력</em></strong>
+								<div class="boxUpload">
+									<input class="uploadFile inputTxt1" placeholder="법인 등록증 첨부"  >
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">찾아보기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+								<div class="boxUpload">
+									<input class="uploadFile inputTxt1" placeholder="사업자 등록증 첨부" >
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">찾아보기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="txtInfo">법인등록증 및 사업자등록증을 첨부해주세요.</p>
+					</div>
+					
+					<div class="tableType1 dotlineType">
+						<ul class="tableCon">
+							<li>
+								<strong>첨부서류<em class="essential">필수입력</em></strong>
+								<div class="boxUpload">
+									<span class="retry">
+										<input class="uploadFile inputTxt1" placeholder="SKT법인.jpg"  >
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">다시찾기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+								<div class="boxUpload">
+									<span class="retry">
+										<input class="uploadFile inputTxt1" placeholder="SKT사업자.jpg" >
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">다시찾기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="txtInfo">법인등록증 및 사업자등록증을 첨부해주세요.</p>
+					</div>
+				</div><!-- //첨부서류 -->
+				
+				<div class="orderBox">
+					<p>03_첨부서류_외국인인 경우</p>
+					<div class="tableType1 dotlineType">
+						<h2 class="titDep2">첨부서류</h2>
+						<strong class="essential">필수</strong>
+						<ul class="tableCon">
+							<li>
+								<strong>첨부서류<em class="essential">필수입력</em></strong>
+								<div class="boxUpload">
+									<input class="uploadFile inputTxt1" placeholder="외국인 등록증 첨부"  >
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">찾아보기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="txtInfo">외국인 등록증을 첨부해주세요.</p>
+					</div>
+					
+					<div class="tableType1 dotlineType">
+						<ul class="tableCon">
+							<li>
+								<strong>첨부서류<em class="essential">필수입력</em></strong>
+								<div class="boxUpload">
+									<span class="retry">
+										<input class="uploadFile inputTxt1" placeholder="외국인 등록증.jpg"  >
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<div class="fileUpload">
+										<a href="#none" class="btnS btnDgray btnB">다시찾기</a>
+										<input type="file" class="btnUpload" >
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="txtInfo">외국인 등록증을 첨부해주세요.</p>
+					</div>
+				</div><!-- //첨부서류 -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

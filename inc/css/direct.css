@@ -26,6 +26,8 @@
 .ml20{margin-left:20px !important;}
 .ml30{margin-left:30px !important;}
 .mr20{margin-right:20px !important;}
+.pl5{padding-left:5px !important;}
+.pr5{padding-right:5px !important;}
 .h5 {margin-top:5px !important;}
 .h40 {margin-top:40px !important;}
 .h50 {margin-top:50px !important;}
@@ -41,8 +43,10 @@
 .fSize13 {font-size:13px !important;}
 .fSize16 {font-size:16px !important;}
 .fSize18 {font-size:18px !important;}
-.clearB {clear:both;}
+.fBold {font-weight:bold !important;}
 .fColorlg {color:#cdcdcd !important;} /* Light Gray */
+.fColorlg2 {color:#666 !important;} /* Light Gray 666*/
+.clearB {clear:both;}
 .ovHide{overflow:hidden;}
 .txtInfo.gray {background:url('../../img/direct/bl_info_gray.png') no-repeat 0px 5px; padding-left:18px;} /* info 아이콘 회색 */
 .list_info4>li{margin-top:6px;padding:0 0 0 16px}
@@ -54,11 +58,10 @@
 .popCon .titDep3{display:block;padding-bottom:10px;font-weight:bold;font-size:24px;line-height:36px;color:#333;letter-spacing:-1px}
 .pRight{position:absolute;right:0;top:0;}
 .icoVar {color:#cdcdcd !important; font-size:12px; padding:0 5px; vertical-align:top !important;}
-.b_checkPoint_txt {font-size:16px; line-height:22px;}
 .txtInfo.more2 {background-image:url('../../img/direct/bl_info1.png');} /* info 아이콘 회색 테두리 */
 .listType1.list_s li {font-size:12px; color:#666; margin-top:3px;}
 .tabType1.col6 li{width:16.7%} /* tab 버튼 6개*/
-.txt_timer {background:url('../../img/direct/ico_time.png') no-repeat 0 3px; color:#ea002c; font-size:13px; padding-left:17px; font-weight:bold;} /* 인증남은 시간 */
+.txt_timer {background:url('../../img/direct/ico_time.png') no-repeat 0 3px; background-size:14px 14px; color:#ea002c; font-size:13px; padding-left:17px; font-weight:bold; line-height:1;} /* 인증남은 시간 */
 .txt_s {font-size: 13px; line-height:normal;}
 .noneList1 {padding: 170px 0 190px;}
 .noneList2 {padding: 100px 0 100px;}
@@ -68,6 +71,10 @@
 .ico_qmark {background:url('../../img/direct/ico_qmark.png') no-repeat; display:inline-block; *display:inline; *zoom:1; width:22px; height:22px; overflow:hidden; text-indent:-9999px;}
 .ico_qmark.ico_qmark_b {background:url('../../img/direct/ico_qmark_b.png') no-repeat; width:30px; height:30px; vertical-align:middle;}
 .btnDisabled {color:#999 !important; border:1px solid #bab9bf !important; cursor:default;}
+.btnLtgray {border:1px solid #e4e4e4; background:#f8f8f8;}
+.btnB {border:none; height:35px; line-height:35px;}
+
+.listType1.fSize13 li:before {top:10px;}
 
 .tabType1 li.on .tabColor li.on a {background:#f6f6f6;}
 .tabType1 li.on .tabColor li a {background:#fff;}
@@ -94,6 +101,28 @@
 .icoOrder {display:inline-block; text-indent:-9999px; overflow:hidden; vertical-align:middle; background:url('../../img/direct/ico_order.png') no-repeat; background-size:250px 250px; margin-right:5px;}
 .icoOrder.icoPhone {width:13px; height:18px;}
 .icoOrder.icoRate {background-position:0 -47px; width:16px; height:16px;}
+
+.icoOrder2 {display:inline-block; text-indent:-9999px; overflow:hidden; vertical-align:middle; }
+.icoOrder2.icoJoin {background:url('../../img/direct/ico_join_type.png') no-repeat; background-size:35px 35px; width:35px; height:35px;}
+
+/* 물음표 버튼 */
+.btnQinfo {background:url('../../img/common/bg_speechbubble.png') no-repeat; background-size:20px 20px; width:20px; height:20px; display:inline-block; text-indent:-9999px; overflow:hidden; }
+
+
+/* 파일 업로드 인풋 */
+.boxUpload {position: relative; position: relative; overflow: hidden; margin-top:5px; padding-right:85px;}
+.boxUpload a {position:absolute; top: 0; right: 0; width:80px;}
+.boxUpload .fileUpload .btnUpload {position: absolute; top: 0; right: 0; margin: 0; padding: 0; font-size: 20px; cursor: pointer; opacity: 0; filter: alpha(opacity=0);}
+
+/* 멀티 라디오 */
+.multi_radio {margin:-8px 0 0 -13px;} 
+.multi_radio .radio {display: inline-block; vertical-align:top; margin-top:8px;}
+.multi_radio .formWrap {margin:8px 0 0 13px;}
+
+.colType1 {position:relative; padding-right:85px; margin-top:5px;}
+.colType1>a {position:absolute; right:0; top:0; width:80px;}
+.colType1 .formArea {margin-top:0 !important; min-height:35px;}
+.colType1 .formArea > * {min-height:35px;}
 
 /* 실시간 체팅 상담 */
 .tbl_cm {border-bottom:1px solid #ddd; padding-bottom:15px;}
@@ -264,6 +293,14 @@
 .train_name.train_28 span {background-position: left -266px}
 
 /* 구매 프로세스 */
+.autoComplete {position:relative}
+.autoComplete .autoComplete_box {display:none; position:absolute; top:34px; left:0;  z-index:2; width:100%;}
+.autoComplete .autoComplete_box>div {overflow-y:auto; max-height:219px; background:#FFF; border:1px solid #d9d9d9;}
+.autoComplete .autoComplete_box p {margin:0 0 10px 15px;padding-top:15px;font-weight:bold;color:#333}
+.autoComplete .autoComplete_box ul li a {display:block;padding: 5px 15px;color:#666;text-decoration:none}
+.autoComplete .autoComplete_box ul li a:hover {background:#ea002c;color:#FFF}
+.autoComplete .autoComplete_box ul + p {border-top:1px dashed #d7d7d9}
+
 .findInfo {padding:0 15px; background:#f9f9f9; border:1px solid #e4e4e4; margin-top:20px;}
 .findInfo li {position:relative; border-top:1px dashed #e4e4e4; padding:15px 0 15px 55px; color:#666; font-size:15px; background:url('../../img/direct/ico_find1.png') no-repeat 13px 50%; background-size:20px 20px;}
 .findInfo li:first-child {border-top:none;}
@@ -272,12 +309,21 @@
 .findInfo li.find3 {background-image:url('../../img/direct/ico_find3.png');}
 
 .tgift_item ul {border-bottom:1px solid #e7e7e7; margin-bottom:20px;}
-.tgift_item ul li{position:relative; height:141px; padding:0 15px 0 131px; border-bottom:1px solid #e7e7e7; background:#fff;}
+.tgift_item ul li{position:relative; height:141px; padding:0 15px 0 120px; border-bottom:1px solid #e7e7e7; background:#fff;}
 .tgift_item ul li:last-of-type{border-bottom:none;}
-.tgift_item ul li .img_area{position:absolute; left:20px; top:5px; display:inline-block; width:106px;}
+.tgift_item ul li .img_area{position:absolute; left:0px; top:5px; display:inline-block; width:106px;}
 .tgift_item ul li .img_area img{width:100%;}
 .tgift_item ul li .info_area{position:relative; height:100%;}
 .tgift_item ul li .info_area .device{font-size:17px; line-height:20px; color:#111; font-weight:bold; padding-top:20px;}
+
+.tgiftDetail {padding:74px 0 102px !important;}
+.tgiftDetail .tgiftBox {padding:0 15px 20px; border-bottom:1px solid #e4e4e4;}
+.tgiftDetail .buyWrap .option {display:block !important;}
+.tgiftDetail .buyWrap .btnBox .btnRed em {background:none; padding:0;}
+.tgiftDetail .buyWrap .btnBox.btnSoldout .btnRed em {cursor:default; opacity:.5}
+.tgiftDetailImg {margin-top:15px;}
+.tgiftDetailImg img {width:100%;}
+.tgiftDetail .buyWrap .select_drop {height:120px;}
 
 .listService {margin-top:25px;}
 .listService dt {background:#84838c; color:#fff; font-size:20px; text-align:center; padding:13px;}
@@ -295,10 +341,13 @@
 .listService dd .serviceBox li a:hover,
 .listService dd .serviceBox li.on a {border:1px solid #ea002c; color:#ea002c;}
 
-.orderDetail {background:#ececec; }
+.orderDetail {background:#ececec; padding-bottom:0;}
 .orderDetail .orderBox {background:#fff; border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; margin-top:5px; padding:28px 15px;}
-.orderDetail .orderBox:first-child {border-top:none; padding:0;}
-.orderDetail .orderBox:first-child h2 {padding:28px 15px 0;}
+.orderDetail .orderBox:first-child {border-top:none; margin-top:0;}
+.orderDetail .orderBox:last-child {padding-bottom:50px;}
+.orderDetail .orderList {border-top:none; padding:0;}
+.orderDetail .orderList h2 {padding:28px 15px 15px; margin:0}
+/* .orderDetail .orderBox:first-child h2 {padding:28px 15px 0;} */
 .orderDetail .orderBox .tblBlank {font-size:17px;}
 .usedPayment {background:url('../../img/direct/bg_pop_plan_circle_org.png') no-repeat 0 6px; background-size:10px 10px; padding-left:14px;}
 .orderInfo {overflow:hidden;}
@@ -308,7 +357,7 @@
 .orderInfo .infoBox.rate {background:#e9002d;}
 .tglOrder li {border-top:1px solid #efefef}
 .tglOrder li:first-child {border-top:none;}
-.tglOrder li a {background:#fff; color:#333; margin-top:0;}
+.tglOrder li a {background:#fff; color:#333; margin-top:0; font-size:15px; padding: 15px 120px 15px 15px;}
 .tglOrder li a .price {position:absolute; right:40px; top:15px}
 .tglOrder li a .price em {font-size:18px;}
 .tglOrder li a:after {background:url(../../img/common/bg_figure.png)no-repeat; background-position: -53px -24px; background-size: 155px 115px;}
@@ -335,7 +384,8 @@
 .orderTotal .tblBlank td .price {font-size:22px}
 .orderTotal .tblBlank td .price em {font-size:27px;}
 .orderTotal .tblBlank .subtxt {font-size:12px; margin-top:5px;}
-.serviceDetail {border:1px solid #e4e4e4; padding:0 14px; }
+
+.serviceDetail {border:1px solid #e4e4e4; padding:0 14px; margin-top:10px;}
 .serviceDetail table {display:table; width:100%; table-layout: fixed;}
 .serviceDetail th,
 .serviceDetail td {height:60px;}
@@ -355,3 +405,50 @@
 .orderSupport .on .img {background-position: 0 -68px;}
 .orderSupport .on .tit,
 .orderSupport .on .price {color:#e3002b}
+
+.orderDetail {overflow-x:hidden;}
+.orderDetail .narrowCon {background:#fff;}
+.orderDetail .tabCon {margin:0;}
+.orderDetail .tabCon .orderBox {padding: 28px 15px;}
+.orderDetail .tabCon .orderBox:first-child {margin-top:0;}
+.orderDetail h1.hidden+.listConfirm {margin:-15px 0;}
+.listConfirm.line li {border-top:1px dashed #efefef;}
+.listConfirm.line li:first-child {border-top:none;}
+.listConfirm li {padding:15px 0;}
+.listConfirm li .formArea {margin-top:5px;}
+.listConfirm .confirmPhone {position:relative;}
+.listConfirm .confirmPhone .txt_timer {position:absolute; top:10px; right:10px; background-position:0 0; height:14px;}
+
+.dotlineType .tableCon {padding-top:10px; border-top:none;}
+.dotlineType .tableCon li {border-top: 1px dashed #efefef;}
+.dotlineType .tableCon li:first-child {border-top:none;}
+.dotlineType [class^="titDep"] {padding-bottom:0px;}
+.dotlineType .formArea {margin-top:5px;}
+.dotlineType>.tableCon>li>strong+.formArea,
+.dotlineType>.tableCon>li>strong+.colType1,
+.dotlineType>.tableCon>li>strong+.boxUpload {margin-top:0px;}
+.dotlineType .selectRelation {text-align:right;}
+.dotlineType .selectRelation div {display:inline-block;}
+.dotlineType .btnQinfo {position:static; margin-left:10px;}
+.myAddress {margin-top:5px;}
+.expectNum {position:relative; padding-left:175px; margin-top:5px;}
+.expectNum .priority {position:absolute; left:0; top:5px; display:inline-block; background:url('../../img/direct/bg_expectNum.png') no-repeat; background-size:50px 24px; width:50px; height:24px; line-height:24px; text-align:center; }
+.expectNum .default {position:absolute; left:55px; top:7px;}
+.payRadio img {width:65px; max-height:12px;}
+.tblPaytype {margin-bottom:20px; border:1px solid #e4e4e4; border-bottom:none;}
+.tblPaytype li {padding:20px 15px;}
+.tblPaytype .type {}
+.tblPaytype .total {background:#f7f7f7; border-top:1px solid #e4e4e4; font-size:18px;}
+.tblPaytype .total .price {color:#ea002c;}
+.tblPaytype .total .price em {font-size:22px;}
+.tblPaytype:after {content:""; display:block; background:url('../../img/direct/bg_pay_total.png') repeat-x bottom left; background-size:auto 5px; height:5px; margin-bottom:-10px;}
+.usedSearch {position:relative; padding-right:65px;}
+.usedSearch a {position:absolute; right:0; top:0;}
+
+.joinType {padding:15px 15px 30px;}
+.joinType .typeView {border-top:1px solid #e4e4e4; padding-top:15px; margin-top:10px;}
+
+.visitStore,
+.visitChange {display:none;}
+.visitStore.on,
+.visitChange.on {display:block;}

@@ -60,12 +60,42 @@
 
 			<div class="tabCon" id="tab1">
 				<h1 class="hidden">키워드로 찾기</h1>
-				<fieldset class="h15">
+				<!-- 2016-06-20 - 자동 완성 기능 영역 추가 -->
+				<script type="text/javascript">
+					//디자인 확인 용 임시 스크립트
+					$(function(){
+						$(".autoComplete").find("input").focus(function(){
+							$(this).parents('.autoComplete').find('.autoComplete_box').show();
+						}).blur(function(){
+							$(this).parents('.autoComplete').find('.autoComplete_box').hide();
+						});
+					});
+				</script>
+				<fieldset class="autoComplete h15">
 					<legend>검색</legend>
 					<div class="searchCon">
 						<div class="srch">
 							<input type="search" title="검색어 입력" placeholder="주소 또는 지하철 명으로 입력해 주세요.">
 							<button type="button">검색</button>
+						</div>
+					</div>
+					
+					<div class="autoComplete_box">
+						<div>
+							<p>지하철역</p>
+							<ul>
+								<li><a href="#none">을지로입구역 수도권 2호선</a></li>
+								<li><a href="#none">을지로3가역 수도권 2호선</a></li>
+								<li><a href="#none">을지로4가역 수도권 2호선</a></li>
+								<li><a href="#none">검색 결과가 없습니다.</a></li>
+							</ul>
+							<p>주소</p>
+							<ul>
+								<li><a href="#none">서울 중구 을지로(을지로 3가)</a></li>
+								<li><a href="#none">서울 중구 을지로(을지로 4가)</a></li>
+								<li><a href="#none">서울 중구 을지로(을지로 5가)</a></li>
+								<li><a href="#none">검색 결과가 없습니다.</a></li>
+							</ul>
 						</div>
 					</div>
 				</fieldset>

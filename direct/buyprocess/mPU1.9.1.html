@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>인증하기 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>인증하기</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+				<div class="narrowCon">
+					<h2 class="titDep2">본인인증</h2>
+					<p>개인(일반), 미성년자, 법인, 외국인 인증 중 고객님의 유형을 선택하신 후 본인인증을 진행해 주십시오.</p>
+				</div>
+
+				<!-- tab -->
+				<div class="tab">
+					<div class="tabTitle">
+						<a href="#"><span>개인(일반)</span></a>
+					</div>
+					<!-- 메뉴선택 -->
+					<div class="tabContent" style="display:none">
+						<div class="tabSwipe">
+							<strong class="hidden">메뉴선택</strong>
+							<button type="button" class="btnPre">이전</button>
+							<div class="swiperWrap">
+								<div class="group">
+									<ul class="tabJs">
+										<li class="on"><a href="#tab1">개인(일반)</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+										<li><a href="#tab2">미성년자</a></li>
+										<li><a href="#tab3">법인</a></li>
+										<li><a href="#tab4">외국인</a></li>
+										<li><span></span></li>
+										<li><span></span></li><!-- data가 없을 경우 -->
+									</ul>
+								</div>
+							</div>
+							<button type="button" class="btnAfter">다음</button>
+							<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+							<button type="button" class="btnClose">목록닫기</button>
+						</div>
+					</div>
+					<!-- //메뉴선택 -->
+				</div><!-- //tab -->
+
+				<div class="tabCon" id="tab1">
+					<div class="orderBox">
+						<h1 class="hidden">개인(일반)</h1>
+						<ul class="listConfirm line">
+							<li>
+								<label for="firm_person_name">이름</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_num">주민등록번호</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_card">카드번호</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_card" class="inputTxt1" title="카드번호 첫 번째 4자리"></span> 
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드번호 두 번째 4자리"></span> 
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드번호 세 번째 4자리"></span> 
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드번호 네 번째 4자리"></span> 
+								</div>
+							</li>
+							<li>
+								유효기간
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="카드 유효기간 월">
+											<option value="" selected>MM 월</option>
+											<option value="">1월</option>
+											<option value="">2월</option>
+											<option value="">3월</option>
+											<option value="">4월</option>
+											<option value="">5월</option>
+											<option value="">6월</option>
+											<option value="">7월</option>
+											<option value="">8월</option>
+											<option value="">9월</option>
+											<option value="">10월</option>
+											<option value="">11월</option>
+											<option value="">12월</option>
+										</select>
+									</div>
+									
+									<div class="selectBox pl5">
+										<select title="카드 유효기간 연도">
+											<option value="" selected>YYYY 년</option>
+											<option value="">2016년</option>
+											<option value="">2017년</option>
+											<option value="">2018년</option>
+											<option value="">2019년</option>
+											<option value="">2020년</option>
+											<option value="">2021년</option>
+											<option value="">2022년</option>
+											<option value="">2023년</option>
+											<option value="">2024년</option>
+											<option value="">2025년</option>
+											<option value="">2026년</option>
+											<option value="">2027년</option>
+											<option value="">2028년</option>
+											<option value="">2029년</option>
+											<option value="">2030년</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_pass">비밀번호 앞 2자리</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_pass"class="inputTxt1" style="width:60px"> ●●</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab1 -->
+
+				<div class="tabCon" id="tab2" style="display:none;">
+					<div class="orderBox">
+						<h1 class="hidden">미성년자</h1>
+						<ul class="listConfirm line">
+							<li>
+								<label for="firm_person_name">이름</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_num">주민등록번호</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_name2">법정대리인(부모님 또는 보호자)</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_name2" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_num2">법정대리인 주민등록번호</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_num2" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_card2">카드번호(법정대리인 명의)</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_card2" class="inputTxt1" title="카드번호 첫 번째 4자리"></span> 
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드번호 두 번째 4자리"></span> 
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드번호 세 번째 4자리"></span> 
+									<span class="pl5"><input type="text" class="inputTxt1" title="카드번호 네 번째 4자리"></span> 
+								</div>
+							</li>
+							<li>
+								유효기간
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="카드 유효기간 월">
+											<option value="" selected>MM 월</option>
+											<option value="">1월</option>
+											<option value="">2월</option>
+											<option value="">3월</option>
+											<option value="">4월</option>
+											<option value="">5월</option>
+											<option value="">6월</option>
+											<option value="">7월</option>
+											<option value="">8월</option>
+											<option value="">9월</option>
+											<option value="">10월</option>
+											<option value="">11월</option>
+											<option value="">12월</option>
+										</select>
+									</div>
+									
+									<div class="selectBox pl5">
+										<select title="카드 유효기간 연도">
+											<option value="" selected>YYYY 년</option>
+											<option value="">2016년</option>
+											<option value="">2017년</option>
+											<option value="">2018년</option>
+											<option value="">2019년</option>
+											<option value="">2020년</option>
+											<option value="">2021년</option>
+											<option value="">2022년</option>
+											<option value="">2023년</option>
+											<option value="">2024년</option>
+											<option value="">2025년</option>
+											<option value="">2026년</option>
+											<option value="">2027년</option>
+											<option value="">2028년</option>
+											<option value="">2029년</option>
+											<option value="">2030년</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label for="firm_person_pass">비밀번호 앞 2자리</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_pass"class="inputTxt1" style="width:60px"> ●●</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab2 -->
+
+				<div class="tabCon" id="tab3" style="display:none;">
+					<div class="orderBox">
+						<h1 class="hidden">법인</h1>
+						<ul class="listConfirm line">
+							<li>
+								<label for="firm_company_name">법인명</label>
+								<div class="formArea">
+									<input type="text" id="firm_company_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<label for="firm_company_num">법인등록번호</label>
+								<div class="formArea">
+									<input type="text" id="firm_person_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+							</li>
+							<li>
+								<label for="firm_company_num2">사업자등록번호</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_company_num2" class="inputTxt1"></span>
+									<span class="hyphen">-</span>
+									<span><input type="text" class="inputTxt1" title="사업자 등록 번호 두 번째를 입력해주세요"></span>
+									<span class="hyphen">-</span>
+									<span style="width:40%"><input type="text" class="inputTxt1" title="사업자 등록 번호 세 번째를 입력해주세요"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div><!-- //tab3 -->
+
+				<div class="tabCon" id="tab4" style="display:none;">
+					<div class="orderBox">
+						<h1 class="hidden">외국인</h1>
+						<ul class="listConfirm line">
+							<li>
+								<label for="firm_alien_name">Name(이름)</label>
+								<div class="formArea">
+									<input type="text" id="firm_alien_name" class="inputTxt1">
+								</div>
+								<p class="fSize13">Please enter your first and last name(case-sensitive)<br>
+									영문 이름인 경우 대소문자를 정확히 입력하여 주세요.</p>
+							</li>
+							<li>
+								<label for="firm_alien_num">Alien Registration Number(외국인등록번호)</label>
+								<div class="formArea">
+									<input type="text" id="firm_alien_num" title="주민등록번호 앞 6자리 번호를 입력해주세요" class="inputTxt1"> <span class="hyphen">-</span> <input type="text" title="주민등록번호 뒤 6자리 번호를 입력해주세요"  class="inputTxt1" > 
+								</div>
+								<p class="fSize13">Please enter your first and last name(case-sensitive)<br>
+								영문 이름인 경우 대소문자를 정확히 입력하여 주세요.</p>
+							</li>
+							<li>
+								Nationality(국적)
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="Select your Country Please.(국적을 선택해 주세요)">
+											<option value="" selected>Select Country</option>
+											<option value="">Unite States of American</option>
+											<option value="">Canada</option>
+											<option value="">Japen</option>
+											<option value="">China</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<!--li>
+								<label for="firm_person_pass">비밀번호 앞 2자리</label>
+								<div class="formArea">
+									<span><input type="text" id="firm_person_pass"class="inputTxt1" style="width:60px"> ●●</span>
+								</div>
+							</li-->
+						</ul>
+					</div>
+
+				</div><!-- //tab4 -->
+
+				<div class="orderBox">
+					<h2 class="titDep2">번호이동 인증</h2>
+					<p>본 인증 절차는 번호이동 업무처리를 위해 필요합니다. 아래의 순서에 따라 인증을 진행해 주세요.</p>
+					<ul class="listConfirm">
+						<li>
+							휴대폰 번호
+							<div class="formArea">
+								<div class="selectBox" style="width:110px">
+									<select title="통신사 선택">
+										<option value="" selected>통신사</option>
+										<option value="">KT</option>
+										<option value="">LG U+</option>
+										<option value="">Cj hello</option>
+									</select>
+								</div>
+							</div>
+							<div class="formArea">
+								<span>
+									<select title="전화번호 앞자리 선택">
+										<option>010</option>
+									</select>
+								</span>
+								<span class="hyphen">-</span>
+								<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
+								<span class="hyphen">-</span>
+								<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
+							</div>
+							<div class="formArea">
+								<a href="#" class="btnL btnDgray">인증번호 받기</a>
+							</div>
+						</li>
+						<li>
+							<label for="confirm_num">인증번호 확인</label>
+							<div class="formArea">
+								<span class="confirmPhone">
+									<input type="txt" id="confirm_num" class="inputTxt1" placeholder="인증번호 숫자 6자리" maxlength="6">
+									<span class="txt_timer">남은시간 2:55</span>
+								</span>
+							</div>
+							<div class="formArea">
+								<a href="#" class="btnL btnDgray">인증번호 확인</a>
+							</div>
+							<p class="txtInfo">인증번호를 빈칸에 기입하신 후 [인증번호 확인] 버튼을 누르시면 다음으로 진행됩니다.</p>
+							<p class="txtInfo">인증문자가 도착하지 않았거나 입력시간 초과 시 ‘재전송’ 버튼을 눌러주세요.</p>
+						</li>
+						<li>
+							인증정보
+							<div class="formArea">
+								<div class="selectBox" style="width:110px">
+									<select title="통신사 선택">
+										<option value="" selected>인증수단</option>
+										<option value="">단말기 일련번호
+										<option value="">은행 계좌번호</option>
+										<option value="">신용카드 번호 </option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+							</div>
+							<div class="formArea">
+								<input type="txt" id="confirm_num" class="inputTxt1" placeholder="마지막 4자리 숫자 입력">
+							</div>
+							<p class="txtInfo">현재 사용하시는 단말기의 일련번호 또는 기존 통신사 요금납부 정보 중 선택하여 입력해 주세요.</p>
+						</li>
+						<li>
+							인증정보
+							<div class="formArea">
+								<div class="selectBox" style="width:110px">
+									<select title="통신사 선택">
+										<option value="">인증수단</option>
+										<option value="" selected>단말기 일련번호
+										<option value="">은행 계좌번호</option>
+										<option value="">신용카드 번호 </option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+							</div>
+							<div class="formArea">
+								<input type="txt" id="confirm_num" class="inputTxt1" placeholder="마지막 4자리 숫자 입력">
+							</div>
+							<p class="txtInfo">현재 사용하시는 단말기의 배터리를 분리하고 본체 뒷면에 있는 일련번호 중 마지막 4자리를 입력해 주세요. 애플(아이폰) 제품은 일련번호로 확인이 되지 않으니 계좌번호나 신용카드 번호로 선택해 주세요.</p>
+						</li>
+						<li>
+							인증정보
+							<div class="formArea">
+								<div class="selectBox" style="width:110px">
+									<select title="통신사 선택">
+										<option value="">인증수단</option>
+										<option value="">단말기 일련번호
+										<option value="" selected>은행 계좌번호</option>
+										<option value="">신용카드 번호 </option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+							</div>
+							<div class="formArea">
+								<input type="txt" id="confirm_num" class="inputTxt1" placeholder="마지막 4자리 숫자 입력">
+							</div>
+							<p class="txtInfo">기존 통신사에 납부하셨던 계좌번호 중 마지막 4자리를 입력해 주세요.</p>
+						</li>
+						<li>
+							인증정보
+							<div class="formArea">
+								<div class="selectBox" style="width:110px">
+									<select title="통신사 선택">
+										<option value="">인증수단</option>
+										<option value="">단말기 일련번호
+										<option value="">은행 계좌번호</option>
+										<option value="" selected>신용카드 번호 </option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+							</div>
+							<div class="formArea">
+								<input type="txt" id="confirm_num" class="inputTxt1" placeholder="마지막 4자리 숫자 입력">
+							</div>
+							<p class="txtInfo">기존 통신사에 납부하셨던 신용카드 번호 중 마지막 4자리를 입력해 주세요.</p>
+						</li>
+						<li>
+							인증정보
+							<div class="formArea">
+								<div class="selectBox" style="width:110px">
+									<select title="통신사 선택">
+										<option value="">인증수단</option>
+										<option value="">단말기 일련번호
+										<option value="">은행 계좌번호</option>
+										<option value="">신용카드 번호 </option>
+										<option value="" selected>자동납부 계좌번호</option>
+									</select>
+								</div>
+							</div>
+							<div class="formArea">
+								<input type="txt" id="confirm_num" class="inputTxt1" placeholder="마지막 4자리 숫자 입력">
+							</div>
+							<p class="txtInfo">기존 통신사에 납부하셨던 자동납부 계좌번호 중 마지막 4자리를 입력해 주세요.</p>
+						</li>
+					</ul>
+				
+					<div class="btnBox">
+						<a href="#" class="btnL btnRed">인증완료</a>
+					</div>
+				</div>
+				
+
+				<div class="grayCont">
+					<!-- checkPoint -->
+					<div class="checkPoint">
+						<div class="tit">
+							<a href="#">Check Point</a>
+						</div>
+						<ol>
+							<li> <!-- 선택시 on 클래스 추가 -->
+								<a href="#">1. SMS 인증번호 수신 불가</a>
+								<div class="chkptCont">
+									<ul class="listType1">
+										<li>SMS 인증문자는 114번호로 발신되니 해당 번호의 단말기 <em class="fColor1">스팸설정 여부 및 스팸편지함을 확인</em>해 주세요.</li>
+										<li><em class="fColor1">스팸필터링 부가서비스</em> 가입 후 114번호를 스팸설정 하신 경우 <em class="fColor1">스팸설정을 해제</em>해 주세요.</li>
+										<li><em class="fColor1">착신 관련 서비스</em>에 가입되어 있는 경우 SMS 인증문자가 수신되지 않을 수 있습니다.</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#">2. USIM 단독상태</a>
+								<div class="chkptCont">
+									현재 사용중인 휴대폰이 USIM 단독 상태이거나 휴대폰과 USIM카드가 분리된 상태에서는 SMS 인증을 받으실 수 없습니다.
+								</div>
+							</li>
+						</ol>
+						<div class="btnBox">
+							<a href="#" class="btnL btnWhite btnPlus">더보기</a> <!-- 목록이 5개 이상일 경우 나타남 -->
+							<a href="#" class="btnL btnWhite btnClose">닫기</a> <!-- 목록이 5개 이상 보여지면 나타남 -->
+						</div>
+					</div>
+					<!-- // checkPoint -->
+				</div><!-- // grayCont -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

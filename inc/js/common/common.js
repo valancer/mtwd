@@ -1,4 +1,4 @@
-/* 
+/*
  * 2016.04.26
  * @setQInfo qInfo 스크립트 //mpoc/guide/layout_sp.html
  *
@@ -8,10 +8,10 @@
  * @setPopup .popup 사이즈 조절 추가 //www/mpoc/guide/syspop.html
  * @setPopup .popup checkPoint클릭 열고/닫기 추가//www/mpoc/guide/syspop.html
  * @setPopup .layer_pop 열고/닫기 추가 //www/mpoc/guide/syspop.html
- *	
+ *
  * 2016.04.28
  * @setSwiper 추가
- * 	commonJs.HEIGHT , commonJs.WIDTH 추가 및 초기 ready 실행후 값을 셋팅후 resize 마다  
+ * 	commonJs.HEIGHT , commonJs.WIDTH 추가 및 초기 ready 실행후 값을 셋팅후 resize 마다
  * @setTglBtn 추가
  * @setQInfo resizeObject로 변경
  * @setRadioBox , setCheckBox 변경
@@ -21,7 +21,7 @@
  * @ArcBox, @setUlExtendTglOn 삭제
  * @setTglBtn .tglBtnClose 추가
  * @setCheckPoint 추가 @setPopup checkPoint 삭제 //
- * @setCircuit 추가 회선정보 fixed 처리 
+ * @setCircuit 추가 회선정보 fixed 처리
  * @setCheckBox 체크박스 selector 변경 .formWrap //www/mpoc/guide/form.html
  * @setSwiper
  *
@@ -32,34 +32,34 @@
  * @setCalendar 함수명 변경 및 코드 수정
  * @SetCheckBox, @SetRadioBox 클릭 이벤트 e.preventdefault() 삭제 ***** 모바일 토크백 사용시 비정상 작동 *****
  * @setPopup layerPopup 가운데정렬 및 마스크 설정 추가//mpoc/guide/layerpop.html
- * @SwiperSlider 높이 가변 추가 
+ * @SwiperSlider 높이 가변 추가
  * @setCalendar 외부연결 함수 추가 selectDate,getDate,setup
  * @setCommon 추가 layout3.html 화살표 센터제어
- * @setLayerPopupCenter inerpop 페딩제어 및 닫기버튼 제어 
- * 
+ * @setLayerPopupCenter inerpop 페딩제어 및 닫기버튼 제어
+ *
  * 2016.05.02
  * @setCommon  헤드 closeBtn위치 조절 스크립트 추가 //mpoc/guide/layout4.html
  * swiper 수정
  * @setPopup 레이어팝업 닫기 버튼 스크립트 수정
  * @setPopup 시스템팝업 inPop height 세팅 스크립트 수정
- * @setProduct 추가 토글 버튼 및 fixed영역 제어 
+ * @setProduct 추가 토글 버튼 및 fixed영역 제어
  * @setCircuit  mMY1.1.4.2.html 회선 정보 스크롤시 안보이다 스크롤 하지 안을시 나오도록 추가
- * 
+ *
  * 2016.05.03
  * @setMyt 포인트이용내역 검색 기간검색 버튼 스크립트 추가//myt/mMY1.1.4.5.html
  * @commonJs.setSlider 추가//mpoc/product/MTS1.1.4.html
  * @setCommon shareWrap 정렬 추가 //mpoc/guide/layout3.html
  * @setProduct tabType3 추가//mpoc/product/mTs1.1.4.html
  * @setMyt 선물할 데이터량 선택 추가 //myt/mMY2.2.2.1T.1.html
- * @setCommon  .topConBox 안에 버튼이 없을 시 padding-right제거 추가 
+ * @setCommon  .topConBox 안에 버튼이 없을 시 padding-right제거 추가
  * @setCommon  .circuit1.center>.lineCon.type1 버튼 없을시 padding-right 제거 추가
- * 
+ *
  * 2016.05.04
  * @debug 추가
  * @swiperSlider 수정
  * @setPopup setLayerPopupCenter 닫기버튼 가운데정렬 추가
  * @getVersion 안드로이드 버전 체크 함수 추가
- * 
+ *
  * 2016.05.06
  * @setQInfo 레이어팝업 오류 수정 //mpoc/myt/mMY3.1.3.1P.html#
  * @setQInfo div셀렉터 삭제
@@ -75,12 +75,12 @@
  * @changeLineSlide 초기화 수정//mpoc/util/common/mUT10.8P.html
  * @setMyt div.datesetting>button click이벤트 높이 값 수정
  * @setTab 추가
- * 
+ *
  * 2016.05.10
  * @setProduct 내가 찾은 요금상품 카테고리 탭//mpoc/product/mTS1.1.1.html#
  * @setTab 수정
  * @setPopup #mask 하위버전 css변경 수정
- * 
+ *
  * 2016.05.11
  * @setTab 수정
  * @setMask @clearMask 추가
@@ -97,11 +97,11 @@
  * @setMask, clearMask 스크롤 방지 스크립트 삭제
  * @setMyt div.datesetting>button '.call_gift'삽입 폐이지 높이값 변경 스크립트 추가//mpoc/myt/mMY1.2.1.1T.1.1.html
  * @setMyt div.datesetting>button '.data_info' 높이 값 설정 추가//mpoc/myt/mMY1.2.1.1T.1.1.html
- * 
+ *
  * 2016.05.16
  * @SwiperSlider 수정
  * @commonJs.setSlider 마우스 이벤트 추가 (mousedown, click, mouseup, mousemove, keydown, dragstart)
- * 
+ *
  * 2016.05.17
  * @setQInfo 화면 폭보다 qTxt가 클 경우 width/min-width 변경 스크립트 추가
  * @setTab 타이틀값 변경 스크립트 추가
@@ -123,7 +123,7 @@
  * 2016.05.20
  * @setPurchase "결합상품신청" 이용약관 높이 조절 클래스 추가(.agreeBox, .agreeCheck)//mpoc/myt/mMY5.3.4P.1.html
  * @setPurchase 이용약관 높이 조절 스크립트 @setCommon으로 이동
- * 
+ *
  * 2016.05.24
  * @setCenter 추가
  * @setCenter FAQ 자주찾는질문 카테고리 스크립트 추가 //mpoc/center/mCS2.1.1T.html
@@ -134,7 +134,7 @@
  * @setTab urld해쉬태그 처리 //mpoc/center/mCS3.2.1T.html
  * @setPopup 시스템 팝업 body fixed 처리 추가
  * @setPopup 시스템 팝업 .popup 넓이 화면 넓이로 css변경 처리 추가
- * 
+ *
  * 2016.05.26
  * @setSwiper '.sidemg15' 화면에 좌우 margin이 각각 15인경우 넓이 조절 추가//mpoc/center/mCS.html
  * @setCenter '공식 인증 대리점' 관심매장 등록 버튼 //mpoc/center/mCS4.1.1T.1.html
@@ -160,68 +160,20 @@
  * @setMyt 기간선택 버튼 이벤트 높이 조절 스크립트 삭제('div.datesetting>button')
  * @setMyt 기간선택 버튼 개월버튼 셀렉터 변경('.datesetting .dateSort' -> '.settingCon .dateSort')
  * @setMyt 이용내역 박스 높이 조절 추가 //mpoc/myt/mMY1.1.4.3.1.html, mpoc/myt/mMY1.1.4.4.html#, mpoc/myt/mMY1.1.4.5.html
- * 
+ *
  * 2016.05.31
  * @setMyt 기간선택 버튼 클래스 'on' 토글 기능 추가('.useSearch')//myt/mMY1.1.4.5.html
  * @setMyt '이용내역 박스 높이 조절' 스크립트 resize시 무한 증가 방지 스크립트 추가
  * @setMyt 내가 찾은 요금상품 카테고리 탭 높이(padding-top,padding-bottom) 조절 스크립트 추가//mpoc/product/mTS1.1.1.html //mMY1.2.1.2T.1.html
  * @setQInfo 특정단말기(갤럭시S3) resize시 왼쪽 여백 생기는 현상 추가 수정
  * @setMask, @clearMask 레이어팝업에서 셀렉트 박스 여는 경우 레이어팝업을 mask밑으로 이동 스크립트 추가
- * 
+ *
  * 2016.06.01
  * @setSwiper auto 기능 추가
- * 
- * 2016.06.02
- * @getVersion 바다os, 블랙베리 분기 처리 추가
  *
- * 2016.06.07
- * @setSwiper 기본 넓이 swiperCon넓이로 변경 
- * @setSwiper sidemg15 if문 변경
- * SwiperSlider display:none 의 부모가 있을시에는 높이값 재설정 부분 제거
- * 
- * 2016.06.08
- * common/mUT1.4.html 간격 맞추기
- * @setTab 항목 선택시 resize 이벤트 발생 추가
- * @setTab 두번째탭 클릭 오픈시 빈내용 출력 수정(첫번째탭 항목의 'on'클래스 기준 인덱스 사용) //mpoc/util/common/mUT1.3.2.1.html
- * 
- * 2016.06.10
- * @setPopup 시스템 팝업 상단 타이틀이랑 내용이랑 붙는 경우 추가('.freeCall')
- * @setTab, @setSwiper 투뎁스 탭 컨텐츠 영역 높이 조절 수정
- *
- * 2016.06.13
- * @setCalendar 초기 기본값 변경(현재일:사용자PC 기준 오늘 날짜, 시작일:현재일 30일 전,  마지막일:현재일 30일 후)
- *
- * 2016.06.14
- * @setQInfo 말풍선버튼 연속 클릭 시 넓이값이 변하는 오류 수정 //mpoc/guide/etc.html
- *
- * 2016.06.15
- * @setTab a태그 href가 있는 경우 페이지이동 분기 처리 추가
- * 
- * 2016.06.16
- * bind => on교체 calendar의 경우 (pc와 동일하게 유지 하기 위해서) bind로 설정 되어 있기 때문에 변경하지 않고 나머지는 on로 변경
- * @setLayerPopupHeight 초기화 추가
- *
- * 2016.06.17
- * @commonJs.setSelectBox initSB() 수정
- *
- * 2016.06.21
- * @setTab 2depth탭 인덱스 문제 수정//mpoc/util/common/mUT1.3.1.html
- * 
- * 2016.06.24
- * mMY1.6.4.4T.1T.1.html  .btnBoxFloating 번튼 영역의 scroll 에 다한 위치 제어
- * @setBanner 추가
- * Jessture 클래스 추가
- * @setBanner 변수없이도 작동하도록 수정 요망
- * 
- * 2016.06.27
- * 'div.appsList>div.swiperCon2'  mpoc/product/mTS.html 스와이프 타입 추가
- * document ready setBanner(document); -> setBanner($(document)); 변경
- * @setSelectBox 클래스 추가 기능 추가//mpoc/myt/mMY1.4.1T.2.13P.html
- * @setSelectBox 클래스 추가 기능 null처리 추가//mpoc/myt/mMY1.4.1T.2.13P.html
- * @clearMask dispaly->$(this).css('display') 오타수정
  */
 
-(function ($, window) 
+(function ($, window)
 {
 	'use strict';
 	if( !window.commonJs )
@@ -231,20 +183,20 @@
 	var commonJs = window.commonJs;
 	commonJs.HEIGHT = 0;
 	commonJs.WIDTH = 0;
-	
+
 	var resizeObject = {};
-	$( window ).resize(function() 
+	$( window ).resize(function()
 	{
 		commonJs.WIDTH = $(window).width();
 		commonJs.HEIGHT = $(window).height();
 		$(resizeObject).trigger('resize');
 	});
-	$( window ).scroll(function() 
+	$( window ).scroll(function()
 	{
 		$(resizeObject).trigger('scroll');
 	});
-	
-	
+
+
 	// 셀렉트 박스 관련 추가
 	var selectBox = $({});
 	commonJs.selectBox = selectBox;
@@ -296,7 +248,7 @@
 						afSpanTxt=OrglSlt.next('span').text();
 						bfSpanTxt=OrglSlt.prev('span').text();
 					}
-					
+
 				}
 				OrglSlt.hide();
 				_creatLayout(OrglSlt);
@@ -312,30 +264,22 @@
 				target.wrap('<div/>');
 				SelectBox=target.parent('div');
 
-				var tmpStr=('<a href="#ls_'+sltBoxIdx+'" title="'+OrglSlt.attr('title')+'"><span>선택하세요</span></a>');
+				var tmpStr=('<a href="#ls_'+sltBoxIdx+'" title="'+OrglSlt.attr('title')+'">선택하세요</a>');
 				SelectBox.prepend(tmpStr);
 
 				tmpStr='<div class="layerSelect" id="ls_'+sltBoxIdx+'"><div class="selectCon"><div class="list"><ul>';
 				for(var i=0;i<sltArrTxt.length;i++){
 					if(OrglSltOpt.eq(i).is(":disabled")){
-						if(OrglSltOpt.eq(i).attr('class')){
-							tmpStr+='<li class="disabled"><a href="#"><span class="'+OrglSltOpt.eq(i).attr('class')+'">'+sltArrTxt[i]+'</span></a></li>';
-						}else{
-							tmpStr+='<li class="disabled"><a href="#"><span>'+sltArrTxt[i]+'</span></a></li>';
-						}	
+						tmpStr+='<li class="disabled"><a href="#">'+sltArrTxt[i]+'</a></li>';
 					}else{
-						if(OrglSltOpt.eq(i).attr('class')){
-							tmpStr+='<li><a href="#"><span class="'+OrglSltOpt.eq(i).attr('class')+'">'+sltArrTxt[i]+'</span></a></li>';	
-						}else{
-							tmpStr+='<li><a href="#"><span>'+sltArrTxt[i]+'</span></a></li>';
-						}
-					}					
+						tmpStr+='<li><a href="#">'+sltArrTxt[i]+'</a></li>';
+					}
 				}
 				tmpStr+='</ul></div>';
-				tmpStr+='<div class="btnBox h20"><a href="#" class="btnL btnGray">닫기</a></div></div>';
+				tmpStr+='<div class="btnBox h20"><a href="#" class="btnL btnGray">닫기</a></div></div>'
 
-				$('body').append(tmpStr);				
-				
+				$('body').append(tmpStr);
+
 				layerSelect=$("#ls_"+sltBoxIdx);
 				selectList=layerSelect.find('div.list');
 				selectListLi=selectList.find('ul>li');
@@ -350,7 +294,7 @@
 					layerSelect.children('div.tit').find('span:eq(0)').text(bfSpanTxt);
 					layerSelect.children('div.tit').find('span:eq(1)').text(afSpanTxt);
 					lsEm=layerSelect.children('div.tit').find('em');
-					
+
 
 					layerSelect.children('.selectCon').addClass('topLine');
 				}else{
@@ -375,7 +319,7 @@
 				}else{
 					var scTop=$(window).scrollTop();
 					layerSelect.css('top',(scTop+commonJs.HEIGHT*0.07)+'px');
-				}				
+				}
 			};
 
 			var _selectListByIdx=function(idx){
@@ -384,13 +328,12 @@
 				selectListLi.removeClass('on');
 				selectListLi.eq(idx).addClass('on');
 				sltIdx=idx;
-				// sltTxt=sltArrTxt[idx];
-				sltTxt=selectListA.eq(idx).html();
+				sltTxt=sltArrTxt[idx];
 				sltVal=sltArrVal[idx];
-				selectBoxA.html(sltTxt);
+				selectBoxA.text(sltTxt);
 
 				if(isSlt2){
-					lsEm.html(sltTxt);
+					lsEm.text(sltTxt);
 				}
 				_sortLayerSelect();
 				SelectBox.trigger('change.selectbox', _getInfoSB());
@@ -417,7 +360,7 @@
 			};
 
 			var _setEvent=function(){
-				selectBoxA.on('click',function(e){
+				selectBoxA.bind('click',function(e){
 					e.preventDefault();
 					if(SelectBox.hasClass('disabled')) return;
 
@@ -426,7 +369,7 @@
 					setMask();
 				});
 
-				selectListA.on('click',function(e){
+				selectListA.bind('click',function(e){
 					e.preventDefault();
 					var thisLi=$(this).parent();
 					if(thisLi.hasClass('disabled')) return;
@@ -435,13 +378,13 @@
 					_selectListByIdx(idx);
 				});
 
-				layerSelect.find('.btnBox>a.btnL').on('click',function(e){
+				layerSelect.find('.btnBox>a.btnL').bind('click',function(e){
 					e.preventDefault();
 					layerSelect.hide();
 					clearMask();
 				});
 
-				$(resizeObject).on('resize',function(){
+				$(resizeObject).bind('resize',function(){
 					_sortLayerSelect();
 				});
 			};
@@ -481,7 +424,7 @@
 			};
 
 			var _initSB=function(){
-				if(!OrglSlt) return false;
+				if(OrglSlt) return false;
 				_init();
 				return SelectBox;
 			};
@@ -492,7 +435,7 @@
 				}
 				if(val) SelectBox.addClass('disabled');
 				else SelectBox.removeClass('disabled');
-				return val;				
+				return val;
 			};
 
 			var _getInfoSB=function(){
@@ -523,11 +466,11 @@
 		});
 	};
 
-	if (jQuery.fn.getInstance === undefined) jQuery.fn.getInstance = function () { 
+	if (jQuery.fn.getInstance === undefined) jQuery.fn.getInstance = function () {
 		if($(this).length>1) return null;
-		return this.data('scope'); 
+		return this.data('scope');
 	};
-	
+
 	// 모바일용 디버거
 	function debug( str )
 	{
@@ -547,10 +490,10 @@
 				});
 		}
 		debug.css('width',commonJs.WIDTH);
-		var s = debug.html()+'\n' + str;	
+		var s = debug.html()+'\n' + str;
 		debug.html(s);
 	};
-	
+
 	// 마스크 추가
 	var currentTop=0;
 	function setMask(bfObj){
@@ -569,7 +512,7 @@
 				'position':'absolute',
 				'top':'0px',
 				'height':document.body.scrollHeight+'px'
-			});			
+			});
 		}else{
 			if(bfObj) bfObj.before('<div id="mask"></div>');
 			else $('body').append('<div id="mask"></div>');
@@ -588,13 +531,13 @@
 		var chkLayer=false;
 		if(!isLayerPop){
 			$('.layer_pop').each(function(){//레이어팝업 열려있는 경우
-				if($(this).css('display')!='none') {
+				if($(this).css('dispaly')!='none') {
 					$('.layer_pop, calBox').css('z-index','999999');
 					chkLayer=true;
 				}
 			});
-		}				
-		
+		}
+
 		if(chkLayer) return;
 
 		$("#mask").remove();
@@ -612,10 +555,6 @@
 	function getVersion()
 	{
 		var x = navigator.userAgent;
-
-		if(x.indexOf('BlackBerry')>-1) return false; //블랙베리 분기 처리
-		if(x.indexOf('Bada')>-1) return false; //바다os 분기 처리
-
 		var index = x.indexOf('Android');
 		if(index==-1) return true; //아이폰 분기 처리.
 		var and_v = eval(x.substr(index+8,1));
@@ -627,9 +566,9 @@
 		//debug( and_v );
 		return check;
 	}
-	
+
 	var doc = $(window.document);
-	
+
 	function setTab()
 	{
 		var tab = doc.find('div.tab');
@@ -640,20 +579,18 @@
 			dethList.each(function( idx )
 			{
 			});
-			
+
 			var tabContent = $this.children('.tabContent').children('li');
 			var tabTitle;
 			var menuType = 0;
-			
+
 			if( tabContent.size()>0 )
 			{
 				// 탭에 상단 메뉴가 2개인 경우
-				var tCont1DepLi=tabContent.eq(0).find('li');
-				var tCont2DepDiv=tabContent.eq(1).children('div');
 				menuType = 0;
 				var title = dethList.eq(0).children('a').children('span');
 				var sub = dethList.eq(1).children('a').children('span');
-				dethList.children('a').on('click' , function( evt )
+				dethList.children('a').bind('click' , function( evt )
 				{
 					evt.preventDefault();
 					var ta = $(evt.target).closest('li');
@@ -664,70 +601,45 @@
 							if(tabTitle){
 								tabTitle.children('a').removeClass('on');
 							}
-							
+
 							dethList.eq(0).removeClass('on');
 							dethList.eq(1).removeClass('on');
 						}else{//열기
-							//0518 추가 
+							//0518 추가
 							ta.addClass('on');
 							$this.children('.tabContent').css('display','block');
-							//0518 추가 
-							
+							//0518 추가
+
 							tabContent.eq(0).css('display','block');
 							tabContent.eq(1).css('display','none');
-
-							$(resizeObject).trigger('resize');
-						}						
+						}
 					}else if(tabContent.eq(1).css('display')=="none"){//열기
-						var idx=0;
-						tCont1DepLi.each(function (i){
-							if($(this).hasClass('on')) {
-								idx=i;
-								return false;
-							}
-						});
-						tCont2DepDiv.css('display','none');
-						tCont2DepDiv.eq(idx).css('display','block');
-						
 						ta.addClass('on');
 						$this.children('.tabContent').css('display','block');
 
 						tabContent.eq(0).css('display','none');
 						tabContent.eq(1).css('display','block');
-
-						$(resizeObject).trigger('resize');
 					}else{//닫기
 						tabContent.css('display','none');
 						if(tabTitle){
 							tabTitle.children('a').removeClass('on');
 						}
-						
+
 						dethList.eq(0).removeClass('on');
 						dethList.eq(1).removeClass('on');
 					}
-					// reHeight( tabContent.eq(0).children('.tabSwipe'));
-					
-				});
-				var resize = function()
-				{
-					tabContent.children('.tabSwipe').each(function(i){
-						var target=$(this);
-						
-						if(target.closest('li').css('display')!='none'&&target.css('display')!='none') {
-							reHeight(target);
-						}
-					});
-					
-				};
-				tabContent.children('.tabSwipe').data('resizeH',resize);
 
+					$(resizeObject).trigger('resize');
+					// reHeight( tabContent.eq(0).children('.tabSwipe'));
+
+				});
 				tabContent.css('display','none');
 			}else{
 				menuType = 1;
 				tabTitle = $this.children('.tabTitle');
 				tabContent = $this.children('.tabContent');
 				tabContent.css('display','none');
-				$this.children('div.tabTitle').children('a').on('click' , function(evt)
+				$this.children('div.tabTitle').children('a').bind('click' , function(evt)
 				{
 					evt.preventDefault();
 					$(evt.target).closest('a').addClass('on');
@@ -737,7 +649,7 @@
 						tabContent.css('display','none');
 						$(evt.target).closest('a').removeClass('on');
 					}
-					
+
 					$(resizeObject).trigger('resize');
 					// reHeight( tabContent.children('.tabSwipe'));
 				});
@@ -759,17 +671,17 @@
 				var paging = swiper.children('.paging');
 				//var paging=con.children('.paging');
 				//console.log( paging.attr('class') );
-				swiper.children('button.btnClose').on('click',function()
+				swiper.children('button.btnClose').bind('click',function()
 				{
 					tContent.css('display','none');
 					if(tabTitle){
 						tabTitle.children('a').removeClass('on');
 					}
-					
+
 					dethList.eq(0).removeClass('on');
 					dethList.eq(1).removeClass('on');
 				});
-				
+
 				gropList.each(function( idx2 )
 				{
 					var lilist = $(this).children('.group').children('ul').children('li');
@@ -779,11 +691,11 @@
 					{
 						var ch = false;
 						if( lilist.parent().hasClass('tabJs') ){
-							ch = true;	
+							ch = true;
 						}
 						return ch;
 					})();
-					
+
 					//해쉬태그 처리 //mpoc/center/mCS3.2.1T.html
 					var hashTag=window.location.hash;
 					lilist.children('a').each(function(){
@@ -794,9 +706,9 @@
 						}
 					});
 
-					lilist.children('a').on('click', function(evt) 
+					lilist.children('a').bind('click', function(evt)
 					{
-						if($(this).attr('href')=='#') evt.preventDefault();
+						evt.preventDefault();
 						lilist.removeClass('on');
 						var target =$(evt.target).closest('li');
 						target.addClass('on');
@@ -804,37 +716,32 @@
 						{
 							case 0 :
 								if( depth == 0){
-									var tarIdx=target.index();
-									if(target.closest('div.group').index()>0){
-										tarIdx+=6;
-									}
 									dethList.eq(0).removeClass('on');
 									dethList.eq(1).addClass('on');
 									_title.empty();
 									_title.html( target.text() );
 									tabContent.eq(0).css('display','none');
-									
+
 									tabContent.eq(1).css('display','block');
 									tabContent.eq(1).children('.tabSwipe').css('display','none');
-									tabContent.eq(1).children('.tabSwipe').eq(tarIdx).css('display','block');
-									
-									reHeight( tabContent.eq(1).children('.tabSwipe').eq(tarIdx));
-									var swipe = tabContent.eq(1).children('.tabSwipe').eq(tarIdx).find('ul>li').eq(0).children('a');
+									tabContent.eq(1).children('.tabSwipe').eq(target.index()).css('display','block');
+
+									reHeight( tabContent.eq(1).children('.tabSwipe').eq(target.index()));
+									var swipe = tabContent.eq(1).children('.tabSwipe').eq(target.index()).find('ul>li').eq(0).children('a');
 									_sub.empty();
 									_sub.html( swipe.text() );
 									menuCheck( dethList );
-									$(resizeObject).trigger('resize');
 								}else{
-									
+
 								}
 							break;
-							case 1 : 
+							case 1 :
 								if( tabJS )
 								{
 									var id = $(this).attr('href');
 									if ( doc.find( id ).attr('id') )
 									{
-										tabContent.css('display','none');	
+										tabContent.css('display','none');
 									}
 								}
 								tabTitle.find('a>span').text($(this).text());
@@ -844,7 +751,7 @@
 				});
 			});
 		});
-		
+
 		function menuCheck( target )
 		{
 			var ch = false;
@@ -865,14 +772,14 @@
 				target.not(':eq('+n+')').children('a').addClass('center');
 			}
 		}
-		
+
 		function reHeight( target )
 		{
 			//console.log('===reHeight===');
-			target.find('.swiper-container').each(function(idx) 
+			target.find('.swiper-container').each(function(idx)
 			{
 				var list = $(this).find('ul>li');
-				list.filter(':even').each(function(index) 
+				list.filter(':even').each(function(index)
 				{
 					var li = $(this);
 					var tli = list.eq(li.index()+1);
@@ -880,7 +787,7 @@
 					li.removeAttr("style");
 					tli.removeAttr("style");
 					li.children().removeAttr("style");
-					tli.children().removeAttr("style");	
+					tli.children().removeAttr("style");
 					if( li.height() > tli.height())
 					{
 						h = li.height();
@@ -957,7 +864,7 @@
 					currPointLeft=Number(currPoint.css("left").replace("px",""));
 				}
 				overUnit.hide();
-			}			
+			}
 
 			var fn_result=function(x, isKeyDown){
 				var curLeft=Number(ctrl.css("left").replace("px",""));
@@ -1043,87 +950,108 @@
 						overUnit.hide();
 					}
 				}
-				
+
 			};
 
 		    //event----------------------------------------------------------------------
-		    ctrl.on("touchstart",function(e){
+		    ctrl.bind("touchstart",function(e){
 		    	e.preventDefault ? e.preventDefault() : e.returnValue = false;//모바일 화면 드래그 방지
 		    	curX=e.originalEvent.touches[0].clientX;
 		    	sliderHandle=this;
 		    });
 
-		    $('html').on("touchend",function(e){
+		    $('html').bind("touchend",function(e){
 		    	curX=null;
 		    	sliderHandle=null;
 		    });
 
-		    $('html').on("touchmove",function(e){
+		    $('html').bind("touchmove",function(e){
 		    	if(sliderHandle!=null) {
 		    		fn_result(e.originalEvent.touches[0].clientX);
 					curX=e.originalEvent.touches[0].clientX;
-		    	}    	
+		    	}
 		    });
 		    //--------------------------------------------------------------------------
 
-		    ctrl.on("dragstart",function(e){//블록 드래그 방지 ie7/8
+		    ctrl.bind("dragstart",function(e){//블록 드래그 방지 ie7/8
 		    	e.preventDefault ? e.preventDefault() : e.returnValue = false;
 		    });
 
 			//pc mouse event
-		    ctrl.on("mousedown",function(e){
+		    ctrl.bind("mousedown",function(e){
 		    	curX=e.pageX;
 		    	sliderHandle=this;
 		    });
-		    ctrl.on("click",function(e){//a 태그 클릭 이벤트 방지.
+		    ctrl.bind("click",function(e){//a 태그 클릭 이벤트 방지.
 		    	e.preventDefault();
 		    });
-		    
-		    $('html').on("mouseup",function(e){
+
+		    $('html').bind("mouseup",function(e){
 		    	curX=null;
 		    	sliderHandle=null;
 		    });
 
-		    $('html').on("mousemove",function(e){
+		    $('html').bind("mousemove",function(e){
 		    	if(sliderHandle!=null) {
 		    		fn_result(e.pageX);
 		    		curX=e.pageX;
-		    	}    	
+		    	}
 		    });
 
-		    ctrl.on('keydown',function(e){
+		    ctrl.bind('keydown',function(e){
 		    	if(e.keyCode==39||e.keyCode==38){
 		    		e.preventDefault();
 		    		if(hasPoint){
 		    			fn_result(maxLeft/(max*10),true);
 		    		}else{
-		    			fn_result(maxLeft/max,true);	
+		    			fn_result(maxLeft/max,true);
 		    		}
-		    		
+
 		    	}else if(e.keyCode==37||e.keyCode==40){
 		    		e.preventDefault()
 		    		if(hasPoint){
 		    			fn_result(-maxLeft/(max*10),true);
 		    		}else{
-		    			fn_result(-maxLeft/max,true);	
+		    			fn_result(-maxLeft/max,true);
 		    		}
 		    	}
 		    });
 		    //--------------------------------------------------------------------------
-			
+
 		});
 	};
 	//----------------------
-		function Jessture( target )
+
+	// 추가
+	function SwiperSlider( target , opt )
 	{
+		var swiper = this;
+		swiper.target = $(target);
+
+		var warper = swiper.target.children('.swiperWrap');
+		warper.css('width','999999px');
+		warper.addClass('swiper-warper');
+		var container = warper.children();
+		container.addClass('swiper-container');
+		swiper.activeIndex = 0;
+		var eventBlock = true;
+		var totalItem = container.length;
+		swiper.length = totalItem;
+
+		// 스와이프 컨텐츠의 높이 값을 제대로 읽지 못하는 경우가 있어서 timeout  추가
+		var first =container.eq(0);
+		var th = first.outerHeight(true);
+		if(th){
+			setTimeout(function(){
+				th = first.outerHeight(true);
+				warper.css('height',th+'px');
+			},10);
+		}
+
 		var startX = 0;
 		var startY = 0;
-		var _this = $(this);
-		var RIGHT = this.RIGHT = 'jsRight';
-		var LEFT = this.LEFT = 'jsLeft';
-		
-		
-		target.on('touchstart , mousedown' , function(e)
+
+		warper.bind('touchstart , mousedown' , function(e)
 		{
 			//e.stopPropagation();
 			if(e.type == 'mousedown'){
@@ -1135,25 +1063,25 @@
 				startY = e.originalEvent.touches[0].pageY;
 			}
 		});
-		
-		target.on( 'touchmove , mousemove' , function(e) 
+
+		warper.bind( 'touchmove , mousemove' , function(e)
 		{
 			var endX = 0;
 			var endY = 0;
-			
+
 			if(e.type != 'mousemove')
 			{
 				endX = e.originalEvent.touches[0].pageX;
 				endY = e.originalEvent.touches[0].pageY;
-				
+
 				if( Math.abs(startX - endX)>Math.abs(startY - endY) )
 				{
 					e.preventDefault();
 				}
 			}
 		});
-		
-		target.on('touchend , mouseup' , function(e)
+
+		warper.bind('touchend , mouseup' , function(e)
 		{
 			var endX = 0;
 			if(e.type == 'mouseup'){
@@ -1163,122 +1091,62 @@
 			}else{
 				endX = Number(e.originalEvent.changedTouches[0].pageX);
 			}
-			
+
 			if( Math.abs(startX - endX) > 70)
 			{
 				if(startX < endX)
 				{
-					_this.trigger( RIGHT );
+					warper.trigger('swiperright');
 				}else{
-					_this.trigger( LEFT );
+					warper.trigger('swiperleft');
 				}
 			}
 			startX = 0;
 		});
-		
-		this.on = function( evt , func)
+
+		warper.bind('swiperright' , function()
 		{
-			_this.on(evt , func ); 
-		};
-	}
-	
-	
-	// 추가
-	function SwiperSlider( target , opt )
-	{
-		var swiper = this;
-		swiper.target = $(target);
-		
-		var warper = swiper.target.children('.swiperWrap');
-		warper.css('width','999999px');
-		warper.addClass('swiper-warper');
-		var container = warper.children();
-		container.addClass('swiper-container');
-		swiper.activeIndex = 0;
-		var eventBlock = true;
-		var totalItem = container.length;
-		swiper.length = totalItem;
-		
-		// 스와이프 컨텐츠의 높이 값을 제대로 읽지 못하는 경우가 있어서 timeout  추가
-		var first =container.eq(0);
-		var th = first.outerHeight(true);
-		var tch = true;
-		warper.parents().each(function(index) 
-		{
-			if( $(this).css('display') == 'none' )
-			{
-				tch = false;
-				return;
-			} 
-		});
-		
-		if(th && tch ){
-			setTimeout(function(){
-				th = first.outerHeight(true);
-				warper.css('height',th+'px');
-			},10);	
-		}
-		
-		var js = new Jessture( warper );
-		js.on( js.RIGHT , function()
-		{ 
 			if( eventBlock && ( swiper.activeIndex > 0) )
-			{	
+			{
 				swiper.__prevSlider();
 			}
 		});
-		js.on( js.LEFT , function()
+		warper.bind('swiperleft' , function()
 		{
 			if( eventBlock && (  swiper.activeIndex < swiper.length-1))
 			{
-				swiper.__nextSlider();				
+				swiper.__nextSlider();
 			}
 		});
-		
+
 		swiper.__moving = false;
 		swiper.__nextSlider = function()
 		{
 			this.__moveSlider( swiper.activeIndex+1 );
 		};
-		
+
 		swiper.__prevSlider = function ()
 		{
 			this.__moveSlider( swiper.activeIndex-1 );
 		};
-		
+
 		swiper.__setSlideWidth = function( n )
 		{
-			opt.width = n;	
+			opt.width = n;
 		};
-		
+
 		swiper.__resize = function()
 		{
 			var s = -((swiper.activeIndex) *  opt.width);
 			if( opt.type=='type3' ){
 				s = -(commonJs.WIDTH/2 + 70)*swiper.activeIndex;
 			}
-			var sWarper =swiper.target.find('.swiper-warper'); 
+			var sWarper =swiper.target.find('.swiper-warper');
 			sWarper.css('margin-left' , s );
 			var li = sWarper.children('.swiper-container').eq(swiper.activeIndex);
 			var h = li.outerHeight(true);
-			
-			var tch = true;
-			sWarper.parents().each(function(index) 
-			{
-				if( $(this).css('display') == 'none' )
-				{
-					tch = false;
-					return;
-				} 
-			});
-			
-			
-						
-			if(th && tch )
-			{
-				sWarper.css('height',h+'px');
-			}
-			
+			sWarper.css('height',h+'px');
+
 			//myt/mMY1.2.1.2T.1.html  요일별, 차트의 스와이프 단일적용
 			if( opt.conWidth && swiper.activeIndex > 0)
 			{
@@ -1290,7 +1158,7 @@
 				sWarper.css('margin-left' , s );
 			}
 		};
-		
+
 		swiper.__moveSlider = function( nen)
 		{
 			swiper.__moving =false;
@@ -1302,10 +1170,10 @@
 				var act =  swiper.target.find('.swiper-warper');
 				var li =  swiper.target.find('.swiper-container').css('margin-right');
 				var rm = Number(li.replace('px',''));
-				
+
 				var actPos =  0;
 				actPos = -((opt.width+rm) * nen);
-				// myt/mMY1.2.1.2T.1.html  요일별, 차트의 스와이프 단일적용 
+				// myt/mMY1.2.1.2T.1.html  요일별, 차트의 스와이프 단일적용
 				//if( opt.conWidth && actPos ){
 				if( opt.conWidth && actPos ){
 					actPos =  opt.width-opt.conWidth;
@@ -1314,7 +1182,7 @@
 					actPos = -(commonJs.WIDTH/2 + 70)*nen;
 				}
 				//
-				
+
 				TweenMax.to(  act, 0.3, {'margin-left':actPos+"px" , ease:Circ.easeInOut , onComplete : 	function( e )
 				{
 					swiper.activeIndex = nen;
@@ -1322,7 +1190,7 @@
 					check();
 				}} );
 			}
-			
+
 			function check()
 			{
 				eventBlock = true;
@@ -1334,10 +1202,10 @@
 			}
 		};
 	}
-	SwiperSlider.prototype.on = function( event , callBack ) 
+	SwiperSlider.prototype.bind = function( event , callBack )
 	{
-		 //this.target.on(event , callBack );
-		 this.target.on(event , callBack ); 
+		 //this.target.bind(event , callBack );
+		 this.target.bind(event , callBack );
 	};
 	SwiperSlider.prototype.nextSlider = function(){ this.__nextSlider(); };
 	SwiperSlider.prototype.moveSlider = function( n ){ this.__moveSlider( n ); };
@@ -1348,36 +1216,30 @@
 	SwiperSlider.prototype.getActiveIndex = function(){ return this.activeIndex; };
 	SwiperSlider.prototype.getLength = function(){ return this.length; };
 	SwiperSlider.prototype.setLength = function(n){ this.length = n; };
-	
+
 	var clickEvent = '';
-	
+
 	function setSwiper()
-	{		
-		doc.find('div.swiperCon,div.tabSwipe').each(function(index) 
+	{
+		doc.find('div.swiperCon,div.tabSwipe').each(function(index)
 		{
 			var con = $(this);
 			var sNavi = con.children('.slideNavi');
-			if( sNavi.length == 0 ) sNavi = con.parent().children('.slideNavi'); 
+			if( sNavi.length == 0 ) sNavi = con.parent().children('.slideNavi');
 			var sNaviList = sNavi.children('ul').children('li');
 			var liList = con.children('.swiperWrap').children();
-			
-			var paging=con.children('.paging');
 
+			var paging=con.children('.paging');
 			var sliderW = function(){
-				var n= con.outerWidth(true);
-				// var n = commonJs.WIDTH;
-				//if( con.hasClass('sideMargin') ){
-				//	n = commonJs.WIDTH - 30;
-				//}else if(con.hasClass('sidemg15') ){//mpoc/center/mCS.html
-				//	n = commonJs.WIDTH - 30;
-				//}
-				if( con.hasClass('sideMargin') || con.hasClass('sidemg15') ){
+				var n = commonJs.WIDTH;
+				if( con.hasClass('sideMargin') ){
+					n = commonJs.WIDTH - 30;
+				}else if(con.hasClass('sidemg15') ){//mpoc/center/mCS.html
 					n = commonJs.WIDTH - 30;
 				}
-				
 				return n;
 			};
-			
+
 			// myt/mMY1.2.1.2T.1.html  요일별, 차트의 스와이프 적용
 			var type = 'type1';
 			var conWidth = 0;
@@ -1390,14 +1252,13 @@
 				var left = (commonJs.WIDTH/2) - 70;
 				liList.not(':eq(0)').css('margin-left', -left+'px');
 			}
-			
-			var swiper = new SwiperSlider( con , 
+
+			var swiper = new SwiperSlider( con ,
 			{
 				width : sliderW(),
 				conWidth : conWidth,
 				type:type
 			});
-
 			con.children('.swiperWrap').css({
 				'position'	:'relative'
 			});
@@ -1410,15 +1271,15 @@
 				}else{
 					pagingCur=paging.children('span').eq(0).children('span>span');
 					pagingCur.text('1');
-					paging.children('span').eq(1).children('span>span').text(swiper.getLength());					
+					paging.children('span').eq(1).children('span>span').text(swiper.getLength());
 				}
 			}
-			
+
 			// myt/mMY1.2.1.2T.1.html  요일별, 차트의 스와이프 단일적용
 			if( $(this).hasClass('resizeWidth') ){
 				swiper.setLength(2);
 			}
-						
+
 			var menu = doc.find('div.changeType>ul>li,div.inforCont>ul>li');
 			var menuActive = function( idx )
 			{
@@ -1427,7 +1288,7 @@
 			};
 			menu.each(function()
 			{
-				$(this).find('a').on('click', function(evt) 
+				$(this).find('a').bind('click', function(evt)
 				{
 					evt.preventDefault();
 					var idx = $(evt.target).parent().index();
@@ -1435,19 +1296,19 @@
 					swiper.moveSlider( idx );
 				});
 			});
-			
+
 			liList.css({
 				'display'	:'block',
 				'width'	:sliderW()+'px'
 			});
-			
-			
-			var target =$(this); 	
-			$(resizeObject).on('resize',function(evt)
+
+
+			var target =$(this);
+			$(resizeObject).bind('resize',function(evt)
 			{
 				swiper.setSlideWidth( sliderW() );
 				liList.css('width' , sliderW()+'px' );
-				
+
 				if( target.hasClass('roundMargin') ){
 					var left = (commonJs.WIDTH/2) - 70;
 					liList.not(':eq(0)').css('margin-left', -left+'px');
@@ -1455,21 +1316,19 @@
 				if( target.data('resizeH') )
 				{
 					target.data('resizeH')();
-					var actCon=con.find('.swiper-container').eq(swiper.activeIndex);
-					actCon.parent().css('height',actCon.outerHeight()+'px');
 				}
-				
+
 				// myt/mMY1.2.1.2T.1.html  요일별, 차트의 스와이프 단일적용
 				if( conWidth < sliderW() && conWidth ){
 					swiper.setLength(0);
 				}else if( conWidth ){
 					swiper.setLength(2);
 				}
-				
+
 				swiper.resize();
 			});
-				
-			swiper.on( 'complete' , function( event, obj )
+
+			swiper.bind( 'complete' , function( event, obj )
 			{
 				sNaviList.removeClass('on');
 				sNaviList.eq( obj.data.getActiveIndex() ).addClass('on');
@@ -1480,8 +1339,8 @@
 			});
 			var prev = con.children('button.swipePrev');
 			var next = con.children('button.swipeNext');
-				
-			con.children('button').on('click' , function()
+
+			con.children('button').bind('click' , function()
 			{
 				if( swiper.getLength()==1 ){
 					return;
@@ -1502,9 +1361,9 @@
 							pagingCur.text(n);
 						}
 					}
-				}				
+				}
 			});
-				
+
 			function check()
 			{
 				var n = swiper.getActiveIndex();
@@ -1518,14 +1377,14 @@
 				}else{
 					next.addClass('on');
 				}
-				
+
 				if(paging.length==1){
 					pagingCur.text(n+1);
 				}
 			};
 			check();
-			
-						
+
+
 			//auto slide
 			var startSlide , stopSlide , aDuration = 3000 , timer=0;;
 			var isAuto=con.hasClass('autoSlide');
@@ -1536,7 +1395,7 @@
 				var btnStop =  sNavi.find('.btnPlay');
 				btnPlay.hide();
 				btnStop.show();
-				
+
 				startSlide=function(){
 					if(!timer) timer=setInterval(function()
 					{
@@ -1551,7 +1410,7 @@
 					if(timer) clearInterval(timer);
 					timer=null;
 				};
-				
+
 				var btnClick = function( evt )
 				{
 					if( btnPlay.css('display')=='block' ){
@@ -1561,28 +1420,28 @@
 					}else{
 						btnPlay.css('display','block');
 						btnStop.css('display','none');
-						
+
 						stopSlide();
 					}
-				};				
-				btnPlay.on('click' , btnClick);
-				btnStop.on('click' , btnClick);
+				};
+				btnPlay.bind('click' , btnClick);
+				btnStop.bind('click' , btnClick);
 
-				
+
 				startSlide();
 			}
-			
-		});		
+
+		});
 	}
 
-	
+
 	function setProduct()
 	{
 		//mTS1.1.1.html# 10GB이상(무제한) 탭 클릭시
 		doc.find('div.findProduct').children('div.tabType2').each(function()
 		{
 			//console.log( $(this).children('a.tabBtn') );
-			$(this).children('a.tabBtn').on('click',function(evt)
+			$(this).children('a.tabBtn').bind('click',function(evt)
 			{
 				evt.preventDefault();
 				var target = $(evt.target).next();
@@ -1599,7 +1458,7 @@
 				}
 			});
 		});
-		doc.find('div.myContents').each(function(index) 
+		doc.find('div.myContents').each(function(index)
 		{
 			var target = $(this);
 			function show()
@@ -1607,7 +1466,7 @@
 				target.css('display' ,'block');
 			}
 			var inter;
-			$(resizeObject).on('scroll' , function()
+			$(resizeObject).bind('scroll' , function()
 			{
 				if( inter ){
 					clearTimeout(inter);
@@ -1624,13 +1483,13 @@
 		$('div.tabType3').each(function(){
 			var target=$(this).children('ul').children('li');
 
-			target.children('a').on('click',function(e){
+			target.children('a').bind('click',function(e){
 				e.preventDefault();
 				target.removeClass('on');
 				$(this).parent().addClass('on');
 			});
 		});
-		
+
 		//내가 찾은 요금상품 카테고리 탭//mpoc/product/mTS1.1.1.html# //mMY1.2.1.2T.1.html#
 		$('div.tabType2').each(function(){
 			var $thisA=$(this).find('div.tabContent>div.group>ul>li>a');
@@ -1674,11 +1533,11 @@
 							od.css('padding-bottom', (Number(od.css('padding-bottom').replace('px',''))+gap)+'px');
 						}
 
-					}						
+					}
 				});
 			};
 
-			tabTitle.on('click',function(e){
+			tabTitle.bind('click',function(e){
 				e.preventDefault();
 				var target=$(this).parent();
 				target.toggleClass('on');
@@ -1687,108 +1546,21 @@
 				}
 			});
 
-			$thisA.on('click',function(e){
+			$thisA.bind('click',function(e){
 				e.preventDefault();
 				tabTitle.parent().removeClass('on');
 				tabTitle.text($(this).text());
 			});
 
-			$(resizeObject).on('resize',fn_resize);
-		});	
-			
-		doc.find('div.appsList>div.swiperCon2').each(function( idx ) 
-		{
-			var waper = $(this).parent();
-			var con =$(this).find('ul'); 
-			/**
-			TweenMax.to(  act, 0.3, {'margin-left':actPos+"px" , ease:Circ.easeInOut , onComplete : 	function( e )
-			{
-				swiper.activeIndex = nen;
-				//eventBlock = true;
-				check();
-			}} );
-			**/
-			
-			var list = doc.find('div.appsList>div.appsCont');
-			var libox = $(this).find('div.inner>ul>li');
-			var sellCnt = 3;
-			var tn = (function(){
-				return (libox.size()/sellCnt)-1;
-			})();
-			var cn = 0;
-			
-			var docview = function( wid )
-			{
-				list.css('display','none');
-				//var n =$(this).attr('href');
-				doc.find(wid).css('display','block');
-			};
-			
-			libox.children('a').on('click' , function( evt )
-			{
-				evt.preventDefault();
-				libox.removeClass('on');
-				$(evt.target).closest('li').addClass('on');
-				docview( $(this).attr('href') );
-			});
-			
-			
-			$(this).children('button').bind('click', function( evt ) 
-			{
-			  //console.log(   );
-			  if( $(evt.target).closest('button').hasClass('swipePrev') )
-			  {
-				cn--;
-				if( cn < 0){
-					cn = 0;
-				}
-			  }else{
-			  	cn++;
-				if( cn > tn){
-					cn = tn;
-				}
-			  }
-			  moveF();
-			});
-			
-			var moveF = function()
-			{
-				var mn = -(cn * 240)+'px';
-				TweenMax.to(  con, 0.3, {'margin-left': mn , ease:Circ.easeInOut , onComplete : 	function( e ){}});
-				var id = cn*sellCnt;
-				libox.removeClass('on');
-				libox.eq(id).addClass('on');
-				docview( libox.eq(id).find('a').attr('href') );
-				//console.log( 'dd '+id );
-				//console.log( libox.eq(id).find('a').attr('href') );
-			};
-			
-			var js = new Jessture(waper);
-			js.on( js.RIGHT , function()
-			{
-				cn--;
-				if( cn < 0){
-					cn = 0;
-				}
-				moveF();
-			});
-			js.on( js.LEFT , function()
-			{
-				cn++;
-				if( cn > tn){
-					cn = tn;
-				}
-				moveF();
-			});
-			
+			$(resizeObject).bind('resize',fn_resize);
 		});
 	}
-	
+
 	function setCommon()
 	{
 		//mpoc/guide/layout3.html, mpoc/guide/layout4.html
-		var topHeadResize = null; 
-		doc.find('div.topHead').each(function(index) 
+		var topHeadResize = null;
+		doc.find('div.topHead').each(function(index)
 		{
 			var head = $(this);
 			var backBtn = doc.find('div.backBtn');
@@ -1805,25 +1577,25 @@
 		  		}
 		  		if(closeBtn.length>0) {
 		  			bH = closeBtn.height();
-		  			closeBtn.css('top' , ((h/2)-(bH/2))+'px');	
+		  			closeBtn.css('top' , ((h/2)-(bH/2))+'px');
 		  		}
 		  		if(shareWrap.length>0) {
 		  			bH = shareWrap.height();
-		  			shareWrap.css('top' , ((h/2)-(bH/2))+'px');	
+		  			shareWrap.css('top' , ((h/2)-(bH/2))+'px');
 		  		}
 		  	};
 		  	topHeadResize();
 		});
 		/////////////////////////////////////////////////////
-				 
-		$(resizeObject).on('resize', function(event) 
+
+		$(resizeObject).bind('resize', function(event)
 		{
 			if( topHeadResize ){
 				topHeadResize();
-			}			
+			}
 		});
 
-		//.topConBox 버튼 없을시 padding-right 제거 
+		//.topConBox 버튼 없을시 padding-right 제거
 		$('.topConBox').each(function(){
 			var target=$(this).children("strong");
 			if(target.children("button").length==0){
@@ -1831,7 +1603,7 @@
 			}
 		});
 
-		//.lineType1.center>.lineCon.type1 버튼 없을시 padding-right 제거 
+		//.lineType1.center>.lineCon.type1 버튼 없을시 padding-right 제거
 		$('.lineType1.center>.lineCon.type1').each(function(){
 			var target=$(this);
 			if(target.children(".btnChange").length==0){
@@ -1853,7 +1625,7 @@
 			target.hide();
 			target.eq(initNum).show();
 
-			sltBox.on('change',function(){
+			sltBox.bind('change',function(){
 				var sltIdx=$(this).children('option:selected').index();
 				target.hide();
 				target.eq(sltIdx).show();
@@ -1869,9 +1641,9 @@
 				var h=Number(target.css('padding-top').replace('px',''))+Number(target.css('padding-bottom').replace('px',''))+target.children('.formWrap').height();
 				target.css('height',h+'px');
 				$this.css('padding-top',target.outerHeight(true)+'px');
-			};			
+			};
 			setH();
-			$(resizeObject).on('resize',function(){
+			$(resizeObject).bind('resize',function(){
 				setH();
 			});
 		});
@@ -1880,32 +1652,14 @@
 		//탑배너 닫기 스크립트 //mpoc/util/common/mUT8.3.1L.html
 		$('.topBanner').each(function(){
 			var target=$(this);
-			target.find('.bnrClose').on('click',function(e){
+			target.find('.bnrClose').bind('click',function(e){
 				e.preventDefault();
 				target.hide();
 			});
 		});
-		// common/mUT1.4.html 간격 맞추기
-		var kWordlist =$('.keywordPack2>.con2>dd:eq(0)>ol>li');
-		if( kWordlist.length ){
-			
-			$(resizeObject).on('resize', function(event) 
-			{
-				var kWordlist2 =$('.keywordPack2>.con2>dd:eq(1)>ol>li');
-				for( var i = 0; i<kWordlist.length; i++ ){
-					kWordlist.eq(i).removeAttr("style");
-					kWordlist2.eq(i).removeAttr("style");
-					if(  kWordlist.eq(0).height() > kWordlist2.eq(i).height()){
-						kWordlist2.eq(i).css('height',kWordlist.eq(i).height()+'px');
-					}else{
-						kWordlist.eq(i).css('height',kWordlist2.eq(i).height()+'px');
-					}
-				}
-			});
-		}
 	}
 
-	function setPopup() 
+	function setPopup()
 	{
 		var verChk=getVersion();
 		//레이어팝업
@@ -1919,8 +1673,6 @@
 				var pHead=target.find('div.popHead');
 				var popCon=target.find('div.popCon');
 				var btnBox2=popCon.children('div.btnBox2');
-				target.css('height','');
-				inPop.css('height','');
 				var targetH=target.outerHeight(true);
 				var inPopH=inPop.outerHeight(true);
 
@@ -1934,14 +1686,14 @@
 					var h=inPop.height();
 					if(resH<h) inPop.css('height',resH+'px');
 					else inPop.css('height',h+'px');
-					
+
 				}else{
 					target.css('position','absolute');
 					pHead.css('position','absolute');
 					target.find('div.layerClose').css('position','absolute');
 				}
 
-				
+
 			});
 		};
 
@@ -1952,7 +1704,7 @@
 				var pt=Number(pHead.css('padding-top').replace('px',''));
 				var targetH=target.outerHeight(true);
 				var pClose = target.find('div.layerClose');
-				
+
 				var pH = pClose.height();
 				var hOh = pHead.outerHeight(true);
 
@@ -1968,34 +1720,34 @@
 					popCon.css('margin-top',pt+'px');
 					pClose.css('top',(hOh/2-pH/2)+'px');
 					target.css('margin-bottom',(commonJs.HEIGHT*0.07)+'px');
-				}				
+				}
 			});
 		};
 
-		$('a.id_layerOpen').on('click',function(e){
+		$('a.id_layerOpen').bind('click',function(e){
 			e.preventDefault();
 			var href=$(this).attr('href');
 			$(href).show();
-			
+
 			setLayerPopupHeight($(href));
 			sortLayerPopup($(href));
-			
+
 			setMask();
 			$(resizeObject).trigger('resize');
-		});	
+		});
 
 		$('div.layer_pop').each(function(){
 			var target=$(this);
 			// setLayerPopupHeight(target);
 			// sortLayerPopup(target);
-			target.find('div.layerClose>button').on('click',function(e){//닫기버튼
+			target.find('div.layerClose>button').bind('click',function(e){//닫기버튼
 				e.preventDefault();
 				target.hide();
 				clearMask(true);
 			});
 		});
-		
-		$(resizeObject).on('resize',function(){
+
+		$(resizeObject).bind('resize',function(){
 			setLayerPopupHeight($('div.layer_pop'));
 			sortLayerPopup($('div.layer_pop'));
 		});
@@ -2010,7 +1762,7 @@
 			var content = pCon.children('div.inPop');
 			var contentH = content.height();
 			var pClose = p.children('div.popClose');
-			
+
 			var grayCont=pCon.children('div.grayCont');
 
 			//화면사이즈조절 //www/mpoc/guide/syspop.html
@@ -2021,11 +1773,10 @@
 
 				var mbLen=Number(pCon.css("padding-bottom").replace('px',''));
 
-				var excEl=p.find('.steptype, .lineType1, .tab, .hideView, .freeCall');
+				var excEl=p.find('.steptype, .lineType1, .tab, .hideView');
 				if(excEl.length>0){
 					excEl.each(function(){
-						var target=$(this);
-						if(target.parent().hasClass('inPop')&&target.prev().length==0){
+						if(excEl.parent().hasClass('inPop')&&excEl.prev().length==0){
 							mbLen=0;
 						}
 					});
@@ -2046,7 +1797,7 @@
 						$('body').css('overflow-y','hidden');
 					}
 					pCon.css('padding-top',(hHeight+mbLen)+'px');//padding-top 조절
-					
+
 					p.width(commonJs.WIDTH);
 				}else{
 					pHead.css('position','static');
@@ -2058,24 +1809,24 @@
 					content.css({
 						'height':'auto'
 					});
-					
+
 					if(grayCont.length!=0){
 						grayCont.css('position','static');
 					}
 					pClose.css('position','absolute');
-				}				
+				}
 			};
 
 			setInPopHeight();
 
-			$(resizeObject).on('resize',function(evt)
+			$(resizeObject).bind('resize',function(evt)
 			{
 				setInPopHeight();
 			});
 			//////////////////////////////////////////////////////////////////////
 		});
 	}
-	
+
 	function setRadioBox()
 	{
 		//label
@@ -2085,17 +1836,17 @@
 		if( !radioBox.next('label').attr('for') ){
 		//	return;
 		}
-		
+
 		var nameObj = {};
 		var choiceObj = {};
-		
+
 
 		//팝업창에서 라디오 박스 클릭시 스크롤 자동이동 막기 //mpoc/center/mCS1.1.2.1L.1T.html
 		var curTop=0;
 		var chkMove=false;
 		//
 
-		radioBox.each(function(index) 
+		radioBox.each(function(index)
 		{
 			if( !nameObj[$(this).attr('name')] )
 			{
@@ -2105,19 +1856,19 @@
 			nameObj[$(this).attr('name')].push($(this));
 
 			if(inPop.length>0&&getVersion()){//라디오 박스 클릭 스크롤 이벤트 막기
-				$('label[for="'+$(this).attr('id')+'"]').on('touchstart, mousedown', function(e){
+				$('label[for="'+$(this).attr('id')+'"]').bind('touchstart, mousedown', function(e){
 					curTop=inPop.scrollTop();
-					chkMove=true;	
+					chkMove=true;
 				});
 			}
 		});
 
 		if(inPop.length>0&&getVersion()){//라디오 박스 클릭 스크롤 이벤트 막기
-			inPop.on('scroll', function(e){
+			inPop.bind('scroll', function(e){
 				chkMove=false;
 			});
 		}
-		
+
 		for( var a in nameObj )
 		{
 			var arr = nameObj[a];
@@ -2132,7 +1883,7 @@
 				if( radio.attr('disabled') ){
 					radio.parent().addClass('disabled');
 				}
-								
+
 				radio.data('radio', {
 					target : radio,
 					func : function( value )
@@ -2163,13 +1914,13 @@
 								}
 							}
 				});
-				
-				radio.on('click' , function( e )
+
+				radio.bind('click' , function( e )
 				{
 					// e.preventDefault(); //!!사용시 토크백 오작동!!
 					// e.stopPropagation();
-					
-					var target = $(this);					
+
+					var target = $(this);
 					var obj = target.data('radio');
 					obj.func( obj.target );
 
@@ -2181,24 +1932,24 @@
 			}
 		}
 	}
-	
+
 	function setTabJs()
 	{
-		doc.find('.tabJs').each(function(index) 
+		doc.find('.tabJs').each(function(index)
 		{
 			var objArr = new Array();
 			//var p = $(this).children('li'); 바로 아래가 li가 아닌경우도 잡아 내기 위해 변경
 			var p = $(this).find('li');
-			
-			p.each(function(index) 
+
+			p.each(function(index)
 			{
 				var t = $(this);
 				var a = t.children('a');
 				// 제어할 id등록
 				objArr.push( a.attr('href') );
 				var i = index;
-				
-				$(this).on('click' , function( e )
+
+				$(this).bind('click' , function( e )
 				{
 					e.preventDefault();
 					//e.stopPropagation();
@@ -2206,35 +1957,27 @@
 					p.removeClass('on');
 					t.addClass('on');
 
-					$.each( objArr, function(index, value) 
+					$.each( objArr, function(index, value)
 					{
 						if(value!='#'&&value!='') {
 							$(value).css('display','none');
 						}
 					});
 					if(objArr[i]=='#tabAll'){
-						// product/mTS2a.3.1T.html tabjs 추가 
-						if( $(e.target).closest('.pkgTab').length>0 ){
-							doc.find('.pkgTabCon').addClass('pkgAll');
-						}
-						$.each( objArr, function(index, value) 
+						$.each( objArr, function(index, value)
 						{
 							if(index!=i&&value!='#'&&value!='') doc.find(value).css('display','block');
 						});
 					}else{
-						// product/mTS2a.3.1T.html tabjs 추가 
-						if( $(e.target).closest('.pkgTab').length>0 ){
-							doc.find('.pkgTabCon').removeClass('pkgAll');
-						}
-						if(objArr[i]!='#'&&objArr[i]!='') doc.find(objArr[i]).css('display','block');	
-					}					
+						if(objArr[i]!='#'&&objArr[i]!='') doc.find(objArr[i]).css('display','block');
+					}
 				});
 			});
 
 		});
 	}
-	
-	
+
+
 	function setCheckBox()
 	{
 		//var chkBox = doc.find('input:checkbox');
@@ -2248,18 +1991,18 @@
 			{
 				box.parent().addClass('checked');
 			}
-			
+
 			if( box.attr('disabled') )
 			{
 				box.parent().addClass('disabled');
 			}
 
-			box.on( 'click' , function( e )
+			box.bind( 'click' , function( e )
 			{
 				// e.preventDefault(); //!!사용시 토크백 오작동!!
 				// e.stopPropagation();
 				var target = $(this);
-				var tParnet =target.parent(); 
+				var tParnet =target.parent();
 				if( !tParnet.hasClass('disabled') ){
 					tParnet.toggleClass('checked');
 					if( tParnet.hasClass('checked') ){
@@ -2267,7 +2010,7 @@
 					}else{
 						target.attr('checked', false);
 					}
-				}				
+				}
 			});
 		});
 	}
@@ -2284,7 +2027,7 @@
 			ul.css('height',(liHeight+li.filter('.on').children('.infoCon').outerHeight(true)+10)+'px');
 			//
 
-			li.children('a').on('click',function(e){
+			li.children('a').bind('click',function(e){
 				e.preventDefault();
 				li.removeClass('on');
 				var target=$(this).parent('li');
@@ -2296,27 +2039,27 @@
 		//myt/mMY3.2.1.2.3.html 라디오 버튼 아래 툴팁
 		doc.find('div.useType').each(function()
 		{
-			$(this).find('input:radio').on('click', function(evt) 
+			$(this).find('input:radio').bind('click', function(evt)
 			{
 				var ta = $(evt.target);
 				var warp = ta.parent().parent().children('.formWrap');
 				warp.removeClass('on');
 				ta.parent().addClass('on');
-				
+
 				var info = ta.parent().parent().children('.addInfo');
 				info.css('display','none');
 				ta.parent().next().css('display','block');
 			});
 		});
-		
+
 		//myt/mMY3.5.2.1.1.html
 		doc.find('div.narrowCon>.billSelect').each(function()
 		{
 			var list = $(this).children('li');
-			list.children('a').on('click',function( evt )
+			list.children('a').bind('click',function( evt )
 			{
 			 	evt.preventDefault();
-				 var ta = $(evt.target); 
+				 var ta = $(evt.target);
 				 list.removeClass('on');
 				ta.parent().addClass('on');
 			});
@@ -2327,7 +2070,7 @@
 			var useSearch=$(this).closest('.useSearch');
 			var target=useSearch.next('.settingCon');
 
-			$(this).on('click',function(){
+			$(this).bind('click',function(){
 				if(target.css('display')=='none'){
 					target.show();
 					useSearch.addClass('on');
@@ -2368,7 +2111,7 @@
 
 				var setMax=function(){
 					currGuage.css('width',len+'px');
-					currData.css('left',len+'px');	
+					currData.css('left',len+'px');
 					currDataSt.text("1GB");
 					currDataSt.removeClass('min');
 					currDataSt.addClass('max');
@@ -2383,7 +2126,7 @@
 				};
 				if(resLeft>=len){
 					cur=len;
-					setMax();					
+					setMax();
 				}else if(resLeft<=0){
 					cur=0;
 					setMin();
@@ -2400,26 +2143,26 @@
 					else if(len/18*15<=cur&&cur<len/18*17) setRes(8);
 					else setMax();
 				}
-				
+
 			};
 			//event----------------------------------------------------------------------
-		    currDataImg.on("touchstart",function(e){
+		    currDataImg.bind("touchstart",function(e){
 		    	e.preventDefault ? e.preventDefault() : e.returnValue = false;//모바일 화면 드래그 방지
 		    	curX=e.originalEvent.touches[0].clientX;
 		    	sliderHandle=this;
 		    });
 
-		    $('html').on("touchend",function(e){
+		    $('html').bind("touchend",function(e){
 		    	curX=null;
 		    	sliderHandle=null;
 		    	cur=Number(currData.css("left").replace("px",""));
 		    });
 
-		    $('html').on("touchmove",function(e){
+		    $('html').bind("touchmove",function(e){
 		    	if(sliderHandle!=null) {
 		    		fn_result(e.originalEvent.touches[0].clientX);
 					curX=e.originalEvent.touches[0].clientX;
-		    	}    	
+		    	}
 		    });
 		    //--------------------------------------------------------------------------
 		});
@@ -2429,20 +2172,20 @@
 			var $this=$(this);
 			var target=$this.find('li>button');
 
-			target.on('click',function(e){
+			target.bind('click',function(e){
 				target.siblings('span').remove();
 				target.parent().removeClass('on');
 				$(this).after('<span class="hidden">선택</span>');
-				$(this).parent().addClass('on');				
+				$(this).parent().addClass('on');
 			});
 		});
 
 		//기본배송지 버튼 //mpoc/myt/mMY1.1.6.1.html
-		$('.btnBasic').on('click',function(){
+		$('.btnBasic').bind('click',function(){
 			$(this).toggleClass('on');
 		});
 
-		//이용내역 박스 높이 조절 //mpoc/myt/mMY1.1.4.3.1.html, mpoc/myt/mMY1.1.4.4.html#, mpoc/myt/mMY1.1.4.5.html# 
+		//이용내역 박스 높이 조절 //mpoc/myt/mMY1.1.4.3.1.html, mpoc/myt/mMY1.1.4.4.html#, mpoc/myt/mMY1.1.4.5.html#
 		$('.useHistory>ul').each(function(){
 			var target=$(this).children('li').children('dl');
 			var fn_resize=function(){
@@ -2454,7 +2197,7 @@
 						var evCon=ev.children('dd.con');
 						//resize 패딩 무한증가 방지 초기화
 						od.css('height','auto');
-						ev.css('height','auto');						
+						ev.css('height','auto');
 						//
 						if(odCon.length==1&&evCon.length==1){
 							//resize 패딩 무한증가 방지 초기화
@@ -2488,7 +2231,7 @@
 								odCon.css('padding-top', (Number(odCon.css('padding-top').replace('px',''))+gap)+'px');
 								odCon.css('padding-bottom', (Number(odCon.css('padding-bottom').replace('px',''))+gap)+'px');
 							}
-						}	
+						}
 
 						if(od.length==1&&ev.length==1){
 							var odH=od.height();
@@ -2508,15 +2251,15 @@
 
 			fn_resize();
 
-			$(resizeObject).on('resize',fn_resize);
-			
+			$(resizeObject).bind('resize',fn_resize);
+
 
 		});
 	}
-	
+
 	function search()
 	{
-		
+
 		$( "select" ).focus(function( e )
 		{
 			$(this).addClass('on');
@@ -2527,20 +2270,20 @@
 		});
 		/* */
 		/*
-		$( "form input" ).focus(function( e ) 
+		$( "form input" ).focus(function( e )
 		{
 			$(this).parent().addClass('on');
 		});
-		$( "form input" ).focusout(function( e ) 
+		$( "form input" ).focusout(function( e )
 		{
 			$(this).parent().removeClass('on');
 		});
 		*/
 	}
-	
+
 	function setCalendar()
 	{
-		
+
 		var calendar = doc.find('div.calendar');
 		if( !calendar.length ){
 			return;
@@ -2550,16 +2293,6 @@
 			return (String(n).length < 2)? '0'+n:n;
 		}
 
-		var curD=new Date();
-		var stD=new Date(Date.parse(curD) - 30 * 1000 * 60 * 60 * 24);
-		var endD=new Date(Date.parse(curD) + 30 * 1000 * 60 * 60 * 24);
-
-		var option={
-			start 	: { year : stD.getFullYear(), month : stD.getMonth()+1, day : stD.getDate() }, 		//달력 시작일
-			current : { year : curD.getFullYear(), month : curD.getMonth()+1, day : curD.getDate() },	//달력 현재일
-			end 	: { year : endD.getFullYear(), month : endD.getMonth()+1, day : endD.getDate() }	//달력 마지막
-		};
-		
 		$.fn.getCalrendar = function()
 		{
 			//console.log('= getCalrendar =');
@@ -2581,14 +2314,14 @@
 		};
 
 		/*
-		ex.) 
+		ex.)
 		$('div.calendar:eq(0)').setup({
 			start 	: { year:2016, month:1,  day:1  },
 			end 	: { year:2016, month:12, day:31 },
 			today 	: { year:2016, month:5,  day:1  },
 			date 	: { year:2016, month:5,  day:8  }
 		});
-		*/		
+		*/
 		$.fn.setup = function(opt)
 		{
 			var d=this.data('calrendar');
@@ -2606,34 +2339,34 @@
 				$(this).children('input').attr('value',opt.date.year+'.'+addZero( opt.date.month )+'.'+addZero( opt.date.day ));
 			}
 		};
-		
+
 		//var dt = new Date();
 		//var month = dt.getMonth()+1;
 		//var day = dt.getDate();
 		//var year = dt.getFullYear();
 		//dt.getFullYear() , month : dt.getMonth()+1, day : dt.getDate()				//pc값 셋팅
-		
+
 		calendar.each(function( idx )
 		{
 			var cal = $(this);
 			var mIndex = cal.css('z-index');
 			var box = cal.parent().children('div.calBox');
-			
+
 			var calObj = box.calendarInit({
 				//target : box.children('.calTop'),
-				year : box.find('.year'),				// 달표시
-				month :box.find('.month') ,				// 월표시
-				start 	: option.start, 				//달력 시작일
-				current : option.current,				//달력 현재일
-				end 	: option.end					//달력 마지막
+				year : box.find('.year'),								// 달표시
+				month :box.find('.month') ,							// 월표시
+				start 	: { year : 2015 , month : 1, day : 1 }, 		//달력 시작일
+				current : { year : 2016 , month : 1, day : 6 },		//달력 현재일
+				end 	: { year : 2017 , month : 8, day : 1 }			//달력 마지막
 			});
 			cal.data('calrendar',calObj);
 			calObj.setVisible( false );
-			
+
 			var input =  cal.children('input');
-			
-			input.attr('value',option.current.year+'.'+addZero( option.current.month )+'.'+addZero( option.current.day ));			
-			
+
+
+
 			calObj.calrendarClose = function()
 			{
 				cal.css('z-index',1);
@@ -2644,7 +2377,7 @@
 				cal.css('z-index',1000);
 				this.setVisible(true);
 			};
-			
+
 			calObj.bind( calObj.EVENTS.SELECT , function( evt , date )
 			{
 				input.attr('value',date.year+'.'+addZero( date.month )+'.'+addZero( date.day ));
@@ -2652,15 +2385,15 @@
 			calObj.bind(calObj.EVENTS.FOCUSOUT , function( evt ){
 				$(evt.target).parent().removeClass('on');
 			});
-			
-			cal.children('button.calBtn').on('click', function(evt) 
+
+			cal.children('button.calBtn').bind('click', function(evt)
 			{
 				calendar.css('z-index',1);
 				calendar.removeClass('on');
 				cal.css('z-index',1000);
 				cal.addClass('on');
-				
-				$.each( calendar , function( idx , value) 
+
+				$.each( calendar , function( idx , value)
 				{
 					if( $(value).data('calrendar') )
 					{
@@ -2685,8 +2418,8 @@
 
 				setMask(box);
 			});
-			
-					
+
+
 		function calendarFocus( target )
 		{
 			target.children('.calBox').css({
@@ -2696,84 +2429,84 @@
 			target.children('.calendar').addClass('on');
 			// $('html,body').animate({scrollTop:position.top}, 300);
 		}
-			
+
 			var top = box.children('div.calTop');
-			
-			top.children('button.first').on('click', function(evt) 
+
+			top.children('button.first').bind('click', function(evt)
 			{
 				calObj.first();
 			});
-			top.children('button.prev').on('click', function(evt) 
+			top.children('button.prev').bind('click', function(evt)
 			{
 				calObj.prev();
 			});
-			top.children('button.next').on('click', function(evt) 
+			top.children('button.next').bind('click', function(evt)
 			{
 				calObj.next();
 			});
-			top.children('button.end').on('click', function(evt) 
+			top.children('button.end').bind('click', function(evt)
 			{
 				calObj.end();
 			});
-			
+
 			// 하단 버튼 영역
 			var btn = box.children('div.btn');
-			btn.children('button.close').on('click' , function( evt )
+			btn.children('button.close').bind('click' , function( evt )
 			{
 				cal.removeClass('on');
 				calObj.setVisible(false);
 				clearMask();
 			});
-			btn.children('button.today').on('click' , function( evt )
+			btn.children('button.today').bind('click' , function( evt )
 			{
 				calObj.today();
 			});
-			
+
 		});
-		
-		
+
+
 		// 전체변경
-		// $('div.calendar:eq(0)').getCalrendar().setup({
-		// 		start 	: { year : 2015 , month : 1, day : 1 }, 
-		// 		current : { year : 2016 , month : 4, day : 6 },
-		// 		end 	: { year : 2017 , month : 8, day : 1 }	
-		// });
+		$('div.calendar:eq(0)').getCalrendar().setup({
+				start 	: { year : 2015 , month : 1, day : 1 },
+				current : { year : 2016 , month : 4, day : 6 },
+				end 	: { year : 2017 , month : 8, day : 1 }
+		});
 		// 단일값 변경
 		//$('div.calendar:eq(0)').getCalrendar().setToday(
 		//	{
-		//		year : 2016 , month : 4, day : 3 
+		//		year : 2016 , month : 4, day : 3
 		//	}
 		//);
 		// 단일 달력 접근
 		//$('div.calendar:eq(0)').getCalrendar().calrendarOpen();		// 열기
 		//$('div.calendar:eq(0)').getCalrendar().calrendarClose();		// 닫기
-		
-		
+
+
 	}
-	
+
 	function setList()
 	{
 		var list = $('ul.listCon');
 		if( !list.length ){
 			return;
 		}
-		
+
 		var callLink = function( link )
 		{
 			if( link ){
 				window.location.href = link;
 			}
 		};
-			
+
 		var subSeting = function( target , n )
 		{
 			var parentN = n;
-			//target.on('click' , function(e)
-			target.on('click' , function(e)
+			//target.bind('click' , function(e)
+			target.bind('click' , function(e)
 			{
 				e.preventDefault();
 				e.stopPropagation();
-				
+
 				var sub =$(this).children('ul');
 				var href = $(this).children('a').attr('href');
 				if( sub.length )
@@ -2790,7 +2523,7 @@
 					callLink( href );
 				}
 			});
-			
+
 			target.children('ul').css('display','none');
 			target.removeClass('on');
 			target.children('ul').each(function(index)
@@ -2803,8 +2536,8 @@
 				});
 			});
 		};
-		
-		list.children('li:not(:eq(0))').each(function(index) 
+
+		list.children('li:not(:eq(0))').each(function(index)
 		{
 			subSeting( $(this) , index);
 		});
@@ -2819,27 +2552,23 @@
 			var qCon=qTxt.children('.con');
 			var inPop=qInfo.closest('.inPop');
 			var m=15;
-			// var qTxtW=null;			
+			// var qTxtW=null;
 
 			var setTxtWidth=function(){
 				var qTxt_w=qTxt.outerWidth(true);
+
 				if(inPop.length==0){
 					if(commonJs.WIDTH<qTxt_w+2*m){
 						var w=qCon.width()-qTxt_w-2*m+commonJs.WIDTH;
 						qCon.css('min-width',w+'px');
 						qCon.width(w);
-					}else{
-						qCon.css('min-width',qCon.css('width'));
 					}
 				}else{
 					var inPopW=inPop.width();
 					if(inPopW<qTxt_w+2*m){
-					
 						var w=qCon.width()-qTxt_w-2*m+inPopW;
 						qCon.css('min-width',w+'px');
 						qCon.width(w);
-					}else{
-						qCon.css('min-width',qCon.css('width'));
 					}
 				}
 				// qTxtW=qTxt.outerWidth(true);
@@ -2847,7 +2576,7 @@
 			var setTxtLeft=function(_value){
 				var l=qInfo.offset().left;
 				var qTxt_w=qTxt.outerWidth(true);
-				// var qTxt_w;
+				var qTxt_w;
 				var sum;
 
 				// if(qTxtW!=null) qTxt_w=qTxtW;
@@ -2855,6 +2584,7 @@
 
 				if(inPop.length==0){
 					if(typeof _value=='boolean') qTxt_w=commonJs.WIDTH;
+
 					sum=l+qTxt_w+m;
 					if(sum<=commonJs.WIDTH){
 						qTxt.css("left","0px");
@@ -2865,7 +2595,7 @@
 					var inPopW=inPop.width();
 
 					if(typeof _value=='boolean') qTxt_w=inPopW;
-					
+
 					l=l-(commonJs.WIDTH-inPopW)/2;
 					sum=l+qTxt_w+m;
 					if(sum<=inPopW){
@@ -2881,7 +2611,7 @@
 			setTxtWidth();
 			setTxtLeft();
 
-			$(resizeObject).on('resize',function(){
+			$(resizeObject).bind('resize',function(){
 				qInfo_all.filter('.on').hide();
 				setTxtLeft(true);//화면 왼쪽으로 붙이기
 				qInfo_all.filter('.on').show();
@@ -2889,14 +2619,14 @@
 				setTxtLeft();
 			});
 
-			qInfo.children('a.qTit').on('click',function(e){
+			qInfo.children('a.qTit').bind('click',function(e){
 				e.preventDefault();
 				qInfo_all.removeClass('on');
 				qInfo.addClass('on');
 				setTxtWidth();
 				setTxtLeft();
 			});
-			qInfo.find('a.btnClose').on('click',function(e){
+			qInfo.find('a.btnClose').bind('click',function(e){
 				e.preventDefault();
 				qInfo.removeClass('on');
 			});
@@ -2908,7 +2638,7 @@
 	function setTopConBoxTglOn(){
 		$('.topConBox').each(function(){
 			var target=$(this);
-			target.find('button.btnMore').on('click',function(e){
+			target.find('button.btnMore').bind('click',function(e){
 				e.preventDefault();
 				target.toggleClass('on');
 			});
@@ -2916,7 +2646,7 @@
 	}
 
 	function setTglBtn(){
-		$('.tglBtn').on('click',function(e){
+		$('.tglBtn').bind('click',function(e){
 			e.preventDefault();
 			var tglBtn=$(this);
 			var target=tglBtn.closest('.tglClsOpen');
@@ -2927,11 +2657,11 @@
 				}
 				tagetLi.toggleClass('on');
 			}else{
-				target.toggleClass('on');	
+				target.toggleClass('on');
 			}
 		});
 
-		$('.tglBtnClose').on('click',function(e){
+		$('.tglBtnClose').bind('click',function(e){
 			e.preventDefault();
 			var tglBtnClose=$(this);
 			var target=tglBtnClose.closest('.tglClsOpen');
@@ -2941,16 +2671,16 @@
 			target.removeClass('on');
 		});
 	}
-	
+
 	// mMY1.1.5.html회선 정보
 	function setCircuit()
 	{
 		var check = true;
 		doc.find('div.myContents').each(function()
-		{	
+		{
 			check = false;
 		});
-		
+
 		//mTS1.1.1.html# 내 요금상품 보기에서 .myContents 클래스가 없는 경우에만 실행 된다.
 		if( check )
 		{
@@ -2962,12 +2692,12 @@
 				var tH = tm.outerHeight();
 				var t = tm.offset().top;
 				check = t + tH;
-				
+
 				function checkVisible()
 				{
 					target.css('display' , 'block');
 					if( $(document).scrollTop() > check){
-						
+
 						//tm.css({'position':'absolute' , 'top':'550px' ,'z-index':'1000'});
 						//var t =$(document).scrollTop()+commonJs.HEIGHT-(tm.outerHeight());
 						//tm.css({'position':'absolute' , 'top':t+'px' ,'z-index':'1000'});
@@ -2975,31 +2705,14 @@
 						//var t =commonJs.HEIGHT-(tm.outerHeight());
 						//tm.css({'position':'fixed' , 'top':t+'px' ,'z-index':'1000'});
 						tm.css({'position':'fixed' , 'bottom':'0' ,'z-index':'1000'});
-						if( tm.hasClass('lineType1'))
-						{
-							tm.addClass('mLine');
-						}
 					}else{
 						//tm.css({'position':'relative' ,'z-index':'1' ,'margin-top':'0px'});
 						tm.css({'position':'relative' ,'z-index':'1' });
-						if( tm.hasClass('mLine') ){
-							tm.removeClass('mLine');
-						}
 					}
-					
-					$('.btnBoxFloating').each(function(index)
-					{
-						var t = $(this);
-						if( tm.css('position')=='fixed'){
-							t.css('bottom','93px');
-						}else{
-							t.css('bottom','0px');
-						}
-					});
 				}
-				
+
 				var inter;
-				$(resizeObject).on('scroll' , function()
+				$(resizeObject).bind('scroll' , function()
 				{
 					if( inter ){
 						//clearTimeout(inter);
@@ -3009,26 +2722,19 @@
 					if( ($(document).scrollTop()+commonJs.HEIGHT ) != $('body').prop('scrollHeight') )
 					{
 						checkVisible();
+
 						//if( $(document).scrollTop() > check )
 						//{
 						//	inter = setTimeout(checkVisible,200);
 						//}else{
 						//	checkVisible();
-						//}	
+						//}
 					}
-					
-					$('.btnBoxFloating').each(function( idx ) {
-						var t = $(this);
-						if( target.css('display') == 'none'){
-						 	t.css('bottom','0px');
-						}
-					});
-					
 				});
-			});	
-		}		
+			});
+		}
 	}
-	
+
 
 	function setCheckPoint(){
 		$("div.checkPoint").each(function(){
@@ -3052,7 +2758,7 @@
 				btnPlus.show();
 				btnClose.hide();
 
-				btnPlus.on('click',function(e){
+				btnPlus.bind('click',function(e){
 					e.preventDefault();
 					btnPlus.hide();
 					btnClose.show();
@@ -3061,7 +2767,7 @@
 					$(resizeObject).trigger('resize');
 				});
 
-				btnClose.on('click',function(e){
+				btnClose.bind('click',function(e){
 					e.preventDefault();
 					btnClose.hide();
 					btnPlus.show();
@@ -3072,8 +2778,8 @@
 					$(resizeObject).trigger('resize');
 				});
 			}
-			
-			checkPoint.children('div.tit').children('a').on('click',function(e){
+
+			checkPoint.children('div.tit').children('a').bind('click',function(e){
 				e.preventDefault();
 				checkPoint.toggleClass('on');
 				if(cpLiLen>5&&checkPoint.hasClass('on')){
@@ -3085,7 +2791,7 @@
 				$(resizeObject).trigger('resize');
 			});
 
-			cpLi.children('a').on('click',function(e){
+			cpLi.children('a').bind('click',function(e){
 				e.preventDefault();
 				var target=$(this).parent();
 				if(target.hasClass('on')){
@@ -3101,11 +2807,11 @@
 	}
 
 	//mpoc/purchase
-	function setPurchase(){ 
+	function setPurchase(){
 		//"부가서비스 신청" 서비스 옵션 선택 토글'on' //mpoc/purchase/mPJ2.1.23.html
 		$('ul.serviveOption').each(function(){
 			var li=$(this).children('li');
-			li.find('input[type="radio"]').on('click',function(e){
+			li.find('input[type="radio"]').bind('click',function(e){
 				li.removeClass('on');
 				$(this).closest('li').addClass('on');
 			});
@@ -3151,7 +2857,7 @@
 			var selectCtgr=function(el){
 
 				var sltHref=el.attr('href');
-				
+
 				if(isSameDept){
 					selectedCtgr.find('a:last').remove();
 				}
@@ -3194,31 +2900,31 @@
 				btnBox.hide();
 			});
 
-			faqDep1.find('li>a').on('click',function(e){
+			faqDep1.find('li>a').bind('click',function(e){
 				e.preventDefault();
 				selectCtgr($(this));
 			});
 
-			faqDep2.find('li>a').on('click',function(e){
+			faqDep2.find('li>a').bind('click',function(e){
 				e.preventDefault();
 				selectCtgr($(this));
 			});
 
-			btnMore.children('a').on('click',function(e){
+			btnMore.children('a').bind('click',function(e){
 				e.preventDefault();
 				btnMore.hide();
 				btnClose.show();
 				dep1_hidden.show();
 			});
 
-			btnClose.children('a').on('click',function(e){
+			btnClose.children('a').bind('click',function(e){
 				e.preventDefault();
 				btnMore.show();
 				btnClose.hide();
 				dep1_hidden.hide();
 			});
 
-			btnSearchAgain.on('click',function(e){
+			btnSearchAgain.bind('click',function(e){
 				e.preventDefault();
 				init();
 			});
@@ -3229,7 +2935,7 @@
 		// 지도보기 상세 목록열고/닫기 //mpoc/center/mCS4.1.1T.2.2.html#
 		$('.mapList_area').each(function(){
 			var target=$(this);
-			target.children('a').on('click',function(e){
+			target.children('a').bind('click',function(e){
 				e.preventDefault();
 				target.toggleClass('on');
 				if(target.hasClass('on')){
@@ -3246,7 +2952,7 @@
 		$('.favoriteBtn').each(function(){
 			var target=$(this);
 
-			target.children('button').on('click',function(e){
+			target.children('button').bind('click',function(e){
 				target.toggleClass('on');
 				if(target.hasClass('on')){
 					$(this).text('관심매장 취소');
@@ -3258,7 +2964,7 @@
 
 		// '공식 인증 대리점' 관심매장 등록 버튼 //mpoc/center/mCS4.1.1T.1.html
 		$('.shopList .detailBtn').each(function(){
-			$(this).children('a:last').on('click',function(e){
+			$(this).children('a:last').bind('click',function(e){
 				e.preventDefault();
 				var target=$(this);
 				target.toggleClass('on');
@@ -3276,7 +2982,7 @@
 			var li=$this.find('.calCon>ul>li');
 			var liLen=li.length;
 
-			$this.find('.prevMonth').on('click',function(){
+			$this.find('.prevMonth').bind('click',function(){
 				var idx=li.filter('.on').index();
 				var targetIdx=idx-1;
 				if(targetIdx<0) return;
@@ -3286,7 +2992,7 @@
 				}
 			});
 
-			$this.find('.nextMonth').on('click',function(){
+			$this.find('.nextMonth').bind('click',function(){
 				var idx=li.filter('.on').index();
 				var targetIdx=idx+1;
 				if(targetIdx>=liLen) return;
@@ -3296,74 +3002,6 @@
 				}
 			});
 		});
-	}	
-
-	function setBanner( target )
-	{
-		var arrValNm=["_banner_2006_F"];
-		//
-		var arrValNm_m=["_banner_2005_F"];
-
-		var cutIdx=arrValNm.length;
-		arrValNm.concat(arrValNm_m);
-
-		//arrValNm_m
-		for( var i =0; i< arrValNm.length; i++)
-		{
-			var id = arrValNm[i];
-			var isMult=false;
-			if(i>=cutIdx) isMult=true;
-
-			target.find('#'+id).each(function( idx ) 
-			{
-				var val = window[id];
-
-				if( val && val.length > 0 && typeof val == "object")
-				{
-					var tmpHtml="";
-					for(var i=0;i<val.length;i++) {
-						if(isMult) tmpHtml+='<li class="cont">';
-
-						var arrTmp = val[i].split('||');
-
-						if(arrTmp[1]=="I"){// img
-							tmpHtml='<a';// a
-							if(arrTmp[10]) tmpHtml+=' href="'+arrTmp[10]+'"'; // href
-							else tmpHtml+=' href="#"';
-							if(arrTmp[8]) tmpHtml+=' target="'+arrTmp[8]+'"'; // target
-
-							if(arrTmp[7]) tmpHtml+=' title="'+arrTmp[7]+'"'; // title
-							tmpHtml+='>';// a
-
-							tmpHtml+='<img';// img
-							if(arrTmp[2]) tmpHtml+=' src="'+arrTmp[2]+'"'; // src
-
-							if(arrTmp[6]) tmpHtml+=' alt="'+arrTmp[6]+'"'; // alt
-							tmpHtml+='>';// img
-
-							tmpHtml+='</a>';
-						}else if(arrTmp[1]=="H"&&arrTmp[2]){//html
-							$.ajax({
-								type: "get",
-								dataType: "html",
-								url: arrTmp[2], //html url
-								data: { },
-								success: function( result )
-								{
-									if(result){
-										tmpHtml+=result;
-									}
-								}
-							});
-						}
-
-						if(isMult) tmpHtml+="</li>";
-					}
-					$(this).html(tmpHtml);					
-				}				
-			});
-		}
-			
 	}
 
 	$(window).ready(function()
@@ -3371,7 +3009,7 @@
 		//$('head').append( '<div data-role="header" data-fullscreen="true"/>' );
 		commonJs.WIDTH = $(window).width();
 		commonJs.HEIGHT = $(window).height();
-		
+
 		var mobilecheck = function () {
 			var check = false;
 			(function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
@@ -3379,12 +3017,9 @@
 		};
 		//clickEvent = ( mobilecheck() ) ? 'touchend' : 'click';
 		clickEvent = 'click';
-
-		setBanner($(document));
-
 		setCommon();
 		commonJs.setSelectBox('select');
-		
+
 		setPopup();
 		search();
 		setList();
@@ -3394,7 +3029,7 @@
 		setTopConBoxTglOn();
 		setTglBtn();
 		setCheckPoint();
-		
+
 		setMyt();
 		setProduct();
 		setPurchase();
@@ -3405,10 +3040,10 @@
 		setTab();
 		setTabJs();
 	});
-	$(window).load(function() 
+	$(window).load(function()
 	{
 		setQInfo();
 		setSwiper();
 	});
-	
+
 })(jQuery, window);

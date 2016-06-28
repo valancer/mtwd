@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>공시지원금에 상응하는 요금할인 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+<div class="popup popSfprice">
+	<div class="popHead">
+		<h1>공시지원금에 상응하는 요금할인</h1>
+	</div>
+	<div class="popCon popWide topNone">
+		<div class="inPop">
+			<div class="narrowCon">
+				<p class="fColor6">요금제를 선택해주세요. 선택한 요금제 별 지원금을 확인하실 수 있습니다.</p>
+				<p class="fColor6 h5">표기되지 않은 요금제는 요금제 금액과 비례하여 지원금이 적용됩니다.</p>
+			</div>
+
+			<!-- tab -->
+			<div class="tab">
+				<div class="tabTitle">
+					<a href="#"><span>맞춤형 요금제</span></a>
+				</div>
+				<!-- 메뉴선택 -->
+				<div class="tabContent" style="display:none">
+					<div class="tabSwipe">
+						<strong class="hidden">메뉴선택</strong>
+						<button type="button" class="btnPre">이전</button>
+						<div class="swiperWrap">
+							<div class="group">
+								<ul class="tabJs">
+									<li><a href="#tab1">일반 요금제</a></li><!-- 선택시 class값 on 추가 --><!-- 선택시 a태그에 title="선택"추가 -->
+									<li class="on"><a href="#tab2">맞춤형 요금제</a></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span></span></li><!-- data가 없을 경우 -->
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="btnAfter">다음</button>
+						<div class="paging"><em class="hidden">현재페이지</em><span>1</span>/<em class="hidden">전체페이지</em><span>3</span></div>
+						<button type="button" class="btnClose">목록닫기</button>
+					</div>
+				</div>
+				<!-- //메뉴선택 -->
+			</div><!-- //tab -->			
+
+			<div class="tabCon">
+				<div class="tab_select">
+					<ul class="tabJs">
+						<li class="on"><a href="#tabSelect1">LTE T끼리 맞춤형 요금제</a></li>
+						<li><a href="#tabSelect2">LTE 맞춤형 요금제</a></li>
+					</ul>
+				</div>
+				
+				<!-- LTE T끼리 맞춤형 요금제 -->
+				<div id="tabSelect1" class="tab_select_box center">
+					<dl>
+						<dt class="titDep2"><em class="fColor3">음성 제공 옵션</em> 확인 후 <em class="fColor3">추가 음성</em> 및 <em class="fColor3">데이터 제공량</em>을 선택해 주세요.</dt>
+						<dd>
+							<div>
+								<span>나는</span>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>음성옵션</option>
+									<option value="bb">음성옵션</option>
+									<option value="cc" disabled>음성옵션</option>
+								</select>
+								<span>+</span>
+							</div>
+							<div>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>음성 추가 제공량</option>
+									<option value="bb">음성 추가 제공량</option>
+									<option value="cc" disabled>음성 추가 제공량</option>
+								</select>
+								<span>과</span>
+							</div>
+							<div>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>데이터</option>
+									<option value="bb">데이터</option>
+									<option value="cc" disabled>데이터</option>
+								</select>
+								<span>를</span><br />
+								<span>제공하는 요금제를 찾고 있어요.</span>
+							</div>
+						</dd>
+					</dl>
+					<div class="btnBox h20">
+						<a href="#" class="btnL2 btnRed">조회</a>
+					</div>
+
+					<!-- 맞춤 요금제 옵션을 선택 후 조회버튼 클릭 시 노출 - 노출 시 체크 박스 체크 -->
+					<div class="result formWrap circle">
+						<input type="radio" id="setPrice1" name="PriceDate"><label for="setPrice1">T끼리 맞춤형 75~84</label>
+					</div>					
+
+				</div><!-- //LTE T끼리 맞춤형 요금제 -->
+				
+				<!-- LTE 맞춤형 요금제 -->
+				<div id="tabSelect2" class="tab_select_box center">
+					<dl>
+						<dt class="titDep2"><em class="fColor3">추가 음성</em> 및 <em class="fColor3">데이터 제공량</em>을 선택해 주세요.</dt>
+						<dd>
+							<div>
+								<span>나는</span>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>음성 추가 제공량</option>
+									<option value="bb">음성 추가 제공량</option>
+									<option value="cc" disabled>음성 추가 제공량</option>
+								</select>
+								<span>과</span>
+							</div>
+							<div>
+								<select title="title값" class="select2 bt">
+									<option value="aa" selected>데이터</option>
+									<option value="bb">데이터</option>
+									<option value="cc" disabled>데이터</option>
+								</select>
+								<span>를</span><br />
+								<span>제공하는 요금제를 찾고 있어요.</span>
+							</div>
+						</dd>
+					</dl>
+					<div class="btnBox h20">
+						<a href="#" class="btnL2 btnRed">조회</a>
+					</div>
+
+					<!-- 맞춤 요금제 옵션을 선택 후 조회버튼 클릭 시 노출 - 노출 시 체크 박스 체크 -->
+					<div class="result formWrap circle">
+						<input type="radio" id="setPrice2" name="PriceDate"><label for="setPrice2">T끼리 맞춤형 75~84</label>
+					</div>
+
+				</div><!-- //LTE 맞춤형 요금제 -->
+
+
+			</div><!-- //tab2 -->			
+
+		</div><!-- //inPop -->
+
+		<div class="btnBox">
+			<a href="#" class="btnL2 btnRed">선택한 요금제로 보기</a>
+		</div>
+
+	</div><!-- //popCon -->
+	<div class="popClose" style="top: 0px;"><button type="button">닫기</button></div>
+</div><!-- //popup -->
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>주문정보 작성 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>주문정보 작성</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+
+				<div class="orderBox">
+					<div class="tableType1 dotlineType">
+						<p>01_신청서작성_주문내역확인_인증하기_단말기 일련번호 선택 시</p>
+						<ul class="tableCon">
+							<li>
+								<strong><label for="order_parent_name">인증정보</label></strong>
+								<div class="selectBox">
+									<select title="인증정보">
+										<option value="" selected>단말기 일련번호</option>
+										<option value="">신용카드 번호</option>
+										<option value="">은행 계좌번호</option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+								<p class="h10"><input type="text" placeholder="마지막 4자리 숫자 입력" class="inputTxt1" /></p>
+								<p class="txtInfo">현재 사용하시는 단말기의 배터리를 분리하고 본체 뒷면에 있는 일련번호 중 마지막 4자리를 입력해 주세요. 애플(아이폰) 제품은 일련번호로 확인이 되지 않으니 계좌번호나 신용카드 번호로 선택해 주세요.</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //인증정보_단말기 일련번호 -->
+
+				<div class="orderBox">
+					<div class="tableType1 dotlineType">
+						<p>02_신청서작성_주문내역확인_인증하기_은행 계좌번호 선택 시</p>
+						<ul class="tableCon">
+							<li>
+								<strong><label for="order_parent_name">인증정보</label></strong>
+								<div class="selectBox">
+									<select title="인증정보">
+										<option value="">단말기 일련번호</option>
+										<option value="">신용카드 번호</option>
+										<option value="" selected>은행 계좌번호</option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+								<p class="h10"><input type="text" placeholder="마지막 4자리 숫자 입력" class="inputTxt1" /></p>
+								<p class="txtInfo">기존 통신사에 납부하셨던 계좌번호 중 마지막 4자리를 입력해 주세요.</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //인증정보_은행 계좌번호 -->
+
+				<div class="orderBox">
+					<div class="tableType1 dotlineType">
+						<p>03_신청서작성_주문내역확인_인증하기_신용카드 번호 선택 시</p>
+						<ul class="tableCon">
+							<li>
+								<strong><label for="order_parent_name">인증정보</label></strong>
+								<div class="selectBox">
+									<select title="인증정보">
+										<option value="">단말기 일련번호</option>
+										<option value="" selected>신용카드 번호</option>
+										<option value="">은행 계좌번호</option>
+										<option value="">자동납부 계좌번호</option>
+									</select>
+								</div>
+								<p class="h10"><input type="text" placeholder="마지막 4자리 숫자 입력" class="inputTxt1" /></p>
+								<p class="txtInfo">기존 통신사에 납부하셨던 신용카드 번호중 마지막 4자리를 입력해 주세요</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //인증정보_신용카드 번호 -->
+
+				<div class="orderBox">
+					<div class="tableType1 dotlineType">
+						<p>04_신청서작성_주문내역확인_인증하기_자동납부 계좌번호 선택 시</p>
+						<ul class="tableCon">
+							<li>
+								<strong><label for="order_parent_name">인증정보</label></strong>
+								<div class="selectBox">
+									<select title="인증정보">
+										<option value="">단말기 일련번호</option>
+										<option value="">신용카드 번호</option>
+										<option value="">은행 계좌번호</option>
+										<option value="" selected>자동납부 계좌번호</option>
+									</select>
+								</div>
+								<p class="h10"><input type="text" placeholder="마지막 4자리 숫자 입력" class="inputTxt1" /></p>
+								<p class="txtInfo">기존 통신사에 납부하셨던 자동납부 계좌번호 중 마지막4자리를 입력해 주세요.</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //인증정보_자동납부 계좌번호 -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

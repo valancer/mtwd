@@ -40,6 +40,9 @@
 					<dd class="h5 fColor6">공시기준일 : 2016.03.31</dd>
 				</dl>
 				<a href="#none" class="btnM_line btnWhite fRight h10">업데이트 상품 보기</a>
+				<!-- 공시지원금 업데이트 상품이 없을 경우 
+				<a href="#none" class="btnM_line btnWhite fRight h10">업데이트 알림 받기</a>
+				위 버튼을 제공하며, 클릭 시 공시지원금 업데이트 문자 알림 신청 팝업 제공  -->
 			</section>
 
 			<section class="sf_filter">
@@ -57,16 +60,17 @@
 					<a href="#none" class="hRight choose_plan">요금제 선택</a>
 				</div>
 
-				<div class="discount">
+				<div class="directAddPrice">
 					<p>다이렉트샵 추가지원금</p>
-					<a href="#none" class="discount_btn"></a>
+					<button type="button">닫기</button>
 				</div>
 
-				<ul class="list_area">
+				<ul class="list_area sf_directPrice">
 					<li>
 						<div class="title">
 							<h4>갤럭시 S7_64G</h4>
 							<p>삼성전자㈜ / SM-G930S_64G / 공시일 2016-03-11</p>
+							<a href="#none" class="alert">알림받기</a>
 						</div>
 						<div class="cont">
 							<img src="../../img/direct/tmp_item_120x230.jpg" alt="갤럭시 S7_64G">
@@ -75,17 +79,22 @@
 								<dd class="fColor6"><strong>880,000</strong>원</dd>
 								<dt class="h10">지원금 <span class="typeCircle">B</span></dt>
 								<dd class="fColor5 h10"><strong>248,000</strong>원</dd>
+								<!-- 다이렉트 추가지원금 보기 버튼 클릭시 클래스 directPrice_area 영역 노출 -->
+								<dt class="directPrice_area h10">다이렉트샵 추가지원금 <span class="typeCircle">C</span></dt>
+								<dd class="directPrice_area fColor5 h10"><strong>37,200</strong>원</dd>
 							</dl>
 							<dl class="sell_area h15">
-								<dt class="h15 sellPrice">판매가 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+								<!-- 다이렉트 추가지원금 보기 버튼 클릭시 클래스 directPrice_area 영역 노출 -->
+								<dt class="h15 sellPrice">판매가 <span class="typeCircle">A</span><span class="typeCircle">B</span><span class="typeCircle directPrice_area">C</span></dt>
 								<dd class="fColor1 h15"><strong>594,800</strong>원</dd>
 							</dl>
 						</div>
 					</li>
-					<li class="noSell"><!-- TWD에서 판매 중이 아닌 상품은 클래스 noSell 추가 -->
+					<li>
 						<div class="title">
 							<h4>갤럭시 S7_64G</h4>
 							<p>삼성전자㈜ / SM-G930S_64G / 공시일 2016-03-11</p>
+							<a href="#none" class="alert">알림받기</a>
 						</div>
 						<div class="cont">
 							<img src="../../img/direct/tmp_item_120x230.jpg" alt="갤럭시 S7_64G">
@@ -94,30 +103,57 @@
 								<dd class="fColor6"><strong>880,000</strong>원</dd>
 								<dt class="h10">지원금 <span class="typeCircle">B</span></dt>
 								<dd class="fColor5 h10"><strong>248,000</strong>원</dd>
+								<!-- 다이렉트 추가지원금 보기 버튼 클릭시 클래스 directPrice_area 영역 노출 -->
+								<dt class="directPrice_area h10">다이렉트샵 추가지원금 <span class="typeCircle">C</span></dt>
+								<dd class="directPrice_area fColor5 h10"><strong>37,200</strong>원</dd>
 							</dl>
 							<dl class="sell_area h15">
-								<dt class="h15">판매가 <span class="typeCircle">A</span>-<span class="typeCircle">B</span>-<span class="typeCircle">C</span></dt>
+								<!-- 다이렉트 추가지원금 보기 버튼 클릭시 클래스 directPrice_area 영역 노출 -->
+								<dt class="h15">판매가 <span class="typeCircle">A</span><span class="typeCircle">B</span><span class="typeCircle directPrice_area">C</span></dt>
 								<dd class="fColor1 h15"><strong>594,800</strong>원</dd>
 							</dl>
 						</div>
 					</li>
 				</ul>
-
 			</div>
 
 			<div class="bottom_area">
 				<div class="moreBoxType1"><a href="#">더보기</a></div>
-				<div class="cautionBox tglClsOpen h30">
+				<div class="cautionBox sf_caution tglClsOpen h30">
 					<a href="#" class="tglBtn">이것만은 꼭 확인하세요</a>
-					<div class="tglCont">
-						<ul class="listType1">
-							<li>위 지원금은 요금제와 <em class="fColor1">약정기간에 따라</em> 달라질 수 있습니다.</li>
-							<li>위 판매가는 <em class="fColor1">부가가치세(VAT) 포함 금액</em>입니다.</li>
-							<li>대리점 또는 판매점은 위 지원금의 <em class="fColor1">100분의 15내에서 추가로 단말기 구입금액을 지원</em> 할 수 있습니다.</li>
+					<div class="tglCont center">
+						<ul class="listType1 contSt">
+							<li><span>1.</span>위 지원금은 요금제와 <em class="fColor1">약정기간에 따라</em> 달라질 수 있습니다.</li>
+							<li><span>2.</span>위 판매가는 <em class="fColor1">부가가치세(VAT) 포함 금액</em>입니다.</li>
+							<li><span>3.</span>대리점 또는 판매점은 위 지원금의 <em class="fColor1">100분의 15내에서 추가로 단말기 구입금액을 지원</em> 할 수 있습니다.</li>
 						</ul>
-						<a href="#none" class="btnL btnWhite h10">자세히 보기</a>
+						<span>
+						<a href="#none" class="btnS btnWhite h10">자세히 보기</a>
 					</div>
-				</div>	
+				</div>
+			</div>
+
+			<div class="alert_wrap">
+				<div class="bar_area">
+					<p>공시지원금 변동 문자알림<a href="#none" class="btn_option">알림관리</a><a href="#none" class="btn_close">닫기</a></p>
+				</div>
+				<div class="alert_content">
+					<a href="#none" class="txtInfo">공시지원금 변동 문자 알림이란?</a>
+					<div class="device_list h10">
+						<ul>
+							<li>GALAXY S7<a href="#none">삭제</a></li>
+							<li>iPhone 6S<a href="#none">삭제</a></li>
+							<li>iPhone 6S Plus<a href="#none">삭제</a></li>
+							<li>LG G5<a href="#none">삭제</a></li>
+						</ul>
+						<!-- 변동알림 상품 없을 경우 아래 P태그 노출
+							<p>버튼을 선택하시면 문자알림을<br /> 받아 보실 수 있습니다.</p>
+						 -->
+					</div>
+					<div class="btnBox h15">
+						<a href="#" class="btnL btnRed">알림 신청하기</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!--/ content -->

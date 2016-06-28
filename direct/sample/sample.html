@@ -37,12 +37,96 @@ body {overflow:auto; position:static !important;}
 		<!--/ header -->
 		<!-- content -->
 		<div id="content" style="padding-top:60px;"> 
-			<span class="hyphen hyphen2">|</span>
+			
 			<section class="conInfo">
 				<h1 class="titDep1">Sample</h1>
 				<a href="#none" class="favorite">즐겨찾기</a>
 				<a href="#none" class="share">공유하기</a>
 			</section>
+
+			<div class="colType1">
+				<input type="text" id="phoneSerial" class="inputTxt1">
+				<a href="#none" class="btnS btnDgray btnB">기기인증</a>
+			</div>
+
+			<p class="h20">파일 업로드</p>
+			<div class="formArea boxUpload">
+				<input class="uploadFile inputTxt1" placeholder="법정대리인 신분증 첨부"  >
+				
+				<div class="fileUpload">
+					<a href="#none" class="btnS btnDgray btnB">찾아보기</a>
+					<input type="file" class="btnUpload" >
+				</div>
+			</div>
+
+			<div class="formArea">
+				<span>
+					<select title="전화번호 앞자리 선택">
+						<option value="" selected>010</option>
+						<option value="">011</option>
+						<option value="">016</option>
+						<option value="">017</option>
+						<option value="">018</option>
+						<option value="">019</option>
+					</select>
+				</span>
+				<span class="hyphen">-</span>
+				<span><input type="tel" title="전화번호 중간자리 4자리 입력" class="inputTxt1"></span>
+				<span class="hyphen">-</span>
+				<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" class="inputTxt1"></span>
+			</div>
+
+			
+			
+			<strong>받으실 주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
+			<p class="multi_radio h5">
+				<span class="formWrap">
+					<input type="radio" id="order_address_2" name="order_address" checked><label for="order_address_2">새로운 주소</label>
+				</span>
+				<span class="formWrap">
+					<input type="radio" id="order_address_1" name="order_address">
+					<label for="order_address_1">기본주소</label>
+				</span>
+			</p>
+			<div class="colType1">
+				<div class="formArea">
+					<input type="text" class="inputTxt1" title="우편번호 앞 자리" />
+					<span class="hyphen">-</span>
+					<input type="text" class="inputTxt1" title="우편번호 뒷 자리" />
+					<span class="pl5"><a href="#none" class="btnS btnDgray btnB">우편번호 찾기</a></span>
+				</div>
+			</div>
+			<p class="h10"><input type="text" title="주소를 입력해 주세요." class="inputTxt1" /></p>
+			<p class="h10"><input type="text" placeholder="상세주소를 입력해 주세요." class="inputTxt1" /></p>
+			<p class="txtInfo">서울시 외의 지역으로 변경/등록하실 경우, 찾아가는 개통 서비스 혜택을 받으실 수 없습니다.(자동 택배 수령)</p>
+		
+		
+			<strong>법정대리인 주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
+			<p class="multi_radio h5">
+				<span class="formWrap">
+					<input type="radio" id="order_address2_1" name="order_address2" checked><label for="order_address2_1">위 주소와 동일합니다</label>
+				</span>
+				<span class="formWrap">
+					<input type="radio" id="order_address2_2" name="order_address2" ><label for="order_address2_2">새로운 주소</label>
+				</span>
+				<span class="formWrap">
+					<input type="radio" id="order_address2_3" name="order_address2">
+					<label for="order_address2_3">기본주소</label>
+				</span>
+			</p>
+			<div class="formArea">
+				<div>(043039) 서울특별시 중구 <br>
+				을지로 2가 11(SK텔레콤 빌딩)</div>
+				<div class="right" style="width:25%"><a href="#none" class="btnS btnDgray btnB">변경하기</a></div>
+			</div>
+
+
+
+
+			<span class="hyphen hyphen2">|</span>
+			<p>
+				<span class="txt_timer">남은시간 2:55</span>
+			</p>
 			<section class="container" style="overflow:auto;">
 				<div class="boxGray h10">
 					<ul class="listType1">

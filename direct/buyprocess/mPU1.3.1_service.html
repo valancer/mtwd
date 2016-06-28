@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>주문정보 작성 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>주문정보 작성</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+
+				<div class="orderBox">
+					<p>01_서비스 가입 정보 케이스 별 구성</p>
+					<div class="tableType1 dotlineType">
+						<h2 class="titDep2">서비스 가입정보</h2>
+						<strong class="essential">필수</strong>
+						
+						<ul class="tableCon">
+							<li>
+								<strong><label for="order_name">USIM(유심)</label><em class="essential">필수입력</em></strong>
+								<p>
+									<span class="formWrap"><input type="radio" id="order_usim1_1" name="order_usim" checked><label for="order_usim_1">일반 USIM 구매 (6,600원)</label></span>
+								</p>
+								<p class="h5">
+									<span class="formWrap"><input type="radio" id="order_usim1_2" name="order_usim"><label for="order_usim_2">금융 USIM 구매 (8,800원)</label></span>
+									<em class="fColor1 fSize12">*해당단말지원</em>
+								</p>
+								<p class="h5">
+									<span class="formWrap"><input type="radio" id="order_usim1_3" name="order_usim"><label for="order_usim_3">기존 USIM 사용</label></span>
+								</p>
+								<div class="colType1">
+									<input type="text" title="조회번호 입력" value="USIM번호" class="inputTxt1" class="ml20" disabled />
+									<a href="#none" class="btnS btnDgray btnB">조회하기</a>
+								</div>
+								<!-- 작성중 -->
+								<div class="colType1">
+									<span class="retry">
+										<input type="text" title="조회번호 입력" value="" class="inputTxt1" class="ml20"/>
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<a href="#none" class="btnS btnDgray btnB">다시조회</a>
+								</div>
+								<!-- //작성중 -->
+								<span class="txtInfo">금융 USIM은 NFC 기능을 지원합니다. <br>
+								USIM 비용은 익월에 합산 청구됩니다.</span>
+							</li>
+							<li>
+								<strong>희망번호<em class="essential">필수입력</em></strong>
+								<div class="expectNum">
+									<span class="priority">1순위</span>
+									<span class="default">010 - ●●●● - </span>
+									<span class="num"><input type="text" id="order_email" title="1순위 휴대폰 뒷 자리 번호 4개를 입력해주세요." class="inputTxt1"></span>
+								</div>
+								<div class="expectNum">
+									<span class="priority">2순위</span>
+									<span class="default">010 - ●●●● - </span>
+									<span class="num"><input type="text" id="order_email" title="2순위 휴대폰 뒷 자리 번호 4개 입력해주세요." class="inputTxt1"></span>
+								</div>
+								<p><span class="txtInfo">희망번호가 없을 경우 임의 번호로 개통됩니다.</span></p>
+							</li>
+							<li>
+								<strong>고객보호비밀번호<em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">011</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
+								</div>
+								<div class="colType1">
+									<input type="password" placeholder="비밀번호6자리 입력" class="inputTxt1">
+									<a href="#none" class="btnS btnDgray btnB">인증하기</a>
+								</div>
+								<p class="txtInfo">고객님은 고객보호 비밀번호 서비스를 이용하고 계십니다. 개통을 진행하기 위해 설정하신 고객보호 비밀번호 6자리를 입력해 주세요.</p>
+							</li>
+							<li>
+								<strong>추천인정보</strong>
+								<div class="colType1">
+									<input type="password" title="추천인을 입력해주세요." class="inputTxt1">
+									<a href="#none" class="btnS btnDgray btnB">조회하기</a>
+								</div>
+								<!-- 작성중 -->
+								<div class="colType1">
+									<span class="retry">
+										<input type="text" title="조회번호 입력" value="" class="inputTxt1" class="ml20"/>
+										<a href="#none" class="del">삭제</a>
+									</span>
+									<a href="#none" class="btnS btnDgray btnB">조회하기</a>
+								</div>
+								<!-- //작성중 -->
+							</li>
+						</ul>
+					</div>
+				</div><!-- //서비스 가입정보 -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

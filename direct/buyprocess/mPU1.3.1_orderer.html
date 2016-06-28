@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>주문정보 작성 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문 바로가기</a>
+	</div>
+	<div id="Wrap">
+		<div class="topHead">
+			<h1>주문정보 작성</h1>
+		</div>
+		<!-- content -->
+		<div id="content"> 
+			<section class="container orderDetail">
+
+				<div class="orderBox">
+					<p>01_주문자정보</p>
+					<div class="tableType1 dotlineType">
+						<h2 class="titDep2">주문자 정보</h2>
+						<strong class="essential">필수</strong>
+						<p class="checkSame">
+							<span class="formWrap">
+								<input type="checkbox" id="same_person1">
+								<label for="same_person1">주문자와 회선 명의가 동일합니다.</label>
+							</span>
+						</p>
+						<ul class="tableCon">
+							<li>
+								<strong><label for="order_name">이름</label><em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<input type="text" id="order_name" class="inputTxt1">
+								</div>
+							</li>
+							<li>
+								<strong><label for="order_email">이메일</label><em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<span><input type="text" id="order_email" title="이메일 아이디 입력"  class="inputTxt1"></span> <span class="hyphen pl5">@</span> <span class="pl5"><input type="text" title="이메일 도메인 직접입력" class="inputTxt1"></span>
+								</div>
+								<div class="formArea">
+									<div class="selectBox ml5" style="width:220px">
+										<select title="이메일 도메인을 선택해 주세요.">
+											<option value="">직접입력</option>
+											<option value="">naver.com</option>
+											<option value="">hanmail.net</option>
+											<option value="">nate.com</option>
+											<option value="">gmail.com</option>
+											<option value="">yahoo.co.kr</option>
+											<option value="">hotmail.com</option>
+										</select>
+									</div>
+								</div>
+								<p><span class="txtInfo">주문내역이 이메일로 발송됩니다.</span></p>
+							
+							</li>
+							<li>
+								<strong>연락가능번호<em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">011</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
+								</div>
+							</li>
+							<li>
+								<strong>직업</strong>
+								<div class="formArea">
+									<div>
+										<div class="selectBox">
+											<select title="휴대폰 번호 선택">
+												<option value="" selected>공무원</option>
+												<option value="">회사원</option>
+												<option value="">자영업</option>
+												<option value="">농/수/축산업</option>
+												<option value="">전문직</option>
+												<option value="">학생(학원생)</option>
+												<option value="">주부</option>
+												<option value="">기타</option>
+											</select>
+										</div>
+									</div>
+									<span class="hyphen"></span>
+									<div>
+										<div class="selectBox">
+											<select title="휴대폰 번호 선택">
+												<option value="" selected>사무관리직</option>
+												<option value="">서비스직</option>
+												<option value="">판매직</option>
+												<option value="">기술직</option>
+												<option value="">기능직</option>
+												<option value="">기타</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
+								<p class="multi_radio h5">
+									<span class="formWrap">
+										<input type="radio" id="myAddress_new" name="myAddress" checked><label for="myAddress_new">새로운 주소</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="myAddress_default" name="myAddress">
+										<label for="myAddress_default">기본주소</label>
+									</span>
+								</p>
+								<div class="colType1">
+									<div class="formArea">
+										<input type="text" class="inputTxt1" title="우편번호 앞 자리" />
+										<span class="hyphen">-</span>
+										<input type="text" class="inputTxt1" title="우편번호 뒷 자리" />
+										<span class="pl5"><a href="#none" class="btnS btnDgray btnB">우편번호 찾기</a></span>
+									</div>
+								</div>
+								<p class="h10"><input type="text" title="주소를 입력해 주세요." class="inputTxt1" /></p>
+								<p class="h10"><input type="text" placeholder="상세주소를 입력해 주세요." class="inputTxt1" /></p>
+							</li>
+							<li>
+								<strong><label for="order_parent_name">법정대리인명</label><em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<div>
+										<input type="text" id="order_parent_name" class="inputTxt1">
+									</div>
+									<div class="selectRelation">
+										<div class="">관계</div> <div class="selectBox" style="width:72%">
+											<select title="법정대리인의 관계">
+												<option value="" selected>아버지</option>
+												<option value="">어머니</option>
+												<option value="">기타</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<strong>법정대리인 연락처<em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<span>
+										<select title="전화번호 앞자리 선택">
+											<option value="" selected>010</option>
+											<option value="">011</option>
+											<option value="">016</option>
+											<option value="">017</option>
+											<option value="">018</option>
+											<option value="">019</option>
+										</select>
+									</span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
+									<span class="hyphen">-</span>
+									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
+								</div>
+							</li>
+							<li>
+								<strong>법정대리인 주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
+								<p class="multi_radio h5">
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_same" name="deputyAddress" checked><label for="deputyAddress_same">위 주소와 동일합니다</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_new" name="deputyAddress" ><label for="deputyAddress_new">새로운 주소</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_default" name="deputyAddress">
+										<label for="deputyAddress_default">기본주소</label>
+									</span>
+								</p>
+								<div class="formArea">
+									<div>(043039) 서울특별시 중구 <br>
+									을지로 2가 11(SK텔레콤 빌딩)</div>
+									<div class="right" style="width:25%"><a href="#none" class="btnS btnDgray btnB">변경하기</a></div>
+								</div>
+							</li>
+							<li>
+								<strong><label for="order_parent_name">Resident permit code (체류코드)</label><em class="essential">필수입력</em></strong>
+								<div class="selectBox">
+									<select title="법정대리인의 관계">
+										<option value="" selected>A1</option>
+										<option value="">A2</option>
+										<option value="">M4</option>
+									</select>
+								</div>
+								<p class="txtInfo">Please enter resident permit code.<br />
+								체류코드를 입력해 주세요</p>
+								
+							</li>
+							<li>
+								<strong><label for="order_parent_name">RExpiration date of Stay (체류만료일자)</label><em class="essential">필수입력</em></strong>
+								<div class="formArea">
+									<div class="selectBox">
+										<select title="발급 연도">
+											<option value="" selected>YYYY년</option>
+											<option value="">2016년</option>
+											<option value="">2017년</option>
+											<option value="">2018년</option>
+											<option value="">2019년</option>
+											<option value="">2020년</option>
+											<option value="">2021년</option>
+											<option value="">2022년</option>
+											<option value="">2023년</option>
+											<option value="">2024년</option>
+											<option value="">2025년</option>
+											<option value="">2026년</option>
+											<option value="">2027년</option>
+											<option value="">2028년</option>
+											<option value="">2029년</option>
+											<option value="">2030년</option>
+										</select>
+									</div><div class="selectBox pl5">
+										<select title="발급 월">
+											<option value="" selected>MM월</option>
+											<option value="">01월</option>
+											<option value="">02월</option>
+											<option value="">03월</option>
+											<option value="">04월</option>
+											<option value="">05월</option>
+											<option value="">06월</option>
+											<option value="">07월</option>
+											<option value="">08월</option>
+											<option value="">09월</option>
+											<option value="">10월</option>
+											<option value="">11월</option>
+											<option value="">12월</option>
+										</select>
+									</div><div class="selectBox pl5">
+										<select title="발급 일">
+											<option value="" selected>DD일</option>
+											<option value="">01일</option>
+											<option value="">02일</option>
+											<option value="">03일</option>
+											<option value="">04일</option>
+											<option value="">05일</option>
+											<option value="">06일</option>
+											<option value="">07일</option>
+											<option value="">08일</option>
+											<option value="">09일</option>
+											<option value="">10일</option>
+											<option value="">11일</option>
+											<option value="">12일</option>
+											<option value="">13일</option>
+											<option value="">14일</option>
+											<option value="">15일</option>
+											<option value="">16일</option>
+											<option value="">17일</option>
+											<option value="">18일</option>
+											<option value="">19일</option>
+											<option value="">20일</option>
+											<option value="">21일</option>
+											<option value="">22일</option>
+											<option value="">23일</option>
+											<option value="">24일</option>
+											<option value="">25일</option>
+											<option value="">26일</option>
+											<option value="">27일</option>
+											<option value="">28일</option>
+											<option value="">29일</option>
+											<option value="">30일</option>
+											<option value="">31일</option>
+										</select>
+									</div>
+								</div>
+								<p class="txtInfo">Please enter expiration date of your stay.<br />
+								체류만료일자를 입력해 주세요.</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //주문자 정보 -->
+
+				<div class="orderBox">
+					<p>01_02_주문자정보_법정대리인주소_동일주소</p>
+					<div class="tableType1 dotlineType">
+						<ul class="tableCon">
+							<li>
+								<strong>법정대리인 주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
+								<p class="multi_radio h5">
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_same_2" name="deputyAddress_2" checked><label for="deputyAddress_same_2">위 주소와 동일합니다</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_new_2" name="deputyAddress_2" ><label for="deputyAddress_new_2">새로운 주소</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_default_2" name="deputyAddress_2">
+										<label for="deputyAddress_default_2">기본주소</label>
+									</span>
+								</p>
+								<div class="formArea">
+									<div>(043039) 서울특별시 중구 <br>
+									을지로 2가 11(SK텔레콤 빌딩)</div>
+									<div class="right" style="width:25%"><a href="#none" class="btnS btnDgray btnB">변경하기</a></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //주문자 정보 -->
+
+				<div class="orderBox">
+					<p>01_02_주문자정보_법정대리인주소_주소변경시</p>
+					<div class="tableType1 dotlineType">
+						<ul class="tableCon">
+							<li>
+								<strong>법정대리인 주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
+								<p class="multi_radio h5">
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_same_3" name="deputyAddress_3" checked><label for="deputyAddress_same_3">위 주소와 동일합니다</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_new_3" name="deputyAddress_3" ><label for="deputyAddress_new_3">새로운 주소</label>
+									</span>
+									<span class="formWrap">
+										<input type="radio" id="deputyAddress_default_3" name="deputyAddress_3">
+										<label for="deputyAddress_default_3">기본주소</label>
+									</span>
+								</p>
+								<div class="colType1">
+									<div class="formArea">
+										<input type="text" class="inputTxt1" title="우편번호 앞 자리" />
+										<span class="hyphen">-</span>
+										<input type="text" class="inputTxt1" title="우편번호 뒷 자리" />
+										<span class="pl5"><a href="#none" class="btnS btnDgray btnB">우편번호 찾기</a></span>
+									</div>
+								</div>
+								<p class="h10"><input type="text" title="주소를 입력해 주세요." class="inputTxt1" /></p>
+								<p class="h10"><input type="text" placeholder="상세주소를 입력해 주세요." class="inputTxt1" /></p>
+								<p class="checkSame h15">
+									<span class="formWrap">
+										<input type="checkbox" id="add_address">
+										<label for="add_address">나의 주소록에 추가하기</label>
+									</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- //주문자 정보 -->
+
+			</section><!-- //container -->
+		</div>
+		<!--/ content -->
+		<!-- footer -->
+		<footer>
+			<div class="tmp_footer">
+				<img src="../../img/tmp/img_tmp_footer.gif" alt=""/>
+			</div>
+		</footer>
+		<!--/ footer  -->
+		<div class="backBtn"><button type="button">이전페이지</button></div><!-- 기획TBD로 추후 수정될수도 있음 -->
+	</div><!--/ wrap -->
+</body>
+</html>

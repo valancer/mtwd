@@ -71,12 +71,26 @@
 .boxBoard li dl dt {float:left;width:70%;margin-bottom:10px}
 .boxBoard li dl dd {float:left;width:30%;margin-bottom:10px;text-align:right}
 .boxBoard li dl dd strong {font-size:20px;font-weight:normal}
+.boxBoard li dl dt.fColor6 {font-size:12px}
+.boxBoard li dl dd.fColor6,
+.boxBoard li dl dd.fColor6 strong {font-size:14px}
+.boxBoard li dl dd.monthPrice strong {font-size:22px}
+.boxBoard li tr th {padding:0 0 10px;}
+.boxBoard li tr th strong {display:inline-block;font-weight:normal}
+.boxBoard li tr td {padding:0 0 10px;text-align:right}
+.boxBoard li tr td strong {font-size:20px;font-weight:normal}
+.boxBoard li tr.selectAllSale th {font-size:12px;color:#666}
+.boxBoard li tr.selectAllSale td,
+.boxBoard li tr.selectAllSale td strong {font-size:14px;color:#666}
+.boxBoard li tr td.monthPrice strong {font-size:22px}
 
 /* Circle Type */
-.typeCircle {display:inline-block;width:12px;height:12px;color:#f65d00;border:1px solid #f65d00;border-radius:50%;font-size:7px;line-height:12px;text-align:center;text-transform:uppercase;vertical-align: middle}
-.typeCircleL {display:inline-block;width:15px;height:15px;color:#ee1d33;border:1px solid #ee1d33;border-radius:50%;font-size:8px;line-height:14px;text-align:center;text-transform:uppercase;vertical-align: middle}
+.typeCircle {display:inline-block;position:relative;width:12px;height:12px;color:#f65d00;border:1px solid #f65d00;border-radius:50%;font-size:8px;line-height:12px;text-align:center;text-transform:uppercase;vertical-align: middle}
+.typeCircleL {display:inline-block;width:15px;height:15px;margin-top:-2px;color:#ee1d33;border:1px solid #ee1d33;border-radius:50%;font-size:8px;line-height:14px;text-align:center;text-transform:uppercase;vertical-align: middle}
 .typeCircle.circleWhite,
 .typeCircleL.circleWhite {color:#FFF;border:1px solid #FFF;}
+.typeCircle + .typeCircle {margin-left:6px;}
+.typeCircle + .typeCircle:before {content:"";position:absolute;top:6px;left:-6px;width:4px;height:1px;background:#333}
 
 /* Card Number */
 .cardNumber {width:102%;margin-left:-2%}
@@ -105,8 +119,8 @@
 .gallerySlide .cont .imgType a{display:block;text-align:center;}
 
 /* Sort */
-.conSort {padding:15px;background:#434159}
-.conSort a {display:block;background:url("../../img/direct/ico_sort.png") no-repeat right 50%;background-size:25px;font-size:15px;color:#FFF;line-height:25px;}
+.conSort {padding-right:15px;background:#434159}
+.conSort a {display:block;padding:15px 0 15px 15px;background:url("../../img/direct/ico_sort.png") no-repeat right 50%;background-size:25px;font-size:15px;color:#FFF;line-height:25px;}
 
 /* Background Red Water */
 .bgWaterR {position:relative;padding:25px 15px;background:#e7032c;}
@@ -114,9 +128,6 @@
 
 /* 취소선 */
 .lineThrough {text-decoration:line-through}
-
-/* 이것만은 꼭 확인하세요 Style 2 */
-.cautionBox {}
 
 /* 셀렉트 다운 */
 .dropSelect {position:relative}
@@ -129,6 +140,17 @@
 .dropSelect .select_drop li strong em {color:#e3002b}
 .dropSelect .select_drop li.soldout span,
 .dropSelect .select_drop li.soldout strong {color:#bcbcbc}
+
+/* Dim처리 레이어 */
+.layer_pop.layer_dim {text-align:center}
+.layer_pop.layer_dim .popHead {display:none}
+.layer_pop.layer_dim .popCon {padding:0 !important;border:0}
+.layer_pop.layer_dim .layerClose {position:static;top:auto !important;left:auto}
+.layer_pop.layer_dim .layerClose button {padding:10px 20px;width:auto;height:auto;background:#434159;color:#FFF;line-height:1;}
+
+/* 둥근 체크라디오 */
+.circle input[type='radio']+label:before{background:url('../../img/direct/bg_check_circle.png') 0 -26px no-repeat; background-size:23px 50px;}
+.circle.checked input[type='radio']+label:before{background-position:0 0;}
 
 
 /* ==================================
@@ -170,9 +192,8 @@
 .callCareCon .tableType1 {padding-bottom:15px;border-bottom:1px solid #efefef}
 
 /* 분할상환 수수료 조회하기 */
-.divide_charge .inPop {background:#eee}
-.divide_charge .inPop_box {padding:20px 15px;background:#FFF;border-bottom:1px solid #e4e4e4}
-.divide_charge .inPop_box + .inPop_box {border-top:1px solid #e4e4e4}
+.divide_charge .inPop {}
+.divide_charge .inPop_box {padding:20px 15px;background:#FFF}
 .divide_charge .boxGray {overflow:hidden;padding:15px 0;text-align:center}
 .divide_charge .boxGray .boxInner {float:left;width:50%;box-sizing:border-box}
 .divide_charge .boxGray .boxInner + .boxInner {border-left:1px dashed #e4e4e4}
@@ -187,7 +208,6 @@
 .bill_detail .bgWaterR dl dd {float:right;width:50%;font-size:15px;color:#fff;text-align:right;}
 .bill_detail .bgWaterR dl dd strong {font-size:20px;font-weight:normal}
 .bill_detail .bgWaterR dl dd p {font-size:12px}
-.bill_detail .bill_table {background:#eee}
 .bill_detail .bill_table thead {background:#FFF;border-bottom:1px solid #e4e4e4}
 .bill_detail .bill_table thead th {padding:20px 15px 15px;font-size:20px;font-weight:bold;text-align:left}
 .bill_detail .bill_table thead th p {font-size:12px;color:#666}
@@ -222,6 +242,8 @@
 .accMobile textarea {height:75px}
 .accMobile .checkAll {position:relative}
 .accMobile .checkAll.checked:after {content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,.7);}
+
+/* 액세서리 쿠폰 */
 .accCoupon li {position:relative;padding:15px 5px 15px 8px;border:1px solid #ddd;border-radius:5px;text-align:center}
 .accCoupon li:before {content:"";position:absolute;top:0;left:-1px;width:8px;height:100%;background:url('../../img/direct/bg_coupon_left.jpg') no-repeat left center;background-size:8px;}
 .accCoupon li:after {content:"";position:absolute;top:0;right:-1px;width:6px;height:100%;background:url('../../img/direct/bg_coupon_right.jpg') no-repeat left center;background-size:6px;}
@@ -243,6 +265,7 @@
 .accCouponNone:before {content:"";position:absolute;top:0;left:-1px;width:8px;height:100%;background:url('../../img/direct/bg_coupon_off_left.jpg') no-repeat left center;background-size:8px}
 .accCouponNone:after {content:"";position:absolute;top:0;right:-1px;width:6px;height:100%;background:url('../../img/direct/bg_coupon_off_right.jpg') no-repeat left center;background-size:6px}
 
+/* 가로 슬라이 탭 */
 .tabSlide {position:relative;}
 .tabSlide:after {content:"";display:block;position:absolute;top:0;right:0;z-index:10;width:50px;height:100%;background:url("../../img/direct/bg_blur_w.png") repeat-y; background-size:100%; }
 .tabSlide .tabSlide_inner {width:100%;padding-left:10px;overflow:hidden;overflow-x:auto}
@@ -255,38 +278,49 @@
 .tabSlide .tabSlide_inner ul li.livingM a {background-position: center -285px}
 .tabSlide .tabSlide_inner ul li.blandH a {background-position: center -57px}
 .tabSlide .tabSlide_inner ul li.tAllSale a {background-position: center -360px}
+
 .accMain {overflow:hidden}
 .accMain .bnSlide .slideNavi {position:absolute;bottom:30px;left:0;width:100%;}
+
+/* 액세서리 리스트 */
 .accList .titDep3 {padding:30px 0 15px;font-weight:normal}
 .accList  ul {border-top:1px solid #e7e7e7}
-.accList  ul li {position:relative;padding: 45px 0 24px;border-bottom:1px solid #e7e7e7}
+.accList  ul li {position:relative;border-bottom:1px solid #e7e7e7}
+.accList  ul li a {display:block;padding: 45px 0 24px}
 .accList  ul li .img_area {float:left;width:125px;padding:0 10px;text-align:center;box-sizing:border-box}
 .accList  ul li .img_area img {width:100%;}
-.accList  ul li dl dt {margin-bottom:15px;font-size:17px;font-weight:bold}
-.accList  ul li dl dt span {display:block;}
-.accList  ul li dl dt span em {margin-left:3px;padding:1px 4px 2px;border-radius:3px;font-size:10px;color:#fff}
-.accList  ul li dl dt span .hot {background:#f65d00}
-.accList  ul li dl dt span .limit {background:#00a49a}
-.accList  ul li dl dt strong {}
-.accList  ul li dl dd span {display:block;font-size:14px;color:#666;text-decoration:line-through}
-.accList  ul li dl dd span em {font-size:10px}
-.accList  ul li dl dd strong {display:inline-block;position:relative;font-size:24px;color:#e3002b}
-.accList  ul li dl dd strong em {font-size:12px}
-.accList  ul li dl dd strong i {position:absolute;top:-10px;right:-30px;height:16px;padding:0 5px 0 0;background:#434159;font-size:10px;font-style:normal;color:#fff;line-height:15px}
-.accList  ul li dl dd strong i:before {content:"";position:absolute;top:0px;left:-8px;width:0;height:0;border-top: 8px solid transparent;border-bottom: 8px solid transparent;border-right:8px solid #434159}
+.accList  ul li .productTitle {display:block;margin-bottom:15px;font-size:17px;font-weight:bold}
+.accList  ul li .productTitle span {display:block;}
+.accList  ul li .productTitle span em {margin-left:3px;padding:2px 4px 2px;border-radius:3px;font-size:10px;color:#fff;vertical-align:middle}
+.accList  ul li .productTitle span .hot {background:#f65d00}
+.accList  ul li .productTitle span .limit {background:#00a49a}
+.accList  ul li .productTitle strong {}
+.accList  ul li .productPrice {display:block}
+.accList  ul li .productPrice span {display:block;font-size:14px;color:#666;text-decoration:line-through}
+.accList  ul li .productPrice span em {font-size:10px}
+.accList  ul li .productPrice strong {display:inline-block;position:relative;font-size:24px;color:#e3002b}
+.accList  ul li .productPrice strong em {font-size:12px}
+.accList  ul li .productPrice strong i {position:absolute;top:-13px;right:-30px;height:16px;padding:0 5px 0 0;background:#434159;font-size:10px;font-style:normal;color:#fff;line-height:15px}
+.accList  ul li .productPrice strong i:before {content:"";position:absolute;top:0px;left:-8px;width:0;height:0;border-top: 8px solid transparent;border-bottom: 8px solid transparent;border-right:8px solid #434159}
 .accList  ul li .stock {position:absolute;top:15px;left:15px;border-bottom:1px solid #d23c00;font-size:14px;font-weight:bold;color:#d23c00}
 .accList  ul li .stock strong {font-size:24px;}
-.accList  ul li .favorite {display:block;position:absolute;top:15px;right:15px;width:18px;height:25px;background:url('../../img/direct/ico_item_pick.png') no-repeat center top;background-size:18px;text-indent:-9999em;cursor:pointer}
-.accList  ul li .favorite.on {background-position: center bottom}
+.accList  ul li .favorite {display:block;position:absolute;top:0;right:0;width:50px;height:50px;background:url('../../img/direct/ico_item_pick.png') no-repeat 17px 15px;background-size:18px;text-indent:-9999em;cursor:pointer}
+.accList  ul li .favorite.on {background-position: 17px -33px}
 .accList .moreBoxType1 {width:auto;margin: 15px 15px 20px;}
 .accList .sort_area {padding:15px 15px 10px}
 .accList .sort_area:after {content:"";display:block;clear:both}
 .accList .sort_area p {margin-top:15px}
+
+/* Hot 아이템 슬라이드 */
 .gallerySlide.hotSlide {padding:30px 0 50px;background:#f8f8f8}
 .gallerySlide.hotSlide .titDep3 {margin:0 0 20px;font-weight:normal}
 .gallerySlide.hotSlide .slideNavi {position:absolute;bottom:25px;left:0;width:100%}
 .gallerySlide.hotSlide .swipePrev {left:30px}
 .gallerySlide.hotSlide .swipeNext {right:30px}
+.gallerySlide.hotSlide .swiperCon li {position:relative}
+.gallerySlide.hotSlide .swiperCon li + li:before {content:"";position:absolute;top:0;left:0;width:7px;height:100%;background: linear-gradient(to top, #f4f0e7 70px, #FFF 70px);border:1px solid #e1e1e1;border-left:0;box-sizing:border-box}
+.gallerySlide.hotSlide .swiperCon li:after {content:"";position:absolute;top:0;right:0;width:7px;height:100%;background: linear-gradient(to top, #f4f0e7 70px, #FFF 70px);border:1px solid #e1e1e1;border-right:0;box-sizing:border-box}
+.gallerySlide.hotSlide .swiperCon li:last-child:after {display:none}
 .gallerySlide.hotSlide .swiperCon li .cont_inner {display:block;position:relative;margin:0 15px;background:#FFF;border:1px solid #e1e1e1}
 .gallerySlide.hotSlide .swiperCon li em {position:absolute; top:20px;left:20px;font-size:32px;color:#666}
 .gallerySlide.hotSlide .swiperCon li .slideImg {display:block;padding-top:57px;height:155px;text-align:center}
@@ -299,6 +333,8 @@
 .gallerySlide.hotSlide .swiperCon li.number1 .cont_inner {background:url("../../img/direct/ico_number1.png") no-repeat 50% 15px #FFF;background-size: 43px 27px; }
 .gallerySlide.hotSlide .swiperCon li.number2 .cont_inner {background:url("../../img/direct/ico_number2.png") no-repeat 50% 15px #FFF;background-size: 43px 27px; }
 .gallerySlide.hotSlide .swiperCon li.number3 .cont_inner {background:url("../../img/direct/ico_number3.png") no-repeat 50% 15px #FFF;background-size: 43px 27px; }
+
+/* 액세서리 제품 상세 */
 .accProductDetail .topHead.option_tap h1 {padding-right:0;padding-left:46px;text-align:center}
 .accProductDetail .topHead.option_tap h1:before {display:none}
 .accProductDetail .gallerySlide {padding:10px 0 20px;background:#FFF;text-align:center}
@@ -355,13 +391,13 @@
 .accProductDetail .buyWrap .option .seleced li .select {float:left;width:55px;}
 .accProductDetail .buyWrap .option .seleced li strong {float:right;width:33.3%;margin-top: 6px;color:#FFF;text-align:right;font-weight:normal}
 .accProductDetail .buyWrap .option .seleced li strong em {font-size:12px;vertical-align:top}
-.accProductDetail .buyWrap .option .seleced li a.delete {position:absolute;top:14px;right:0;width:17px;height:17px;background:url('../../img/direct/btn_delete.png') no-repeat left top;background-size:17px 17px;text-indent:-9999em}
+.accProductDetail .buyWrap .option .seleced li button.delete {position:absolute;top:14px;right:0;width:17px;height:17px;background:url('../../img/direct/btn_delete.png') no-repeat left top;background-size:17px 17px;border:0;text-indent:-9999em}
 .accProductDetail .buyWrap dl {padding:15px 0;overflow:hidden}
 .accProductDetail .buyWrap dl dt {float:left;font-size:16px;color:#FFF}
 .accProductDetail .buyWrap dl dd {float:right;font-size:22px;color:#ff9b51}
 .accProductDetail .buyWrap dl dd em {font-size:14px;vertical-align:top}
 .accProductDetail .buyWrap .dropSelect.color_select .select_drop {position:static;top:auto;left:auto;max-height:none}
-.accProductDetail .buyWrap .open {display:block;position:absolute;top:-13px;left:50%;width:48px;height:13px;margin-left:-24px;background:url('../../img/direct/bg_layer_open.png') no-repeat center top;background-size:48px 13px;text-indent:-9999em}
+.accProductDetail .buyWrap .open {display:block;position:absolute;top:-13px;left:50%;width:48px;height:13px;margin-left:-24px;background:url('../../img/direct/bg_layer_open.png') no-repeat center top;background-size:48px 13px;border:0;text-indent:-9999em}
 .accProductDetail .buyWrap .open.on {background-image:url('../../img/direct/bg_layer_close.png')}
 
 /* 공시지원금 */
@@ -387,3 +423,119 @@
 .listType1.contSt li:before {display:none}
 .listType1.contSt li {padding-left:15px}
 .listType1.contSt li span {position:absolute;top:0;left:0}
+.listType1.contSt li .typeCircle + .typeCircle {margin-left:0}
+.listType1.contSt li .typeCircle + .typeCircle:before {display:none}
+.sf_meta {display:block;margin:0 auto 40px;width:230px}
+.sf_meta li {text-align:left}
+.sf_meta li + li {margin-top:20px}
+.sf_meta li a {display:block;padding:12px 0 12px 47px;background:url('../../img/direct/bg_meta.png') no-repeat left top;background-size:36px;font-weight:bold;line-height:1}
+.sf_meta li.meta_textAlarm a {background-position:left -54px}
+.sf_meta li.meta_supportPrice a {background-position:left -110px}
+.textAlarm .phoneName {overflow:hidden;margin-bottom:20px;padding:10px;background:#f5f5f5}
+.textAlarm .phoneName dt {float:left}
+.textAlarm .phoneName dd {float:left;margin-left:10px;font-weight:bold;color:#11b0a7}
+.tableType3 tbody tr td.sf_deleteArea {padding:0;text-align:right;border-left: 0}
+.tableType3 tbody tr td.sf_deleteArea button {width:25px;height:25px;background:url('../../img/direct/btn_delete2.jpg') no-repeat 50% 50%;background-size:25px 25px;border:0;text-indent:-9999em}
+.selectPhoneName {padding:20px 15px;}
+.selectPhoneName h2 {margin-bottom:10px;padding-left:18px;background:url('../../img/direct/ico_phone.png') no-repeat left 3px;background-size:11px;font-size:17px;font-weight:bold}
+.selectPhoneName p span {position:relative;margin-right:3px;padding-right:10px;font-size:14px;}
+.selectPhoneName p span:after {content:"";position:absolute;top:50%;right:0;width:1px;height:10px;margin-top:-5px;background:#e7e7e7}
+.selectPhoneName p strong {font-size:14px;font-weight:normal}
+.directAddPrice {position:relative;padding:15px;background:#ececec;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.directAddPrice p {font-size:14px;color:#666}
+.directAddPrice button {position:absolute;top:11px;right:15px;width:80px;height:30px;background:#f5f5f5;border:1px solid #d4d4d4;border-radius:15px;font-size:14px;color:#666;text-indent:-18px;line-height:1}
+.directAddPrice button:after {content:"";position:absolute;top:-1px;right:-1px;width:30px;height:30px;background:url('../../img/direct/bg_check_circle2.png') no-repeat left bottom;background-size:30px;}
+.directAddPrice button.on {text-indent:20px}
+.directAddPrice button.on:after {right:auto;left:-1px;background-position:left top}
+.bandDatePrice {position:relative;padding:15px; background:#f3f3f5;border-bottom:1px solid #e4e4e4}
+.bandDatePrice p {font-size:15px;font-weight:bold}
+.bandDatePrice .select {position:absolute;top:10px;right:15px;width:auto}
+.bandDatePrice .select > a {display:inline-block;position:relative;width:130px;height:30px;background:#757380;border:0;color:#FFF;text-indent:-9999em;line-height:30px}
+.bandDatePrice .select > a:before {content:"요금제 그룹 선택";position:absolute;top:0;left:0;width:100%;color:#FFF;font-size:14px;text-align:center;text-indent:0}
+.sf_directPrice .directPrice_area {display:none}
+
+/* 요금제 설정 */
+.popSfprice .narrowCon {background:#FFF}
+.popSfprice .tabCon {margin:0 0 15px}
+.popSfprice .extendCon .con {border-right:1px solid #CCC;border-left:1px solid #CCC}
+.popSfprice .extendCon .con li {display:block;margin-left:0;padding:0 15px;}
+.popSfprice .extendCon .con li label {width:100%;padding:13px 0}
+.popSfprice .extendCon .con li + li label {border-top:1px dashed #e4e4e4}
+.popSfprice .popCon > .btnBox {position:fixed;bottom:0;left:0;width:100%;padding:15px 0;background:#FFF;border-top:1px solid #e2e2e2}
+.popSfprice .tabCon .extend {padding:20px 15px}
+.popSfprice .tab_select {padding:20px 15px;border-bottom:1px solid #e4e4e4}
+.popSfprice .tab_select ul li a {display:block;position:relative;padding:20px 20px 20px 58px;background:#f9f9f9;border:1px solid #e4e4e4;font-size:16px;font-weight:bold}
+.popSfprice .tab_select ul li a:before {content:"";position:absolute;top:50%;left:20px;width:24px;height:24px;margin-top:-12px;background:url('../../img/direct/bg_radio.png') no-repeat left bottom;background-size:24px 48px}
+.popSfprice .tab_select ul li + li a {margin-top:5px}
+.popSfprice .tab_select ul li.on a {background:#FFF;border:1px solid #e3002b;color:#e3002b}
+.popSfprice .tab_select ul li.on a:before {background-position:left top}
+.popSfprice .tab_select_box + .tab_select_box {display:none}
+.popSfprice .tab_select_box .btnBox {padding-bottom:20px}
+.popSfprice .tab_select_box dl {padding:20px 15px}
+.popSfprice .tab_select_box .result {display:none;width:100%;padding:0 15px;background:#f9f9f9;border-top:1px dashed #e4e4e4;box-sizing:border-box}
+.popSfprice .tab_select_box .result label {padding:20px 0;width:100%;border-top:1px dashed #e4e4e4;font-size:17px;font-weight:bold;text-align:left}
+.popSfprice .narrowCon + .tabCon .extend {padding-top:0}
+.popSfprice .extend>li .extendCon {background:#FFF}
+.popSfprice.bgGray,
+.popSfprice.bgGray .extend>li .extendCon {background:#efefef}
+
+/* 인터넷/IPTV */
+.internetIptv .btnDetail {padding-right:26px;background:url('../../img/common/bg_add_info1.png') no-repeat 95% 50% #FFF;background-size:6px 9px}
+.internetIptv .gallerySlide {padding:20px 0 50px}
+.internetIptv .gallerySlide .slideNavi {position:absolute;bottom:25px;left:0;width:100%}
+.internetIptv .gallerySlide .swipePrev {left:30px;top:90px;margin-top:0}
+.internetIptv .gallerySlide .swipeNext {right:30px;top:90px;margin-top:0}
+.internetIptv .gallerySlide .swiperWrap li {position:relative}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner {display:block;margin:0 15px;padding-top:30px;background:#f5f5f5;border:1px solid #dcdcdc}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner .title {display:block;margin-bottom:22px;font-size:20px}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner i {display:block;margin-bottom:15px;font-size:14px;font-weight:bold;font-style:normal}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner i img {margin:0 auto;width:25px;height:25px;margin-bottom:8px}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner span {display:block;margin-bottom:20px;color:#666}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner em {display:block;padding:20px 0;border-top:1px dashed #e7e7e7;font-size:17px;font-weight:bold;color:#e3002b}
+.internetIptv .gallerySlide .swiperWrap li .cont_inner em strong {font-size:20px}
+.internetIptv .gallerySlide .swiperWrap li + li:before {content:"";position:absolute;top:0;left:0;width:7px;height:100%;background:#f5f5f5;border:1px solid #e1e1e1;border-left:0;box-sizing:border-box}
+.internetIptv .gallerySlide .swiperWrap li:after {content:"";position:absolute;top:0;right:0;width:7px;height:100%;background:#f5f5f5;border:1px solid #e1e1e1;border-right:0;box-sizing:border-box}
+.internetIptv .gallerySlide .swiperWrap li:last-child:after {display:none}
+
+.internetIptv .cont_internet {position:relative;padding-top:30px}
+.internetIptv .cont_internet .btnBox {margin-bottom:30px}
+.internetIptv .cont_internet .symptom {overflow:hidden;margin-bottom:30px}
+.internetIptv .cont_internet .symptom li {position:relative;float:left;width:33.3%;padding-top:55px;background:url('../../img/direct/img_internet1.png') no-repeat 50% top;background-size:50px 46px;font-size:14px;font-weight:bold;letter-spacing:-1px}
+.internetIptv .cont_internet .symptom li + li {background-image:url('../../img/direct/img_internet2.png')}
+.internetIptv .cont_internet .symptom li + li + li {background-image:url('../../img/direct/img_internet3.png')}
+.internetIptv .cont_internet .symptom li + li:before {content:"";position:absolute;top:0;left:0;z-index:1;width:1px;height:52px;background:#e4e4e4}
+.internetIptv .cont_internet .symptom li + li:after {content:"";position:absolute;top:18px;left:-7px;z-index:2;width:15px;height:15px;background:url('../../img/direct/ico_plus.png') no-repeat left top;background-size:15px 15px}
+.internetIptv .cont_internet .bt_txt {position:relative;padding:20px 0;background: linear-gradient(to right, #e9032b, #fc5c2b);font-weight:bold;color:#FFF;text-shadow: -1px -1px 0 #d44138, 1px -1px 0 #d44138, -1px 1px 0 #d44138, 1px 1px 0 #d44138;}
+.internetIptv .cont_internet .bt_txt:before {content:"";position:absolute;top:0;left:50%;width:0;height:0;margin-left:-5px;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #FFF}
+
+.internetIptv .cont_iptv {position:relative;padding-top:30px;background:#f5f5f5;border-top:1px solid #e9e9e9}
+.internetIptv .cont_iptv .btnBox {margin-bottom:20px}
+.internetIptv .cont_iptv .bt_txt img {max-width:100%}
+.internetIptv .cont_iptv .gallerySlide .swiperWrap li .cont_inner,
+.internetIptv .cont_iptv .gallerySlide .swiperWrap li + li:before,
+.internetIptv .cont_iptv .gallerySlide .swiperWrap li:after {background:#FFF;border-color:#dcdcdc}
+                                                      
+.internetIptv .cont_combine {position:relative;padding-top:30px;}
+.internetIptv .cont_combine .btnBox {margin-bottom:20px}
+.internetIptv .cont_combine ul li {position:relative;float:left;width:50%;height:270px;padding:15px 25px 45px 20px;background:#e3002b;box-sizing:border-box;color:#FFF;text-align:left;text-shadow: 0 0 2px #bc1718}
+.internetIptv .cont_combine ul li + li {background:#f03323}
+.internetIptv .cont_combine ul li + li + li {background:#ff6925}
+.internetIptv .cont_combine ul li + li + li + li {background:#f78931}
+.internetIptv .cont_combine ul li dl dt {position:relative;padding:25px 0 15px;border-bottom:1px solid rgba(0,0,0,.2);font-size:17px;font-weight:bold}
+.internetIptv .cont_combine ul li dl dt span {display:inline-block;font-size:12px}
+.internetIptv .cont_combine ul li dl dt:before {content:"";position:absolute;top:0;left:0;width:100%;height:16px;background:url('../../img/direct/img_connect.png') no-repeat left top;background-size:91px}
+.internetIptv .cont_combine ul li + li dl dt:before {background-position: left -38px}
+.internetIptv .cont_combine ul li + li + li dl dt:before {background-position: left -77px}
+.internetIptv .cont_combine ul li + li + li + li dl dt:before {background-position: left -116px}
+.internetIptv .cont_combine ul li dl dd {padding-top:15px;border-top:1px solid rgba(255,255,255,.2)}
+.internetIptv .cont_combine ul li dl dd p {font-size:12px}
+.internetIptv .cont_combine ul li dl dd .tit {margin-bottom:10px;font-size:14px}
+.internetIptv .cont_combine ul li dl dd a {position:absolute;bottom:15px;left:20px;display:inline-block;font-size:12px;color:#FFF}
+.internetIptv .cont_combine ul li dl dd a:before {content: "";position:absolute;top:7px;right: -15px;width:6px;height:1px;background:#FFF;transform: rotate(45deg); -webkit-transform: rotate(45deg)}
+.internetIptv .cont_combine ul li dl dd a:after {content: "";position:absolute;top:11px;right: -15px;width:6px;height:1px;background:#FFF;transform: rotate(-45deg); -webkit-transform: rotate(-45deg)}
+
+.internetIptv .cont_myServices {padding:25px 15px 25px 107px;background:url('../../img/direct/img_internet4.png') no-repeat 15px 50% #f7f7f7;background-size:80px 48px}
+.internetIptv .cont_myServices dl dt {margin-bottom:10px;font-size:17px}
+.internetIptv .cont_myServices dl dd {position:relative;padding-right:100px}
+.internetIptv .cont_myServices dl dd p {font-size:12px;color:#666;line-height:1.5;}
+.internetIptv .cont_myServices dl dd a {position:absolute;top:0;right:0;}
