@@ -38,7 +38,8 @@ function slickSlider(){
 //스마트홈 - 서비스가입유형 선택
 function openWithTarget(target) {
 	$('.service-type-sub').hide();
-	$('.service-type-sub[data-rel=' + target).show();
+	console.log($('.service-type-sub[data-rel=' + target + ']'));
+	$('.service-type-sub[data-rel=' + target + ']').show();
 }
 
 function selectServiceType() {
@@ -51,9 +52,33 @@ function selectServiceType() {
 	});
 }
 
+function withBridge() {
+	var $bridgeItems = $('input[name=bridge]');
+	$bridgeItems.on('click', function(e) {
+		if( $(this).is(":checked") ) {
+			$('[name=service-type]').removeAttr('checked');;
+			$('.service-type-sub').hide();
+
+			var action = $(this).attr("data-action");
+			if( action == "with-bridge" ) {
+				$('#prodcut-count').hide();
+				$('#prodcut-count + .emptyPlace').hide();
+				$('#only-device').hide();
+			} else if( action == "only-device" ) {
+				$('#prodcut-count').show();
+				$('#prodcut-count + .emptyPlace').show();
+				$('#only-device').show();
+			}
+		}
+	});
+
+	$("input[name=bridge]:first").prop("checked", true).trigger("click");
+}
+
 $(document).ready(function(){
 	smarthomeCubbyhole();	//스마트홈 - 보관함 담기 - 2016-06-26 추가
 	slickSlider();			//스마트홈 - 패키지 슬라이더 - 2016-06-26 추가
 	selectServiceType();	//스마트홈 - 서비스가입유형 선택
+	withBridge();			//스마트홈 - 브릿지 구입여부
 });
 
