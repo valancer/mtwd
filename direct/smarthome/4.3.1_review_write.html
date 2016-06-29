@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>멤버십 조회하기 | T world</title>
+<link rel="stylesheet" href="../../inc/css/common.css">
+<link rel="stylesheet" href="../../inc/css/direct.css">
+<script src="../../inc/js/lib/jquery-1.7.2.min.js"></script>
+<script src="../../inc/js/lib/libs.js"></script>
+<script src="../../inc/js/common/common.js"></script>
+<script src="../../inc/js/common/direct.js"></script>
+
+<link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
+<link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
+
+<script type="text/javascript" src="../../inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+</head>
+<body>
+	<h1 style="padding:0 0 20px">아래 링크 클릭하여 확인</h1>
+	<a href="#layerID" class="id_layerOpen">상품 문의하기</a>
+
+	<div id="layerID" class="layer_pop">
+		<div class="layerWrap">
+			<div class="popHead">
+				<h1>상품 문의하기</h1>
+			</div>
+
+			<div class="popCon accMobile">
+				<div class="inPop">
+					<textarea id="conTxt" class="textArea" rows="5" cols="35"></textarea>
+					<p class="inputInfo right">0/1,000자</p>
+
+					<ul class="tableCon bdtGray h15">
+						<li>
+							<strong>답변완료 알림받기</strong>
+							<span class="formWrap">
+								<input type="checkbox" id="answerAlram1" checked="checked"><label for="answerAlram1">SMS알림</label>
+							</span>
+							<span class="formWrap">
+								<input type="checkbox" id="answerAlram2" checked="checked"><label for="answerAlram2">이메일</label>
+							</span>
+						</li>
+						<li>
+							<strong>비공개 문의</strong>
+							<span class="formWrap">
+								<input type="checkbox" id="closed" checked="checked"><label for="closed">비공개 문의</label>
+							</span>
+						</li>
+					</ul>
+
+				</div><!-- //inPop -->
+				<div class="btnBox col2 h20">
+					<span><a href="#" class="btnL btnGray">취소</a></span>
+					<span><a href="#" class="btnL btnRed">작성완료</a></span>
+				</div>
+
+			</div><!-- //popCon -->
+			<div class="layerClose" style="top: 0px;"><button type="button">닫기</button></div>
+		</div><!-- //layerWrap -->
+
+	</div><!-- //layer_pop -->
+</body>
+</html>

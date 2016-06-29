@@ -13,6 +13,7 @@
 <script src="../../inc/js/lib/libs.js"></script>
 <script src="../../inc/js/common/common.js"></script>
 <script src="../../inc/js/common/direct.js"></script>
+<script src="../../inc/js/common/smarthome.js"></script>
 
 <link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
 <link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
@@ -30,7 +31,7 @@
 			<h1>주문완료</h1>
 		</div>
 		<!-- content -->
-		<div id="content" class="foreign"> 
+		<div id="content">
 			<section class="container">
 
 				<div class="orderDetail">
@@ -41,159 +42,22 @@
 								<dt><img src="../../img/common/ico_guide2.png" alt="완료"></dt>
 								<dd>
 									<strong><em class="fColor1">다이렉트샵</em>을 이용해 주셔서 감사합니다.</strong>
-									<p>주문완료 후 가입신청서(T-Gate)를 작성 해 주셔야<br>최종 가입신청이 완료됩니다.</p>
+									<p>주문완료 후 <span class="fColor1">가입신청서(T-Gate)를 작성해</span> 주셔야<br>최종 가입신청이 완료됩니다.</p>
 								</dd>
 							</dl>
 						</div>
-					</div>
 
-					<div class="orderBox st02">
-						<div class="titleBox">
-							<h2 class="titDep2">액세서리 주문내역</h2>
-							<p class="titDep4">주문번호 : 2925132925113</p>
-						</div>
-						<div class="orderInfo_acc h15">
-							<ul>
-								<li>
-									<p class="name"><strong>[iriver] 블링크 WUR-1000 보조배터리</strong></p>
-									<p class="option"><strong>화이트<em>2개</em></strong></p>
-								</li>
-								<li>
-									<p class="name"><strong>루나와치 전용 가죽 스트랩</strong></p>
-									<p class="option"><strong>레드<em>1개</em></strong></p>
-								</li>
-							</ul>
-						</div>						
-						<ul class="extend tglClsOpen tglOrder">
-							<li>
-								<span class="tglBtn"><strong>단말상환 금액</strong> <span class="price"><em>380,500</em>원</span></span>
-							</li>
-							<li>
-								<a href="#" class="tglBtn"><strong>추가할인금액</strong> <span class="price"><em>-10,000</em>원</span></a>
-								<div class="extendCon">
-									<div class="con">
-										<div class="info">
-											<table summary="추가할인금액 상세 내역입니다" class="tblBlank">
-												<caption>추가할인금액</caption>
-												<colgroup>
-													<col>
-													<col style="width:30%">
-													<col style="width:30%">
-												</colgroup>
-												<tbody>
-													<tr>
-														<th scope="row" class="left">T가족포인트</th>
-														<td colspan="2" class="right"><span class="price"><em>-5,000</em>원</span></td>
-													</tr>
-													<tr>
-														<th scope="row" class="left">제휴포인트</th>
-														<td colspan="2" class="right"><span class="price"><em>-5,000</em>원</span></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-									<button type="button" class="btnClose tglBtnClose">닫기</button>
-								</div>
-							</li>
-						</ul>
-						<div class="orderTotal">
-							<table summary="월 납부금액 상세 내역입니다" class="tblBlank">
-								<caption>월 납부금액</caption>
-								<colgroup>
-									<col>
-									<col style="width:65%">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row" class="left">
-											월 납부금액
-											<p class="subtxt">&nbsp;</p><!-- 내용없을시 공백으로 처리 -->
-										</th>
-										<td class="right">
-											<span class="price"><em>72,300</em>원</span>
-											<p class="subtxt">주문금액 390,500원 - 추가할인 10,000원</p>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+						<div class="order-finish">
+							<dl class="order-number">
+								<dt>주문번호</dt>
+								<dd>2925132925113</dd>
+							</dl>
 
-					<div class="orderBox">
-						<h2 class="titDep2">주문자 정보</h2>
-						<ul class="order_info_list">
-							<li class="clearfix">
-								<span class="fLeft">이름</span>
-								<span class="fRight"><strong>홍길동</strong></span>
-							</li>
-							<li class="clearfix">
-								<span class="fLeft">이메일</span>
-								<span class="fRight"><strong>chungA115@paran.com</strong></span>
-							</li>
-							<li class="clearfix">
-								<span class="fLeft">연락가능번호</span>
-								<span class="fRight"><strong>010-1234-5678</strong></span>
-							</li>
-						</ul>
-					</div>
+							<p class="popup-warning">가입신청서(T-Gate)가 보이지 않을 경우 팝업허용 또는 팝업차단을 해제해 주시길 바랍니다.</p>
 
-					<div class="orderBox">
-						<h2 class="titDep2">액세사리 배송 정보</h2>
-						<ul class="order_info_list st02">
-							<li class="clearfix">
-								<span class="fLeft">이름</span>
-								<span class="fRight"><strong>홍길동</strong></span>
-							</li>
-							<li class="clearfix">
-								<span class="fLeft">휴대폰 번호</span>
-								<span class="fRight"><strong>010-1234-5678</strong></span>
-							</li>
-							<li class="clearfix">
-								<span class="fLeft">다른연락처</span>
-								<span class="fRight"><strong>010-1234-5678</strong></span>
-							</li>
-							<li class="clearfix">
-								<span class="fLeft">배송방법</span>
-								<span class="fRight"><strong>택배</strong></span>
-							</li>
-							<li class="clearfix">
-								<span class="fLeft">받으실 주소</span>
-								<span class="fRight"><strong>(049-39) 서울특별시 중구 을지로2가 11(SK텔레콤빌딩)</strong></span>
-							</li>
-						</ul>
-						<p class="txtInfo">배송정보 변경 시 이미 상품 배송이 시작되었다면 변경된 정보가 적용되지 않을 수 있습니다.</p>
-					</div>
-
-					<div class="orderBox">
-						<h2 class="titDep2">결제정보</h2>
-						<div class="serviceDetail st04">
-							<ul class="order_info_list st03">
-								<li class="clearfix">
-									<span class="fLeft">결제방법</span>
-									<span class="fRight fColor6">카드결제</span>
-								</li>
-								<li class="clearfix">
-									<span class="fLeft">카드번호</span>
-									<span class="fRight fColor6">12345456*****</span>
-								</li>
-								<li class="clearfix">
-									<span class="fLeft">결제상태</span>
-									<span class="fRight fColor6">결제완료</span>
-								</li>
-								<li class="clearfix">
-									<span class="fLeft">결제일시</span>
-									<span class="fRight fColor6">2016.04.06 23:33:20</span>
-								</li>
-							</ul>
-						</div>
-						<div class="total_area">
-							<span class="fLeft">총 결제금액</span>
-							<span class="fRight"><strong>380,500</strong>원</span>
-						</div>
-						<div class="btnBox col2 h25">
-							<span><a href="#" class="btnL btnBlack">메인으로 가기</a></span>
-							<span><a href="#" class="btnL btnRed">주문내역 보기</a></span>
+							<div class="btnBox h30">
+								<a href="#none" class="btnL btnRed">가입신청서 작성하기</a>
+							</div>
 						</div>
 					</div>
 

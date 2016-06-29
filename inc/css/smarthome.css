@@ -204,29 +204,17 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .orderDetail { padding-bottom: 0; background-color: #ececec; }
 .orderDetail .orderBox {background:#fff; border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; margin-top:5px; padding:28px 15px;}
 .orderDetail .orderBox:last-child {padding-bottom:50px;}
-
-.dotlineType .tableCon {padding-top:10px; border-top:none;}
-.dotlineType .tableCon li {border-top: 1px dashed #efefef;}
-.dotlineType .tableCon li:first-child {border-top:none;}
-.dotlineType [class^="titDep"] {padding-bottom:0px;}
-.dotlineType .formArea {margin-top:5px;}
-.dotlineType>.tableCon>li>strong+.formArea,
-.dotlineType>.tableCon>li>strong+.colType1,
-.dotlineType>.tableCon>li>strong+.boxUpload {margin-top:0px;}
-.dotlineType .selectRelation {text-align:right;}
-.dotlineType .selectRelation div {display:inline-block;}
-.myAddress {margin-top:5px;}
-
-
 .orderDetail .order-major-info { padding: 28px 15px; border-bottom: 1px solid #dfdfdf; background-color: #fff; }
 
 .order-info { overflow: hidden; margin-right: -15px; margin-left: -15px; padding: 20px 15px; font-size: 17px; color: #fff; line-height: 23px; text-shadow: -1px -1px 0 #d23c00, 1px -1px 0 #d23c00, -1px 1px 0 #d23c00, 1px 1px 0 #d23c00; background-color: #f65d00; }
 .list-order-info { margin-right: -15px; margin-left: -15px; }
-.list-order-info > li { padding: 0 15px; min-height: 50px; font-size: 16px; color: #333; border-top: 1px solid #e4e4e4; }
+.list-order-info > li { margin: 0 15px; padding: 0; min-height: 50px; font-size: 16px; color: #333; border-top: 0px; border-bottom: 1px dashed #e4e4e4; }
+.list-order-info > li:first-child { margin: 0; padding: 0 15px; border-bottom: 1px solid #e4e4e4; }
+.list-order-info > li:last-child { border-bottom: 0px; }
 .list-order-info > li > .title,
 .list-order-info > li > a > .title { font-weight: bold; line-height: 50px; }
 .list-order-info > li .content { float: right; line-height: 50px; }
-.list-order-info > li > .tglBtn { display: block; position: relative; }
+.list-order-info > li > .tglBtn { display: block; position: relative; padding: 0; color: #333; background-color: #fff; }
 .list-order-info > li > .tglBtn:after { content: ''; display: block; position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 14px; background-position: 0px -30px; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
 .list-order-info > li.on .options { display: block; }
 .list-order-info > li.on > .tglBtn:after { background-position: -30px -30px; }
@@ -248,8 +236,12 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .order-total ul > li.multiple > .content { float: none; margin-top: 10px; }
 
 
+.order-finish { padding: 0 15px; }
+.order-finish .order-number { overflow: hidden; font-size: 15px; font-weight: bold; color: #333; line-height: 40px; border: 1px solid #e4e4e4; }
+.order-finish .order-number dt { display: block; float: left; padding: 0 15px; text-align: center; background-color: #f3f3f3; }
+.order-finish .order-number dd { display: block; float: left; padding-left: 15px; }
 
-
+.order-finish .popup-warning { margin-top: 75px; padding: 12px 0; font-size: 15px; color: #666; line-height: 19px; text-align: center; border: 1px solid #ccc; background-color: #f7f7f7; }
 
 
 /* ==================================

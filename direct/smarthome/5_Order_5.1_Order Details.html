@@ -13,6 +13,7 @@
 <script src="../../inc/js/lib/libs.js"></script>
 <script src="../../inc/js/common/common.js"></script>
 <script src="../../inc/js/common/direct.js"></script>
+<script src="../../inc/js/common/smarthome.js"></script>
 
 <link rel="icon" type="image/x-icon"  href="경로/QRicon_64x64.ico">
 <link rel="apple-touch-icon-precomposed" href="경로/QRicon_114x114.png">
@@ -39,7 +40,7 @@
 					<p class="order-info">
 						스마트홈 프리미엄 패키지 표준팩<br>
 						레드(DAR-436TRR)<br>
-						1 / 할부결제 / 36개월<br>
+						1개 / 할부결제 / 36개월<br>
 					</p>
 
 					<ul class="list-order-info tglClsOpen tglOrder">
@@ -72,7 +73,7 @@
 							</p>
 						</li>
 						<li>
-							<span class="title">서비스수량</span>
+							<span class="title">패키지 수량</span>
 							<p class="content">
 								1개
 							</p>
@@ -84,7 +85,7 @@
 							</p>
 						</li>
 						<li>
-							<span class="title">월 서비스 요금</span>
+							<span class="title">월 서비스 이용료</span>
 							<p class="content">
 								<em>9,900</em>원/월
 							</p>
@@ -104,7 +105,7 @@
 							</li>
 							<li class="multiple">
 								<span class="title">
-									월 납부금액 <small>(기기구매/36개월 + 서비스/36개월)</small>
+									월 납부금액 <small>(기기대금/36개월 + 월 서비스 이용료/36개월)</small>
 								</span>
 								<p class="content">
 									<em>705,000</em>원 / 월<br>
@@ -293,11 +294,9 @@
 							<li class="type">
 								<strong>결제방법</strong>
 								<div class="multi_radio payRadio h5">
-									<p>
-										<span class="formWrap">
-											<input type="radio" id="pay_type_1" name="pay_type" checked><label for="pay_type_1">카드결제 <img src="../../img/tmp/temp_pay1.png" alt=""></label>
-										</span>
-									</p>
+									<span class="formWrap">
+										<input type="radio" id="pay_type_1" name="pay_type" checked><label for="pay_type_1">카드결제</label>
+									</span>
 									<span class="formWrap">
 										<input type="radio" id="pay_type_2" name="pay_type" /><label for="pay_type_2">계좌이체</label>
 									</span>
@@ -314,11 +313,10 @@
 							</li>
 						</ul>
 					</div>
-					<p class="txtInfo">카드결제 시, 삼성카드만 결제가 가능하며, 보유 포인트로 포인트 결제가 가능합니다. 보유 포인트가 결제금액 미만일 경우에도 포인트 결제를 요청하시면, 보유 포인트만큼을 결제대금에서 차감하고 부족한 금액은 카드대금으로 청구됩니다.</p>
-					<p class="txtInfo">삼성카드 미소지 고객은 &lt;<a href="https://www.samsungcard.com/personal/card/cardfinder/UHPPCA0102M0.jsp?code=AAP1415&site=GP007112&fastIsCardYn=Y" target="_blank" title="새 창 열림" class="fColor2 uLine">삼성카드 빠른발급서비스</a>&gt;를 통해 1시간 내에 가상 카드정보를 받아서 카드 결제를 이용할 수 있습니다.</p>
-				
-					<div class="btnBox h15">
-						<a href="#none" class="btnL btnRed">결제하기</a><!-- 작성완료 버전도 있습니다 -->
+					
+					<div class="btnBox h40">
+						<a href="#none" class="btnL btnRed">결제하기</a>
+						<!--a href="#none" class="btnL btnRed">작성완료</a-->
 					</div>
 				</div>
 
