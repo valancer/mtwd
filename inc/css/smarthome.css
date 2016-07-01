@@ -141,6 +141,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .list-radio > li { position: relative; padding-top: 10px; }
 .smarthomeProductDetail .list-radio input[type=radio] { position: absolute; left: -9999px; }
 .smarthomeProductDetail .list-radio input[type=radio]:checked + label { color: #ea002c; border: 1px solid #ea002c; }
+.smarthomeProductDetail .list-radio input[type=radio]:disabled + label { color: #b0b0b0; border: 1px solid #ccc; background-color: #eee; }
 .smarthomeProductDetail .list-radio label { display: block; padding: 0 15px; font-size: 12px; color: #333; line-height: 56px; border: 1px solid #ccc; }
 .smarthomeProductDetail .list-radio label .title em { font-size: 20px; }
 .smarthomeProductDetail .list-radio label .price { float: right; }

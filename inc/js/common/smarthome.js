@@ -38,7 +38,9 @@ function slickSlider(){
 //스마트홈 - 서비스가입유형 선택
 function openWithTarget(target) {
 	$('.service-type-sub').hide();
-	console.log($('.service-type-sub[data-rel=' + target + ']'));
+	$('input[name=one], input[name=unlimited]').prop('checked', false);
+	updateInstallment(true);
+
 	$('.service-type-sub[data-rel=' + target + ']').show();
 }
 
@@ -52,12 +54,32 @@ function selectServiceType() {
 	});
 }
 
+//스마트홈 - 서비스가입유형 약정 선택
+function selectServiceStipulation() {
+	var $stipulation = $('input[name=one], input[name=unlimited]');
+	$stipulation.on('click', function(e) {
+		var eid = $(this).attr('id');
+		if( $(this).is(":checked") && ( eid == "unlimited36" || eid == "one36" ) ) {
+			updateInstallment(false);
+		} else {
+			updateInstallment(true);
+		}
+	});
+}
+
+//스마트홈 - 36개월 할부 활성화
+function updateInstallment(active) {
+	$('#payments36').prop('disabled', active);
+}
+
+//스마트홈 - 브릿지 구입여부
 function withBridge() {
 	var $bridgeItems = $('input[name=bridge]');
 	$bridgeItems.on('click', function(e) {
 		if( $(this).is(":checked") ) {
 			$('[name=service-type]').removeAttr('checked');;
 			$('.service-type-sub').hide();
+			updateInstallment(true);
 
 			var action = $(this).attr("data-action");
 			if( action == "with-bridge" ) {
@@ -76,9 +98,10 @@ function withBridge() {
 }
 
 $(document).ready(function(){
-	smarthomeCubbyhole();	//스마트홈 - 보관함 담기 - 2016-06-26 추가
-	slickSlider();			//스마트홈 - 패키지 슬라이더 - 2016-06-26 추가
-	selectServiceType();	//스마트홈 - 서비스가입유형 선택
-	withBridge();			//스마트홈 - 브릿지 구입여부
+	smarthomeCubbyhole();			//스마트홈 - 보관함 담기 - 2016-06-26 추가
+	slickSlider();					//스마트홈 - 패키지 슬라이더 - 2016-06-26 추가
+	selectServiceType();			//스마트홈 - 서비스가입유형 선택
+	selectServiceStipulation();		//스마트홈 - 서비스가입유형 약정 선택
+	withBridge();					//스마트홈 - 브릿지 구입여부
 });
 
