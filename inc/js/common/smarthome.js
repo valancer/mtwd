@@ -40,8 +40,14 @@ function openWithTarget(target) {
 	$('.service-type-sub').hide();
 	$('input[name=one], input[name=unlimited]').prop('checked', false);
 	updateInstallment(true);
+	updateServicePrice(false);
 
 	$('.service-type-sub[data-rel=' + target + ']').show();
+	if( target == "device" ) {
+		$('.except-device').hide();
+	} else {
+		$('.except-device').show();
+	}
 }
 
 function selectServiceType() {
@@ -59,8 +65,11 @@ function selectServiceStipulation() {
 	var $stipulation = $('input[name=one], input[name=unlimited]');
 	$stipulation.on('click', function(e) {
 		var eid = $(this).attr('id');
-		if( $(this).is(":checked") && ( eid == "unlimited36" || eid == "one36" ) ) {
-			updateInstallment(false);
+		if( $(this).is(":checked") ) {
+			if( ( eid == "unlimited36" || eid == "one36" ) ) {
+				updateInstallment(false);
+			}
+			updateServicePrice(true);
 		} else {
 			updateInstallment(true);
 		}
@@ -70,6 +79,17 @@ function selectServiceStipulation() {
 //스마트홈 - 36개월 할부 활성화
 function updateInstallment(active) {
 	$('#payments36').prop('disabled', active);
+}
+
+//스마트홈 - 서비스 납부금액 show/hide
+function updateServicePrice(active) {
+	if( active ) {
+		$('#servicePriceContent').show();
+		$('#servicePriceMessage').hide();
+	} else {
+		$('#servicePriceContent').hide();
+		$('#servicePriceMessage').show();
+	}
 }
 
 //스마트홈 - 브릿지 구입여부

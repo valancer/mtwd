@@ -182,28 +182,28 @@
 								<input type="radio" id="one36" name="one" value="">
 								<label for="one36">
 									<span class="title"><em>36</em>개월 요금약정</span>
-									<span class="price">대당 <em>1,100</em>원/월</span>
+									<span class="price"><em>1,100</em>원/월 x 2대</span>
 								</label>
 							</li>
 							<li>
 								<input type="radio" id="one24" name="one" value="">
 								<label for="one24">
 									<span class="title"><em>24</em>개월 요금약정</span>
-									<span class="price">대당 <em>1,650</em>원/월</span>
+									<span class="price"><em>1,650</em>원/월 x 2대</span>
 								</label>
 							</li>
 							<li>
 								<input type="radio" id="one12" name="one" value="">
 								<label for="one12">
 									<span class="title"><em>12</em>개월 요금약정</span>
-									<span class="price">대당 <em>2,200</em>원/월</span>
+									<span class="price"><em>2,200</em>원/월 x 2대</span>
 								</label>
 							</li>
 							<li>
 								<input type="radio" id="one0" name="one" value="">
 								<label for="one0">
 									<span class="title"><em>무약정</em></span>
-									<span class="price">대당 <em>3,300</em>원/월</span>
+									<span class="price"><em>3,300</em>원/월 x 2대</span>
 								</label>
 							</li>
 						</ul>
@@ -250,7 +250,7 @@
 							<input type="radio" id="payments0" name="payments" value="" checked>
 							<label for="payments0">
 								<span class="title"><em>일시불</em></span>
-								<span class="price"><em>132,000</em>원/월</span>
+								<span class="price"><em>132,000</em>원</span>
 							</label>
 						</li>
 						<li>
@@ -320,18 +320,23 @@
 					</dd>
 				</dl>
 
-				<h3 class="titDep4">서비스 납부금액</h3>
-				<!-- 서비스 납부금액 존재시 -->
-				<dl>
-					<dt>서비스 구매수량</dt>
-					<dd>1<span>개</span></dd>
-					<dt>스마트홈 ONE</dt>
-					<dd>
-						월 <strong>2,200</strong>원 / 36개월<br>
-						(대당 1,100 원/월)
-					</dd>
-				</dl>
-				<p class="center">서비스가입 유형을 선택해 주세요.</p>
+				<div class="except-device">
+					<h3 class="titDep4">서비스 납부금액</h3>
+						<div id="servicePriceContent" style="display: none;">
+							<!-- 서비스 납부금액 존재시 -->
+							<dl>
+								<dt>서비스 구매수량</dt>
+								<dd>1<span>개</span></dd>
+								<dt>스마트홈 ONE</dt>
+								<dd>
+									월 <strong>2,200</strong>원 / 36개월<br>
+									(대당 1,100 원/월)
+								</dd>
+							</dl>
+						</div>
+
+					<p id="servicePriceMessage" class="center">서비스가입 유형을 선택해 주세요.</p>
+				</div>
 			</div>
 
 			<div class="askCall">
@@ -346,7 +351,7 @@
 
 			<div class="emptyPlace"><!-- Empty --></div>
 
-			<div class="checkPoint">
+			<div class="checkPoint on">
 				<div class="tit">
 					<a href="#">Check Point</a>
 				</div>
