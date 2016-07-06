@@ -102,13 +102,13 @@ function withBridge() {
 			updateInstallment(true);
 
 			var action = $(this).attr("data-action");
+			var ins = $("#prodcut-count .select").getInstance();
 			if( action == "with-bridge" ) {
-				$('#prodcut-count').hide();
-				$('#prodcut-count + .emptyPlace').hide();
+				ins.disabledSB(true);
 				$('#only-device').hide();
 			} else if( action == "only-device" ) {
-				$('#prodcut-count').show();
-				$('#prodcut-count + .emptyPlace').show();
+				ins.disabledSB(false);
+				$('#prodcut-count .select').removeAttr('disabled');
 				$('#only-device').show();
 			}
 		}
