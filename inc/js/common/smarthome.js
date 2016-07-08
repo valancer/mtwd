@@ -35,11 +35,30 @@ function slickSlider(){
 	}
 }
 
+// //스마트홈 - 상품 결제방식 36개월 할부 선택
+function selectPayments36() {
+	var $paymentType36 = $('#payments36');
+	$paymentType36.on('click', function(e) {
+		checkedServiceTypeSub($('[name=service-type]:checked').val());
+	});
+}
+
+//스마트홈 - 36개월 할부 활성화
+function checkedServiceTypeSub(target) {
+	var $sub = $('input[name=' + target + ']:checked');
+	if( $sub.val() != 36 ) {
+		var result = confirm('36개월 할부 선택 시 서비스 요금약정이 36개월로 변경됩니다.\n변경하시겠습니까?');
+		if( result ) {
+			$('input[name=' + target + '][value=36]').prop('checked', true);
+		}
+	}
+}
 //스마트홈 - 서비스가입유형 선택
 function openWithTarget(target) {
 	$('.service-type-sub').hide();
 	$('input[name=one], input[name=unlimited]').prop('checked', false);
-	updateInstallment(true);
+	$("input[name=" + target + "][value=36]").prop("checked", true);
+
 	updateServicePrice(false);
 
 	$('.service-type-sub[data-rel=' + target + ']').show();
@@ -52,6 +71,14 @@ function openWithTarget(target) {
 
 function selectServiceType() {
 	var $serviceType = $('[name=service-type]');
+
+	$serviceType.each(function() {
+		if( $(this).is(":checked") ) {
+			var target = $(this).val();
+			openWithTarget(target);
+		}
+	});
+
 	$serviceType.on('click', function(e) {
 		if( $(this).is(":checked") ) {
 			var target = $(this).val();
@@ -66,20 +93,14 @@ function selectServiceStipulation() {
 	$stipulation.on('click', function(e) {
 		var eid = $(this).attr('id');
 		if( $(this).is(":checked") ) {
-			if( ( eid == "unlimited36" || eid == "one36" ) ) {
-				updateInstallment(false);
+			if( ( eid != "unlimited36" || eid != "one36" ) ) {
+				$('input[name=payments][value=0]').prop('checked', true);
 			}
 			updateServicePrice(true);
-		} else {
-			updateInstallment(true);
 		}
 	});
 }
 
-//스마트홈 - 36개월 할부 활성화
-function updateInstallment(active) {
-	$('#payments36').prop('disabled', active);
-}
 
 //스마트홈 - 서비스 납부금액 show/hide
 function updateServicePrice(active) {
@@ -99,7 +120,7 @@ function withBridge() {
 		if( $(this).is(":checked") ) {
 			$('[name=service-type]').removeAttr('checked');;
 			$('.service-type-sub').hide();
-			updateInstallment(true);
+			// updateInstallment(true);
 
 			var action = $(this).attr("data-action");
 			var ins = $("#prodcut-count .select").getInstance();
@@ -120,6 +141,7 @@ function withBridge() {
 $(document).ready(function(){
 	smarthomeCubbyhole();			//스마트홈 - 보관함 담기 - 2016-06-26 추가
 	slickSlider();					//스마트홈 - 패키지 슬라이더 - 2016-06-26 추가
+	selectPayments36();				//스마트홈 - 상품 결제방식 36개월 할부 선택
 	selectServiceType();			//스마트홈 - 서비스가입유형 선택
 	selectServiceStipulation();		//스마트홈 - 서비스가입유형 약정 선택
 	withBridge();					//스마트홈 - 브릿지 구입여부
