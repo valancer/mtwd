@@ -6,7 +6,6 @@
 ================================== */
 button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; }
 
-
 /* ==================================
 * smart home main
 ================================== */
@@ -59,8 +58,9 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeList  ul {border-top:1px solid #e7e7e7}
 .smarthomeList  ul li {position:relative;overflow: hidden;padding:0px;border-bottom:1px solid #e7e7e7}
 .smarthomeList  ul li a { display: block; position: relative; padding: 30px 15px 22px 125px; min-height: 100px; }
-.smarthomeList  ul li .img_area {display: block; position: absolute; top: 30px; left: 15px; width: 95px; text-align:center;box-sizing:border-box;}
-.smarthomeList  ul li .img_area img {width:100%;}
+.smarthomeList  ul li .img_area {display: block; position: absolute; top: 30px; left: 15px; height: 95px; width: 95px; text-align:center;box-sizing:border-box;}
+.smarthomeList  ul li .img_area img {height: auto; width:100%;}
+.smarthomeList  ul li .img_area.vertical img {height: 100%; width: auto;}
 .smarthomeList  ul li dl dt {margin-bottom:15px;font-size:17px;font-weight:bold}
 .smarthomeList  ul li dl dt span {display:block;}
 .smarthomeList  ul li dl dt span em {margin-left:3px;padding:1px 4px 2px;border-radius:3px;font-size:10px;color:#fff}
@@ -119,6 +119,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .buy-bridge ul > li > label:before { content: none; }
 .smarthomeProductDetail .buy-bridge ul > li > label > small { font-size: 13px; font-weight: normal; color: #666; }
 .smarthomeProductDetail .buy-bridge ul > li > input[type=radio]:checked + label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
+.smarthomeProductDetail .buy-bridge ul > li.checked label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
 
 .smarthomeProductDetail .service-type { padding: 25px 15px 30px; background-color: #fff; }
 .smarthomeProductDetail .service-type .btn-help { display: inline-block; margin-top: -2px; height: 19px; width: 19px; text-indent: -9999px; vertical-align: middle; background-position: -60px 0; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }

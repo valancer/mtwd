@@ -37,9 +37,17 @@ function slickSlider(){
 
 // //스마트홈 - 상품 결제방식 36개월 할부 선택
 function selectPayments36() {
-	var $paymentType36 = $('#payments36');
-	$paymentType36.on('click', function(e) {
-		checkedServiceTypeSub($('[name=service-type]:checked').val());
+	var $paymentsType = $('input[name=payments]');
+
+	$paymentsType.on('click', function(e) {
+		$(this).prop('checked', function (i, value) {
+			return !value;
+		});
+
+		var eid = $(this).attr('id');
+		if( ( eid == "payments36" ) ) {
+			checkedServiceTypeSub($('[name=service-type]:checked').val());
+		}
 	});
 }
 
@@ -56,21 +64,25 @@ function checkedServiceTypeSub(target) {
 //스마트홈 - 서비스가입유형 선택
 function openWithTarget(target) {
 	$('.service-type-sub').hide();
+	$('.sk-auth').show();
 	$('input[name=one], input[name=unlimited]').prop('checked', false);
 	$("input[name=" + target + "][value=36]").prop("checked", true);
 
-	updateServicePrice(false);
+	updateServicePrice(true);
 
 	$('.service-type-sub[data-rel=' + target + ']').show();
 	if( target == "device" ) {
+		$('#payments36').prop("disabled", true);
 		$('.except-device').hide();
+		$('.sk-auth').hide();
 	} else {
+		$('#payments36').prop("disabled", false);
 		$('.except-device').show();
 	}
 }
 
 function selectServiceType() {
-	var $serviceType = $('[name=service-type]');
+	var $serviceType = $('input[name=service-type]');
 
 	$serviceType.each(function() {
 		if( $(this).is(":checked") ) {
@@ -80,6 +92,10 @@ function selectServiceType() {
 	});
 
 	$serviceType.on('click', function(e) {
+		$(this).prop('checked', function (i, value) {
+			return !value;
+		});
+
 		if( $(this).is(":checked") ) {
 			var target = $(this).val();
 			openWithTarget(target);
@@ -91,6 +107,10 @@ function selectServiceType() {
 function selectServiceStipulation() {
 	var $stipulation = $('input[name=one], input[name=unlimited]');
 	$stipulation.on('click', function(e) {
+		$(this).prop('checked', function (i, value) {
+			return !value;
+		});
+
 		var eid = $(this).attr('id');
 		if( $(this).is(":checked") ) {
 			if( ( eid != "unlimited36" || eid != "one36" ) ) {
@@ -115,12 +135,16 @@ function updateServicePrice(active) {
 
 //스마트홈 - 브릿지 구입여부
 function withBridge() {
-	var $bridgeItems = $('input[name=bridge]');
+	var $bridgeItems = $('input[name=isBridge]');
 	$bridgeItems.on('click', function(e) {
+		$(this).prop('checked', function (i, value) {
+			return !value;
+		});
+
 		if( $(this).is(":checked") ) {
 			$('[name=service-type]').removeAttr('checked');;
 			$('.service-type-sub').hide();
-			// updateInstallment(true);
+			$('.sk-auth').hide();
 
 			var action = $(this).attr("data-action");
 			var ins = $("#prodcut-count .select").getInstance();
@@ -135,8 +159,14 @@ function withBridge() {
 		}
 	});
 
-	$("input[name=bridge]:first").prop("checked", true).trigger("click");
+//	$("input[name=isBridge]:first").prop("checked", true).trigger("click");
 }
+
+//스마트홈 - 보관함 담기, 구매하기 이벤트 제거
+function removeBuyCart() {
+	$(document).off("click",".buyWrap .btnDgray");
+}
+
 
 $(document).ready(function(){
 	smarthomeCubbyhole();			//스마트홈 - 보관함 담기 - 2016-06-26 추가
@@ -145,5 +175,7 @@ $(document).ready(function(){
 	selectServiceType();			//스마트홈 - 서비스가입유형 선택
 	selectServiceStipulation();		//스마트홈 - 서비스가입유형 약정 선택
 	withBridge();					//스마트홈 - 브릿지 구입여부
+	removeBuyCart();				//스마트홈 - 보관함 담기, 구매하기 이벤트 제거
+
 });
 

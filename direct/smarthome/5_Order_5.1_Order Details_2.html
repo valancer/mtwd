@@ -28,97 +28,15 @@
 	</div>
 	<div id="Wrap">
 		<div class="topHead">
-			<h1>주문내역 확인</h1>
+			<h1>주문정보 작성</h1>
 		</div>
 		<!-- content -->
 		<div id="content" class=""> 
 			<section class="container orderDetail">
 
-				<div class="order-major-info">
-					<h2 class="titDep2">스마트 홈&amp;라이프 주문내역</h2>
-					
-					<p class="order-info">
-						스마트홈 프리미엄 패키지 표준팩<br>
-						레드(DAR-436TRR)<br>
-						1개 / 할부결제 / 36개월<br>
-					</p>
-
-					<ul class="list-order-info tglClsOpen tglOrder">
-						<li>
-							<a href="#" class="tglBtn">
-								<span class="title">패키지 구성상품 옵션</span>
-							</a>
-
-							<div class="options extendCon">
-								<ul>
-									<li>
-										<span><em>스마트홈 플러그</em> / 화이트</span>
-										<span class="count">1개</span>
-									</li>
-									<li>
-										<span><em>스마트홈 스위치</em></span>
-										<span class="count">2개</span>
-									</li>
-									<li>
-										<span><em>스마트홈 열림감지센터</em></span>
-										<span class="count">3개</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<span class="title">기기 결제금액</span>
-							<p class="content">
-								<em>136,000</em>원
-							</p>
-						</li>
-						<li>
-							<span class="title">서비스 유형</span>
-							<p class="content">
-								스마트홈 Unlimited / 36개월
-							</p>
-						</li>
-						<li>
-							<span class="title">월 서비스 요금</span>
-							<p class="content">
-								<em>9,900</em>원/월
-							</p>
-						</li>
-						<li>
-							<span class="title">서비스 수량</span>
-							<p class="content">
-								1개
-							</p>
-						</li>
-					</ul>
-
-
-					<div class="order-total">
-						<ul>
-							<li>
-								<span class="title">
-									즉시결제금액 <small>(기기금액)</small>
-								</span>
-								<p class="content">
-									<em>705,000</em>원
-								</p>
-							</li>
-							<li class="multiple">
-								<span class="title">
-									월 납부금액 <small>(기기대금/36개월 + 월 서비스 이용료/36개월)</small>
-								</span>
-								<p class="content">
-									<em>705,000</em>원 / 월<br>
-									<small>분할상환 수수료 5.9% 포함</small>
-								</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
-
 				<div class="orderBox">
 					<div class="tableType1 dotlineType">
-						<h2 class="titDep2">주문자 정보</h2>
+						<h2 class="titDep2">주문 정보</h2>
 						<strong class="essential">필수</strong>
 						<ul class="tableCon">
 							<li>
@@ -147,45 +65,6 @@
 								</div>
 								<p><span class="txtInfo">주문내역이 이메일로 발송됩니다.</span></p>
 							
-							</li>
-							<li>
-								<strong>연락가능번호<em class="essential">필수입력</em></strong>
-								<div class="formArea">
-									<span>
-										<select title="전화번호 앞자리 선택">
-											<option value="" selected>010</option>
-											<option value="">011</option>
-											<option value="">016</option>
-											<option value="">017</option>
-											<option value="">018</option>
-											<option value="">019</option>
-										</select>
-									</span>
-									<span class="hyphen">-</span>
-									<span><input type="tel" title="전화번호 중간자리 4자리 입력" value="1234" class="inputTxt1"></span>
-									<span class="hyphen">-</span>
-									<span><input type="tel" title="전화번호 마지막 자리 4자리 입력" value="5678" class="inputTxt1"></span>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div><!-- //주문자 정보 -->
-
-
-				<div class="orderBox">
-					<div class="tableType1 dotlineType">
-						<h2 class="titDep2">배송 정보</h2>
-						<strong class="essential">필수</strong>
-						<p class="checkSame">
-							<span class="formWrap">
-								<input type="checkbox" id="same_person1">
-								<label for="same_person1">주문자와 동일합니다.</label>
-							</span>
-						</p>
-						<ul class="tableCon">
-							<li>
-								<strong><label for="deliver_name">이름</label><em class="essential">필수입력</em></strong>
-								<input type="text" class="inputTxt1" id="deliver_name">
 							</li>
 							<li>
 								<strong>휴대폰번호<em class="essential">필수입력</em></strong>
@@ -226,14 +105,6 @@
 								</div>
 							</li>
 							<li>
-								<strong>배송방법<em class="essential">필수입력</em></strong>
-								
-								<span class="formWrap">
-									<input type="radio" id="deliver_way_1" name="deliver_way" checked><label for="deliver_way_1">택배</label>
-								</span>
-
-							</li>
-							<li>
 								<strong>받으실 주소<em class="essential">필수입력</em><a href="#none" class="btnS btnLtgray myAddress">나의 주소록</a></strong>
 								<p class="multi_radio h5">
 									<span class="formWrap">
@@ -256,9 +127,16 @@
 								<p class="h10"><input type="text" placeholder="상세주소를 입력해 주세요." class="inputTxt1" /></p>
 								<p class="txtInfo">단, 배송정보 변경 시 이미 상품 배송이 시작되었다면 변경된 정보가 적용되지 않을 수 있습니다.</p>
 							</li>
+							<li>
+								<strong>배송방법<em class="essential">필수입력</em></strong>
+								
+								<span class="formWrap">
+									<input type="radio" id="deliver_way_1" name="deliver_way" checked><label for="deliver_way_1">택배</label>
+								</span>
+							</li>
 						</ul>
 					</div>
-				</div><!-- //배송 정보 -->
+				</div><!-- //주문자 정보 -->
 
 				<div class="orderBox">
 					<div class="tableType1 dotlineType">
