@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="../../inc/css/direct.css">
 <link rel="stylesheet" href="../../inc/css/purchase.css">
 <link rel="stylesheet" href="../../inc/css/smarthome.css">
-<script src="../../inc/js/lib/jquery-1.9.1.min.js"></script>
+<script src="../../inc/js/lib/jquery.min.js"></script>
+<script src="../../inc/js/lib/jquery.js"></script>
 <script src="../../inc/js/lib/libs.js"></script>
 <script src="../../inc/js/common/common.js"></script>
 <script src="../../inc/js/common/direct.js"></script>
@@ -114,11 +115,11 @@
 				
 				<ul>
 					<li>
-						<input type="radio" id="bridge01" name="isBridge" data-action="with-bridge" value="">
+						<input type="radio" id="bridge01" name="isBridge" data-action="with-bridge" value="" class="basicType">
 						<label for="bridge01">함께구입<br><small>+50,000원</small></label>
 					</li>
 					<li>
-						<input type="radio" id="bridge02" name="isBridge" data-action="only-device" value="">
+						<input type="radio" id="bridge02" name="isBridge" data-action="only-device" value="" class="basicType">
 						<label for="bridge02">구입안함<br><small>브릿지 보유 중</small></label>
 					</li>
 				</ul>
@@ -156,15 +157,15 @@
 						<legend>서비스가입유형 선택</legend>
 						<ul class="list-service-type">
 							<li>
-								<input type="radio" id="unlimited" name="service-type" value="unlimited">
+								<input type="radio" id="unlimited" name="service-type" value="unlimited" class="basicType">
 								<label for="unlimited">스마트홈 Unlimited<br><small>기기무제한연동</small></label>
 							</li>
 							<li>
-								<input type="radio" id="one" name="service-type" value="one">
+								<input type="radio" id="one" name="service-type" value="one" class="basicType">
 								<label for="one">스마트홈 ONE<br><small>기기1대만 연동</small></label>
 							</li>
 							<li id="only-device">
-								<input type="radio" id="device" name="service-type" value="device">
+								<input type="radio" id="device" name="service-type" value="device" class="basicType">
 								<label for="device" class="device">기기만 구매</label>
 							</li>
 						</ul>
@@ -179,28 +180,28 @@
 					<div data-rel="unlimited" class="service-type-sub sep-arrow">
 						<ul class="list-radio">
 							<li>
-								<input type="radio" id="unlimited36" name="unlimited" value="36">
+								<input type="radio" id="unlimited36" name="unlimited" value="36" class="basicType">
 								<label for="unlimited36">
 									<span class="title"><em>36</em>개월 요금약정</span>
 									<span class="price"><em>9,900</em>원/월</span>
 								</label>
 							</li>
 							<li>
-								<input type="radio" id="unlimited24" name="unlimited" value="24">
+								<input type="radio" id="unlimited24" name="unlimited" value="24" class="basicType">
 								<label for="unlimited24">
 									<span class="title"><em>24</em>개월 요금약정</span>
 									<span class="price"><em>12,100</em>원/월</span>
 								</label>
 							</li>
 							<li>
-								<input type="radio" id="unlimited12" name="unlimited" value="12">
+								<input type="radio" id="unlimited12" name="unlimited" value="12" class="basicType">
 								<label for="unlimited12">
 									<span class="title"><em>12</em>개월 요금약정</span>
 									<span class="price"><em>14,300</em>원/월</span>
 								</label>
 							</li>
 							<li>
-								<input type="radio" id="unlimited0" name="unlimited" value="0">
+								<input type="radio" id="unlimited0" name="unlimited" value="0" class="basicType">
 								<label for="unlimited0">
 									<span class="title"><em>무약정</em></span>
 									<span class="price"><em>16,500</em>원/월</span>
@@ -214,28 +215,28 @@
 					<div data-rel="one" class="service-type-sub sep-arrow">
 						<ul class="list-radio">
 							<li>
-								<input type="radio" id="one36" name="one" value="36">
+								<input type="radio" id="one36" name="one" value="36" class="basicType">
 								<label for="one36">
 									<span class="title"><em>36</em>개월 요금약정</span>
 									<span class="price"><em>1,100</em>원/월 x 2대</span>
 								</label>
 							</li>
 							<li>
-								<input type="radio" id="one24" name="one" value="24">
+								<input type="radio" id="one24" name="one" value="24" class="basicType">
 								<label for="one24">
 									<span class="title"><em>24</em>개월 요금약정</span>
 									<span class="price"><em>1,650</em>원/월 x 2대</span>
 								</label>
 							</li>
 							<li>
-								<input type="radio" id="one12" name="one" value="12">
+								<input type="radio" id="one12" name="one" value="12" class="basicType">
 								<label for="one12">
 									<span class="title"><em>12</em>개월 요금약정</span>
 									<span class="price"><em>2,200</em>원/월 x 2대</span>
 								</label>
 							</li>
 							<li>
-								<input type="radio" id="one0" name="one" value="0">
+								<input type="radio" id="one0" name="one" value="0" class="basicType">
 								<label for="one0">
 									<span class="title"><em>무약정</em></span>
 									<span class="price"><em>3,300</em>원/월 x 2대</span>
@@ -288,14 +289,14 @@
 
 					<ul class="list-radio">
 						<li>
-							<input type="radio" id="payments0" name="payments" value="0" checked>
+							<input type="radio" id="payments0" name="payments" value="0"  class="basicType">
 							<label for="payments0">
 								<span class="title"><em>일시불</em></span>
 								<span class="price"><em>132,000</em>원</span>
 							</label>
 						</li>
 						<li>
-							<input type="radio" id="payments36" name="payments" value="36">
+							<input type="radio" id="payments36" name="payments" value="36" class="basicType">
 							<label for="payments36">
 								<span class="title"><em>36</em>개월 할부</span>
 								<span class="price"><em>4,400</em>원/월</span>

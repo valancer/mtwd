@@ -40,13 +40,18 @@ function selectPayments36() {
 	var $paymentsType = $('input[name=payments]');
 
 	$paymentsType.on('click', function(e) {
-		$(this).prop('checked', function (i, value) {
-			return !value;
-		});
+		$paymentsType.removeAttr("checked");
+		$(this).attr('checked', true);
 
 		var eid = $(this).attr('id');
+		var target;
 		if( ( eid == "payments36" ) ) {
-			checkedServiceTypeSub($('[name=service-type]:checked').val());
+			$('[name=service-type]').each(function() {
+				if( $(this)[0].hasAttribute("checked") ) {
+					target = $(this).val();
+				}
+			});
+			checkedServiceTypeSub(target);
 		}
 	});
 }
@@ -57,7 +62,8 @@ function checkedServiceTypeSub(target) {
 	if( $sub.val() != 36 ) {
 		var result = confirm('36개월 할부 선택 시 서비스 요금약정이 36개월로 변경됩니다.\n변경하시겠습니까?');
 		if( result ) {
-			$('input[name=' + target + '][value=36]').prop('checked', true);
+			$('input[name=' + target + ']').removeAttr("checked");
+			$('input[name=' + target + '][value=36]').attr('checked', true);
 		}
 	}
 }
@@ -65,18 +71,18 @@ function checkedServiceTypeSub(target) {
 function openWithTarget(target) {
 	$('.service-type-sub').hide();
 	$('.sk-auth').show();
-	$('input[name=one], input[name=unlimited]').prop('checked', false);
-	$("input[name=" + target + "][value=36]").prop("checked", true);
+	$('input[name=one], input[name=unlimited]').attr('checked', false);
+	$("input[name=" + target + "][value=36]").attr("checked", true);
 
 	updateServicePrice(true);
 
 	$('.service-type-sub[data-rel=' + target + ']').show();
 	if( target == "device" ) {
-		$('#payments36').prop("disabled", true);
+		$('#payments36').attr("disabled", true);
 		$('.except-device').hide();
 		$('.sk-auth').hide();
 	} else {
-		$('#payments36').prop("disabled", false);
+		$('#payments36').attr("disabled", false);
 		$('.except-device').show();
 	}
 }
@@ -85,21 +91,18 @@ function selectServiceType() {
 	var $serviceType = $('input[name=service-type]');
 
 	$serviceType.each(function() {
-		if( $(this).is(":checked") ) {
+		if( $(this).prop("checked") ) {
 			var target = $(this).val();
 			openWithTarget(target);
 		}
 	});
 
 	$serviceType.on('click', function(e) {
-		$(this).prop('checked', function (i, value) {
-			return !value;
-		});
+		$serviceType.removeAttr("checked");
+		$(this).attr('checked', true);
 
-		if( $(this).is(":checked") ) {
-			var target = $(this).val();
-			openWithTarget(target);
-		}
+		var target = $(this).val();
+		openWithTarget(target);
 	});
 }
 
@@ -107,17 +110,15 @@ function selectServiceType() {
 function selectServiceStipulation() {
 	var $stipulation = $('input[name=one], input[name=unlimited]');
 	$stipulation.on('click', function(e) {
-		$(this).prop('checked', function (i, value) {
-			return !value;
-		});
+		$stipulation.removeAttr("checked");
+		$(this).attr('checked', true);
 
 		var eid = $(this).attr('id');
-		if( $(this).is(":checked") ) {
-			if( ( eid != "unlimited36" || eid != "one36" ) ) {
-				$('input[name=payments][value=0]').prop('checked', true);
-			}
-			updateServicePrice(true);
+		if( ( eid != "unlimited36" || eid != "one36" ) ) {
+			$('input[name=payments]').removeAttr("checked");
+			$('input[name=payments][value=0]').attr('checked', true);
 		}
+		updateServicePrice(true);
 	});
 }
 
@@ -137,25 +138,22 @@ function updateServicePrice(active) {
 function withBridge() {
 	var $bridgeItems = $('input[name=isBridge]');
 	$bridgeItems.on('click', function(e) {
-		$(this).prop('checked', function (i, value) {
-			return !value;
-		});
+		$bridgeItems.removeAttr("checked");
+		$(this).attr('checked', true);
 
-		if( $(this).is(":checked") ) {
-			$('[name=service-type]').removeAttr('checked');;
-			$('.service-type-sub').hide();
-			$('.sk-auth').hide();
+		$('[name=service-type]').removeAttr('checked');;
+		$('.service-type-sub').hide();
+		$('.sk-auth').hide();
 
-			var action = $(this).attr("data-action");
-			var ins = $("#prodcut-count .select").getInstance();
-			if( action == "with-bridge" ) {
-				ins.disabledSB(true);
-				$('#only-device').hide();
-			} else if( action == "only-device" ) {
-				ins.disabledSB(false);
-				$('#prodcut-count .select').removeAttr('disabled');
-				$('#only-device').show();
-			}
+		var action = $(this).attr("data-action");
+		var ins = $("#prodcut-count .select").getInstance();
+		if( action == "with-bridge" ) {
+			ins.disabledSB(true);
+			$('#only-device').hide();
+		} else if( action == "only-device" ) {
+			ins.disabledSB(false);
+			$('#prodcut-count .select').removeAttr('disabled');
+			$('#only-device').show();
 		}
 	});
 

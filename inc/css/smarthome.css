@@ -12,7 +12,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeMain {overflow:hidden}
 .smarthomeMain .tabSmarthome { overflow: hidden; padding: 22px 15px; border-bottom: 1px solid #ccc; }
 .smarthomeMain .tabSmarthome > a { display: block; box-sizing: border-box; position: relative; float: left; padding-left: 30px; width: 50%; font-size: 14px; line-height: 14px; }
-.smarthomeMain .tabSmarthome > a:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -12px; height: 25px; width: 24px; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.smarthomeMain .tabSmarthome > a:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -12px; height: 25px; width: 24px; background-image: url('/mtshop/images/smarthome/sprites_smarthome.png'); background-size: 150px; }
 .smarthomeMain .tabSmarthome > a > small { display: block; font-size: 11px; }
 .smarthomeMain .tabSmarthome > a.life { padding-left: 45px; border-left: 1px solid #dcdcdc; }
 .smarthomeMain .tabSmarthome > a.home:before { background-position: 0px 0px; }
@@ -80,7 +80,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeList  ul li dl.package-item dd strong i.subsidy:before {content: ''; position: absolute; top: 0px; left: -10px; height: 0; width: 0; border-top: 18px solid transparent; border-bottom: 18px solid transparent; border-right: 10px solid #e3002b; }
 .smarthomeList  ul li .stock {position:absolute;top:15px;left:15px;border-bottom:1px solid #d23c00;font-size:14px;font-weight:bold;color:#d23c00}
 .smarthomeList  ul li .stock strong {font-size:24px;}
-.smarthomeList  ul li .favorite {display:block;position:absolute;top:30px;right:15px;z-index:10;width:18px;height:25px;background:url('../../img/direct/ico_item_pick.png') no-repeat center top;background-size:18px;text-indent:-9999em;cursor:pointer}
+.smarthomeList  ul li .favorite {display:block;position:absolute;top:30px;right:15px;z-index:10;width:18px;height:25px;background:url('/mtshop/images/direct/ico_item_pick.png') no-repeat center top;background-size:18px;text-indent:-9999em;cursor:pointer}
 .smarthomeList  ul li .favorite.on {background-position: center bottom}
 .smarthomeList .moreBoxType1 {width:auto;margin: 15px 15px 20px;}
 
@@ -118,11 +118,11 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .buy-bridge ul > li > label { display: block; padding: 10px 0; height: 41px; font-size: 13px; font-weight: bold; color: #333; line-height: 20px; text-align: center; border: 1px solid #ccc; }
 .smarthomeProductDetail .buy-bridge ul > li > label:before { content: none; }
 .smarthomeProductDetail .buy-bridge ul > li > label > small { font-size: 13px; font-weight: normal; color: #666; }
-.smarthomeProductDetail .buy-bridge ul > li > input[type=radio]:checked + label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
+.smarthomeProductDetail .buy-bridge ul > li > input[type=radio][checked] + label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
 .smarthomeProductDetail .buy-bridge ul > li.checked label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
 
 .smarthomeProductDetail .service-type { padding: 25px 15px 30px; background-color: #fff; }
-.smarthomeProductDetail .service-type .btn-help { display: inline-block; margin-top: -2px; height: 19px; width: 19px; text-indent: -9999px; vertical-align: middle; background-position: -60px 0; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.smarthomeProductDetail .service-type .btn-help { display: inline-block; margin-top: -2px; height: 19px; width: 19px; text-indent: -9999px; vertical-align: middle; background-position: -60px 0; background-image: url('/mtshop/images/smarthome/sprites_smarthome.png'); background-size: 150px; }
 .smarthomeProductDetail .service-type .list-service-type { display: flex; margin-top: 10px; }
 .smarthomeProductDetail .service-type .list-service-type > li { flex: 1; position: relative; }
 .smarthomeProductDetail .service-type .list-service-type > li + li { margin-left: -1px; }
@@ -131,18 +131,18 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .service-type .list-service-type > li > label:before { content: none; }
 .smarthomeProductDetail .service-type .list-service-type > li > label > small { font-size: 13px; font-weight: normal; color: #666; }
 .smarthomeProductDetail .service-type .list-service-type > li > label.device { line-height: 41px; }
-.smarthomeProductDetail .service-type .list-service-type > li > input[type=radio]:checked + label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
+.smarthomeProductDetail .service-type .list-service-type > li > input[type=radio][checked] + label { position: relative; z-index: 1; color: #ea002c; border: 1px solid #ea002c; }
 
 .smarthomeProductDetail .service-type-sub { display: none; }
 .smarthomeProductDetail .sep-arrow { position: relative; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; }
-.smarthomeProductDetail .sep-arrow:before { content: ''; display: block; position: absolute; top: -1px; left: 50%; height: 8px; width: 12px; margin-left: -6px; background-position: -90px 0; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.smarthomeProductDetail .sep-arrow:before { content: ''; display: block; position: absolute; top: -1px; left: 50%; height: 8px; width: 12px; margin-left: -6px; background-position: -90px 0; background-image: url('/mtshop/images/smarthome/sprites_smarthome.png'); background-size: 150px; }
 .smarthomeProductDetail .service-type-sub .desc { margin-top: 20px; font-size: 13px; color: #ea002c; text-align: right; }
 
 .smarthomeProductDetail .list-radio { }
 .smarthomeProductDetail .list-radio > li { position: relative; padding-top: 10px; }
 .smarthomeProductDetail .list-radio input[type=radio] { position: absolute; left: -9999px; }
-.smarthomeProductDetail .list-radio input[type=radio]:checked + label { color: #ea002c; border: 1px solid #ea002c; }
-.smarthomeProductDetail .list-radio input[type=radio]:disabled + label { color: #b0b0b0; border: 1px solid #ccc; background-color: #eee; }
+.smarthomeProductDetail .list-radio input[type=radio][checked] + label { color: #ea002c; border: 1px solid #ea002c; }
+.smarthomeProductDetail .list-radio input[type=radio][disabled] + label { color: #b0b0b0; border: 1px solid #ccc; background-color: #eee; }
 .smarthomeProductDetail .list-radio label { display: block; padding: 0 15px; font-size: 12px; color: #333; line-height: 56px; border: 1px solid #ccc; }
 .smarthomeProductDetail .list-radio label .title em { font-size: 20px; }
 .smarthomeProductDetail .list-radio label .price { float: right; }
@@ -170,7 +170,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .list-package-options .option .title { font-size: 15px; color: #111; }
 .smarthomeProductDetail .list-package-options .option .count { position: absolute; bottom: 0; left: 68px; font-size: 13px; color: #666; }
 .smarthomeProductDetail .list-package-options .option .btn-detail { display: block; position: absolute; right: 0; bottom: 0; font-size: 12px; color: #333; text-decoration: underline; }
-.smarthomeProductDetail .list-package-options .option .btn-detail:before { content: ''; display: block; position: absolute; top: 50%; left: -15px; margin-top: -6px; height: 12px; width: 12px; background-position: -120px 0; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.smarthomeProductDetail .list-package-options .option .btn-detail:before { content: ''; display: block; position: absolute; top: 50%; left: -15px; margin-top: -6px; height: 12px; width: 12px; background-position: -120px 0; background-image: url('/mtshop/images/smarthome/sprites_smarthome.png'); background-size: 150px; }
 
 .smarthomeProductDetail .bgWaterR {padding-top:13px}
 .smarthomeProductDetail .bgWaterR .titDep4 { display: block; margin: 0 -15px; padding: 15px 0 12px 15px; font-size: 17px; font-weight: bold; color: #fff; border-bottom: 1px solid #fff; }
@@ -183,7 +183,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .bgWaterR dl dd + dt,
 .smarthomeProductDetail .bgWaterR dl dd + dt + dd {border-top:1px solid #f14e6c}
 
-.smarthomeProductDetail .askCall {padding:32px 0 32px 60px;background: url('../../img/common/bg_caution.png') no-repeat 15px center #FFF;background-size: 32px 32px;background-size: 32px 32px;}
+.smarthomeProductDetail .askCall {padding:32px 0 32px 60px;background: url('/mtshop/images/common/bg_caution.png') no-repeat 15px center #FFF;background-size: 32px 32px;background-size: 32px 32px;}
 .smarthomeProductDetail .askCall a {color:#e3002b;border-bottom:1px solid #e3002b}
 
 .smarthomeProductDetail .bnArea img {display:block;width:100%}
@@ -192,12 +192,12 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .smarthomeProductDetail .buyWrap .btnBox {padding:0}
 .smarthomeProductDetail .buyWrap .btnBox .btnL {padding-top:10px;font-size:15px;font-weight:normal;line-height:1}
 .smarthomeProductDetail .buyWrap .btnBox .btnDgray.on {background:#f65d00}
-.smarthomeProductDetail .buyWrap .btnBox .btnDgray em {padding-left:21px;background:url('../../img/direct/ico_acc1.png') no-repeat left 0px; background-size:16px;}
-.smarthomeProductDetail .buyWrap .btnBox .btnRed em {padding-left:21px;background:url('../../img/direct/ico_acc1.png') no-repeat left -41px; background-size:16px;}
+.smarthomeProductDetail .buyWrap .btnBox .btnDgray em {padding-left:21px;background:url('/mtshop/images/direct/ico_acc1.png') no-repeat left 0px; background-size:16px;}
+.smarthomeProductDetail .buyWrap .btnBox .btnRed em {padding-left:21px;background:url('/mtshop/images/direct/ico_acc1.png') no-repeat left -41px; background-size:16px;}
 .smarthomeProductDetail .buyWrap .btnBox.btnSoldout .btnRed em {background-position:left bottom}
 .smarthomeProductDetail .buyWrap .btnBox.btnSoldout .btnL em {opacity:.5}
 .smarthomeProductDetail .buyWrap .dropSelect.color_select .select_drop {position:static;top:auto;left:auto;max-height:none}
-.smarthomeProductDetail .buyWrap .open {display:block;position:absolute;top:-13px;left:50%;width:48px;height:13px;margin-left:-24px;background:url('../../img/direct/bg_layer_open.png') no-repeat center top;background-size:48px 13px;text-indent:-9999em}
+.smarthomeProductDetail .buyWrap .open {display:block;position:absolute;top:-13px;left:50%;width:48px;height:13px;margin-left:-24px;background:url('/mtshop/images/direct/bg_layer_open.png') no-repeat center top;background-size:48px 13px;text-indent:-9999em}
 
 
 /* ==================================
@@ -217,7 +217,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 .list-order-info > li > a > .title { font-weight: bold; line-height: 50px; }
 .list-order-info > li .content { float: right; line-height: 50px; }
 .list-order-info > li > .tglBtn { display: block; position: relative; padding: 0; color: #333; background-color: #fff; }
-.list-order-info > li > .tglBtn:after { content: ''; display: block; position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 14px; background-position: 0px -30px; background-image: url('../../img/smarthome/sprites_smarthome.png'); background-size: 150px; }
+.list-order-info > li > .tglBtn:after { content: ''; display: block; position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 14px; background-position: 0px -30px; background-image: url('/mtshop/images/smarthome/sprites_smarthome.png'); background-size: 150px; }
 .list-order-info > li.on .options { display: block; }
 .list-order-info > li.on > .tglBtn:after { background-position: -30px -30px; }
 .list-order-info .options { display: none; margin-bottom: 15px; padding: 15px; border: 1px solid #e4e4e4; background-color: #f7f7f7; }
@@ -245,7 +245,7 @@ button { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 
 .order-finish .popup-warning { margin-top: 75px; padding: 12px 0; font-size: 15px; color: #666; line-height: 19px; text-align: center; border: 1px solid #ccc; background-color: #f7f7f7; }
 
-
+.smarthomeMain .gallerySlide .cont img { width: 100%; max-width: 100%; height: auto }
 /* ==================================
 * smart home mypage
 ================================== */
